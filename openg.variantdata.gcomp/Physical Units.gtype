@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="4ED3B47CB50A547859BC9499757893FB" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@c1dea38ec6164797b0cb8b9fd09db693" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="10" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="13" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="14" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="15" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="16" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAELSURBVEhLtZKLEYMgEETpKT2lBWtJcanFHLuLIH8xvmFG7th74oxuf4yx2rnF1w/GzEtUX6E3I2tA3WkWP3aGXJ1dkKWhuoYSRWZwaxvYtq0cO0iPsthddcojaguUmT+oW6ezaqJuQrVJ8oNMwdLzqVt4eKAuaL7TUNykXO0LVqmn6YzSP6oJ/Y+oDco9T6j7f0iHWbXqK+QzuFxs2r6lrjZTRsddNVFdcEuNcW/HPmdJ/X7ZQjMuogA4FSWWnrk1N9yjRICPFpbrqw+g0vKlfZaCAcRik6WhOgHNIEqkKBHg4xLOfbGi0feAEuBUZCgeUDeATl1KempDc9XJgOqCgdpoDXekZKxeZN9/Rxq8PU7SETQAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@c1dea38ec6164797b0cb8b9fd09db693" Id="19" Name="Physical Units">
+			<p.DefaultValue>0_0_</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="5" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="6" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="7" Name="Physical\ Units\.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy,Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="8" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="9" xmlns="http://www.ni.com/MocCommon">
+					<Label Id="18" LabelOwner="[UIModel]17" Left="[float]145" Text="[string]Physical Units" Top="[float]174" xmlns="http://www.ni.com/PanelCommon" />
+					<Cluster AutoArrange="[AutoArrange]ArrangeVertically" ClusterType="[Type]@c1dea38ec6164797b0cb8b9fd09db693" Height="[float]112" Id="17" IsTabStop="[bool]True" Label="[UIModel]18" Left="[float]145" TabIndex="[int]0" Top="[float]194" Value="{DataItemBinding Id=19}" Width="[float]105" xmlns="http://www.ni.com/PanelCommon">
+						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="20" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]22" Left="[float]4" MinHeight="[float]24" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Base\ Units}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]89" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+							<EnumSelectorInfo DisplayValue="[string]radian" Value="[ushort]0" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]steradian" Value="[ushort]1" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]second" Value="[ushort]2" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]meter" Value="[ushort]3" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]kilogram" Value="[ushort]4" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]ampere" Value="[ushort]5" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]kelvin" Value="[ushort]6" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]mole" Value="[ushort]7" ValueType="[Type]UInt16" />
+							<EnumSelectorInfo DisplayValue="[string]candela" Value="[ushort]8" ValueType="[Type]UInt16" />
+						</EnumSelector>
+						<Label Id="22" LabelOwner="[UIModel]20" Left="[float]4" Text="[string]Base Units" Top="[float]4" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="23" Interval="[short]1" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]4" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=Exponent}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="25" LabelOwner="[UIModel]23" Left="[float]4" Text="[string]Exponent" Top="[float]56" />
+					</Cluster>
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="c1dea38ec6164797b0cb8b9fd09db693">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Base Units" DataType="@dbfab57835f04ba582164dafa498a9b0" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Exponent" DataType="Int16" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="dbfab57835f04ba582164dafa498a9b0">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="radian" />
+					<EnumerationMember Value="1" Name="steradian" />
+					<EnumerationMember Value="2" Name="second" />
+					<EnumerationMember Value="3" Name="meter" />
+					<EnumerationMember Value="4" Name="kilogram" />
+					<EnumerationMember Value="5" Name="ampere" />
+					<EnumerationMember Value="6" Name="kelvin" />
+					<EnumerationMember Value="7" Name="mole" />
+					<EnumerationMember Value="8" Name="candela" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

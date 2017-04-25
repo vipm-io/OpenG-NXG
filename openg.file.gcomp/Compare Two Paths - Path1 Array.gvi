@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="AA6E94D2405B2765B60ACB713E77F6B0" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Path1 Array" Id="1" OverloadGroup="Compare Two Paths" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Compare Two Paths.vi - Compares two paths and if the paths are the same type (both absolute or both relative), the relative path between them is returned.</p.UserDescription>
+		<Icon Id="19" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="21" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="22" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="23" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="24" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="25" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEXSURBVEhLtZQBDsMgCEV7/xv0Tr0TQz9FRKrSZuRlScH/dOnmcdH1J0R93KWDFBLu401NRG62TxhvapQOUkg4VMvDWzWYqcvz+c1u4oEauP4mNh6oywv5oNZ4oAZdc/sd2PigPsh1mPLua7n+HHe6wMuwlOhkUhvIOs4CHdx9KahTGzR1/TstTm1ZbrA4NYAaLq7NDdbfi3G6kXCDhBp5rqUUlC7GXHZg4ZHVgXmEEfV4JYIaL5WSAlGj7MDCo5QUtHWTDIxcrj+nW+2uDiUrBV6tl0uKMOjV727UMOjVwDZ3CIOB5Y263hD8++2a9kFxi/axwUc1cH0HDotPYIPP6voHdf0lNvisvjefwEv0E9hg+ly70PUDj2zm4jPaZMAAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="115" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="18" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 80" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 95" Parameter="17" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="200 70 40 15" DataItem="14" Id="53" Label="54" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="53" Bounds="163 70 32 14" Id="54" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>path1</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="200 85 40 15" DataItem="15" Id="55" Label="56" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="55" Bounds="163 85 32 14" Id="56" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>path2</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="400 80 40 15" DataItem="16" Id="57" Label="58" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="57" Bounds="445 80 137 14" Id="58" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>relative path from 1 to 2</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="450 110 40 15" DataItem="17" Id="59" Label="60" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="59" Bounds="495 110 111 14" Id="60" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>any different types?</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="400 60 40 15" DataItem="18" Id="61" Label="62" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="61" Bounds="445 60 77 14" Id="62" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>common path</p.Text>
+			</NodeLabel>
+			<ForLoop Bounds="263 3 110 170" DiagramId="64" Id="63">
+				<LoopIteration Bounds="0 140 15 15" Id="65" />
+				<MethodCall Bounds="35 65 40 40" DomainName="OpenG.File" Id="72" Label="73" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\file\\file.llb\\Compare Two Paths - Scalar.gvi&quot;" Target="OpenG\.File:Compare\ Two\ Paths\ \-\ Scalar\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="L0" Desc="path1" />
+							<Parameter Id="L1" Desc="path2" />
+							<Parameter Id="R0" Desc="common path" />
+							<Parameter Id="R1" Desc="relative path from 1 to 2" />
+							<Parameter Id="R2" Desc="different types?" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType="Path" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Path" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Path" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Boolean" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				</MethodCall>
+				<NodeLabel AttachedTo="72" Bounds="35 44 279 18" Id="73" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Scalar</p.Text>
+				</NodeLabel>
+				<Wire Id="75" Joints="N(71:i0)|(6,85) h(19) v(-5) N(72:L1)|(35,80)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="76" Joints="N(70:i0)|(6,70) N(72:L0)|(35,70)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="77" Joints="N(72:R0)|(75,70) N(69:i0)|(98,70)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="78" Joints="N(72:R1)|(75,80) N(68:i0)|(98,80)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="79" Joints="N(72:R2)|(75,90) N(67:i0)|(98,90)" xmlns="http://www.ni.com/PlatformFramework" />
+				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="66" Terminals="63, 64" />
+				<LoopTunnel AutoIndex="True" Bounds="100 87 13 10" Docking="Right" Id="67" Terminals="o0=85, i0=79" TunnelMode="0" />
+				<LoopTunnel AutoIndex="True" Bounds="100 77 13 10" Docking="Right" Id="68" Terminals="o0=84, i0=78" TunnelMode="0" />
+				<LoopTunnel AutoIndex="True" Bounds="100 67 13 10" Docking="Right" Id="69" Terminals="o0=83, i0=77" TunnelMode="0" />
+				<LoopTunnel AutoIndex="True" Bounds="-5 67 13 10" Docking="Left" Id="70" Terminals="o0=82, i0=76" TunnelMode="0" />
+				<LoopTunnel Bounds="-5 82 13 10" Docking="Left" Id="71" Terminals="o0=81, i0=75" />
+			</ForLoop>
+			<OrArrayElements Bounds="400 100 30 30" Id="74" />
+			<Wire Id="80" Joints="N(74:logical OR)|(430,115) N(59:Value)|(453,115)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="81" Joints="N(55:Value)|(240,90) N(71:o0)|(258,90)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="82" Joints="N(53:Value)|(240,75) N(70:o0)|(258,75)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="83" Joints="N(69:o0)|(376,75) h(14) v(-10) N(61:Value)|(403,65)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="84" Joints="N(68:o0)|(376,85) N(57:Value)|(403,85)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="85" Joints="N(67:o0)|(376,95) h(14) v(20) N(74:Boolean array)|(400,115)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Label Height="[float]16" Id="27" LabelOwner="[UIModel]26" Left="[float]100" Text="[string]path1" Top="[float]16" Width="[float]31" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]31" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="26" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]27" Left="[float]100" Rows="[int]1" TabIndex="[int]0" Top="[float]36" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]265" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>
+					<Path a="1" />
+				</p.DefaultElementValue>
+				<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="31" InitialDirectory="[string]" IsTabStop="[bool]True" Left="[float]61" MinHeight="[float]24" TabIndex="[int]0" Top="[float]6" Width="[float]198" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="33" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]35" Left="[float]100" MinHeight="[float]24" Path="{DataItemBinding Id=15}" TabIndex="[int]1" Top="[float]103" Width="[float]202" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="35" LabelOwner="[UIModel]33" Left="[float]100" Text="[string]path2" Top="[float]83" Width="[float]31" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="37" LabelOwner="[UIModel]36" Left="[float]390" Text="[string]relative path from 1 to 2" Top="[float]83" Width="[float]129" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]41" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="36" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]37" Left="[float]390" Rows="[int]1" TabIndex="[int]2" Top="[float]103" Value="{DataItemBinding Id=16}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]265" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>
+					<Path a="1" />
+				</p.DefaultElementValue>
+				<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="41" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" Left="[float]61" MinHeight="[float]24" TabIndex="[int]0" Top="[float]6" Width="[float]198" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Button ClickMode="[ClickMode]Press" Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]20" Id="43" IsMomentary="[bool]False" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]44" Left="[float]390" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]3" Top="[float]180" Value="{DataItemBinding Id=17}" Width="[float]20" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="44" LabelOwner="[UIModel]43" Left="[float]390" Text="[string]any different types?" Top="[float]160" Width="[float]105" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="46" LabelOwner="[UIModel]45" Left="[float]390" Text="[string]common path" Top="[float]10" Width="[float]75" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]50" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="45" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]46" Left="[float]390" Rows="[int]1" TabIndex="[int]4" Top="[float]30" Value="{DataItemBinding Id=18}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]265" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>
+					<Path a="1" />
+				</p.DefaultElementValue>
+				<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="50" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" Left="[float]61" MinHeight="[float]24" TabIndex="[int]0" Top="[float]6" Width="[float]198" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Text Height="[float]559" Id="52" Left="[float]100" Text="[string]Compare Two Paths - Path1 Array.vi&#xA;&#xA;Compares two paths and if the paths are the same type (both absolute or both relative), the relative path between them is returned.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA;&#xA;Copyright (c) 2002, Rolf Kalbermatter &lt;rolf.kalbermatter@citeng.com&gt; &#xA;Copyright (c) 2002-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;Copyright (c) 2010, Jonathon Green &lt;jg@jgcode.net&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]228" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="Path[]" Id="14" Name="path1" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" CallUsage="Required" DataType="Path" Id="15" Name="path2" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="2" DataType="Path[]" Id="16" Name="relative path from 1 to 2" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="3" DataType="Boolean" Id="17" Name="any different types?" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="Path[]" Id="18" Name="common path" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="OpenG\.File:Compare\ Two\ Paths\ \-\ Scalar\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEXSURBVEhLtZQBDsMgCEV7/xv0Tr0TQz9FRKrSZuRlScH/dOnmcdH1J0R93KWDFBLu401NRG62TxhvapQOUkg4VMvDWzWYqcvz+c1u4oEauP4mNh6oywv5oNZ4oAZdc/sd2PigPsh1mPLua7n+HHe6wMuwlOhkUhvIOs4CHdx9KahTGzR1/TstTm1ZbrA4NYAaLq7NDdbfi3G6kXCDhBp5rqUUlC7GXHZg4ZHVgXmEEfV4JYIaL5WSAlGj7MDCo5QUtHWTDIxcrj+nW+2uDiUrBV6tl0uKMOjV727UMOjVwDZ3CIOB5Y263hD8++2a9kFxi/axwUc1cH0HDotPYIPP6voHdf0lNvisvjefwEv0E9hg+ly70PUDj2zm4jPaZMAAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.File.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

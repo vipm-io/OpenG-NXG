@@ -1,0 +1,1377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="844AC34646BC31D52D7D3E538C61EBA0" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="VI Tree - dictionary" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="14" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="16" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="17" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="18" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="19" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="20" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADDSURBVEhL7ZFRDsIwDEO5/1G4ZJfEwYR06dC6CiF4gsixG/PBjbTWMCtBkkMNYWF4n1wKaM4oANNeaExlvkIdI5lxpUgrEO1giW4SY19mEi8w4xodTGCJwjUKrivRX1/DvzrxoWr/o4/w1x11YNyH4I0fdOwHuDkE7X7TUVbLd/y5oDoR/anq/jJG56t5ZvL5UrU511RzutDwp6upBdXmnK/GvVsPYjRVjYpI9Gerq8/XVgt+sEdZ/Q7+uuAgnmFZdWsbw+QuNcCIMNQAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<FlatSequence Bounds="680 25 1030 775" Id="23" Label="25">
+				<FlatSequence.Frame Bounds="5 10 1020 755" Id="24">
+					<Literal Bounds="205 35 65 15" DataType="@4529452f36c34cebab2f83e17d79fd2a" Facade="Variant" Id="26" Label="27" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>
+							<Variant>
+								<InnerType>Void</InnerType>
+								<VariantData>null</VariantData>
+							</Variant>
+						</p.Data>
+						<VariantBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="26" Bounds="205 14 27 18" Id="27" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>key</p.Text>
+					</NodeLabel>
+					<ClusterLiteral Bounds="80 450 86 48" DataType="@4b2401c404eb49808c11ffd5087f1463" Facade="Cluster" Id="28" Label="33" p6:ControlDefinitionChecksum="n9YNk0iyERBoYY7+om5rNA==" xmlns:p6="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>
+							<Cluster>
+								<Field1>
+									<Variant>
+										<InnerType>Void</InnerType>
+										<VariantData>null</VariantData>
+									</Variant>
+								</Field1>
+								<Field2>
+									<Variant>
+										<InnerType>Void</InnerType>
+										<VariantData>null</VariantData>
+									</Variant>
+								</Field2>
+							</Cluster>
+						</p.Data>
+						<p6:p.TypeDefinitionTargets>
+							<p6:TypeDefinitionTarget TargetName="OpenG\.Dictionary:Dictionary\ Key\ Value\ Pair\ Cluster\.gtype" />
+							<p6:TypeDefinitionTarget TargetName="OpenG\.Dictionary:Dictionary\ Key\ Value\ Pair\ Cluster\.gtype:ControlDefinition" />
+						</p6:p.TypeDefinitionTargets>
+						<ClusterBehavior AutoArrange="ArrangeVertically" />
+						<Literal Bounds="2 2 65 15" DataType="@4529452f36c34cebab2f83e17d79fd2a" Facade="Variant" Id="29" Label="30">
+							<p.Data>
+								<Variant>
+									<InnerType>Void</InnerType>
+									<VariantData>null</VariantData>
+								</Variant>
+							</p.Data>
+							<VariantBehavior />
+						</Literal>
+						<NodeLabel AttachedTo="29" Bounds="2 -16 30 15" Id="30" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>key</p.Text>
+						</NodeLabel>
+						<Literal Bounds="2 21 65 15" DataType="@4529452f36c34cebab2f83e17d79fd2a" Facade="Variant" Id="31" Label="32">
+							<p.Data>
+								<Variant>
+									<InnerType>Void</InnerType>
+									<VariantData>null</VariantData>
+								</Variant>
+							</p.Data>
+							<VariantBehavior />
+						</Literal>
+						<NodeLabel AttachedTo="31" Bounds="2 3 30 15" Id="32" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>value</p.Text>
+						</NodeLabel>
+					</ClusterLiteral>
+					<NodeLabel AttachedTo="28" Bounds="80 429 73 18" Id="33" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>key-value</p.Text>
+					</NodeLabel>
+					<BuildArray Bounds="340 565 40 20" CanToggle="False" Id="34" Terminals="outArray=120, c0t0v=118, c1t0v" VerticalChunkCount="2" />
+					<MethodCall Bounds="745 95 40 40" DomainName="OpenG.Dictionary" Id="35" Label="36" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Not a Dictionary.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Not\ a\ Dictionary\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="R0" Desc="not a dictionary?" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="35" Bounds="745 72 270 20" Id="36" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Not a Dictionary</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="745 170 40 40" DomainName="OpenG.Dictionary" Id="37" Label="38" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Get Status.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Get\ Status\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="size" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="37" Bounds="745 147 230 20" Id="38" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Get Status</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="745 30 40 40" DomainName="OpenG.Dictionary" Id="39" Label="40" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Destroy.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Destroy\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="39" Bounds="745 7 210 20" Id="40" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Destroy</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="180 30 40 40" DomainName="OpenG.Dictionary" Id="41" Label="42" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Create.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Create\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L1" Desc="initial dictionary (empty)" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@a2e038d4b94849d5b5264a4a25f18011" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="41" Bounds="180 7 200 20" Id="42" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Create</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="290 180 40 40" DomainName="OpenG.Dictionary" Id="43" Label="44" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Get Value.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Get\ Value\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L1" Desc="key" />
+								<Parameter Id="L3" Desc="error in" />
+								<Parameter Id="T0" Desc="lock dictionary if key is found? (FALSE)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="value" />
+								<Parameter Id="R2" Desc="found?" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@4529452f36c34cebab2f83e17d79fd2a" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@4529452f36c34cebab2f83e17d79fd2a" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="43" Bounds="290 157 225 20" Id="44" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Get Value</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="290 390 40 40" DomainName="OpenG.Dictionary" Id="45" Label="46" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Delete Element.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Delete\ Element\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L1" Desc="key" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@4529452f36c34cebab2f83e17d79fd2a" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="45" Bounds="290 367 265 20" Id="46" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Delete Element</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="535 245 40 40" DomainName="OpenG.Dictionary" Id="47" Label="48" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Get Keys.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Get\ Keys\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="keys" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@2ef2be26dbb04676b34ec143791bb3be" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="47" Bounds="535 222 220 20" Id="48" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Get Keys</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="535 320 40 40" DomainName="OpenG.Dictionary" Id="49" Label="50" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Get Items.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Get\ Items\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="items" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@a2e038d4b94849d5b5264a4a25f18011" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="49" Bounds="535 297 225 20" Id="50" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Get Items</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="290 320 40 40" DomainName="OpenG.Dictionary" Id="51" Label="52" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Pop Item.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Pop\ Item\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="item" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@bba299d8771749bba2a4e359c8f4ae4a" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="51" Bounds="290 297 220 20" Id="52" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Pop Item</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="430 560 40 40" DomainName="OpenG.Dictionary" Id="53" Label="54" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Update (by value).gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Update\ \(by\ value\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L1" Desc="dictionary with updates" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="T0" Desc="unlock dictionary? (FALSE)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="created new?" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@33b9d81ac03248e59125dbd38a944e0a" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="53" Bounds="430 537 285 20" Id="54" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Update (by value)</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="430 630 40 40" DomainName="OpenG.Dictionary" Id="55" Label="56" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Update (by reference).gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Update\ \(by\ reference\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L1" Desc="dictionary with updates" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="created new?" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="55" Bounds="430 607 315 20" Id="56" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Update (by reference)</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="430 495 40 40" DomainName="OpenG.Dictionary" Id="57" Label="58" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Update (by scalar value).gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Update\ \(by\ scalar\ value\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L1" Desc="key-value" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="T0" Desc="unlock dictionary? (FALSE)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="created new?" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@4b2401c404eb49808c11ffd5087f1463" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="57" Bounds="430 472 335 20" Id="58" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Update (by scalar value)</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="290 460 40 40" DomainName="OpenG.Dictionary" Id="59" Label="60" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Update (by scalar value).gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Update\ \(by\ scalar\ value\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L1" Desc="key-value" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="T0" Desc="unlock dictionary? (FALSE)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="created new?" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@4b2401c404eb49808c11ffd5087f1463" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="59" Bounds="290 437 205 20" Id="60" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Update (by scalar value)</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="290 245 40 40" DomainName="OpenG.Dictionary" Id="61" Label="62" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Get Values.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Get\ Values\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L3" Desc="error in" />
+								<Parameter Id="T0" Desc="lock dictionary? (FALSE)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="values" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@2ef2be26dbb04676b34ec143791bb3be" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="61" Bounds="290 222 230 20" Id="62" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Get Values</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="290 110 40 40" DomainName="OpenG.Dictionary" Id="63" Label="64" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Copy.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Copy\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="new dictionary out" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="63" Bounds="290 87 190 20" Id="64" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Copy</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="535 395 40 40" DomainName="OpenG.Dictionary" Id="65" Label="66" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Clear.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Clear\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="65" Bounds="535 372 190 20" Id="66" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Clear</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="535 175 40 40" DomainName="OpenG.Dictionary" Id="67" Label="68" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Has Key.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Has\ Key\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L1" Desc="key" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="Has Key?" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@4529452f36c34cebab2f83e17d79fd2a" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="67" Bounds="535 152 210 20" Id="68" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Has Key</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="405 710 40 40" DomainName="OpenG.Dictionary" Id="69" Label="70" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Update (by scalar value).gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Update\ \(by\ scalar\ value\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="dictionary" />
+								<Parameter Id="L1" Desc="key-value" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="T0" Desc="unlock dictionary? (FALSE)" />
+								<Parameter Id="R0" Desc="dictionary out" />
+								<Parameter Id="R1" Desc="created new?" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@4b2401c404eb49808c11ffd5087f1463" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="69" Bounds="405 687 255 20" Id="70" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Update (by scalar value)</p.Text>
+					</NodeLabel>
+					<Wire Id="117" Joints="N(41:R0)|(220,35) h(7) B(1) h(501) B(2) N(39:L0)|(745,35) B(2) v(65) B(4) N(35:L0)|(745,100) B(4) v(75) N(37:L0)|(745,175) B(1) v(80) B(8) N(63:L0)|(290,115) B(8) v(70) B(10) N(43:L0)|(290,185) B(10) v(65) B(12) N(61:L0)|(290,250) B(12) v(75) B(14) N(51:L0)|(290,325) B(14) v(70) B(16) h(49) B(17) N(45:L0)|(290,395) B(17) v(70) N(59:L0)|(290,465) B(16) v(320) N(69:L0)|(405,715)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="118" Joints="N(28:Out)|(166,455) h(107) v(20) B(2) N(59:L1)|(290,475) B(2) v(35) B(4) N(57:L1)|(430,510) B(4) v(60) B(6) N(34:c0t0v)|(340,570) B(6) v(155) N(69:L1)|(405,725)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="119" Joints="N(26:Out)|(270,40) h(13) v(133) B(2) h(235) v(17) N(67:L1)|(535,190) B(2) v(22) B(6) N(43:L1)|(290,195) B(6) v(210) N(45:L1)|(290,405)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="120" Joints="N(34:outArray)|(380,570) h(33) v(5) N(53:L1)|(430,575)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="121" Joints="N(43:R0)|(330,185) h(198) v(-5) N(67:L0)|(535,180)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="122" Joints="N(45:R0)|(330,395) h(188) v(5) N(65:L0)|(535,400)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="123" Joints="N(51:R0)|(330,325) N(49:L0)|(535,325)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="124" Joints="N(59:R0)|(330,465) h(73) v(35) B(2) N(57:L0)|(430,500) B(2) v(65) B(4) N(53:L0)|(430,565) B(4) v(70) B(6) N(55:L0)|(430,635) B(6) v(10) N(55:L1)|(430,645)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="125" Joints="N(61:R0)|(330,250) N(47:L0)|(535,250)" xmlns="http://www.ni.com/PlatformFramework" />
+				</FlatSequence.Frame>
+			</FlatSequence>
+			<NodeLabel AttachedTo="23" Bounds="680 2 30 20" Id="25" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>API</p.Text>
+			</NodeLabel>
+			<FlatSequence Bounds="1735 25 399 620" Id="71" Label="73">
+				<FlatSequence.Frame Bounds="5 10 389 600" Id="72">
+					<MethodCall Bounds="5 160 40 40" DomainName="OpenG.Dictionary" Id="74" Label="75" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Object Ref Type.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Object\ Ref\ Type\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="R1" Desc="Object RefNum Type" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="74" Bounds="5 137 270 20" Id="75" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Object Ref Type</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="10 275 40 40" DomainName="OpenG.Dictionary" Id="76" Label="77" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Default Data.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Default\ Data\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="R0" Desc="Data out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@37f78146cbae466c9e4a78d6274bd675" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="76" Bounds="10 252 245 20" Id="77" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Default Data</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="5 75 40 40" DomainName="OpenG.Dictionary" Id="78" Label="79" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Object Data Store VI Ref Type.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Object\ Data\ Store\ VI\ Ref\ Type\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="R1" Desc="VI Refnum (Object Data Store.vi Type)" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@4dbca460575e4df2a671eeb22de8882b" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="78" Bounds="5 52 375 20" Id="79" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Object Data Store VI Ref Type</p.Text>
+					</NodeLabel>
+					<Comment Bounds="10 20 140 30" Id="80" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Dynamic Data Store VI Interface Type "Constant"*/</p.Text>
+					</Comment>
+					<Comment Bounds="10 125 155 15" Id="81" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*GOOP Object "Constant"*/</p.Text>
+					</Comment>
+					<Comment Bounds="10 220 135 30" Id="82" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Object Data Cluster "Constant"*/</p.Text>
+					</Comment>
+				</FlatSequence.Frame>
+			</FlatSequence>
+			<NodeLabel AttachedTo="71" Bounds="1735 2 130 20" Id="73" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Type "Constants"</p.Text>
+			</NodeLabel>
+			<FlatSequence Bounds="2165 25 1050 620" Id="83" Label="85">
+				<FlatSequence.Frame Bounds="5 10 1040 600" Id="84">
+					<MethodCall Bounds="590 100 40 40" DomainName="OpenG.Dictionary" Id="86" Label="87" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Get Data.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Get\ Data\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Object RefNum" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="Dup Object RefNum" />
+								<Parameter Id="R1" Desc="Data out" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@37f78146cbae466c9e4a78d6274bd675" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="86" Bounds="590 77 215 20" Id="87" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Get Data</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="215 100 40 40" DomainName="OpenG.Dictionary" Id="88" Label="89" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Get Data to Modify.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Get\ Data\ to\ Modify\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Object RefNum" />
+								<Parameter Id="L2" Desc="ms timeout (-1)" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="Dup Object RefNum" />
+								<Parameter Id="R1" Desc="Data out" />
+								<Parameter Id="R2" Desc="timed out" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@37f78146cbae466c9e4a78d6274bd675" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="88" Bounds="215 77 290 20" Id="89" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Get Data to Modify</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="390 80 40 40" DomainName="OpenG.Dictionary" Id="90" Label="91" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Set Modified Data.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Set\ Modified\ Data\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Object RefNum" />
+								<Parameter Id="L1" Desc="Data in" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dup Object RefNum" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@37f78146cbae466c9e4a78d6274bd675" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="90" Bounds="390 57 285 20" Id="91" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Set Modified Data</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="805 100 40 40" DomainName="OpenG.Dictionary" Id="92" Label="93" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Delete.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Delete\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Object RefNum" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="92" Bounds="805 77 200 20" Id="93" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Delete</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="20 100 40 40" DomainName="OpenG.Dictionary" Id="94" Label="95" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary New.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ New\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L1" Desc="Data in" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="Object RefNum" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@37f78146cbae466c9e4a78d6274bd675" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="94" Bounds="20 77 185 20" Id="95" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary New</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="230 290 40 40" DomainName="OpenG.Dictionary" Id="96" Label="97" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Get Instance Semaphore RefNum.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Get\ Instance\ Semaphore\ RefNum\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Object RefNum" />
+								<Parameter Id="L3" Desc="error out" />
+								<Parameter Id="R0" Desc="dup Object RefNum" />
+								<Parameter Id="R1" Desc="semaphore" />
+								<Parameter Id="R3" Desc="error in (no error)" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@440d0eb67c124ce2af8bea13294ffa68" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="96" Bounds="230 267 400 20" Id="97" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Get Instance Semaphore RefNum</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="35 305 40 40" DomainName="OpenG.Dictionary" Id="98" Label="99" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Open Object Reference.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Open\ Object\ Reference\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="Object RefNum" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="98" Bounds="35 282 320 20" Id="99" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Open Object Reference</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="525 300 40 40" DomainName="OpenG.Dictionary" Id="100" Label="101" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Data Core.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Data\ Core\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Object RefNum" />
+								<Parameter Id="L1" Desc="Data in" />
+								<Parameter Id="L2" Desc="task (read)" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="dup Object RefNum" />
+								<Parameter Id="R1" Desc="Data out" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@37f78146cbae466c9e4a78d6274bd675" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@213918bb48e542eab3b6252ce7de8f49" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@37f78146cbae466c9e4a78d6274bd675" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="100" Bounds="525 277 225 20" Id="101" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Data Core</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="640 425 40 40" DomainName="OpenG.Dictionary" Id="102" Label="103" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Object Data Store.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Object\ Data\ Store\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L1" Desc="task (read)" />
+								<Parameter Id="L2" Desc="Data in" />
+								<Parameter Id="R2" Desc="Data in 2" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@a94918c840a84afeba3fbe091b81634a" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@37f78146cbae466c9e4a78d6274bd675" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@37f78146cbae466c9e4a78d6274bd675" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="102" Bounds="640 402 285 20" Id="103" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Object Data Store</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="710 305 40 40" DomainName="OpenG.Dictionary" Id="104" Label="105" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\dictionary\\dictionary.llb\\Dictionary Close Object Reference.gvi&quot;" Target="OpenG\.Dictionary:Dictionary\ Close\ Object\ Reference\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Object RefNum" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d531bf29049746c78c770da1aa49df43" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="104" Bounds="710 282 325 20" Id="105" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Dictionary Close Object Reference</p.Text>
+					</NodeLabel>
+					<Comment Bounds="580 380 45 15" Id="106" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Dynamic</p.Text>
+					</Comment>
+					<Comment Bounds="15 235 135 30" Id="107" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Opens a reference to the Dynamic Data Store VI*/</p.Text>
+					</Comment>
+					<Comment Bounds="450 235 145 30" Id="108" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Reads and writes data to the Dynamic Data Store VI*/</p.Text>
+					</Comment>
+					<Comment Bounds="710 235 140 30" Id="109" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Closes the reference to the Dynamic Data Store VI*/</p.Text>
+					</Comment>
+					<Comment Bounds="640 375 140 15" Id="110" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Dynamic Data Store VI*/</p.Text>
+					</Comment>
+					<Comment Bounds="230 235 165 30" Id="111" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Gets a unique semaphore for Dynamic Data Store VI instance*/</p.Text>
+					</Comment>
+					<Comment Bounds="20 30 130 15" Id="112" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Creates a new object*/</p.Text>
+					</Comment>
+					<Comment Bounds="215 25 125 30" Id="113" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Gets data after acquiring a semaphore*/</p.Text>
+					</Comment>
+					<Comment Bounds="390 25 125 30" Id="114" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Sets data and then releases semaphore*/</p.Text>
+					</Comment>
+					<Comment Bounds="805 30 115 15" Id="115" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Deletes the object*/</p.Text>
+					</Comment>
+					<Comment Bounds="590 25 125 30" Id="116" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Gets data without acquiring a semaphore*/</p.Text>
+					</Comment>
+				</FlatSequence.Frame>
+			</FlatSequence>
+			<NodeLabel AttachedTo="83" Bounds="2165 2 135 20" Id="85" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Main Components</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Text Foreground="[SMColor]#ff000000" Height="[float]27" Id="21" Left="[float]106" Text="[string]Dictionary VI Tree" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]153" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Height="[float]365" Id="22" Left="[float]100" Text="[string]Dictionary - VI Tree&#xA;&#xA;A VI that contains all of the Dictionary VIs&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2005, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]158" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="4529452f36c34cebab2f83e17d79fd2a">
+			<Composite Id="1" Name="Variant" Sealed="" GenericTypeDefinition="Void" BaseType="Void" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="4b2401c404eb49808c11ffd5087f1463">
+			<Attributed AttributedType="@87fa2fb6f6b847d08c71b7e4b2c9806b">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Dictionary" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="d531bf29049746c78c770da1aa49df43">
+			<Attributed AttributedType="@9bfef3db80fa422090edd1843d313d78">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Dictionary" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="a2e038d4b94849d5b5264a4a25f18011">
+			<VariableArray DereferenceType="@bba299d8771749bba2a4e359c8f4ae4a" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="2ef2be26dbb04676b34ec143791bb3be">
+			<VariableArray DereferenceType="@4529452f36c34cebab2f83e17d79fd2a" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="bba299d8771749bba2a4e359c8f4ae4a">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="key" DataType="@4529452f36c34cebab2f83e17d79fd2a" />
+					<Field FieldAccessPolicy="ReadWrite" Name="value" DataType="@4529452f36c34cebab2f83e17d79fd2a" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="33b9d81ac03248e59125dbd38a944e0a">
+			<VariableArray DereferenceType="@4b2401c404eb49808c11ffd5087f1463" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="37f78146cbae466c9e4a78d6274bd675">
+			<Attributed AttributedType="@638ec29e3d2b415fb4e4bfbc4bf4e1d9">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Dictionary" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4dbca460575e4df2a671eeb22de8882b">
+			<Attributed AttributedType="@005c2917410649479728a99b98ede6da">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="440d0eb67c124ce2af8bea13294ffa68">
+			<Attributed AttributedType="@d4ca08cc6a664b6d80ea06bf4be92d75">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:G\ Core:Semaphore" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="213918bb48e542eab3b6252ce7de8f49">
+			<Attributed AttributedType="@d58e3d18757946229fbdea582ade6451">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Dictionary" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="a94918c840a84afeba3fbe091b81634a">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="read" />
+					<EnumerationMember Value="1" Name="write" />
+					<EnumerationMember Value="2" Name="init" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="87fa2fb6f6b847d08c71b7e4b2c9806b">
+			<Typedef TypedefName="Dictionary Key Value Pair Cluster.gtype" UnderlyingType="@bba299d8771749bba2a4e359c8f4ae4a" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="9bfef3db80fa422090edd1843d313d78">
+			<Typedef TypedefName="Dictionary Object RefNum.gtype" UnderlyingType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="638ec29e3d2b415fb4e4bfbc4bf4e1d9">
+			<Typedef TypedefName="Dictionary Data.gtype" UnderlyingType="@0b99383bd2f64a7d8a9af87460f8742c" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="005c2917410649479728a99b98ede6da">
+			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.StrictVIRefnum" ReferenceClass="">
+				<GenericTypeDefinition>
+					<Attributed AttributedType="@3cea9b69008943f7a9b388cf398be2e8">
+						<AttributeValues>
+							<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+						</AttributeValues>
+					</Attributed>
+				</GenericTypeDefinition>
+				<ClosedGenericParameters>
+					<TypeRef>@8b72a3cbf9724569aa13bd7ab92d3ec0</TypeRef>
+				</ClosedGenericParameters>
+				<BaseType>@44d9dceb9b514ee8a1b92cf38753540c</BaseType>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="d4ca08cc6a664b6d80ea06bf4be92d75">
+			<Typedef TypedefName="Semaphore RefNum.gtype" Encapsulated="" UnderlyingType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="d58e3d18757946229fbdea582ade6451">
+			<Typedef TypedefName="Dictionary Object Data Core Task Enum.gtype" UnderlyingType="@a94918c840a84afeba3fbe091b81634a" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="0b99383bd2f64a7d8a9af87460f8742c">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="keys" DataType="@2ef2be26dbb04676b34ec143791bb3be" />
+					<Field FieldAccessPolicy="ReadWrite" Name="values" DataType="@2ef2be26dbb04676b34ec143791bb3be" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3cea9b69008943f7a9b388cf398be2e8">
+			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.StrictVIRefnum" ReferenceClass="">
+				<GenericTypeDefinition>
+					<Attributed>
+						<AttributedType>
+							<Composite RefId="1" />
+						</AttributedType>
+						<AttributeValues>
+							<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+						</AttributeValues>
+					</Attributed>
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="ConnectorPaneType" />
+				</GenericParameters>
+				<BaseType>@44d9dceb9b514ee8a1b92cf38753540c</BaseType>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="8b72a3cbf9724569aa13bd7ab92d3ec0">
+			<Function Id="1" IsStatic="False" IsConstructor="False" Name="" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="@0b99383bd2f64a7d8a9af87460f8742c" />
+					<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="@0b99383bd2f64a7d8a9af87460f8742c" />
+					<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="@a94918c840a84afeba3fbe091b81634a" />
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="44d9dceb9b514ee8a1b92cf38753540c">
+			<Attributed AttributedType="@9b7fd5daf5fb4f1ea287c90f78ec6c8f">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9b7fd5daf5fb4f1ea287c90f78ec6c8f">
+			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.VIRefnum" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="Read" Name="Exec.State" DataType="@2c3d5e0130054d1cbfb3093816652822" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2c3d5e0130054d1cbfb3093816652822">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Bad" />
+					<EnumerationMember Value="1" Name="Idle" />
+					<EnumerationMember Value="2" Name="Running Top Level" />
+					<EnumerationMember Value="3" Name="Running" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Not\ a\ Dictionary\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADASURBVEhL5Y5REoQgDEO9/1G8JNs2tUR0BUQ+HN84SyzNc5c0je+olw1/N3xEw271rrxlc2qOoBlHI1ETkHkiqHhQfQyCWvnVzzbQ3PXpGzwX+tQC9wtXQbdasP+n+LtxMvFzAidfruLbNfIeausl2PFCjVJ9DexeqOF7Wqg9D6gLeD6kPjb56r46ahazQrNNnlHHrwe9/LQ6sqDZJvfV6GMS8NWQGgqG56Pqf89r1QL2W8jqFrDcSN92F9PUKf0AeWoXWt9K/IwAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Get\ Status\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVEhL7ZCBDcIwDAS7/yjMwk7Bsb/O05QkjYkEglOF3Pf7VLGlZfzVByLq+0bIK+KdeTWUBBY7UXU9Ox+pZlapT71CVG1eAe/EU4RWD7SVOnFKaqVbE+vgQKkT56huY3Yc9EAvH/SeU7XGza/Oa1IwnIfUdY9X83+In+lYFHnW5D1q/8WQlz+t9lnIsybzaru3xOFVSG0KhvOo+tXztWrB+iMU9QhWHuRa+xLL1Ck9AD0SGfEXdFUvAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Destroy\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVEhL7ZCLCYAwDETdfwN3cqcazRljYj+kKog+ilzb3KM4pNv41YZdPaxg47YBrIswOcyhDN8GTqPYPqzdXuKRV8N3x782LtmObXBLU3lXrqbJzZTU3KnCk1zRVNRpmsrrAjVljT7HpKNJ7ZvmKqiWGgXJxJIvVMsX4fNqycSSO9XaLpiruJoVGn2OSUerOrdeqz71EhV1C5h2lNSdvFGd0gy6I3YJV3E+3gAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Create\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC+SURBVEhL7Y5RDgMhCES9/1F6SQsMIhq6bsR+bNoXsxnReWupX+OvngjUpdDwwC+7QowWONtkj6EMF9RJLxH0odZNAlXwIxsy1EzgwgbWVGO0NhmaeKN8h/fy5gZ6uzH0XeCMCZdKeV2CO9LuzHtCLvU5atfAroVGoPZwYbUOqCf8PKUOmu5oX201ib3CWSZn1PbVwIc/rbZMcJbJvhp9HTX8UUoNhcfPs+pP67FqQguOtfoOentkoc7wRHWtb8kAKUgjlJQDAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Get\ Value\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADhSURBVEhL5ZFREoMwCAVz69ypl1TgIWJClDTTj447qRMesHbasv2Md6rLAG5hgkA9Ra210F5zBOqqTgOJkrA3RGQ0IB/BLj1s6hh+ZXnSgK5JxqAEKJvQyKoJ1B6d6HIwoZ7l/j8k1tQR2l5RP+JekkOnHWFIaIq1zy2YwbyBkNDacVHfAzvmAXJD0wOuOX06RK8GYUi06gafh+o+MS7qePNomVoqBWMhp9rm5Hru8F2S0Q8yIlbbUy/cfLXa7gTfJflejX2khm8tqaHw+HxVPTp/qyawk0TVGbCQZ3ohy7btIXtc0/jIHeUAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Delete\ Element\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADESURBVEhL5ZAJDoQgEAR9LY/bT+JAt4jDNYibrNmKMXN1xbj5r/Ez6i3CpmgVl4VzjlUDuARVVzkX4gXsG9B3wGkN7pIURQnOAK1drzD4arT5kNYDTmtcdsorKDV9s//agnKpVjGnnuLtavy4Ibw2wFPEPl1wg3sLF3Uf2HFvIZyGwOh5QK3I50vqMpmv7qtTLJanItRx8ow6vVmE5V+rUy2EOk7uq5HHNJGvltRQ5OTzVXXrea1aQMYI1RYQsDMdsOL9Dpes8tYHxnymAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Get\ Keys\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADkSURBVEhL5ZABDoMwDAP5/1P2SUhqYwINtAUxadqJIcdxLLFpfo2u6ilAK4OJgo9wr1G6B4XvVEddo/BwNbSBsUbbseqDqNll7NdEaWkDI8CoN4VvWigNogZw9KbwTQule1B4oBrQymCi4CPcN/hKNb+kBdOB1DTo4uxzCTLIC5gG58Cu+hq0Iw/gC7orPrvbeoy6GqSmcaw+EP20unbErjq/XFeqLhNBLGWrVq7I7cZ1cc7+kDPyar0pfPnX1dKG6+Lcr8Y9XBFXj6pREYn+0+qz52erDdx0wuoecNDP8EEv87wAz46K2IJsLIQAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Get\ Items\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD3SURBVEhL5ZBZDsIwDER7696JS5axJwzOimnhA/HURhMvD9Tt+Bpvq7cH5V5Tet49oy6pzpGsutnXFYHwGmExpY77Ze1RZIg8Z/DO4KhQUYHo2p5WHhF3lME6V6eVO2b7oLkOyaobml/tYd1On2lhb4ha+75vuMXH0cxUMYNr5u1xu2YuqBHjYw0/erWVc2B48TWoslMXcFvCGYD54QehCjBX6jWyc2UBZ/xFevWA+MeBSwao26obYp1qX09RqfvN2Dqv1prHp8KyVz6j1lmCNf9arQwse+W8mvusiti6pKYiEutX1bPnZ9WAO0mKOgMX8ry9kOU47qtZLjVrbuItAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Pop\ Item\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD2SURBVEhL5ZHhDsIwCIT71nsnX7ICxxBhLd2mP4xfKoHjuJis9a/B0U3ATFgf9Eyx5Z845jVDOtA5ocfmQGMVTcZWaDK8wprtgqqujqAt0FnAqNU6w0avBw/IIhStotSQGwfrFG4kenSxo2qCV3AcAgewA8+2bY024e3OYTTWRhgJzj1E0smwGp0Z/mWpZCjuJ5yIFrlG3evRorXHFHjgJ+bfkHiLnoN0+InRZ9Q1onmuHhGiS2J0wOu3ovOlX12PtjNpXxHci/KZaKva8PKvo60nuBflejTuoRp+dSsaER6v340evZ+NJnCziEavgIN1Th+s0vsTeSwVG62PVpAAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Update\ \(by\ value\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVEhL5ZFREoMgDES5tXfqJTXJrhhRggj96PQNU0M2eXXGtH6NQ53S5L+hTrwA1ymoK0tRXLHJbqK3xtU3bYSwVee0xmoHnZqlaW/EMbH9lMnoLYwvBJFwZMuyJBkujsEJB4Mdds+wq95bTIKZAosV3i84NV7TH90Ll+uRMKSO6VNbqw2H8XjyDXH9hGCG83jUPiNSwFYI7JzHo4kutM4EdYHvD6nzZsZH79XHmqsFra0zR51/WWj41+pcC1pb570a+2zt+GhIDYXH90fVtfOzaoELXeoncNp4qu5mXTfJUlnWIH97SAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Update\ \(by\ reference\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVEhL5ZFREoMgDES5tXfqJTXJrhhRggj96PQNU0M2eXXGtH6NQ53S5L+hTrwA1ymoK0tRXLHJbqK3xtU3bYSwVee0xmoHnZqlaW/EMbH9lMnoLYwvBJFwZMuyJBkujsEJB4Mdds+wq95bTIKZAosV3i84NV7TH90Ll+uRMKSO6VNbqw2H8XjyDXH9hGCG83jUPiNSwFYI7JzHo4kutM4EdYHvD6nzZsZH79XHmqsFra0zR51/WWj41+pcC1pb570a+2zt+GhIDYXH90fVtfOzaoELXeoncNp4qu5mXTfJUlnWIH97SAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Update\ \(by\ scalar\ value\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVEhL5ZFREoMgDES5tXfqJTXJrhhRggj96PQNU0M2eXXGtH6NQ53S5L+hTrwA1ymoK0tRXLHJbqK3xtU3bYSwVee0xmoHnZqlaW/EMbH9lMnoLYwvBJFwZMuyJBkujsEJB4Mdds+wq95bTIKZAosV3i84NV7TH90Ll+uRMKSO6VNbqw2H8XjyDXH9hGCG83jUPiNSwFYI7JzHo4kutM4EdYHvD6nzZsZH79XHmqsFra0zR51/WWj41+pcC1pb570a+2zt+GhIDYXH90fVtfOzaoELXeoncNp4qu5mXTfJUlnWIH97SAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Get\ Values\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVEhL5ZABDoMwCEW9de+0S3bAxy9arFXjErOXZoEPvMRN9TGG1FPAowzfMLRF2ofbBMmGONICfR9ug1LKJFl8YYH1abV6W2wFC9ZfVksQn86WBevfoZ6nAttL6gaMAJMTauBRhm8Y2iJ9gp+o/UuO8O1AGgqe4uzTBTvYJwgF7wMrdR/YsQ+QE09ntNf06AmtGqShsFVviHmqbhOyUueX84hq6xyspSxq7lm53Ghtyd4fskeu5q8XOvxrNWtBa0uuq3GPlMTRLTUUkZjfVe+916oF3Azi6hFwMM7pg1Fq/QLmw0GIqbdtLwAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Copy\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAELSURBVEhL1Y6BDoNACEP9/0/ZTyq0HLLz5FAXk71cllJo57KesyyyzQ5yBkk0ulDtziXGGXax+l6vkMVYbUND/6qAXjLg2AZga1rw7SeFN3qMwog1jl7pk9nOogG2w4dT2zh7QlbNRRM44inCfB3Rn3w1wcV+oGPLm9WIq1J1B/OMcXQtqIbzm2r/NaHLl6vhl/B7/zWhy0M1THUTeCPECLWgGg4v1fHFFMtAM+XQH1T7Inl7po2RwdmxuiP6sfrs7WddNa1IXN2v5szRtaAaTrFasGAMmwXxNerSqqcwJVyuplnh9WrXgmo496uZp+vE1aNqVkSi/7T67P1ttcBMEauuwECdy4Eq67oBtclNCN0zNlMAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Clear\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC5SURBVEhL5Y8BDsMgCEV7/6Pskg79vwy3gKhtsmUvpuIHXtKj3Mb96uMET8CoD/N0atQWL88wp8YTMPKZU1u8XFlXC0FL+D41coVpz6JaQEvg+4NOLeAJGAXLfkuIepvMqfETQziMKwPWHiGY4TyuDFiLgZ3zuIbUhdG5QP2GzbfUuqnY1rr6tWZqodYtuUatXxa1+ddqrYVat2RdjX1GJ7a1pYbCYvNdtXd+Vi1wYUqdgdONrHqaUp6xYtWN3gQpqwAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Has\ Key\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVEhL7Y5REoMwCERz/6N4yRRYRBrGFA1+dNo3TiUb9tnWH+OvHjjUrRV/RnXkBTiWwC6TYojI5mVm/xrHITxD2oyeTU34FCCJeYSV+zIGnvGq4im19xJl6sFLuI/k0O0EuoraNgU72I/E2zf1HNixn4FXufDpKVAP+HxJHZv+6r7aajIeCp4lqVHbrw58+dNqmwmeJbmvRh+p4a+W1FB4fL6qPnu+Vk2gk0TVGVDIc7mQpfcXY4EOY2hAla0AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Object\ Ref\ Type\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVEhL7ZFRDsMgDEO5wo6/O3GnjmFmeQktJNOkfcyyIic0T4iWY6Z7SmP5pVN0PWrInr5Gl1IYkH1oxorSF2gitCKYOVdIj6F9YOUKcoOEb+0DqqLRxt6aAVnrzWmNTnvr1rgXsoZ+MibeW2+tudNswAfGu78RYjbDqXdvTYoPZ9596yZkDrWdeo1O+482TqKfv7XLzNVhtCGaVh1AX1FmRzE0qlLQQhyOowF71wWaGeIcVZ1Es2VFUH+ExkSr+mdurftsEZp4BAfQMCmsCN5hNAxik5mrk+gdfw191AeCpfqbjoziWQAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Default\ Data\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADvSURBVEhL3ZBrDoMwDIO5/w12J+7E2rm4XtL0IZUfW2SFL04w047zOh9SiT6OCmAPlDoGPpvbUVc7wPgK5NQ95K4XZk1g1xFFNmYeYZnuoemDPZSD8ui+qT5XqdQ3Y2bSduWPP1XmUxtV/ykWd6rIh5rbGl0td9fPTcKBOStDM1oBTODWdAD0dafsOxUd2LPyENffkXUVdaoMyWXV3T02TWV1AJlJ2zUb/ZIyq0jjaB/nnaYG0Z2UzgoaR6OjaLLgNDUVrSMc7ZGWo7UDIv3rr9b3OQJSceU1iIaYwg7oayoaQmIq40daiF7VL0Zf5xttAl4FqslC7wAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Object\ Data\ Store\ VI\ Ref\ Type\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACiSURBVEhL7ZTRDYMwDAVZoUtmp66QWbJCZkmNcSPLhj6FmI9KOVnIp5ATX2zN8b5FrZWekmDO06WV0aF0zlnX49O9Hpw+OOqPpAnSsHRK6aUgDUv7uUxvc4C0ODOqKy0bg9MGOWa8GmCa7vQBadkY0pWWjSGF6fuA9P5b/M6uCq+G4HR/k/iftAakDXLMeDWgr1aM6krLxuD0DL/S8/NYupUPac+K2E7SMZgAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Get\ Data\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD4SURBVEhLzZEBbsMwDAPz/7flT508eleOMoa4S4EKhHKkbAVpj/Nxvklz9XE8QdwBeRLwPflJPPUuiNwBrt5hdD8RY4DuVgVHOKyi6B2WubjDPDAff970nFGV52EHQ7drvPxdFa+6UZ+xen7m5Q+9fM7/+rZ9+b5XViPCgn5gezVbeg8toqX8cl/3r9Wluk95AgvQxupdffZq/SxVmYffUmxMC20ptrgYvb5aXUBIDctgS7oMq8hnj9lFxWFZ+gQiB9QTKfKySn51yAeeiAFyGEufQOQAe+K2wEdYQdVgeU4se7eEnmPnlKjqmZp1gF3KqzIPf5se5xfbBPD9IKOuWAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Get\ Data\ to\ Modify\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEeSURBVEhLvY8BkoMwDAN5bV/Ln7gYm0UoSYfe0Hp0vpXsmOmybuuXVKeX5YTkHpAmBvvkSDTVnmC5Atx6D9F1w8YAXW0WbGHYjKz3MMyTe6iF+vf2peaMWmluNhh6XPHxb5V96kH96nT9kMlPqdntH3ru1bujyJkOeZY0+WkFVZ80Ee4vuicnHWNARcK076YazOrc63g2RbW0vQayB+GP0gROQH7aWFc/1eU09fzpPKesqzPF3l6ex99/T8eG7Lgl5eKduzGeLDCSj1yLfKhcsM20WWEZfKR8DGeRV7fZTdlyWnoBkQLqk5TlzWZy6ZAONEkGyGEsvYBIAdZEbQMdYRNaBadnY9h7S6g5tqZErc5UrAKsyryV5+Yf07b+AdcjTAmYWkArAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Set\ Modified\ Data\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEpSURBVEhLtZCBjsMwCEP7/9/Wf9ogpo5j0umm65DHPYxDpTvO1/kj1enjmADuQKljMDaXo652gPkK5OgdsmvC1gR2HVFkM3OEZb3D1gd3qED9+fhSfa6i1LcxmfS48uO/KvvUg5J/zVV0/qk6VFev4tr0eWtaTit00e+B7ZOZ3q5NluE4XvvzZRfFxZ2YAWg31eKulujuqDqmCh3RuqJZetR2VL+c/KV9aWWNfqv1NOv50wOVNXqn8SbL/fylPc8pa7RrpGfGx+niHBXtCnXl+ibAlXxkLfpbIWBJjKgcufhKeExG0a9uuz/KwhjZC2gpUN2BzI8RztJJulAHTKBP5sheQEuBrI6OAbriCIhKxszEtveRpvoca0sraroyKpBV8KPct/kxvc436thCEysqpWUAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Delete\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADSSURBVEhL7ZEBDsMgDAP7/x/sT/ypA5x6kYEUpnbSpkVW6pjmqLYt7ekmGXrbXga+NZRPxNSTI/Gp7zCSe0Ofe2tK92/IMQ27H1H0EpYRkfTWdHP41tgL9gg3fc6jXD6XsXi6y1Uuv6vkqgv1R4s+jpZ/WMZJRehc4pc0XDDeUXI6o2jHqJX7cOXfCfTOV09e0EcbL/ytTy+I0NlgGSNBlWmFpKs+mpJl4nwfaRntO8xIv/rVfp8jTC4etTpBQ6Sww8SaQkMg5pJ8pAX0qr4Rvacn9DCeXtGLe8wAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ New\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADwSURBVEhL7ZHhDoQgDIN9/2fznXBYrc3YQIz+uOSWZlcK+yDnspb1Ix3oZbkMfGsoTZzZd85EU+0wLldDb701tesJt03DrksUvQvrEpHrrQlz+NYcB46f7qTm3LLS3C2rp3td9fKvyl31ov5opwHaPkYpD6+Px/h5iX7wwdMBsIB+wDUNZoB24U0FY/WRZxkXr9Zy5zMF54ALhQM3L0hPYNi6EUNQTbsXxHucMYPH7pwrZCEJ1dsz2TD/ByyB055pjG6X7DCZptFItGeaRmuHyTRG6zyXMFbcajVAQ6Sww/R1Cw2BaOXyTBPoWf0iuqwbKABimjBHiZ8AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Get\ Instance\ Semaphore\ RefNum\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE3SURBVEhLzZIBbsMwDAP92v1pf8oX9paMFjVaoVM3aFNgAuFQlHxBirZt3z6kRLc2DP1spJqYiclfUtN60lhejTzO2fSzbthYRmdtWfIW9paRnbM5zelnkwv5WN6suUaomlvbvdzt6i//VNmrbtR/Qs8fyq9nHfLaXJEh4H9KHUZyCwXNizmJ361B9Bz1KR8LaVXtuBw4QPcQ6WPKxyNp7zS5GV1FNOnkom5G17qKXkvo/atB9E/QGLMsN2EhuVso6LrllwM4QmtNGF1CB+Sc8miEEKykL34QRp1RKGxZCiWExNXSpqPlWcp5mhAmLv596ddotTppTAiTCwsFXZvjgl3usEjqaUL4IrqeNCaEYCV9/YMorS0NSqMq5CSy6ppfCEgSa7sQd1iHvDZSLj6DrvXW5ZX27RfJu8EtuJ/mhQAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Open\ Object\ Reference\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVEhLzY8BDoMwDAP5/9v4E2vn4Bm3SqgE0qJT5jip0bb92F8iorftJ6BHQdQx8d2cjrraIcxXQd36KHrXC1tTsOuIojazj7Csj2LqQ48iDuInfak+V63Ut7FrqsfpH3+r7FMP8gfR8R9X/mV9aok2JmRHSUqyIkU0uqZgRNGcUkdTo+ijJ9yN5sgOkbAWDUd7wlq0doiEIlrfc4RoxdWUYt1gCjtEya2jBhJbmZ8Qp/HuW6NTFp4Y3dW1aozWIagT4g1PVdPRrmPO5YFpYs70ZuRWdMP86Y1xNxpwm9yQSyKKu5G4OMu2Rv1xJSLPsq2xFr3AsX8ATLvUgGH2koUAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Data\ Core\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVEhLzZABDoMwDAP5/9v409bO3eG5BQEDbZEVzk4bBNP8mG9SWz1NC4h7QJ4EvCbvxFPvgsgd4NJ7qN1PxBigu1XBEVarKHoPw1zcQzvQHps3PWdUyvOwlaHLVV9+V8WrLtR/r26f3/2Ar1bHxrTQIcUWF6Pzq9UFhFS1DA5Jl2EVeesx26k4LEtvQOSA+kSKvFglHx3ygSdigBzG0hsQOcCeuC3gI6ygVGV5Tgx7bwk9x7YpUaklNesAu5SXyjz8hfrd6uGX7tTWNZae275rtSeEwQLXgdWxaM2i9K6du4DQOEXlmt90u5YvYfjL9JifS5Lrz6BVueoAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Object\ Data\ Store\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADASURBVEhL7ZFRCsMwDENz/7PlTl0yZZpQgt1ACxvUCPdZdtWPlnrUmzSiS/kCeAZKHYP35uOoqx1gvgK59Rl61wtbE9h1RJHN7CMs6zMsffAM42A8wjfV56qV+jZ2Jl2u/vG7yj51oZ5o0w9Ej5++89vzU0u0MVB0FKQEKyqJRtcUjCiaS+XRZBR99EBnozmyAwLtRcPRHmgvWjsgUBKt73MEtOJqqWTdxBR2QKpTR01IbGV+oI3TXT3Rpn+MPuoL7LuPBws2Ps0AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Dictionary:Dictionary\ Close\ Object\ Reference\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADiSURBVEhLzY+BDsMgCET7/9/mP3W4Q0aPDTSrSckLPeEEe7SzbUJHH8dHQEdh+AqJd2dUfNVnCKp7YVpyFD17B7VNWPZHhGkq9iNKlKP4WoeOQg36SW/6urUkfJ2OXZu6nb58V9CqG3nAaPzf0l/W1jhuckFmykeUC+r9218NHSsJRfsfstH0rvwYed6ryycLU69eHQpmfcL8UKBuuWYRK2XgCtGrvu01jpQhTCfoncSKlmV/zLlc+AV1Sz+YGi2Qp/QLPNrriHUTj3GZiLBeRB0jqEvUyz06cgR1ibXRC5ztBcbMOZA/Z0yRAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Dictionary.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

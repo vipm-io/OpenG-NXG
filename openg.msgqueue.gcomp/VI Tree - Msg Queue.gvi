@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="0CB166C933ADDF17C9356E171FF5AC9C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="VI Tree - Msg Queue" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="17" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="19" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="20" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="23" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVEhL7ZFBDsMgDATz/7f1T8TgLVlsjIyaKJeOkIyXzVxylMd4Q33kQHvGSl0f21nde9kxiZQtteDtdu/sqgW7YrYHw6AI7h7oWmVOLZEivBN2xXTsqo1XsHtnS+29wiRSpJ0B7Rmrtx/5qw0pNX5ZA1EAF95TQ/e5DpIAflqpa88YaUVphPPb1JpwHqpZpC6foErGIcR0eJFPruaX4Y7p8CKfaM2gnwtZtT/dwjomVAtsV3hFqWFW5R61MEkwA6qDjCqtSYJciUCUYKO6y2PqUk5kH1Hs5Vvq3gAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0">
+			<Button ClickMode="[ClickMode]Press" Content="[string]OFF" ContentVisibility="[Visibility]Visible" Height="[float]20" Id="31" IsMomentary="[bool]False" IsTabStop="[bool]True" Label="[UIModel]32" Left="[float]63" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]0" Top="[float]58" Value="{DataItemBinding Id=16}" Width="[float]40" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">LabVIEW created this control from a constant that was wired to a Case structure. In LabVIEW 7.1 and earlier, subVIs could be kept in memory by wiring a constant to a Case structure and placing the subVI in a case that would not be executed. For example, you could wire a True constant to the Case structure and place a subVI in the False case of the Case structure, and LabVIEW would load the subVI along with the calling VI. This no longer works in LabVIEW 8.0 because the Case structure is optimized to remove code that will not be executed. Changing the constant to a control ensures that this VI behaves as it did in LabVIEW 7.1 and earlier. If the intent is not to keep subVIs in memory, you can change this control back to a constant by right-clicking the control and selecting &lt;b&gt;Change to Constant&lt;/b&gt; from the shortcut menu. The proper way to keep a subVI in memory without calling it is to use a Static VI Reference.</p.InfoTipDescription>
+				<Label Id="32" IsVisualChild="[bool]False" LabelOwner="[UIModel]31" Left="[float]63" Text="[string]Case Constant&#xA;(See Context Help)" Top="[float]22" xmlns="http://www.ni.com/PanelCommon" />
+			</Button>
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="0 635 40 15" DataItem="16" Id="33" Label="34" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="33" Bounds="0 592 145 40" Id="34" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>"Case Constant\n(See Context Help)"</p.Text>
+			</NodeLabel>
+			<CaseStructure Bounds="40 190 1280 920" Default="36" Id="35" Selected="37" UserSelectorBounds="0 0 0 0">
+				<CaseStructure.Case Bounds="5 5 1270 910" Id="36" Pattern="False" />
+				<CaseStructure.Case Bounds="5 5 1270 910" Id="37" Pattern="True">
+					<DataAccessor Bounds="855 400 40 15" DataItem="15" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+					</DataAccessor>
+					<NodeLabel AttachedTo="39" Bounds="855 377 85 20" Id="40" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>msg queue</p.Text>
+					</NodeLabel>
+					<Literal Bounds="355 245 35 15" DataType="String" Facade="String" Id="41" Label="42" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>""</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="41" Bounds="355 224 65 18" Id="42" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>message</p.Text>
+					</NodeLabel>
+					<Literal Bounds="410 710 35 15" DataType="String" Facade="String" Id="43" Label="44" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>""</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="43" Bounds="410 689 110 18" Id="44" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>queue element</p.Text>
+					</NodeLabel>
+					<DataAccessor Bounds="855 360 40 15" DataItem="14" Id="45" Label="46" xmlns="http://www.ni.com/MocCommon">
+						<Terminal DataType="@cde96def96434bde8a24321e4e8943b5" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+					</DataAccessor>
+					<NodeLabel AttachedTo="45" Bounds="855 337 120 20" Id="46" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>message cluster</p.Text>
+					</NodeLabel>
+					<NodeLabel AttachedTo="47" Bounds="360 624 118 18" Id="48" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>queue elements</p.Text>
+					</NodeLabel>
+					<ArrayLiteral Bounds="360 645 53 25" DataType="String[]" Facade="Array" Id="47" Label="48" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>
+							<Array Lengths="0" />
+						</p.Data>
+						<ArrayBehavior ElementType="String" IndexEditorWidth="42">
+							<p.DefaultElementValue>""</p.DefaultElementValue>
+						</ArrayBehavior>
+						<Literal Bounds="0 0 35 15" DataType="String" Facade="String" Id="49">
+							<p.Data>""</p.Data>
+							<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
+						</Literal>
+					</ArrayLiteral>
+					<MethodCall Bounds="455 700 40 40" DomainName="OpenG.Message Queue" Id="50" Label="51" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Cast Msg to Msg Cluster.gvi&quot;" Target="OpenG\.Message\ Queue:Cast\ Msg\ to\ Msg\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L1" Desc="queue element" />
+								<Parameter Id="R1" Desc="message cluster" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@cde96def96434bde8a24321e4e8943b5" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="50" Bounds="455 677 250 20" Id="51" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Cast Msg to Msg Cluster</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="855 435 40 40" DomainName="OpenG.Message Queue" Id="52" Label="53" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Default Message Cluster.gvi&quot;" Target="OpenG\.Message\ Queue:Default\ Message\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="R1" Desc="default message cluster" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@cde96def96434bde8a24321e4e8943b5" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="52" Bounds="855 414 248 18" Id="53" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Default Message Cluster</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="410 185 40 40" DomainName="OpenG.Message Queue" Id="54" Label="55" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Create Msg Queue.gvi&quot;" Target="OpenG\.Message\ Queue:Create\ Msg\ Queue\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="name (unnamed)" />
+								<Parameter Id="L1" Desc="size (unbounded)" />
+								<Parameter Id="L2" Desc="return existing (F)" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="msg queue" />
+								<Parameter Id="R2" Desc="created new" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="String" Direction="Input" Id="L0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="54" Bounds="410 162 205 20" Id="55" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Create Msg Queue</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="455 565 40 40" DomainName="OpenG.Message Queue" Id="56" Label="57" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Cast Msg Queue to Queue.gvi&quot;" Target="OpenG\.Message\ Queue:Cast\ Msg\ Queue\ to\ Queue\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L1" Desc="msg queue" />
+								<Parameter Id="R1" Desc="queue" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@73d872dcd0e145928b04e9d8dd828058" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="56" Bounds="455 542 265 20" Id="57" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Cast Msg Queue to Queue</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="675 565 40 40" DomainName="OpenG.Message Queue" Id="58" Label="59" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Cast Queue to Msg Queue.gvi&quot;" Target="OpenG\.Message\ Queue:Cast\ Queue\ to\ Msg\ Queue\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L1" Desc="queue" />
+								<Parameter Id="R1" Desc="msg queue" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@73d872dcd0e145928b04e9d8dd828058" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="58" Bounds="675 542 265 20" Id="59" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Cast Queue to Msg Queue</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="645 295 40 40" DomainName="OpenG.Message Queue" Id="60" Label="61" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Not A Msg Queue.gvi&quot;" Target="OpenG\.Message\ Queue:Not\ A\ Msg\ Queue\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="msg queue" />
+								<Parameter Id="R0" Desc="not a msg queue" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="60" Bounds="645 272 200 20" Id="61" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Not A Msg Queue</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="455 635 40 40" DomainName="OpenG.Message Queue" Id="62" Label="63" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Cast Msgs to Msg Clusters.gvi&quot;" Target="OpenG\.Message\ Queue:Cast\ Msgs\ to\ Msg\ Clusters\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L1" Desc="queue elements" />
+								<Parameter Id="R1" Desc="massages" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="String[]" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@c4d0cb0bef704989950afcf6648e1da9" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="62" Bounds="455 612 265 20" Id="63" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Cast Msgs to Msg Clusters</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="410 235 40 40" DomainName="OpenG.Message Queue" Id="64" Label="65" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Insert Msg Queue Element.gvi&quot;" Target="OpenG\.Message\ Queue:Insert\ Msg\ Queue\ Element\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="msg queue" />
+								<Parameter Id="L1" Desc="message" />
+								<Parameter Id="L2" Desc="ms timeout (-1)" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="T0" Desc="at front (F)" />
+								<Parameter Id="B0" Desc="Generate Response Notifier (F)" />
+								<Parameter Id="R0" Desc="msg queue out" />
+								<Parameter Id="R1" Desc="response notifier" />
+								<Parameter Id="R2" Desc="timed out" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@ef1d8d5177c240caa9c5ec8b3c8fab10" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="64" Bounds="410 212 270 20" Id="65" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Insert Msg Queue Element</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="410 295 40 40" DomainName="OpenG.Message Queue" Id="66" Label="67" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Flush Msg Queue.gvi&quot;" Target="OpenG\.Message\ Queue:Flush\ Msg\ Queue\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="msg queue" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="msg queue out" />
+								<Parameter Id="R1" Desc="massages" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@c4d0cb0bef704989950afcf6648e1da9" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="66" Bounds="410 272 195 20" Id="67" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Flush Msg Queue</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="410 360 40 40" DomainName="OpenG.Message Queue" Id="68" Label="69" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Remove Msg Queue Element.gvi&quot;" Target="OpenG\.Message\ Queue:Remove\ Msg\ Queue\ Element\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="msg queue" />
+								<Parameter Id="L2" Desc="ms timeout (-1)" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="msg queue out" />
+								<Parameter Id="R1" Desc="message" />
+								<Parameter Id="R2" Desc="timed out" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@cde96def96434bde8a24321e4e8943b5" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="68" Bounds="410 337 285 20" Id="69" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Remove Msg Queue Element</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="410 425 40 40" DomainName="OpenG.Message Queue" Id="70" Label="71" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Destroy Msg Queue.gvi&quot;" Target="OpenG\.Message\ Queue:Destroy\ Msg\ Queue\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="msg queue" />
+								<Parameter Id="L1" Desc="Destroy Response Notifiers? (T)" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="queue name" />
+								<Parameter Id="R1" Desc="massages" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@c4d0cb0bef704989950afcf6648e1da9" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="70" Bounds="410 402 215 20" Id="71" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Destroy Msg Queue</p.Text>
+					</NodeLabel>
+					<MethodCall Bounds="645 230 40 40" DomainName="OpenG.Message Queue" Id="72" Label="73" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\msgqueue\\msgqueue.llb\\Get Msg Queue Status.gvi&quot;" Target="OpenG\.Message\ Queue:Get\ Msg\ Queue\ Status\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="msg queue" />
+								<Parameter Id="L1" Desc="return elements (F)" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R0" Desc="msg queue out" />
+								<Parameter Id="R1" Desc="# pending to remove" />
+								<Parameter Id="R2" Desc="# pending to insert" />
+								<Parameter Id="R3" Desc="error out" />
+								<Parameter Id="T0" Desc="queue size" />
+								<Parameter Id="T1" Desc="name" />
+								<Parameter Id="B0" Desc="messages" />
+								<Parameter Id="B1" Desc="# elements in queue" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@3a9012f48a3c4724a5adaa151a3c72af" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Output" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="String" Direction="Output" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@c4d0cb0bef704989950afcf6648e1da9" Direction="Output" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Output" Hotspot="25 40" Id="B1" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="72" Bounds="645 207 235 20" Id="73" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Get Msg Queue Status</p.Text>
+					</NodeLabel>
+					<Comment Bounds="870 295 70 25" Id="74" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Type Def</p.Text>
+					</Comment>
+					<Comment Bounds="360 510 130 25" Id="75" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Type Conversion</p.Text>
+					</Comment>
+					<Comment Bounds="855 135 45 25" Id="76" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Utility</p.Text>
+					</Comment>
+					<Comment Bounds="360 135 30 25" Id="77" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>API</p.Text>
+					</Comment>
+					<Wire Id="78" Joints="N(54:R0)|(450,190) B(0) h(-35) v(38) v(0.5) B(3) h(-15) v(136.5) B(5) N(68:L0)|(410,365) B(5) v(65) N(70:L0)|(410,430) B(3) v(11.5) N(64:L0)|(410,240) B(0) h(5) h(9) B(12) h(166) v(45) B(14) N(72:L0)|(645,235) B(14) v(65) N(60:L0)|(645,300) B(12) v(91) B(18) h(-60) v(19) N(66:L0)|(410,300) B(18) v(187) h(-14) v(112) N(56:L1)|(455,580)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="79" Joints="N(43:Out)|(445,715) N(50:L1)|(455,715)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="80" Joints="N(47:Out)|(413,650) N(62:L1)|(455,650)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="81" Joints="N(56:R1)|(495,580) N(58:L1)|(675,580)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="82" Joints="N(41:Out)|(390,250) N(64:L1)|(410,250)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 445 13 10" Docking="Left" Id="38" Terminals="35=83, 36, 37" />
+			</CaseStructure>
+			<Wire Id="83" Joints="N(33:Value)|(40,640) N(38:35)|(36,640)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Label Id="26" LabelOwner="[UIModel]24" Left="[float]106" Text="[string]message cluster" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]127" Id="24" IsTabStop="[bool]True" Label="[UIModel]26" Left="[float]106" RefnumType="[Type]@cde96def96434bde8a24321e4e8943b5" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" Width="[float]184" p4:ControlDefinitionChecksum="T5LVSxIoLDyKwcx+Tpep1g==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="OpenG\.Message\ Queue:Msg\ Cluster\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+			</OpaqueRefnum>
+			<Label Id="29" LabelOwner="[UIModel]27" Left="[float]100" Text="[string]msg queue" Top="[float]230" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]msg queue" Height="[float]61" Id="27" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]29" Left="[float]100" MinHeight="[float]24" TabIndex="[int]1" Top="[float]250" Value="{DataItemBinding Id=15}" ValueType="[Type]@3a9012f48a3c4724a5adaa151a3c72af" Width="[float]64" p4:ControlDefinitionChecksum="of9RPRRhKEdvXJhAAuXhYg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="OpenG\.Message\ Queue:Msg\ Queue\ RefNum\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">"&lt;B&gt;queue&lt;/B&gt; is a reference to an existing or newly created queue. "</p.InfoTipDescription>
+			</NumericText>
+			<Text Foreground="[SMColor]#ff000000" Height="[float]17" Id="30" Left="[float]174" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]228" Width="[float]206" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem DataType="@cde96def96434bde8a24321e4e8943b5" Id="14" Name="message cluster" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="OpenG\.Message\ Queue:Msg\ Cluster\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem DataType="@3a9012f48a3c4724a5adaa151a3c72af" Id="15" Name="msg queue" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="OpenG\.Message\ Queue:Msg\ Queue\ RefNum\.gtype" />
+			</p.TypeDefinitionTargets>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"&lt;B&gt;queue&lt;/B&gt; is a reference to an existing or newly created queue. "</p.UserDescription>
+		</DataItem>
+		<DataItem DataType="Boolean" Id="16" Name="&quot;Case Constant\n(See Context Help)&quot;" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">LabVIEW created this control from a constant that was wired to a Case structure. In LabVIEW 7.1 and earlier, subVIs could be kept in memory by wiring a constant to a Case structure and placing the subVI in a case that would not be executed. For example, you could wire a True constant to the Case structure and place a subVI in the False case of the Case structure, and LabVIEW would load the subVI along with the calling VI. This no longer works in LabVIEW 8.0 because the Case structure is optimized to remove code that will not be executed. Changing the constant to a control ensures that this VI behaves as it did in LabVIEW 7.1 and earlier. If the intent is not to keep subVIs in memory, you can change this control back to a constant by right-clicking the control and selecting &lt;b&gt;Change to Constant&lt;/b&gt; from the shortcut menu. The proper way to keep a subVI in memory without calling it is to use a Static VI Reference.</p.UserDescription>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="3a9012f48a3c4724a5adaa151a3c72af">
+			<Attributed AttributedType="@f5525a05347448db9f40b6686dafa180">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Message\ Queue" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="cde96def96434bde8a24321e4e8943b5">
+			<Attributed AttributedType="@7cb92de331d04c2e98a2eb3fec98efe3">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Message\ Queue" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="73d872dcd0e145928b04e9d8dd828058">
+			<Typedef TypedefName="Queue RefNum.gtype" UnderlyingType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="c4d0cb0bef704989950afcf6648e1da9">
+			<VariableArray DereferenceType="@cde96def96434bde8a24321e4e8943b5" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="ef1d8d5177c240caa9c5ec8b3c8fab10">
+			<Typedef TypedefName="Notifier RefNum.gtype" UnderlyingType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="f5525a05347448db9f40b6686dafa180">
+			<Typedef TypedefName="Msg Queue RefNum.gtype" UnderlyingType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="7cb92de331d04c2e98a2eb3fec98efe3">
+			<Typedef TypedefName="Msg Cluster.gtype" UnderlyingType="@9fedd6222a1749f1bb8e819e041cd7e1" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="9fedd6222a1749f1bb8e819e041cd7e1">
+			<Attributed AttributedType="@3b6cb31b4f8e4bc6b14df539599639d4">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3b6cb31b4f8e4bc6b14df539599639d4">
+			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.GenericRefnum" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="OpenG\.Message\ Queue:Cast\ Msg\ to\ Msg\ Cluster\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACpSURBVEhL7dNbDsMwCERR9r+D7il7oteiSilWHYhovzwa5WHhk3wkorcicr3xDo37Exr00KOfNrefPt1m2ruddHDb6Nmlmw4t0IwuElzKom1cZEyMOc5fGujxqESMXbmUAe9yb3WXKg95l9gxk7JrDe84l+FN+zJsdE0nAZrLzEmbnsnr47uMp60sjr9imcTEpj/zVzrjkjKddEmNzrukQJdckqWrrqo+AbyP6ngQ0Xb/AAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Default\ Message\ Cluster\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVEhL7YxbCsAgEAO9/w16J+9k625QMbZaH5SCQz7EZMe4ZWx1xhdqMw5MBOoRYCK0tc72xR/DRIi5rtZZSvyHiZBZo/oah7xR64OZo05PNVptdYhWE9RFJqifo7OU+A8TIbO6+i7+GCZCzLlaP6tgCRMhm5L6qGWrs/SrG8ASJkI2ubo9/hgmQsxjwESgHgGmBfxR7dwJjITNIbMQoKsAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Create\ Msg\ Queue\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADxSURBVEhL5ZRLDsMgDERz/7PlTtQw6cgZzCeQrmo9EQPj1yiLHmc6f8RAfXRLwsJYnY5khA0zzHteUCPGnkRH96qNbKTUI3vBBmojGx9jT15Qh15jrO6UhIXB9Q7P1Nfbhl+2OnygtmFbQCBaVtPrG15x9eyq8+NbPp+vZN/CJmEkdNVSMKs2YOcqtzW9RLakWyArS/nDFkGIk9ZAPekS4hm4oKY3d6WwHdLLmUU+CA4n7fEkKv8JlbdGMZDKKUdaaAK6EATKr1zFqZD4GmO2mrGlWFFzBmp/4llRE6pDttR9dtWd+b9Vd0rCwuB6nXR+ANP9lZq4urBeAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Cast\ Msg\ Queue\ to\ Queue\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVEhL7dNRDsQgCEVR978298RcgmmsOhYapj/TF4LE4Plqi9xKKdcP79C4P6FBq9R82tx8+nCT6d7NpAc3jZ5d6qWHCtCsbjK4FJf2cBPd0D1O2mogA+qJsQuuH+i9u9yZB7orUbfN7dhu/xddtfTq+2B0SKcvoHk4aNM9aR/fZXraikv9K7ZxbLz0OY/SHpeEaadLYrTfJQE65BIvHXVF5APX0vhqI3VxEAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Cast\ Queue\ to\ Msg\ Queue\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACuSURBVEhL7c9REoQgDANQ7n827lTThcUKiA1T/8ywNSvyRpNsJaXngzs03FdooFlyPF3ceLq5wbR1I+nODaNHF+uju/UWjTuulMPrdK6+D8ay1IwbtmCybpmX/3eluZ60U2dbFPaVS5ncGgtNly+c710LR2ddNZNtUzBP+n9sXXQqgN9TKFr7L/WyCB5ttCf1GEXbZYm7fHSXHdrjIjTtdBGO9rsIQVMu4qVZV0QOBlvl43bW0c0AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Not\ A\ Msg\ Queue\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADPSURBVEhL7ZBRDgMhCAW9/9m8k8XFvrCAoGvaj6Zk4r5FnBhLbfVDROoSlhq2JOpWGuEGzGBecarmMWSJ7tKcLGtEUKU8xBdvLVlRz7xEog5KDVvyicdsqMdtvfv6TfU/gw7TwljRczW8MmALq+JI3T/vkvPMnhrA5UqZJTXBdqxq12VVTXTlVao/Y0O9y6+qxwPfn3i0wndP1PIw8uXsGcElUstjnJWoiw/VNnCWv5ZcLc8jd2voJbJtz7tIPn3dr5dtyo5l7yJb/NU3Wn0BWVXRKwGG5eQAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Cast\ Msgs\ to\ Msg\ Clusters\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACkSURBVEhL7dNBEoAgCAVQ73+D7tSd6BPWEJWCQ638wxgavlUVGkop/YsjNNxPaKArrfm0uPn06SbT2s2kjZtG313UpE0FaIw2YlwUDuViIzzBc3hieWoQg3oi7AOnG6zaxZ6POEe77LUPH7fcibr1nTp6bSZtGqFDutn3adE9qR9fN5qWwiH/Fc04JiZ9za+0x0XCtNNFYrTfRQJ0yEW8dNQlog1iI8UEWtAVgwAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Insert\ Msg\ Queue\ Element\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADkSURBVEhL3ZABDoMwCEW9/9l6p4qDffCXaq2aJSMv9gv0xW0ptbyEq5dQaAIbdIqWlZ26LlVIV+O0DdjB/vbq6bZa1zx7yr4iFqZtoLLreqgIq2iCOG1DXPPs6baaLu7UKDSBDTpFy0refYRJtX1t5/dZQGscuSwPpbXPq+GNASM8t6DHONGIoH2UbeoxjtxUI3DXN9hrfBlE7XjSFMyohU35KepHJtUj/JPa/simaO2Y7jaJrnqFX6gF0aFoNMLJnWmvcPLVFC7RvUO6CfuRmir200Dkat1uC6M0ELn6EV5T17IC/0d4UdmjmIQAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Flush\ Msg\ Queue\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADzSURBVEhLtZAJEsMwCAPz/7flT65aiMzhK6nD7FAZhNrpcZbzJebRx7CC2bIUXY4CmoIe+smeaLFR6yS8Bfhs5USKUC7EPprgICdSWBu1TsI7sxKdc8FS9KCC2TKPfsztaP21zX/AD+9F4xhNyOnPo5lrBVfsZEP09+Mq59ePq8YazSJzWYmwuN24i/g1l9uj3ky7AC3FSQ91iHXc76I3OJYa6B7qSJ7RzRSN9FW3VBbr6NHzcP48GsCWq26pAtZEwjB7lqIBfJPjn85dqKoH3Lm4anahqkXc8cZoe8nnnuhA+KYw+SsaIMuWW9nHXl6LLucHtecwmczL4HwAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Remove\ Msg\ Queue\ Element\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADoSURBVEhL3ZALDoMwDEO5/9m4UwmkvFZJ+qECTZr1BCZxvWrbnvaPCKq3rkxYybtLZYgDWactCaEhQ14/URniQNa+EVPHao/K0O9EvhFj5I/r5BziQNa+EVPHao/KEAey9o0YMuT1E5UhDnKkIRNW8u5SGeJeZ1ydLxPdNxzCoFoOy0PxRevV9NaGFc8WK9Xn61adN0xVA139UmWQ0HaeZttn4sdvmfmQxwfm+afq/O86mVifZtoUPe0VflEtSB0yqxkGZ5Z7hcGtjXlE84ypW2jvVRvV89AY4mpNe7EKjSGufoXPqtN+AC3xZGVxIariAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Destroy\ Msg\ Queue\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADaSURBVEhL7ZDbDcQgDATTfwfXU3rymZisYDFv7u9WI2LAjAjXLfeP6KivZqiZ6KvlEsUt0IP+lANqa0MNvKU8pREFhT00J/RAaUSRtqEGB9SuV+mrG6FmorO9w5w63tZ92WJxQq2HdTAc0bIa3rTAFsaUXXX4vEn7wxbNa+hJMwK4SqkxqlbMjpF2SybUSlA+oXWXyr/k52k6SEutofrzBG1tqneJvjdYH7dX1Uq05k+hXhEZsS/e2oJFF18dfcVbp2ypa1NjUT3Crrpx/q8mDqgboWaio15H7i+xhrt04C3sKgAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Message\ Queue:Get\ Msg\ Queue\ Status\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADaSURBVEhL1Y8BDoMwCEW9/9l6pw739Yf9QouaLRl5QUrhpW6tty8xU2/TkOGRhbpv3QgLznBeeKrGGGuPdm3Ox2hkISEe44ev9lTUmddYqCchwyPridtcUB+vjd4bN+WcYcuWwCi6r6bXF7xiFh6p988Zfh5cUxO6QikoqQ3YmeU2pKo2duU7pJ+R/84Z0q8TbIpRjnU+diaWyVWGqpG9BUcEmxUCNWsE+8h1UjWPzCjqLNTo+FxnofYZRR11+X0eUVjwqkIwTQsziqukOzBaSL/O/c0l/6ju7QUiH51ffXwFmQAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Message Queue.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="74712E882931274BCD6DDE0508A5F0B5" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@76a55e8d71f1453f9455e40565d8e006" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="10" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="13" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="14" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="15" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="16" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD8SURBVEhL5ZLtDcMgDETZqTt1hczS4TpLau6OkoL5CG1+9QkpnLFfiJSwX8ZYHcLi6wdj5iXKZ+jNyJpQdZrFj52hVBcXZDSUG7gN45lt2/rq+OaL1MYfqomqFe5RWSoUjJGHP0/co2a3ASWkXG21i99NZ5b+UE3ov0RtUB65Qj3zh7jMqpXPUM7gcrlo+5baLR4ZHXfVRLniKzXGox37kiX1/WYLxbyIGsBHqLHumVtzwz0iGvhoYX199RuotGK0z1JjAm25yGgoH0AxiQ5SRDTwcYoQnljZGGtAHeAjFKg9oWoCFV9KempDc+5kQrlioDZawx0pGasX2fcXr/vRKKgwH0sAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@76a55e8d71f1453f9455e40565d8e006" Id="18" Name="ClassID Name">
+			<p.DefaultValue>4</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="5" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="6" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="7" Name="ClassID\ Names\ Enum\.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy,Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="8" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="9" xmlns="http://www.ni.com/MocCommon">
+					<Label Id="19" LabelOwner="[UIModel]17" Left="[float]30" Text="[string]ClassID Name" Top="[float]67" xmlns="http://www.ni.com/PanelCommon" />
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]25" Id="17" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]19" Left="[float]30" MinHeight="[float]24" TabIndex="[int]0" Top="[float]87" Value="{DataItemBinding Id=18}" ValueType="[Type]UInt32" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]147" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]0 &lt;undefined&gt;" Value="[uint]0" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]1 &lt;undefined&gt;" Value="[uint]1" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]2 &lt;undefined&gt;" Value="[uint]2" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Generic" Value="[uint]3" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Decoration" Value="[uint]4" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Text" Value="[uint]5" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Control" Value="[uint]6" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]ColorBox" Value="[uint]7" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Boolean" Value="[uint]8" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]RefNum" Value="[uint]9" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Variant" Value="[uint]10" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Path" Value="[uint]11" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]ListBox" Value="[uint]12" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Table" Value="[uint]13" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Array" Value="[uint]14" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Picture" Value="[uint]15" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]ActiveXContainer" Value="[uint]16" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Numeric" Value="[uint]17" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Digital" Value="[uint]18" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]NamedNumeric" Value="[uint]19" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]ColorRamp" Value="[uint]20" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Slide" Value="[uint]21" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]GraphOrChart" Value="[uint]22" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]WaveformChart" Value="[uint]23" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]WaveformGraph" Value="[uint]24" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]IntensityChart" Value="[uint]25" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]IntensityGraph" Value="[uint]26" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]String" Value="[uint]27" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]IOName" Value="[uint]28" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]ComboBox" Value="[uint]29" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Cluster" Value="[uint]30" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Panel" Value="[uint]31" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Knob" Value="[uint]32" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]NumWithScale" Value="[uint]33" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Ring" Value="[uint]34" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Enum" Value="[uint]35" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]GObject" Value="[uint]36" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Plot" Value="[uint]37" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Cursor" Value="[uint]38" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]NumericText" Value="[uint]39" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Scale" Value="[uint]40" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]ColorScale" Value="[uint]41" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]GraphScale" Value="[uint]42" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]ColorGraphScale" Value="[uint]43" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]TypedRefNum" Value="[uint]44" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]OldKnobScale" Value="[uint]45" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]MCListbox" Value="[uint]46" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]MeasureData" Value="[uint]47" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]BVTag" Value="[uint]48" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]DAQName" Value="[uint]49" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]VISAName" Value="[uint]50" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]IVIName" Value="[uint]51" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]SlideScale" Value="[uint]52" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]TabControl" Value="[uint]53" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]Page" Value="[uint]54" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]TabArrayTabControl" Value="[uint]55" ValueType="[Type]UInt32" />
+						<EnumSelectorInfo DisplayValue="[string]ConPane" Value="[uint]56" ValueType="[Type]UInt32" />
+					</EnumSelector>
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="76a55e8d71f1453f9455e40565d8e006">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="0 &lt;undefined&gt;" />
+					<EnumerationMember Value="1" Name="1 &lt;undefined&gt;" />
+					<EnumerationMember Value="2" Name="2 &lt;undefined&gt;" />
+					<EnumerationMember Value="3" Name="Generic" />
+					<EnumerationMember Value="4" Name="Decoration" />
+					<EnumerationMember Value="5" Name="Text" />
+					<EnumerationMember Value="6" Name="Control" />
+					<EnumerationMember Value="7" Name="ColorBox" />
+					<EnumerationMember Value="8" Name="Boolean" />
+					<EnumerationMember Value="9" Name="RefNum" />
+					<EnumerationMember Value="10" Name="Variant" />
+					<EnumerationMember Value="11" Name="Path" />
+					<EnumerationMember Value="12" Name="ListBox" />
+					<EnumerationMember Value="13" Name="Table" />
+					<EnumerationMember Value="14" Name="Array" />
+					<EnumerationMember Value="15" Name="Picture" />
+					<EnumerationMember Value="16" Name="ActiveXContainer" />
+					<EnumerationMember Value="17" Name="Numeric" />
+					<EnumerationMember Value="18" Name="Digital" />
+					<EnumerationMember Value="19" Name="NamedNumeric" />
+					<EnumerationMember Value="20" Name="ColorRamp" />
+					<EnumerationMember Value="21" Name="Slide" />
+					<EnumerationMember Value="22" Name="GraphOrChart" />
+					<EnumerationMember Value="23" Name="WaveformChart" />
+					<EnumerationMember Value="24" Name="WaveformGraph" />
+					<EnumerationMember Value="25" Name="IntensityChart" />
+					<EnumerationMember Value="26" Name="IntensityGraph" />
+					<EnumerationMember Value="27" Name="String" />
+					<EnumerationMember Value="28" Name="IOName" />
+					<EnumerationMember Value="29" Name="ComboBox" />
+					<EnumerationMember Value="30" Name="Cluster" />
+					<EnumerationMember Value="31" Name="Panel" />
+					<EnumerationMember Value="32" Name="Knob" />
+					<EnumerationMember Value="33" Name="NumWithScale" />
+					<EnumerationMember Value="34" Name="Ring" />
+					<EnumerationMember Value="35" Name="Enum" />
+					<EnumerationMember Value="36" Name="GObject" />
+					<EnumerationMember Value="37" Name="Plot" />
+					<EnumerationMember Value="38" Name="Cursor" />
+					<EnumerationMember Value="39" Name="NumericText" />
+					<EnumerationMember Value="40" Name="Scale" />
+					<EnumerationMember Value="41" Name="ColorScale" />
+					<EnumerationMember Value="42" Name="GraphScale" />
+					<EnumerationMember Value="43" Name="ColorGraphScale" />
+					<EnumerationMember Value="44" Name="TypedRefNum" />
+					<EnumerationMember Value="45" Name="OldKnobScale" />
+					<EnumerationMember Value="46" Name="MCListbox" />
+					<EnumerationMember Value="47" Name="MeasureData" />
+					<EnumerationMember Value="48" Name="BVTag" />
+					<EnumerationMember Value="49" Name="DAQName" />
+					<EnumerationMember Value="50" Name="VISAName" />
+					<EnumerationMember Value="51" Name="IVIName" />
+					<EnumerationMember Value="52" Name="SlideScale" />
+					<EnumerationMember Value="53" Name="TabControl" />
+					<EnumerationMember Value="54" Name="Page" />
+					<EnumerationMember Value="55" Name="TabArrayTabControl" />
+					<EnumerationMember Value="56" Name="ConPane" />
+				</Members>
+				<DataType>UInt32</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

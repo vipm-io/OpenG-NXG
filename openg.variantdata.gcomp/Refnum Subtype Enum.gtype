@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="9CDD734022F476341AC7672C4591E9AF" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@23cdc12003ab44c0963b7644e40f352d" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="10" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="13" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="14" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="15" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="16" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADdSURBVEhL7VFBDsMgDOv/38afOkqIMR6soWq3yywrcpzEdNqW9vQQfxS99RCHN4cMbFDKTA/5jxYuRwMwZzzfuMwnoxexL1Ce+sx8EMfaX4Toutc/ZV3b8Zsuzs4Y7vtZUTZyp0VXgSwkcstm0cfNcVaUjTLcbPUQftOlsEAtws+ges3ATRVoBe77WTxa4mAKOZpR3R7TlCEnIWPUZ8PIB2HKd93Ir0fXX18gozin0eJc4MlXcwvNFbApc2Blyqq1kcrU3ih7s6D3ytTemPcAa1ExFd8qU/sb+Vj0nl6O5GT+zYq3vAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@23cdc12003ab44c0963b7644e40f352d" Id="18" Name="Refnum Subtype Enum">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="5" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="6" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="7" Name="Refnum\ Subtype\ Enum\.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy,Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="8" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="9" xmlns="http://www.ni.com/MocCommon">
+					<Label Id="19" LabelOwner="[UIModel]17" Left="[float]30" Text="[string]Refnum Subtype Enum" Top="[float]16" xmlns="http://www.ni.com/PanelCommon" />
+					<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]25" Id="17" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]19" Left="[float]30" MinHeight="[float]24" TabIndex="[int]0" Top="[float]36" Value="{DataItemBinding Id=18}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]246" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelectorInfo DisplayValue="[string]Generic" Value="[byte]0" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Datalog File Refnum" Value="[byte]1" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Byte Stream File Refnum" Value="[byte]2" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Device Refnum" Value="[byte]3" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Occurence Refnum" Value="[byte]4" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]TCP Connection Refnum" Value="[byte]5" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]VISA Refnum (Obsolete)" Value="[byte]6" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Automation Renum" Value="[byte]7" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]VI Server Refnum" Value="[byte]8" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Menu Refnum" Value="[byte]9" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]IVI Refnum (Obsolete)" Value="[byte]10" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]IMAQ Session" Value="[byte]11" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]0x0C" Value="[byte]12" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Datasocket Refnum" Value="[byte]13" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]VISA Resource" Value="[byte]14" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]IVI Logical Name" Value="[byte]15" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]UDP Connection Refnum" Value="[byte]16" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Notifier Refnum" Value="[byte]17" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Queue Refnum" Value="[byte]18" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]IrDA Refnum" Value="[byte]19" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Hardware Plugin Refnum" Value="[byte]20" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Hardware Plugin Tag Refnum" Value="[byte]21" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]DAQmx Refnum" Value="[byte]22" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Event Registration Refnum" Value="[byte]23" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string].NET Refnum" Value="[byte]24" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]User Event Refnum" Value="[byte]25" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]0x1A" Value="[byte]26" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Event Callback" Value="[byte]27" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]0x1C" Value="[byte]28" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]0x1D" Value="[byte]29" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Only Used Internal to LabVIEW" Value="[byte]30" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Bluetooth" Value="[byte]31" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]Data Value References" Value="[byte]32" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]RT FIFO" Value="[byte]33" ValueType="[Type]UInt8" />
+						<EnumSelectorInfo DisplayValue="[string]TDM Streaming" Value="[byte]34" ValueType="[Type]UInt8" />
+					</EnumSelector>
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="23cdc12003ab44c0963b7644e40f352d">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Generic" />
+					<EnumerationMember Value="1" Name="Datalog File Refnum" />
+					<EnumerationMember Value="2" Name="Byte Stream File Refnum" />
+					<EnumerationMember Value="3" Name="Device Refnum" />
+					<EnumerationMember Value="4" Name="Occurence Refnum" />
+					<EnumerationMember Value="5" Name="TCP Connection Refnum" />
+					<EnumerationMember Value="6" Name="VISA Refnum (Obsolete)" />
+					<EnumerationMember Value="7" Name="Automation Renum" />
+					<EnumerationMember Value="8" Name="VI Server Refnum" />
+					<EnumerationMember Value="9" Name="Menu Refnum" />
+					<EnumerationMember Value="10" Name="IVI Refnum (Obsolete)" />
+					<EnumerationMember Value="11" Name="IMAQ Session" />
+					<EnumerationMember Value="12" Name="0x0C" />
+					<EnumerationMember Value="13" Name="Datasocket Refnum" />
+					<EnumerationMember Value="14" Name="VISA Resource" />
+					<EnumerationMember Value="15" Name="IVI Logical Name" />
+					<EnumerationMember Value="16" Name="UDP Connection Refnum" />
+					<EnumerationMember Value="17" Name="Notifier Refnum" />
+					<EnumerationMember Value="18" Name="Queue Refnum" />
+					<EnumerationMember Value="19" Name="IrDA Refnum" />
+					<EnumerationMember Value="20" Name="Hardware Plugin Refnum" />
+					<EnumerationMember Value="21" Name="Hardware Plugin Tag Refnum" />
+					<EnumerationMember Value="22" Name="DAQmx Refnum" />
+					<EnumerationMember Value="23" Name="Event Registration Refnum" />
+					<EnumerationMember Value="24" Name=".NET Refnum" />
+					<EnumerationMember Value="25" Name="User Event Refnum" />
+					<EnumerationMember Value="26" Name="0x1A" />
+					<EnumerationMember Value="27" Name="Event Callback" />
+					<EnumerationMember Value="28" Name="0x1C" />
+					<EnumerationMember Value="29" Name="0x1D" />
+					<EnumerationMember Value="30" Name="Only Used Internal to LabVIEW" />
+					<EnumerationMember Value="31" Name="Bluetooth" />
+					<EnumerationMember Value="32" Name="Data Value References" />
+					<EnumerationMember Value="33" Name="RT FIFO" />
+					<EnumerationMember Value="34" Name="TDM Streaming" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

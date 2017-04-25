@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="83CE617B86EEC253D3505F9CB191C798" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="ZLIB Specific Path to Common Path" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="16" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="18" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="19" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="20" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="22" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVEhL7Y4LDsMgDEO5U+/EnXon7tSl8+YFQ9pKE/tIWE9R6iQuaR2mk+iU9gWraOj4JtIPREv1TaSz8Wei0fgeTaTvRb8jvGOMlryAx7dzWmy65QKwbKIjVNGsET4I/dVoiE6LTV+XT9EROkG2LQ7pBkXp/ZT9MXe1vtwDLJsqU46BLbF65JjAvxoNtb4/Jlg2VaYcHyPHx+BnY7SVPIgZLcxoYUYL/xhd8g0q/6/9oX8E1AAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="70" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 50" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="65 395 40 15" DataItem="14" Id="28" Label="29" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="28" Bounds="-10 395 70 14" Id="29" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>specific path</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="2425 395 40 15" DataItem="15" Id="30" Label="31" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="30" Bounds="2425 372 105 20" Id="31" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>common path</p.Text>
+			</NodeLabel>
+			<IsNotANumberOrPathOrRefnum Bounds="125 365 30 30" Id="32" Label="33" />
+			<NodeLabel AttachedTo="32" Bounds="125 344 216 18" Id="33" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Not a Number/Path/Refnum?</p.Text>
+			</NodeLabel>
+			<CaseStructure Bounds="175 200 2225 380" Default="35" Id="34" Label="38" Selected="35" UserSelectorBounds="1068 0 88 17">
+				<CaseStructure.Case Bounds="5 5 2215 370" Id="35" Pattern="False">
+					<PathToString Bounds="30 180 30 30" Id="41" Label="42" />
+					<NodeLabel AttachedTo="41" Bounds="30 159 106 18" Id="42" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Path To String</p.Text>
+					</NodeLabel>
+					<PropertyNode Bounds="85 235 80 45" Id="43" InstanceDataType="Void" IsPlaceholderNodeForConversion="True" ListViewAutoSize="False" Mode="InstanceProperties">
+						<PropertyItemTerminal Hotspot="80 25" Id="c0t0v" IsPlaceholderNodeForConversion="True" Path="App.TargetOS" Usage="Optional" />
+					</PropertyNode>
+					<CloseReference Bounds="185 215 40 40" Id="44" />
+					<CaseStructure Bounds="245 15 1885 335" DataType="@6bcbbcc3f9c74e0a9a71079f7a7ac6b1" Default="46" Id="45" Selected="47" UserSelectorBounds="820 0 246 17">
+						<CaseStructure.Case Bounds="5 5 1875 325" Id="46" Pattern="&quot;invalid OS target&quot;, Default">
+							<Wire Id="195" Joints="N(50:46)|(4,175) N(51:46)|(1871,175)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Case Bounds="5 5 1875 325" Id="47" Pattern="&quot;Mac OS&quot;">
+							<CaseStructure Bounds="25 15 1820 290" DataType="String" Default="53" Id="52" Label="56" Selected="53" UserSelectorBounds="860 0 100 17">
+								<CaseStructure.Case Bounds="5 5 1810 280" Id="53" Pattern="Default">
+									<Literal Bounds="85 140 40 15" DataType="Int32" Facade="Numeric" Id="58" Label="59" xmlns="http://www.ni.com/MocCommon">
+										<p.Data>1</p.Data>
+										<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+									</Literal>
+									<NodeLabel AttachedTo="58" Bounds="85 119 47 18" Id="59" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>length</p.Text>
+									</NodeLabel>
+									<StringSubset Bounds="155 110 40 40" Id="60" Label="61" />
+									<NodeLabel AttachedTo="60" Bounds="155 89 101 18" Id="61" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>String Subset</p.Text>
+									</NodeLabel>
+									<CaseStructure Bounds="235 90 580 120" DataType="String" Default="63" Id="62" Label="66" Selected="63" UserSelectorBounds="240 0 100 17">
+										<CaseStructure.Case Bounds="5 5 570 110" Id="63" Pattern="Default">
+											<Literal Bounds="85 65 40 15" DataType="String" Facade="String" Id="70" xmlns="http://www.ni.com/MocCommon">
+												<p.Data>:</p.Data>
+												<StringBehavior TextDisplayMode="Default" />
+											</Literal>
+											<Literal Bounds="505 45 40 15" DataType="Int32" Facade="Numeric" Id="71" xmlns="http://www.ni.com/MocCommon">
+												<p.Data>0</p.Data>
+												<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+											</Literal>
+											<ConcatenateStrings Bounds="145 65 40 20" Id="72" Label="73" Terminals="outString=197, c0t0v=198, c1t0v=199" />
+											<NodeLabel AttachedTo="72" Bounds="145 44 150 18" Id="73" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+												<p.Text>Concatenate Strings</p.Text>
+											</NodeLabel>
+											<Wire Id="196" Joints="N(71:Out)|(545,50) N(69:63)|(566,50)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="197" Joints="N(72:outString)|(185,70) N(68:63)|(566,70)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="198" Joints="N(70:Out)|(125,70) N(72:c0t0v)|(145,70)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="199" Joints="N(67:63)|(4,60) h(136) v(20) N(72:c1t0v)|(145,80)" xmlns="http://www.ni.com/PlatformFramework" />
+										</CaseStructure.Case>
+										<CaseStructure.Case Bounds="5 5 570 110" Id="64" Pattern="&quot;:&quot;">
+											<Literal Bounds="205 65 10 18" DataType="Int32" Facade="Numeric" Id="74" Label="75" xmlns="http://www.ni.com/MocCommon">
+												<p.Data>1</p.Data>
+												<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+											</Literal>
+											<NodeLabel AttachedTo="74" Bounds="205 44 47 18" Id="75" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+												<p.Text>length</p.Text>
+											</NodeLabel>
+											<Literal Bounds="300 55 35 15" DataType="String" Facade="String" Id="76" Label="77" xmlns="http://www.ni.com/MocCommon">
+												<p.Data>^:*</p.Data>
+												<StringBehavior TextDisplayMode="Default" />
+											</Literal>
+											<NodeLabel AttachedTo="76" Bounds="300 34 137 18" Id="77" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+												<p.Text>regular expression</p.Text>
+											</NodeLabel>
+											<StringLength Bounds="85 75 40 20" Id="78" Label="79" />
+											<NodeLabel AttachedTo="78" Bounds="85 54 101 18" Id="79" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+												<p.Text>String Length</p.Text>
+											</NodeLabel>
+											<Decrement Bounds="150 65 30 30" Id="80" Label="81" />
+											<NodeLabel AttachedTo="80" Bounds="150 44 81 18" Id="81" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+												<p.Text>Decrement</p.Text>
+											</NodeLabel>
+											<StringSubset Bounds="240 45 40 40" Id="82" Label="83" />
+											<NodeLabel AttachedTo="82" Bounds="240 24 101 18" Id="83" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+												<p.Text>String Subset</p.Text>
+											</NodeLabel>
+											<MatchPattern Bounds="355 45 40 40" Id="84" Label="85" />
+											<NodeLabel AttachedTo="84" Bounds="355 24 103 18" Id="85" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+												<p.Text>Match Pattern</p.Text>
+											</NodeLabel>
+											<StringLength Bounds="430 45 40 20" Id="86" Label="87" />
+											<NodeLabel AttachedTo="86" Bounds="430 24 101 18" Id="87" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+												<p.Text>String Length</p.Text>
+											</NodeLabel>
+											<Wire Id="200" Joints="N(67:64)|(4,60) h(5) B(1) h(226) v(-10) N(82:string)|(240,50) B(1) v(20) N(78:string)|(85,80)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="201" Joints="N(82:substring)|(280,50) N(84:string)|(355,50)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="202" Joints="N(86:length)|(470,50) N(69:64)|(566,50)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="203" Joints="N(84:after substring)|(395,70) N(68:64)|(566,70)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="204" Joints="N(84:match substring)|(395,60) h(30) v(-10) N(86:string)|(430,50)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="205" Joints="N(76:Out)|(335,60) N(84:regular expression)|(355,60)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="206" Joints="N(74:Out)|(215,70) N(82:offset (0\))|(240,70)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="207" Joints="N(80:x-1)|(180,80) h(10) v(7) h(40) v(-7) N(82:length (rest\))|(240,80)" xmlns="http://www.ni.com/PlatformFramework" />
+											<Wire Id="208" Joints="N(78:length)|(125,80) N(80:x)|(150,80)" xmlns="http://www.ni.com/PlatformFramework" />
+										</CaseStructure.Case>
+										<CaseStructure.Selector Bounds="-4 20 13 10" Docking="Left" Id="65" Terminals="62=227, 63, 64" />
+										<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="67" Terminals="62=228, 63=199, 64=200" />
+										<CaseStructure.Tunnel Bounds="571 70 13 10" Docking="Right" Id="68" Terminals="62=233, 63=197, 64=203" />
+										<CaseStructure.Tunnel Bounds="571 50 13 10" Docking="Right" Id="69" Terminals="62=234, 63=196, 64=202" />
+									</CaseStructure>
+									<NodeLabel AttachedTo="62" Bounds="235 69 110 18" Id="66" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>Case Structure</p.Text>
+									</NodeLabel>
+									<ForLoop Bounds="858 18 125 145" DiagramId="89" Id="88" Label="92">
+										<LoopIteration Bounds="0 115 15 15" Id="90" />
+										<Literal Bounds="45 75 40 15" DataType="String" Facade="String" Id="94" xmlns="http://www.ni.com/MocCommon">
+											<p.Data>../</p.Data>
+											<StringBehavior TextDisplayMode="Default" />
+										</Literal>
+										<Wire Id="209" Joints="N(94:Out)|(85,80) N(93:i0)|(113,80)" xmlns="http://www.ni.com/PlatformFramework" />
+										<LoopCount Bounds="1 1 15 15" Docking="Left" Id="91" Terminals="88=234, 89" />
+										<LoopTunnel AutoIndex="True" Bounds="115 77 13 10" Docking="Right" Id="93" Terminals="o0=232, i0=209" TunnelMode="0" />
+									</ForLoop>
+									<NodeLabel AttachedTo="88" Bounds="858 -3 64 18" Id="92" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>For Loop</p.Text>
+									</NodeLabel>
+									<ConcatenateStrings Bounds="1010 150 40 20" Id="95" Label="96" Terminals="outString=230, c0t0v=232, c1t0v=233" />
+									<NodeLabel AttachedTo="95" Bounds="1010 129 150 18" Id="96" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>Concatenate Strings</p.Text>
+									</NodeLabel>
+									<StringLength Bounds="1070 75 40 20" Id="97" Label="98" />
+									<NodeLabel AttachedTo="97" Bounds="1070 54 101 18" Id="98" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>String Length</p.Text>
+									</NodeLabel>
+									<ForLoop Bounds="1133 73 645 190" DiagramId="100" Id="99" Label="103">
+										<LoopIteration Bounds="65 90 15 15" Id="101" />
+										<Literal Bounds="45 135 40 15" DataType="Int32" Facade="Numeric" Id="107" Label="108" xmlns="http://www.ni.com/MocCommon">
+											<p.Data>1</p.Data>
+											<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+										</Literal>
+										<NodeLabel AttachedTo="107" Bounds="45 114 47 18" Id="108" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>length</p.Text>
+										</NodeLabel>
+										<StringSubset Bounds="105 105 40 40" Id="109" Label="110" />
+										<NodeLabel AttachedTo="109" Bounds="105 84 101 18" Id="110" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>String Subset</p.Text>
+										</NodeLabel>
+										<CaseStructure Bounds="165 55 440 105" DataType="String" Default="112" Id="111" Label="115" Selected="113" UserSelectorBounds="0 0 0 0">
+											<CaseStructure.Case Bounds="5 5 430 95" Id="112" Pattern="Default">
+												<Wire Id="210" Joints="N(116:112)|(4,20) N(118:112)|(426,20)" xmlns="http://www.ni.com/PlatformFramework" />
+											</CaseStructure.Case>
+											<CaseStructure.Case Bounds="5 5 430 95" Id="113" Pattern="&quot;:&quot;">
+												<Literal Bounds="310 25 35 15" DataType="String" Facade="String" Id="119" Label="120" xmlns="http://www.ni.com/MocCommon">
+													<p.Data>/</p.Data>
+													<StringBehavior TextDisplayMode="Default" />
+												</Literal>
+												<NodeLabel AttachedTo="119" Bounds="310 4 9 18" Id="120" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+													<p.Text>x</p.Text>
+												</NodeLabel>
+												<Literal Bounds="220 55 10 18" DataType="Int32" Facade="Numeric" Id="121" Label="122" xmlns="http://www.ni.com/MocCommon">
+													<p.Data>1</p.Data>
+													<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+												</Literal>
+												<NodeLabel AttachedTo="121" Bounds="220 34 70 18" Id="122" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+													<p.Text>offset (0)</p.Text>
+												</NodeLabel>
+												<SearchOrSplitString Bounds="50 15 40 40" Id="123" Label="124" />
+												<NodeLabel AttachedTo="123" Bounds="50 -6 141 18" Id="124" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+													<p.Text>Search/Split String</p.Text>
+												</NodeLabel>
+												<StringLength Bounds="110 60 40 20" Id="125" Label="126" />
+												<NodeLabel AttachedTo="125" Bounds="110 39 101 18" Id="126" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+													<p.Text>String Length</p.Text>
+												</NodeLabel>
+												<Decrement Bounds="170 50 30 30" Id="127" Label="128" />
+												<NodeLabel AttachedTo="127" Bounds="170 29 81 18" Id="128" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+													<p.Text>Decrement</p.Text>
+												</NodeLabel>
+												<StringSubset Bounds="250 35 40 40" Id="129" Label="130" />
+												<NodeLabel AttachedTo="129" Bounds="250 14 101 18" Id="130" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+													<p.Text>String Subset</p.Text>
+												</NodeLabel>
+												<ConcatenateStrings Bounds="365 15 40 30" Id="131" Label="132" Terminals="outString=218, c0t0v=219, c1t0v=217, c2t0v=211" VerticalChunkCount="3" />
+												<NodeLabel AttachedTo="131" Bounds="365 -6 150 18" Id="132" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+													<p.Text>Concatenate Strings</p.Text>
+												</NodeLabel>
+												<Wire Id="211" Joints="N(129:substring)|(290,40) N(131:c2t0v)|(365,40)" xmlns="http://www.ni.com/PlatformFramework" />
+												<Wire Id="212" Joints="N(117:113)|(4,35) h(39) v(15) N(123:offset)|(50,50)" xmlns="http://www.ni.com/PlatformFramework" />
+												<Wire Id="213" Joints="N(121:Out)|(230,60) N(129:offset (0\))|(250,60)" xmlns="http://www.ni.com/PlatformFramework" />
+												<Wire Id="214" Joints="N(127:x-1)|(200,65) h(10) v(5) N(129:length (rest\))|(250,70)" xmlns="http://www.ni.com/PlatformFramework" />
+												<Wire Id="215" Joints="N(125:length)|(150,65) N(127:x)|(170,65)" xmlns="http://www.ni.com/PlatformFramework" />
+												<Wire Id="216" Joints="N(123:match + rest of string)|(90,35) h(7) B(1) h(128) v(5) N(129:string)|(250,40) B(1) v(30) N(125:string)|(110,65)" xmlns="http://www.ni.com/PlatformFramework" />
+												<Wire Id="217" Joints="N(119:Out)|(345,30) N(131:c1t0v)|(365,30)" xmlns="http://www.ni.com/PlatformFramework" />
+												<Wire Id="218" Joints="N(131:outString)|(405,20) N(118:113)|(426,20)" xmlns="http://www.ni.com/PlatformFramework" />
+												<Wire Id="219" Joints="N(123:substring before match)|(90,20) N(131:c0t0v)|(365,20)" xmlns="http://www.ni.com/PlatformFramework" />
+												<Wire Id="220" Joints="N(116:113)|(4,20) N(123:string)|(50,20)" xmlns="http://www.ni.com/PlatformFramework" />
+											</CaseStructure.Case>
+											<CaseStructure.Selector Bounds="-4 50 13 10" Docking="Left" Id="114" Terminals="111=221, 112, 113" />
+											<CaseStructure.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="116" Terminals="111=226, 112=210, 113=220" />
+											<CaseStructure.Tunnel Bounds="-4 35 13 10" Docking="Left" Id="117" Terminals="111=223, 112, 113=212" />
+											<CaseStructure.Tunnel Bounds="431 20 13 10" Docking="Right" Id="118" Terminals="111=225, 112=210, 113=218" />
+										</CaseStructure>
+										<NodeLabel AttachedTo="111" Bounds="165 34 110 18" Id="115" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>Case Structure</p.Text>
+										</NodeLabel>
+										<Wire Id="221" Joints="N(109:substring)|(145,110) N(114:111)|(161,110)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="222" Joints="N(107:Out)|(85,140) N(109:length (rest\))|(105,140)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="223" Joints="N(101:Output)|(80,95) h(10) B(1) N(117:111)|(161,95) B(1) v(35) N(109:offset (0\))|(105,130)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="224" Joints="N(106:i0)|(6,110) N(109:string)|(105,110)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="225" Joints="N(118:111)|(609,80) N(104:100)|(633,80)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="226" Joints="N(105:i0)|(6,80) N(116:111)|(161,80)" xmlns="http://www.ni.com/PlatformFramework" />
+										<LoopCount Bounds="1 1 15 15" Docking="Left" Id="102" Terminals="99=231, 100" />
+										<RightShiftRegister Bounds="635 77 13 10" Docking="Right" Id="104" Terminals="99=229, 100=225" />
+										<LeftShiftRegister Bounds="-5 77 13 10" Docking="Left" Id="105" RightRegister="104" Terminals="o0=230, i0=226" />
+										<LoopTunnel Bounds="-5 107 13 10" Docking="Left" Id="106" Terminals="o0=230, i0=224" />
+									</ForLoop>
+									<NodeLabel AttachedTo="99" Bounds="1133 52 64 18" Id="103" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>For Loop</p.Text>
+									</NodeLabel>
+									<Wire Id="227" Joints="N(60:substring)|(195,115) N(65:62)|(231,115)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="228" Joints="N(55:53)|(4,155) h(10) B(1) v(-40) N(60:string)|(155,115) B(1) v(4) h(212) v(-4) N(67:62)|(231,155)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="229" Joints="N(104:99)|(1781,155) N(57:53)|(1806,155)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="230" Joints="N(95:outString)|(1050,155) h(15) B(1) N(105:o0)|(1128,155) B(1) v(-75) N(97:string)|(1070,80) B(1) v(30) N(106:o0)|(1128,185)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="231" Joints="N(97:length)|(1110,80) N(102:99)|(1134,80)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="232" Joints="N(93:o0)|(986,100) h(9) v(55) N(95:c0t0v)|(1010,155)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="233" Joints="N(68:62)|(819,165) h(10) v(7) h(166) v(-7) N(95:c1t0v)|(1010,165)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="234" Joints="N(69:62)|(819,145) h(30) v(-120) N(91:88)|(859,25)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="235" Joints="N(58:Out)|(125,145) N(60:length (rest\))|(155,145)" xmlns="http://www.ni.com/PlatformFramework" />
+								</CaseStructure.Case>
+								<CaseStructure.Case Bounds="5 5 1810 280" Id="54" Pattern="&quot;&quot;">
+									<Wire Id="236" Joints="N(55:54)|(4,155) N(57:54)|(1806,155)" xmlns="http://www.ni.com/PlatformFramework" />
+								</CaseStructure.Case>
+								<CaseStructure.Selector Bounds="-4 155 13 10" Docking="Left" Id="55" Terminals="52=238, 53=228, 54=236" />
+								<CaseStructure.Tunnel Bounds="1811 155 13 10" Docking="Right" Id="57" Terminals="52=237, 53=229, 54=236" />
+							</CaseStructure>
+							<NodeLabel AttachedTo="52" Bounds="25 -6 110 18" Id="56" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>Case Structure</p.Text>
+							</NodeLabel>
+							<Wire Id="237" Joints="N(57:52)|(1849,175) N(51:47)|(1871,175)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="238" Joints="N(50:47)|(4,175) N(55:52)|(21,175)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Case Bounds="5 5 1875 325" Id="48" Pattern="&quot;Windows 3.1&quot;..&quot;Windows 95/NT&quot;">
+							<Literal Bounds="25 200 10 18" DataType="Int32" Facade="Numeric" Id="133" Label="134" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>1</p.Data>
+								<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+							</Literal>
+							<NodeLabel AttachedTo="133" Bounds="25 179 47 18" Id="134" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>length</p.Text>
+							</NodeLabel>
+							<StringSubset Bounds="55 185 40 40" Id="135" Label="136" />
+							<NodeLabel AttachedTo="135" Bounds="55 164 101 18" Id="136" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>String Subset</p.Text>
+							</NodeLabel>
+							<CaseStructure Bounds="115 110 370 145" DataType="String" Default="138" Id="137" Label="141" Selected="139" UserSelectorBounds="0 0 0 0">
+								<CaseStructure.Case Bounds="5 5 360 135" Id="138" Pattern="Default">
+									<Wire Id="239" Joints="N(142:138)|(4,60) N(143:138)|(356,60)" xmlns="http://www.ni.com/PlatformFramework" />
+								</CaseStructure.Case>
+								<CaseStructure.Case Bounds="5 5 360 135" Id="139" Pattern="&quot;:&quot;">
+									<Literal Bounds="55 80 10 18" DataType="Int32" Facade="Numeric" Id="144" Label="145" xmlns="http://www.ni.com/MocCommon">
+										<p.Data>2</p.Data>
+										<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+									</Literal>
+									<NodeLabel AttachedTo="144" Bounds="55 59 70 18" Id="145" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>offset (0)</p.Text>
+									</NodeLabel>
+									<Literal Bounds="145 40 10 18" DataType="Int32" Facade="Numeric" Id="146" Label="147" xmlns="http://www.ni.com/MocCommon">
+										<p.Data>1</p.Data>
+										<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+									</Literal>
+									<NodeLabel AttachedTo="146" Bounds="145 19 70 18" Id="147" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>offset (0)</p.Text>
+									</NodeLabel>
+									<Literal Bounds="235 55 35 15" DataType="String" Facade="String" Id="148" xmlns="http://www.ni.com/MocCommon">
+										<p.Data>"\\"</p.Data>
+										<StringBehavior TextDisplayMode="Default" />
+									</Literal>
+									<SearchOrSplitString Bounds="85 55 40 40" Id="149" Label="150" />
+									<NodeLabel AttachedTo="149" Bounds="85 34 141 18" Id="150" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>Search/Split String</p.Text>
+									</NodeLabel>
+									<StringSubset Bounds="175 15 40 40" Id="151" Label="152" />
+									<NodeLabel AttachedTo="151" Bounds="175 -6 101 18" Id="152" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>String Subset</p.Text>
+									</NodeLabel>
+									<ConcatenateStrings Bounds="295 55 40 30" Id="153" Label="154" Terminals="outString=243, c0t0v=240, c1t0v=241, c2t0v=244" VerticalChunkCount="3" />
+									<NodeLabel AttachedTo="153" Bounds="295 34 150 18" Id="154" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>Concatenate Strings</p.Text>
+									</NodeLabel>
+									<Wire Id="240" Joints="N(148:Out)|(270,60) N(153:c0t0v)|(295,60)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="241" Joints="N(151:substring)|(215,20) h(10) v(50) N(153:c1t0v)|(295,70)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="242" Joints="N(146:Out)|(155,45) h(10) v(5) N(151:length (rest\))|(175,50)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="243" Joints="N(153:outString)|(335,60) N(143:139)|(356,60)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="244" Joints="N(149:match + rest of string)|(125,75) h(160) v(5) N(153:c2t0v)|(295,80)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="245" Joints="N(149:substring before match)|(125,60) h(10) v(-40) N(151:string)|(175,20)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="246" Joints="N(144:Out)|(65,85) h(10) v(5) N(149:offset)|(85,90)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="247" Joints="N(142:139)|(4,60) N(149:string)|(85,60)" xmlns="http://www.ni.com/PlatformFramework" />
+								</CaseStructure.Case>
+								<CaseStructure.Selector Bounds="-4 75 13 10" Docking="Left" Id="140" Terminals="137=265, 138, 139" />
+								<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="142" Terminals="137=270, 138=239, 139=247" />
+								<CaseStructure.Tunnel Bounds="361 60 13 10" Docking="Right" Id="143" Terminals="137=266, 138=239, 139=243" />
+							</CaseStructure>
+							<NodeLabel AttachedTo="137" Bounds="115 89 110 18" Id="141" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>Case Structure</p.Text>
+							</NodeLabel>
+							<StringLength Bounds="510 95 40 20" Id="155" Label="156" />
+							<NodeLabel AttachedTo="155" Bounds="510 74 101 18" Id="156" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>String Length</p.Text>
+							</NodeLabel>
+							<ForLoop Bounds="573 93 945 190" DiagramId="158" Id="157" Label="161">
+								<LoopIteration Bounds="70 90 15 15" Id="159" />
+								<Literal Bounds="110 140 10 18" DataType="Int32" Facade="Numeric" Id="165" Label="166" xmlns="http://www.ni.com/MocCommon">
+									<p.Data>1</p.Data>
+									<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+								</Literal>
+								<NodeLabel AttachedTo="165" Bounds="110 119 47 18" Id="166" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>length</p.Text>
+								</NodeLabel>
+								<StringSubset Bounds="140 115 40 40" Id="167" Label="168" />
+								<NodeLabel AttachedTo="167" Bounds="140 94 101 18" Id="168" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>String Subset</p.Text>
+								</NodeLabel>
+								<CaseStructure Bounds="425 55 455 105" DataType="String" Default="170" Id="169" Label="173" Selected="171" UserSelectorBounds="0 0 0 0">
+									<CaseStructure.Case Bounds="5 5 445 95" Id="170" Pattern="Default">
+										<Wire Id="248" Joints="N(174:170)|(4,20) N(176:170)|(441,20)" xmlns="http://www.ni.com/PlatformFramework" />
+									</CaseStructure.Case>
+									<CaseStructure.Case Bounds="5 5 445 95" Id="171" Pattern="&quot;\\&quot;">
+										<Literal Bounds="325 25 35 15" DataType="String" Facade="String" Id="177" Label="178" xmlns="http://www.ni.com/MocCommon">
+											<p.Data>/</p.Data>
+											<StringBehavior TextDisplayMode="Default" />
+										</Literal>
+										<NodeLabel AttachedTo="177" Bounds="325 4 9 18" Id="178" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>x</p.Text>
+										</NodeLabel>
+										<Literal Bounds="235 55 10 18" DataType="Int32" Facade="Numeric" Id="179" Label="180" xmlns="http://www.ni.com/MocCommon">
+											<p.Data>1</p.Data>
+											<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+										</Literal>
+										<NodeLabel AttachedTo="179" Bounds="235 34 70 18" Id="180" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>offset (0)</p.Text>
+										</NodeLabel>
+										<SearchOrSplitString Bounds="35 15 40 40" Id="181" Label="182" />
+										<NodeLabel AttachedTo="181" Bounds="35 -6 141 18" Id="182" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>Search/Split String</p.Text>
+										</NodeLabel>
+										<StringLength Bounds="95 60 40 20" Id="183" Label="184" />
+										<NodeLabel AttachedTo="183" Bounds="95 39 101 18" Id="184" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>String Length</p.Text>
+										</NodeLabel>
+										<Decrement Bounds="155 50 30 30" Id="185" Label="186" />
+										<NodeLabel AttachedTo="185" Bounds="155 29 81 18" Id="186" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>Decrement</p.Text>
+										</NodeLabel>
+										<StringSubset Bounds="265 35 40 40" Id="187" Label="188" />
+										<NodeLabel AttachedTo="187" Bounds="265 14 101 18" Id="188" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>String Subset</p.Text>
+										</NodeLabel>
+										<ConcatenateStrings Bounds="380 15 40 30" Id="189" Label="190" Terminals="outString=256, c0t0v=257, c1t0v=255, c2t0v=249" VerticalChunkCount="3" />
+										<NodeLabel AttachedTo="189" Bounds="380 -6 150 18" Id="190" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+											<p.Text>Concatenate Strings</p.Text>
+										</NodeLabel>
+										<Wire Id="249" Joints="N(187:substring)|(305,40) N(189:c2t0v)|(380,40)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="250" Joints="N(175:171)|(4,35) h(21) v(15) N(181:offset)|(35,50)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="251" Joints="N(179:Out)|(245,60) N(187:offset (0\))|(265,60)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="252" Joints="N(185:x-1)|(185,65) h(10) v(5) N(187:length (rest\))|(265,70)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="253" Joints="N(183:length)|(135,65) N(185:x)|(155,65)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="254" Joints="N(181:match + rest of string)|(75,35) h(10) B(1) h(170) v(5) N(187:string)|(265,40) B(1) v(30) N(183:string)|(95,65)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="255" Joints="N(177:Out)|(360,30) N(189:c1t0v)|(380,30)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="256" Joints="N(189:outString)|(420,20) N(176:171)|(441,20)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="257" Joints="N(181:substring before match)|(75,20) N(189:c0t0v)|(380,20)" xmlns="http://www.ni.com/PlatformFramework" />
+										<Wire Id="258" Joints="N(174:171)|(4,20) N(181:string)|(35,20)" xmlns="http://www.ni.com/PlatformFramework" />
+									</CaseStructure.Case>
+									<CaseStructure.Selector Bounds="-4 60 13 10" Docking="Left" Id="172" Terminals="169=259, 170, 171" />
+									<CaseStructure.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="174" Terminals="169=264, 170=248, 171=258" />
+									<CaseStructure.Tunnel Bounds="-4 35 13 10" Docking="Left" Id="175" Terminals="169=261, 170, 171=250" />
+									<CaseStructure.Tunnel Bounds="446 20 13 10" Docking="Right" Id="176" Terminals="169=263, 170=248, 171=256" />
+								</CaseStructure>
+								<NodeLabel AttachedTo="169" Bounds="425 34 110 18" Id="173" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>Case Structure</p.Text>
+								</NodeLabel>
+								<Comment Bounds="200 105 195 30" Id="191" xmlns="http://www.ni.com/MocCommon">
+									<p.Text>""\\\\" in the case selector corresponds\nto a string value of \\"</p.Text>
+								</Comment>
+								<Wire Id="259" Joints="N(167:substring)|(180,120) N(172:169)|(421,120)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="260" Joints="N(165:Out)|(120,145) h(10) v(5) N(167:length (rest\))|(140,150)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="261" Joints="N(159:Output)|(85,95) h(15) B(1) N(175:169)|(421,95) B(1) v(45) N(167:offset (0\))|(140,140)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="262" Joints="N(164:i0)|(6,120) N(167:string)|(140,120)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="263" Joints="N(176:169)|(884,80) N(162:158)|(933,80)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="264" Joints="N(163:i0)|(6,80) N(174:169)|(421,80)" xmlns="http://www.ni.com/PlatformFramework" />
+								<LoopCount Bounds="1 1 15 15" Docking="Left" Id="160" Terminals="157=267, 158" />
+								<RightShiftRegister Bounds="935 77 13 10" Docking="Right" Id="162" Terminals="157=269, 158=263" />
+								<LeftShiftRegister Bounds="-5 77 13 10" Docking="Left" Id="163" RightRegister="162" Terminals="o0=266, i0=264" />
+								<LoopTunnel Bounds="-5 117 13 10" Docking="Left" Id="164" Terminals="o0=266, i0=262" />
+							</ForLoop>
+							<NodeLabel AttachedTo="157" Bounds="573 72 64 18" Id="161" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>For Loop</p.Text>
+							</NodeLabel>
+							<Wire Id="265" Joints="N(135:substring)|(95,190) N(140:137)|(111,190)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="266" Joints="N(143:137)|(489,175) h(11) B(1) h(60) B(2) N(163:o0)|(568,175) B(2) v(40) N(164:o0)|(568,215) B(1) v(-75) N(155:string)|(510,100)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="267" Joints="N(155:length)|(550,100) N(160:157)|(574,100)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="268" Joints="N(133:Out)|(35,205) h(10) v(5) B(2) N(135:offset (0\))|(55,210) B(2) v(10) N(135:length (rest\))|(55,220)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="269" Joints="N(162:157)|(1521,175) N(51:48)|(1871,175)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="270" Joints="N(50:48)|(4,175) h(11) B(1) N(142:137)|(111,175) B(1) v(15) N(135:string)|(55,190)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Selector Bounds="-4 240 13 10" Docking="Left" Id="49" Terminals="45=275, 46, 47, 48" />
+						<CaseStructure.Tunnel Bounds="-4 175 13 10" Docking="Left" Id="50" Terminals="45=277, 46=195, 47=238, 48=270" />
+						<CaseStructure.Tunnel Bounds="1876 175 13 10" Docking="Right" Id="51" Terminals="45=276, 46=195, 47=237, 48=269" />
+					</CaseStructure>
+					<OpenApplicationReference Bounds="25 215 40 40" Id="192" />
+					<Wire Id="271" Joints="N(43:instance out)|(165,240) h(10) v(-20) N(44:reference)|(185,220)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="272" Joints="N(43:error out)|(165,250) N(44:error in (no error\))|(185,250)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="273" Joints="N(192:error out)|(65,250) N(43:error in)|(85,250)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="274" Joints="N(192:application reference)|(65,220) h(10) v(20) N(43:instance in)|(85,240)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="275" Joints="N(43:c0t0v)|(165,260) N(49:45)|(241,260)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="276" Joints="N(51:45)|(2134,195) N(40:35)|(2211,195)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="277" Joints="N(41:string)|(60,195) N(50:45)|(241,195)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="278" Joints="N(39:35)|(4,195) N(41:path)|(30,195)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 2215 370" Id="36" Pattern="True">
+					<Literal Bounds="2155 190 35 15" DataType="String" Facade="String" Id="193" Label="194" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>&lt;Not A Path&gt;</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="193" Bounds="2155 169 43 18" Id="194" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>string</p.Text>
+					</NodeLabel>
+					<Wire Id="279" Joints="N(193:Out)|(2190,195) N(40:36)|(2211,195)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 175 13 10" Docking="Left" Id="37" Terminals="34=282, 35, 36" />
+				<CaseStructure.Tunnel Bounds="-4 195 13 10" Docking="Left" Id="39" Terminals="34=281, 35=278, 36" />
+				<CaseStructure.Tunnel Bounds="2216 195 13 10" Docking="Right" Id="40" Terminals="34=280, 35=276, 36=279" />
+			</CaseStructure>
+			<NodeLabel AttachedTo="34" Bounds="175 179 110 18" Id="38" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Case Structure</p.Text>
+			</NodeLabel>
+			<Wire Id="280" Joints="N(40:34)|(2404,400) N(30:Value)|(2428,400)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="281" Joints="N(28:Value)|(105,400) h(10) B(1) N(39:34)|(171,400) B(1) v(-20) N(32:number)|(125,380)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="282" Joints="N(32:NaN?)|(155,380) N(37:34)|(171,380)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="23" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]100" MinHeight="[float]24" Path="{DataItemBinding Id=14}" TabIndex="[int]0" Top="[float]30" Width="[float]125" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="25" LabelOwner="[UIModel]23" Left="[float]100" Text="[string]specific path" Top="[float]10" Width="[float]67" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="26" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]27" Left="[float]269" TabIndex="[int]1" Text="{DataItemBinding Id=15}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]30" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]125" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="27" LabelOwner="[UIModel]26" Left="[float]269" Text="[string]common path" Top="[float]10" Width="[float]75" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="1" DataType="Path" Id="14" Name="specific path" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="String" Id="15" Name="common path" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="6bcbbcc3f9c74e0a9a71079f7a7ac6b1">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="invalid OS target" />
+					<EnumerationMember Value="1" Name="Mac OS" />
+					<EnumerationMember Value="2" Name="Windows 3.1" />
+					<EnumerationMember Value="3" Name="Windows 95/NT" />
+					<EnumerationMember Value="4" Name="Solaris 1" />
+					<EnumerationMember Value="5" Name="Solaris 2" />
+					<EnumerationMember Value="6" Name="HP-UX" />
+					<EnumerationMember Value="7" Name="PowerMAX" />
+					<EnumerationMember Value="8" Name="Linux" />
+					<EnumerationMember Value="9" Name="Irix" />
+					<EnumerationMember Value="10" Name="Rhapsody" />
+					<EnumerationMember Value="11" Name="BeOS" />
+					<EnumerationMember Value="12" Name="AIX" />
+					<EnumerationMember Value="13" Name="OSF1" />
+					<EnumerationMember Value="14" Name="VxWorks" />
+					<EnumerationMember Value="15" Name="PharLap" />
+					<EnumerationMember Value="16" Name="Carbon" />
+					<EnumerationMember Value="17" Name="RTX" />
+					<EnumerationMember Value="18" Name="Windows x64" />
+					<EnumerationMember Value="19" Name="Linux x64" />
+					<EnumerationMember Value="20" Name="Mac OS X x64" />
+				</Members>
+				<DataType>UInt32</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

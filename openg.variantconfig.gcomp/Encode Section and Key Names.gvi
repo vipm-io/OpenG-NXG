@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="AB8BF2A212760F5874477F4F472E4A7B" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Encode Section and Key Names" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"Encodes and decodes section and key names.&lt;br/&gt;&lt;br/&gt;Escapes the following:&lt;br/&gt;&lt;br/&gt;    \\ (escape code special character escaped as \\\\)&lt;br/&gt;    \\00-\\1F (non-printable chars)&lt;br/&gt;    "[", "]", and "=" (INI syntax elements)&lt;br/&gt;    \\FE ("þ") and \\FF ("ÿ") (legacy encoding)&lt;br/&gt;&lt;br/&gt;Legacy encoding encodes brackets, "[" and "]", as special characters "þ" and "ÿ"."</p.UserDescription>
+		<Icon Id="17" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="19" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="20" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="23" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB9SURBVEhL7ZNRDoAwCEO9/9l2J0QhSDqW/awfJjT9gK4+jckuoanRoJ+iiRoySH7Q5TvKcHZ05rKjcxQuc/2FeT2MznTtWC2G78jSHIUtN9ZsqOXBV4hWcxi46g0a0lWoBq46atAvHj7l99tI8ltJUKNBjQY1GtRoEA0tcgOvPgh3afX2tAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 65" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 50" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="230 325 40 15" DataItem="14" Id="31" Label="32" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="31" Bounds="230 308 32 14" Id="32" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>string</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="2060 325 40 15" DataItem="15" Id="33" Label="34" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="33" Bounds="2060 308 82 14" Id="34" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>encoded string</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="0 290 40 15" DataItem="16" Id="35" Label="36" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="35" Bounds="0 273 213 14" Id="36" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>use legacy encoding scheme? (FALSE)</p.Text>
+			</NodeLabel>
+			<CaseStructure Bounds="290 0 1745 545" Default="38" Id="37" Selected="38" UserSelectorBounds="828 0 88 17">
+				<CaseStructure.Case Bounds="5 5 1735 535" Id="38" Pattern="False">
+					<Literal Bounds="220 355 35 15" DataType="String" Facade="String" Id="43" Label="44" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>"[\\00\\01\\02\\03\\04\\05\\06\\07\\08\\09\\0A\\0B\\0C\\0D\\0E\\0F\\10\\11\\12\\13\\14\\15\\16\\17\\18\\19\\1A\\1B\\1C\\1D\\1E\\1F[\\]=\\FE\\FF]"</p.Data>
+						<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="43" Bounds="220 338 109 14" Id="44" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Escaped Characters</p.Text>
+					</NodeLabel>
+					<Literal Bounds="25 410 40 15" DataType="Int32" Facade="Numeric" Id="45" Label="46" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					</Literal>
+					<NodeLabel AttachedTo="45" Bounds="25 389 129 18" Id="46" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>offset past match</p.Text>
+					</NodeLabel>
+					<Literal Bounds="35 295 25 15" DataType="Boolean" Facade="True Constant" Id="47" Label="48" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="47" Bounds="35 274 111 18" Id="48" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace all? (F)</p.Text>
+					</NodeLabel>
+					<Literal Bounds="25 355 40 15" DataType="String" Facade="String" Id="49" Label="50" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>"\\\\"</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="49" Bounds="25 334 133 18" Id="50" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace string ("")</p.Text>
+					</NodeLabel>
+					<Literal Bounds="25 330 40 15" DataType="String" Facade="String" Id="51" Label="52" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>"\\"</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="51" Bounds="25 309 96 18" Id="52" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>search string</p.Text>
+					</NodeLabel>
+					<Literal Bounds="1480 330 45 15" DataType="String" Facade="String" Id="53" Label="54" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>"\\0D"</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="53" Bounds="1480 309 96 18" Id="54" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>search string</p.Text>
+					</NodeLabel>
+					<Literal Bounds="1480 355 40 15" DataType="String" Facade="String" Id="55" Label="56" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>"\\r"</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="55" Bounds="1480 334 133 18" Id="56" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace string ("")</p.Text>
+					</NodeLabel>
+					<Literal Bounds="1500 295 25 15" DataType="Boolean" Facade="True Constant" Id="57" Label="58" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="57" Bounds="1500 274 111 18" Id="58" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace all? (F)</p.Text>
+					</NodeLabel>
+					<Literal Bounds="1330 75 25 15" DataType="Boolean" Facade="True Constant" Id="59" Label="60" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="59" Bounds="1330 93 111 18" Id="60" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace all? (F)</p.Text>
+					</NodeLabel>
+					<Literal Bounds="1605 355 40 15" DataType="String" Facade="String" Id="61" Label="62" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>"\\n"</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="61" Bounds="1605 334 133 18" Id="62" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace string ("")</p.Text>
+					</NodeLabel>
+					<Literal Bounds="1605 330 45 15" DataType="String" Facade="String" Id="63" Label="64" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>"\\0A"</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="63" Bounds="1605 309 96 18" Id="64" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>search string</p.Text>
+					</NodeLabel>
+					<SearchAndReplaceString Bounds="85 320 40 50" Id="65" />
+					<WhileLoop Bounds="365 220 1075 245" DiagramId="67" Id="66" Label="70">
+						<LoopCondition Bounds="620 190 15 15" Id="68" LoopConditionMode="ContinueIfTrue" />
+						<LoopIteration Bounds="0 220 15 15" Id="69" />
+						<Literal Bounds="205 195 40 15" DataType="Int32" Facade="Numeric" Id="76" Label="77" xmlns="http://www.ni.com/MocCommon">
+							<p.Data>-1</p.Data>
+							<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+						</Literal>
+						<NodeLabel AttachedTo="76" Bounds="191 195 9 18" Id="77" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>y</p.Text>
+						</NodeLabel>
+						<MatchPattern Bounds="145 95 40 40" Id="78" />
+						<IsNotEqual Bounds="265 180 30 30" Id="79" />
+						<CaseStructure Bounds="325 50 695 115" Default="81" Id="80" Label="84" Selected="82" UserSelectorBounds="304 0 88 17">
+							<CaseStructure.Case Bounds="5 5 685 105" Id="81" Pattern="False">
+								<Wire Id="125" Joints="N(86:81)|(4,45) N(88:81)|(681,45)" xmlns="http://www.ni.com/PlatformFramework" />
+							</CaseStructure.Case>
+							<CaseStructure.Case Bounds="5 5 685 105" Id="82" Pattern="True">
+								<Literal Bounds="75 30 40 15" DataType="UInt8" Facade="Numeric" Id="89" xmlns="http://www.ni.com/MocCommon">
+									<p.Data>0</p.Data>
+									<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+								</Literal>
+								<Literal Bounds="290 0 70 15" DataType="String" Facade="String" Id="90" Label="91" xmlns="http://www.ni.com/MocCommon">
+									<p.Data>"\\\\%02x"</p.Data>
+									<StringBehavior TextDisplayMode="Default" />
+								</Literal>
+								<NodeLabel AttachedTo="90" Bounds="290 18 97 18" Id="91" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>format string</p.Text>
+								</NodeLabel>
+								<ToUnsignedByteInteger Bounds="140 30 30 10" Id="92" />
+								<TypeCast Bounds="215 50 30 15" Id="93" />
+								<FormatIntoString Bounds="380 20 40 40" Id="94" Terminals="formatString=131, initString=130, outString=129, c0t0v=132" />
+								<ConcatenateStrings Bounds="440 50 40 20" Id="95" Terminals="outString=126, c0t0v=129, c1t0v=128" />
+								<Comment Bounds="500 40 160 30" Id="96" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+									<p.Text>"convert char to U8 and format it as "\\xx"."</p.Text>
+								</Comment>
+								<Wire Id="126" Joints="N(95:outString)|(480,55) h(190) v(-10) N(88:82)|(681,45)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="127" Joints="N(92:unsigned 8bit integer)|(170,35) h(60) N(93:type)|(230,50)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="128" Joints="N(87:82)|(4,65) N(95:c1t0v)|(440,65)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="129" Joints="N(94:outString)|(420,25) h(10) v(30) N(95:c0t0v)|(440,55)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="130" Joints="N(86:82)|(4,45) h(61) v(-20) N(94:initString)|(380,25)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="131" Joints="N(90:Out)|(360,5) h(45) N(94:formatString)|(405,20)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="132" Joints="N(93:*(type *\) &amp;x)|(245,55) N(94:c0t0v)|(380,55)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="133" Joints="N(89:Out)|(115,35) N(92:number)|(143,35)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="134" Joints="N(85:82)|(4,55) N(93:x)|(215,55)" xmlns="http://www.ni.com/PlatformFramework" />
+							</CaseStructure.Case>
+							<CaseStructure.Selector Bounds="-4 85 13 10" Docking="Left" Id="83" Terminals="80=141, 81, 82" />
+							<CaseStructure.Tunnel Bounds="-4 55 13 10" Docking="Left" Id="85" Terminals="80=140, 81, 82=134" />
+							<CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="86" Terminals="80=138, 81=125, 82=130" />
+							<CaseStructure.Tunnel Bounds="-4 65 13 10" Docking="Left" Id="87" Terminals="80=137, 81, 82=128" />
+							<CaseStructure.Tunnel Bounds="686 45 13 10" Docking="Right" Id="88" Terminals="80=136, 81=125, 82=126" />
+						</CaseStructure>
+						<NodeLabel AttachedTo="80" Bounds="325 33 145 14" Id="84" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+							<p.Text>"Escape Character as "\\xx""</p.Text>
+						</NodeLabel>
+						<Comment Bounds="530 190 70 15" Id="97" xmlns="http://www.ni.com/MocCommon">
+							<p.Text>continue?</p.Text>
+						</Comment>
+						<Comment Bounds="55 155 60 30" Id="98" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+							<p.Text>Search for character</p.Text>
+						</Comment>
+						<Comment Bounds="405 190 95 15" Id="99" xmlns="http://www.ni.com/MocCommon">
+							<p.Text>found a char?</p.Text>
+						</Comment>
+						<Comment Bounds="325 180 60 30" Id="100" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+							<p.Text>Character Found?</p.Text>
+						</Comment>
+						<Wire Id="135" Joints="N(74:i0)|(4,170) h(131) v(-40) N(78:offset (0\))|(145,130)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="136" Joints="N(88:80)|(1024,100) N(71:67)|(1061,100)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="137" Joints="N(78:after substring)|(185,120) N(87:80)|(321,120)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="138" Joints="N(78:before substring)|(185,100) N(86:80)|(321,100)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="139" Joints="N(72:i0)|(4,100) N(78:string)|(145,100)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="140" Joints="N(78:match substring)|(185,110) N(85:80)|(321,110)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="141" Joints="N(79:x != y?)|(295,195) h(20) B(1) N(68:Input)|(620,195) B(1) v(-55) N(83:80)|(321,140)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="142" Joints="N(76:Out)|(245,200) N(79:y)|(265,200)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="143" Joints="N(78:offset past match)|(185,130) h(70) B(1) h(50) v(40) N(73:67)|(1061,170) B(1) v(55) N(79:x)|(265,185)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="144" Joints="N(75:i0)|(4,135) h(121) v(-25) N(78:regular expression)|(145,110)" xmlns="http://www.ni.com/PlatformFramework" />
+						<RightShiftRegister Bounds="1066 100 13 10" Docking="Right" Id="71" Terminals="66=150, 67=136" />
+						<LeftShiftRegister Bounds="-4 100 13 10" Docking="Left" Id="72" RightRegister="71" Terminals="o0=155, i0=139" />
+						<RightShiftRegister Bounds="1066 170 13 10" Docking="Right" Id="73" Terminals="66, 67=143" />
+						<LeftShiftRegister Bounds="-4 170 13 10" Docking="Left" Id="74" RightRegister="73" Terminals="o0=159, i0=135" />
+						<LoopTunnel Bounds="-4 135 13 10" Docking="Left" Id="75" Terminals="o0=160, i0=144" />
+					</WhileLoop>
+					<NodeLabel AttachedTo="66" Bounds="365 203 299 14" Id="70" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>While Found a Character to Escape: Escape Character</p.Text>
+					</NodeLabel>
+					<SearchAndReplaceString Bounds="1545 320 40 50" Id="101" />
+					<SearchAndReplaceString Bounds="1670 320 40 50" Id="102" />
+					<Comment Bounds="1380 65 175 30" Id="103" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>"Convert CR and LF hex to "\\r" and "\\n" for improved readability."</p.Text>
+					</Comment>
+					<Comment Bounds="620 120 160 15" Id="104" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Current Encoding Scheme</p.Text>
+					</Comment>
+					<Comment Bounds="435 190 210 15" Id="105" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>"Replace all "\\" characters with "\\\\""</p.Text>
+					</Comment>
+					<Comment Bounds="85 375 215 85" Id="106" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>"escape the following:\n\n    \\00-\\1F (non-printable chars)\n    "[", "]", and "=" (INI syntax elements)\n    \\FE ("þ") and \\FF ("ÿ") (legacy encoding)"</p.Text>
+					</Comment>
+					<Wire Id="145" Joints="N(102:result string)|(1710,325) N(41:38)|(1731,325)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="146" Joints="N(63:Out)|(1650,335) N(102:search string)|(1670,335)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="147" Joints="N(61:Out)|(1645,360) h(15) v(-15) N(102:replace string (&quot;&quot;\))|(1670,345)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="148" Joints="N(59:Out)|(1355,80) h(325) N(102:replace all (F\))|(1680,320)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="149" Joints="N(101:result string)|(1585,325) N(102:input string)|(1670,325)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="150" Joints="N(71:66)|(1444,325) N(101:input string)|(1545,325)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="151" Joints="N(57:Out)|(1525,300) h(30) N(101:replace all (F\))|(1555,320)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="152" Joints="N(55:Out)|(1520,360) h(15) v(-15) N(101:replace string (&quot;&quot;\))|(1545,345)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="153" Joints="N(53:Out)|(1525,335) N(101:search string)|(1545,335)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="154" Joints="N(42:38)|(4,325) N(65:input string)|(85,325)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="155" Joints="N(65:result string)|(125,325) N(72:o0)|(361,325)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="156" Joints="N(51:Out)|(65,335) N(65:search string)|(85,335)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="157" Joints="N(49:Out)|(65,360) h(10) v(-15) N(65:replace string (&quot;&quot;\))|(85,345)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="158" Joints="N(47:Out)|(60,300) h(35) N(65:replace all (F\))|(95,320)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="159" Joints="N(45:Out)|(65,415) h(270) v(-20) N(74:o0)|(361,395)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="160" Joints="N(43:Out)|(255,360) N(75:o0)|(361,360)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 1735 535" Id="39" Pattern="True">
+					<Literal Bounds="45 280 35 15" DataType="String" Facade="String" Id="107" Label="108" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>]</p.Data>
+						<StringBehavior TextDisplayMode="Escaped" />
+					</Literal>
+					<NodeLabel AttachedTo="107" Bounds="45 259 96 18" Id="108" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>search string</p.Text>
+					</NodeLabel>
+					<Literal Bounds="290 285 35 15" DataType="String" Facade="String" Id="109" Label="110" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>ÿ</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="109" Bounds="290 264 133 18" Id="110" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace string ("")</p.Text>
+					</NodeLabel>
+					<Literal Bounds="290 305 38 18" DataType="Boolean" Facade="True Constant" Id="111" Label="112" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="111" Bounds="290 284 111 18" Id="112" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace all? (F)</p.Text>
+					</NodeLabel>
+					<Literal Bounds="25 295 38 18" DataType="Boolean" Facade="True Constant" Id="113" Label="114" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>True</p.Data>
+						<BooleanBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="113" Bounds="25 274 111 18" Id="114" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace all? (F)</p.Text>
+					</NodeLabel>
+					<Literal Bounds="25 355 35 15" DataType="String" Facade="String" Id="115" Label="116" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>þ</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="115" Bounds="25 334 133 18" Id="116" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>replace string ("")</p.Text>
+					</NodeLabel>
+					<Literal Bounds="25 330 35 15" DataType="String" Facade="String" Id="117" Label="118" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>[</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="117" Bounds="25 309 96 18" Id="118" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>search string</p.Text>
+					</NodeLabel>
+					<SearchAndReplaceString Bounds="85 320 40 50" Id="119" />
+					<SearchAndReplaceString Bounds="365 320 40 50" Id="120" />
+					<Comment Bounds="45 15 180 25" Id="121" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Legacy Encoding Scheme</p.Text>
+					</Comment>
+					<Comment Bounds="115 215 85 15" Id="122" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Normal Display</p.Text>
+					</Comment>
+					<Comment Bounds="65 245 160 30" Id="123" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Encode brackets, "[" and "]", as special characters "þ" and "ÿ".</p.Text>
+					</Comment>
+					<Comment Bounds="155 70 85 15" Id="124" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Normal Display</p.Text>
+					</Comment>
+					<Wire Id="161" Joints="N(42:39)|(4,325) N(119:input string)|(85,325)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="162" Joints="N(120:result string)|(405,325) N(41:39)|(1731,325)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="163" Joints="N(117:Out)|(60,335) N(119:search string)|(85,335)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="164" Joints="N(115:Out)|(60,360) h(15) v(-15) N(119:replace string (&quot;&quot;\))|(85,345)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="165" Joints="N(113:Out)|(63,300) h(32) N(119:replace all (F\))|(95,320)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="166" Joints="N(111:Out)|(328,310) h(47) N(120:replace all (F\))|(375,320)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="167" Joints="N(109:Out)|(325,290) h(20) v(55) N(120:replace string (&quot;&quot;\))|(365,345)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="168" Joints="N(107:Out)|(80,285) h(170) v(-10) h(105) v(60) N(120:search string)|(365,335)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="169" Joints="N(119:result string)|(125,325) N(120:input string)|(365,325)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 290 13 10" Docking="Left" Id="40" Terminals="37=170, 38, 39" />
+				<CaseStructure.Tunnel Bounds="1736 325 13 10" Docking="Right" Id="41" Terminals="37=172, 38=145, 39=162" />
+				<CaseStructure.Tunnel Bounds="-4 325 13 10" Docking="Left" Id="42" Terminals="37=171, 38=154, 39=161" />
+			</CaseStructure>
+			<Wire Id="170" Joints="N(35:Value)|(40,295) N(40:37)|(286,295)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="171" Joints="N(31:Value)|(270,330) N(42:37)|(286,330)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="172" Joints="N(41:37)|(2039,330) N(33:Value)|(2063,330)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="24" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]186" TabIndex="[int]0" Text="{DataItemBinding Id=14}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]94" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="25" LabelOwner="[UIModel]24" Left="[float]186" Text="[string]string" Top="[float]74" Width="[float]31" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="26" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]27" Left="[float]521" TabIndex="[int]1" Text="{DataItemBinding Id=15}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]94" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="27" LabelOwner="[UIModel]26" Left="[float]521" Text="[string]encoded string" Top="[float]74" Width="[float]80" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]543" Id="28" Left="[float]100" Text="[string]Encode Section and Key Names.vi&#xA;&#xA;Encodes and decodes section and key names.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2004, Heiko Fettig &lt;Heiko.Fettig@gmx.net&gt;&#xA;Copyright (c) 2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]258" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+			<Switch ClickMode="[ClickMode]Press" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" FalseContentVisibility="[Visibility]Collapsed" Height="[float]30" Id="29" IsMomentary="[bool]False" IsTabStop="[bool]True" Label="[UIModel]30" Left="[float]345" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]2" Top="[float]30" TrueContent="[string]" Value="{DataItemBinding Id=16}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="30" LabelOwner="[UIModel]29" Left="[float]345" Text="[string]use legacy encoding scheme? (FALSE)" Top="[float]10" Width="[float]200" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="String" Id="14" Name="string" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="String" Id="15" Name="encoded string" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="Boolean" Id="16" Name="use legacy encoding scheme? (FALSE)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+</SourceFile>

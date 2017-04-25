@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="EA82696AA1C549F3FFDB7AA6084A0009" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="MD5 Unrecoverable character padding" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Insert a number of &lt;B&gt;Padding Character&lt;/B&gt; until the length of the string is a multiple of &lt;B&gt;Block Size&lt;/B&gt;.</p.UserDescription>
+		<Icon Id="17" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="19" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="20" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="23" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC6SURBVEhL7c5RDsMgDANQ7n82DjULR5kJ2QoSqP3o+9gSN/VW6jFvdXBdXcr3RudLb3VwazWgkWyfs3a9JFbb32s84bCqey20cD1STcer8alPuYKunF23j49BXxsPmIw5dFF+IaHPGJzmqovCxfjaTOJihCPnCQfQ0GmukmiX7Nd6lv6VnuXVNjUz7Q+uxkBcwfbGIpFXK0sFQ32Un9m3SO8AuePKHHR2s9Vj0bZqQO5+JSpv2eJYda0fgIRXclsf20AAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 50" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="45 250 40 15" DataItem="14" Id="33" Label="34" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="33" Bounds="45 233 85 14" Id="34" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Block Size (16)</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="45 165 40 15" DataItem="15" Id="35" Label="36" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="35" Bounds="45 148 48 14" Id="36" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Message</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="625 165 40 15" DataItem="16" Id="37" Label="38" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="37" Bounds="625 148 93 14" Id="38" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Padded message</p.Text>
+			</NodeLabel>
+			<StringLength Bounds="175 215 40 20" Id="39" />
+			<QuotientAndRemainder Bounds="245 235 30 30" Id="40" />
+			<CaseStructure Bounds="300 205 235 195" DataType="Int32" Default="43" Id="41" Selected="43" UserSelectorBounds="60 0 115 17">
+				<CaseStructure.Case Bounds="5 5 225 185" Id="42" Pattern="0" />
+				<CaseStructure.Case Bounds="5 5 225 185" Id="43" Pattern="1, Default">
+					<Literal Bounds="25 120 45 15" DataType="String" Facade="String" Id="48" Label="49" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>&#x0;</p.Data>
+						<StringBehavior TextDisplayMode="Escaped" />
+					</Literal>
+					<NodeLabel AttachedTo="48" Bounds="25 99 164 18" Id="49" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Padding Character (0)</p.Text>
+					</NodeLabel>
+					<Subtract Bounds="50 55 30 30" Id="50" />
+					<InitializeArray Bounds="105 120 40 30" Id="51" Terminals="element=55, outArray=60, c0t0v=58" />
+					<ConcatenateStrings Bounds="165 120 40 20" Id="52" Terminals="outString=57, c0t0v=60" />
+					<Wire Id="55" Joints="N(48:Out)|(70,125) N(51:element)|(105,125)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="56" Joints="N(44:43)|(4,30) h(21) v(45) N(50:y)|(50,75)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="57" Joints="N(52:outString)|(205,125) N(46:43)|(221,125)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="58" Joints="N(50:x-y)|(80,70) h(15) v(75) N(51:c0t0v)|(105,145)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="59" Joints="N(45:43)|(4,60) N(50:x)|(50,60)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="60" Joints="N(51:outArray)|(145,125) N(52:c0t0v)|(165,125)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 30 13 10" Docking="Left" Id="44" Terminals="41=62, 42, 43=56" />
+				<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="45" Terminals="41=65, 42, 43=59" />
+				<CaseStructure.Tunnel Bounds="226 125 13 10" DefaultIfUnwired="True" Docking="Right" Id="46" Terminals="41=64, 42, 43=57" />
+			</CaseStructure>
+			<ConcatenateStrings Bounds="560 165 40 20" Id="53" Terminals="outString=63, c0t0v=66, c1t0v=64" />
+			<Wire Id="61" Joints="N(39:length)|(215,220) h(15) v(20) N(40:x)|(245,240)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="62" Joints="N(40:x-y*floor(x/y\))|(275,240) N(44:41)|(296,240)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="63" Joints="N(53:outString)|(600,170) N(37:Value)|(628,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="64" Joints="N(46:41)|(539,335) h(16) v(-155) N(53:c1t0v)|(560,180)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="65" Joints="N(33:Value)|(85,255) h(145) B(1) N(40:y)|(245,255) B(1) v(15) N(45:41)|(296,270)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="66" Joints="N(35:Value)|(85,170) h(80) B(1) N(53:c0t0v)|(560,170) B(1) v(50) N(39:string)|(175,220)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="24" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]26" Left="[float]101" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]123" Value="{DataItemBinding Id=14}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">&lt;B&gt;Message&lt;/B&gt; will be padded until its size (number of characters) is a multiple of this value.</p.InfoTipDescription>
+			</NumericText>
+			<Label Height="[float]16" Id="26" LabelOwner="[UIModel]24" Left="[float]101" Text="[string]Block Size (16)" Top="[float]103" Width="[float]77" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="27" IsTabStop="[bool]True" Label="[UIModel]28" Left="[float]101" TabIndex="[int]1" Text="{DataItemBinding Id=15}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]30" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">Original message</p.InfoTipDescription>
+			</StringControl>
+			<Label Height="[float]16" Id="28" LabelOwner="[UIModel]27" Left="[float]101" Text="[string]Message" Top="[float]10" Width="[float]47" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="29" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]30" Left="[float]286" TabIndex="[int]2" Text="{DataItemBinding Id=16}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]30" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">Message padded with &lt;B&gt;Padding Character&lt;/B&gt; to make its size a multiple of &lt;B&gt;Block Size&lt;/B&gt;. The last 4 characters are &lt;B&gt;Message&lt;/B&gt; original size (in hex format).</p.InfoTipDescription>
+			</StringControl>
+			<Label Height="[float]16" Id="30" LabelOwner="[UIModel]29" Left="[float]286" Text="[string]Padded message" Top="[float]10" Width="[float]90" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]16" Id="31" Left="[float]494" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]45" Width="[float]205" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Height="[float]527" Id="32" Left="[float]100" Text="[string]MD5 Unrecoverable character padding.vi&#xA;&#xA;Derived from the RSA Data Security, Inc. MD5 Message-Digest Algorithm&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2004, Enrique Vargas &lt;vargas@visecurity.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]178" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="Int32" Id="14" Name="Block Size (16)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>16</p.DefaultValue>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">&lt;B&gt;Message&lt;/B&gt; will be padded until its size (number of characters) is a multiple of this value.</p.UserDescription>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" DataType="String" Id="15" Name="Message" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Original message</p.UserDescription>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="String" Id="16" Name="Padded message" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Message padded with &lt;B&gt;Padding Character&lt;/B&gt; to make its size a multiple of &lt;B&gt;Block Size&lt;/B&gt;. The last 4 characters are &lt;B&gt;Message&lt;/B&gt; original size (in hex format).</p.UserDescription>
+		</DataItem>
+	</VirtualInstrument>
+</SourceFile>

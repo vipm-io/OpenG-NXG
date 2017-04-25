@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="049F6A7D192614C91DCA47934F50D906" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="1D U16 Array Changed" Id="1" OverloadGroup="Data Changed" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">&lt;B&gt;Data Changed&lt;/B&gt;&lt;br/&gt;This is a polymorphic VI that will output a true if the data flowing into it has changed.  It is also a Reentrant VI. So each intance of it in your code is treated as a seperate VI.  The first time that the VI is run it will output a false.  It can take any data type as an input.  It has several native data types (for efficiency) and will coerce to variant if a non-native data type (error cluster, refnum, etc) is used.</p.UserDescription>
+		<Icon Id="16" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="18" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="19" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="20" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="22" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACBSURBVEhL7Y1bDoAwCAR7/xt4p94JSSAE6MNS7Y9hspJK3bHAMVLtSLXjN+oSh5uWvrpCXc8rdfdnstxX4+uFT7PUk5uWBzWe0UvRe7mlyU3LTI0H8bZ2/Rk3LUM1Tuel0K0ObrhpmalHiHFTvZ6YOgo3Lf3tJ6TakWpHqh3H1AA31UFeuqN7iDQAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="70" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 50" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="485 155 40 15" DataItem="14" Id="35" Label="36" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="35" Bounds="485 132 65 20" Id="36" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Changed</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="70 125 40 15" DataItem="15" Id="37" Label="38" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt16[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="37" Bounds="70 102 105 20" Id="38" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>1D U16 Array</p.Text>
+			</NodeLabel>
+			<IsFirstCall Bounds="380 175 15 15" Id="39" />
+			<WhileLoop Bounds="210 115 130 95" DiagramId="41" Id="40">
+				<LoopCondition Bounds="100 55 15 15" Id="42" LoopConditionMode="ContinueIfTrue" />
+				<LoopIteration Bounds="10 50 15 15" Id="43" />
+				<Literal Bounds="40 55 38 18" DataType="Boolean" Facade="False Constant" Id="48" xmlns="http://www.ni.com/MocCommon">
+					<p.Data>False</p.Data>
+					<BooleanBehavior />
+				</Literal>
+				<Wire Id="51" Joints="N(48:Out)|(78,60) N(42:Input)|(100,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="52" Joints="N(45:i0)|(4,30) h(97) v(15) N(47:i0)|(116,45)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="53" Joints="N(46:i0)|(4,15) h(107) v(15) N(44:41)|(116,30)" xmlns="http://www.ni.com/PlatformFramework" />
+				<RightShiftRegister Bounds="121 30 13 10" Docking="Right" Id="44" Terminals="40=59, 41=53" />
+				<LeftShiftRegister Bounds="-4 30 13 10" Docking="Left" Id="45" RightRegister="44" Terminals="o0, i0=52" />
+				<LoopTunnel Bounds="-4 15 13 10" Docking="Left" Id="46" Terminals="o0=55, i0=53" />
+				<LoopTunnel Bounds="121 45 13 10" Docking="Right" Id="47" Terminals="o0=58, i0=52" />
+			</WhileLoop>
+			<IsNotEqual Bounds="380 145 30 30" ComparisonMode="CompareAggregates" Id="49" />
+			<LogicalAnd Bounds="440 155 25 20" Id="50" InvertedTerminals="001" Terminals="o=56, c0t0v=57, c1t0v=54" />
+			<Wire Id="54" Joints="N(39:First Call?: T/F)|(395,180) h(30) v(-10) N(50:c1t0v)|(440,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="55" Joints="N(37:Value)|(110,130) h(91) v(5) N(46:o0)|(206,135)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="56" Joints="N(50:o)|(465,165) h(15) v(-5) N(35:Value)|(488,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="57" Joints="N(49:x != y?)|(410,160) N(50:c0t0v)|(440,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="58" Joints="N(47:o0)|(344,165) N(49:y)|(380,165)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="59" Joints="N(44:40)|(344,150) N(49:x)|(380,150)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<LED BaseName="[string]Square LED" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" FalseContentVisibility="[Visibility]Collapsed" Height="[float]24" Id="23" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]316" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]0" Top="[float]46" TrueContent="[string]" Value="{DataItemBinding Id=14}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="25" LabelOwner="[UIModel]23" Left="[float]316" Text="[string]Changed" Top="[float]26" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Id="27" LabelOwner="[UIModel]26" Left="[float]154" Text="[string]1D U16 Array" Top="[float]21" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]31" Columns="[int]1" Dimensions="[int]1" Height="[float]34" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="26" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]27" Left="[float]154" Rows="[int]1" TabIndex="[int]1" Top="[float]41" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]73" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="31" Interval="[ushort]1" IsTabStop="[bool]True" Left="[float]47" Maximum="[ushort]65535" MinHeight="[float]24" Minimum="[ushort]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]23" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt16" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Text Height="[float]376" Id="33" Left="[float]100" Text="[string]Data Changed.vi&#xA;&#xA;This VI is used to detect whether the input has changed value.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jim Kring &lt;jim@jimkring.com&gt;&#xA;Copyright (c) 2002, Cal-Bay Systems, Inc. &lt;info@cal-bay.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]86" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Height="[float]32" Id="34" Left="[float]389" Text="[string][OpenG VI Tags] ***Do Not Remove***&#xD;&#xA;" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]206" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="Boolean" Id="14" Name="Changed" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="UInt16[]" Id="15" Name="1D U16 Array" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+</SourceFile>

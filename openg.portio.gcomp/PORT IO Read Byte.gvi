@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="F6F00A5C6957D15AE96575BE1773BED9" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="PORT IO Read Byte" Id="1" OverloadGroup="PORT IO Read" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This function reads in a single byte from the specified IO port. If you set fast to True, and are running under Windows NT/2000/XP/2003 you must have enabled the according IO port with a call to "PORT IO Enable Range.vi" to avoid a General Protection Fault error.</p.UserDescription>
+		<Icon Id="20" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="22" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="23" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="24" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="25" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="26" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGSSURBVEhL3ZPhdcMgDISzgmfxCp6FFToLK3QWVvAs6R0nBMbQ+jnJn97Tw5KQPhQcP54f0wD9yLLgBfUIh75OH6BTSvu+Y+Xwd0WUiK22bQNXPopCDDfM8K2QiTGCLrEirFcMndGLh1Mj+52FO8EZjv5qZP1HQyma17DCBmikDKc9lEYacGsR9wpOoBBxaSilOZftekjICo2rUCiEo3VFYrnpALM4QiPlXCF8OvpFZ5xl4oELHdC6Zf09nCLDAexvcHRifQdTNFIcGU8sOawjZ6s4OWVSQJdlyXPwDyeaVNGYF1wfueM6uq6F+xtaXDwxtz5CJdEvE8v8/MPloEYKqedCRgFRXIVaqeO8IpYDyreXaKglr1FF4xuRn/Mmhol0rngNXOmDiBW7LmtoxCyuTFzFciSGBY1hz2irG4loPICmNzt8IquYiNtX6m7o/UTX/0Dr3iGLr2lYP0B3zhXdRMNxH1IIDcNWfcoKRwf8GXbqU+dmlyfd6cJOfWrWLM12uzKpT52r4UhXwlaD1Hv0fP4A5GUFkZ+bvsYAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="130" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="19" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 65" Parameter="18" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 80" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 95" Parameter="17" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 110" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="90 325 40 15" DataItem="14" Id="61" Label="62" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="61" Bounds="90 302 135 20" Id="62" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error in (no error)</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="515 325 40 15" DataItem="15" Id="63" Label="64" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="63" Bounds="515 302 70 20" Id="64" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error out</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="90 215 40 15" DataItem="16" Id="65" Label="66" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt16" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="65" Bounds="90 192 60 20" Id="66" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>address</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="515 255 40 15" DataItem="17" Id="67" Label="68" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt8" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="67" Bounds="515 232 40 20" Id="68" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>value</p.Text>
+			</NodeLabel>
+			<Literal Bounds="180 240 10 18" DataType="UInt32" Facade="Numeric" Id="69" Label="70" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>1</p.Data>
+				<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+			</Literal>
+			<NodeLabel AttachedTo="69" Bounds="180 219 56 18" Id="70" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>process</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="90 285 40 15" DataItem="18" Id="71" Label="72" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="71" Bounds="90 262 55 20" Id="72" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>fast (F)</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="90 255 40 15" DataItem="19" Id="73" Label="74" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt8" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="73" Bounds="90 232 35 20" Id="74" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>type</p.Text>
+			</NodeLabel>
+			<PropertyNode Bounds="170 335 55 35" HasErrorTerminals="False" Id="75" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties">
+				<PropertyItemTerminal DataType="Boolean" Hotspot="55 15" Id="c0t0v" Path="status" Usage="Optional" />
+			</PropertyNode>
+			<CaseStructure Bounds="275 175 190 175" Default="77" Id="76" Selected="77" UserSelectorBounds="0 0 0 0">
+				<CaseStructure.Case Bounds="5 5 180 165" Id="77" Pattern="False">
+					<CaseStructure Bounds="10 15 75 115" Default="88" Id="87" Selected="88" UserSelectorBounds="0 0 0 0">
+						<CaseStructure.Case Bounds="5 5 65 105" Id="88" Pattern="False">
+							<MethodCall Bounds="15 35 40 50" DomainName="OpenG.Port IO:ogportio.sli" Id="96" ResolveFailedHint="PortIORead" Target="OpenG\.Port\ IO:ogportio\.sli:PortIORead" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+								<p.MethodDeclaration>
+									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+										<Parameter Id="L1" Desc="address in" />
+										<Parameter Id="L2" Desc="size in" />
+										<Parameter Id="L3" Desc="value in" />
+										<Parameter Id="L4" Desc="error in" />
+										<Parameter Id="R0" Desc="return" />
+										<Parameter Id="R1" Desc="address out" />
+										<Parameter Id="R2" Desc="size out" />
+										<Parameter Id="R3" Desc="value out" />
+										<Parameter Id="R4" Desc="error out" />
+									</MethodDeclaration>
+								</p.MethodDeclaration>
+								<Terminal DataType="UInt16" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt8" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt16" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt8" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
+							</MethodCall>
+							<Wire Id="100" Joints="N(96:R3)|(55,70) h(3) v(-5) N(94:88)|(61,65)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="101" Joints="N(96:R0)|(55,40) h(3) v(-5) N(91:88)|(61,35)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="102" Joints="N(92:88)|(4,45) h(6) v(5) N(96:L1)|(15,50)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="103" Joints="N(95:88)|(4,55) h(6) v(5) N(96:L2)|(15,60)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="104" Joints="N(93:88)|(4,65) h(6) v(5) N(96:L3)|(15,70)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Case Bounds="5 5 65 105" Id="89" Pattern="True">
+							<MethodCall Bounds="15 35 40 50" DomainName="OpenG.Port IO:ogportio.sli" Id="97" ResolveFailedHint="PortIOReadDirect" Target="OpenG\.Port\ IO:ogportio\.sli:PortIOReadDirect" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+								<p.MethodDeclaration>
+									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+										<Parameter Id="L1" Desc="address in" />
+										<Parameter Id="L2" Desc="size in" />
+										<Parameter Id="L3" Desc="value in" />
+										<Parameter Id="L4" Desc="error in" />
+										<Parameter Id="R0" Desc="return" />
+										<Parameter Id="R1" Desc="address out" />
+										<Parameter Id="R2" Desc="size out" />
+										<Parameter Id="R3" Desc="value out" />
+										<Parameter Id="R4" Desc="error out" />
+									</MethodDeclaration>
+								</p.MethodDeclaration>
+								<Terminal DataType="UInt16" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt8" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt16" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt8" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
+							</MethodCall>
+							<Wire Id="105" Joints="N(95:89)|(4,55) h(6) v(5) N(97:L2)|(15,60)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="106" Joints="N(97:R3)|(55,70) h(3) v(-5) N(94:89)|(61,65)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="107" Joints="N(93:89)|(4,65) h(6) v(5) N(97:L3)|(15,70)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="108" Joints="N(92:89)|(4,45) h(6) v(5) N(97:L1)|(15,50)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="109" Joints="N(97:R0)|(55,40) h(3) v(-5) N(91:89)|(61,35)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Selector Bounds="-4 100 13 10" Docking="Left" Id="90" Terminals="87=112, 88, 89" />
+						<CaseStructure.Tunnel Bounds="66 35 13 10" Docking="Right" Id="91" Terminals="87=117, 88=101, 89=109" />
+						<CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="92" Terminals="87=116, 88=102, 89=108" />
+						<CaseStructure.Tunnel Bounds="-4 65 13 10" Docking="Left" Id="93" Terminals="87=115, 88=104, 89=107" />
+						<CaseStructure.Tunnel Bounds="66 65 13 10" Docking="Right" Id="94" Terminals="87=114, 88=100, 89=106" />
+						<CaseStructure.Tunnel Bounds="-4 55 13 10" Docking="Left" Id="95" Terminals="87=113, 88=103, 89=105" />
+					</CaseStructure>
+					<MethodCall Bounds="135 120 40 40" DomainName="OpenG.Port IO" Id="98" Label="99" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\portio\\ogportio.llb\\PORT IO Error Translation.gvi&quot;" Target="OpenG\.Port\ IO:PORT\ IO\ Error\ Translation\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="win error" />
+								<Parameter Id="L3" Desc="error in (no error)" />
+								<Parameter Id="R3" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="UInt32" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="98" Bounds="135 99 261 18" Id="99" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>PORT IO Error Translation</p.Text>
+					</NodeLabel>
+					<Wire Id="110" Joints="N(98:R3)|(175,155) h(0.5) v(-5) N(86:77)|(176,150)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="111" Joints="N(80:77)|(4,150) h(126) v(5) N(98:L3)|(135,155)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="112" Joints="N(85:77)|(4,115) h(1) v(5) N(90:87)|(6,120)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="113" Joints="N(84:77)|(4,70) h(1) v(5) N(95:87)|(6,75)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="114" Joints="N(94:87)|(89,85) h(82) v(-5) N(83:77)|(176,80)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="115" Joints="N(82:77)|(4,80) h(1) v(5) N(93:87)|(6,85)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="116" Joints="N(81:77)|(4,60) h(1) v(5) N(92:87)|(6,65)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="117" Joints="N(91:87)|(89,55) h(31) v(70) N(98:L0)|(135,125)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 180 165" Id="78" Pattern="True">
+					<Wire Id="118" Joints="N(82:78)|(4,80) N(83:78)|(176,80)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="119" Joints="N(80:78)|(4,150) N(86:78)|(176,150)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 160 13 10" Docking="Left" Id="79" Terminals="76=127, 77, 78" />
+				<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="80" Terminals="76=126, 77=111, 78=119" />
+				<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="81" Terminals="76=125, 77=116, 78" />
+				<CaseStructure.Tunnel Bounds="-4 80 13 10" Docking="Left" Id="82" Terminals="76=124, 77=115, 78=118" />
+				<CaseStructure.Tunnel Bounds="181 80 13 10" Docking="Right" Id="83" Terminals="76=123, 77=114, 78=118" />
+				<CaseStructure.Tunnel Bounds="-4 70 13 10" Docking="Left" Id="84" Terminals="76=122, 77=113, 78" />
+				<CaseStructure.Tunnel Bounds="-4 115 13 10" Docking="Left" Id="85" Terminals="76=121, 77=112, 78" />
+				<CaseStructure.Tunnel Bounds="181 150 13 10" Docking="Right" Id="86" Terminals="76=120, 77=110, 78=119" />
+			</CaseStructure>
+			<Wire Id="120" Joints="N(86:76)|(469,330) N(63:Value)|(518,330)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="121" Joints="N(71:Value)|(130,290) h(136) v(5) N(85:76)|(271,295)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="122" Joints="N(69:Out)|(190,245) h(76) v(5) N(84:76)|(271,250)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="123" Joints="N(83:76)|(469,260) N(67:Value)|(518,260)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="124" Joints="N(73:Value)|(130,260) h(10) v(2) h(126) v(-2) N(82:76)|(271,260)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="125" Joints="N(65:Value)|(130,220) h(136) v(20) N(81:76)|(271,240)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="126" Joints="N(61:Value)|(130,330) h(5) B(1) N(80:76)|(271,330) B(1) v(10) N(75:instance in)|(170,340)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="127" Joints="N(75:c0t0v)|(225,350) h(41) v(-10) N(79:76)|(271,340)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="128" IsTabStop="[bool]True" Label="[UIModel]135" Left="[float]113" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]193" Value="{DataItemBinding Id=14}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="129" Label="[UIModel]130" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="130" LabelOwner="[UIModel]129" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="131" Label="[UIModel]132" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="132" LabelOwner="[UIModel]131" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="133" Label="[UIModel]134" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="134" LabelOwner="[UIModel]133" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="135" LabelOwner="[UIModel]128" Left="[float]113" Text="[string]error in (no error)" Top="[float]173" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="137" IsTabStop="[bool]True" Label="[UIModel]144" Left="[float]349" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]1" Top="[float]192" Value="{DataItemBinding Id=15}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="138" IsReadOnly="[bool]True" Label="[UIModel]139" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="139" LabelOwner="[UIModel]138" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="140" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]141" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="141" LabelOwner="[UIModel]140" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="142" IsReadOnly="[bool]True" Label="[UIModel]143" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="143" LabelOwner="[UIModel]142" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="144" LabelOwner="[UIModel]137" Left="[float]349" Text="[string]error out" Top="[float]172" Width="[float]26" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="47" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[ushort]1" IsTabStop="[bool]True" Label="[UIModel]49" Left="[float]110" Maximum="[ushort]65535" MinHeight="[float]24" Minimum="[ushort]0" RadixBase="[RadixBase]Hexadecimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]2" Top="[float]30" Value="{DataItemBinding Id=16}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt16" Width="[float]81" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="49" LabelOwner="[UIModel]47" Left="[float]110" Text="[string]address" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="50" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]52" Left="[float]382" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]3" Top="[float]32" Value="{DataItemBinding Id=17}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]74" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="52" LabelOwner="[UIModel]50" Left="[float]382" Text="[string]value" Top="[float]12" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Square LED" ClickMode="[ClickMode]Press" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" FalseContentVisibility="[Visibility]Collapsed" Height="[float]72" Id="53" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]55" Left="[float]113" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]4" Top="[float]126" TrueContent="[string]" Value="{DataItemBinding Id=18}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="55" LabelOwner="[UIModel]53" Left="[float]113" Text="[string]fast (F)" Top="[float]106" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Foreground="[SMColor]#ff000000" Height="[float]365" Id="56" Left="[float]100" Text="[string]PORT IO Read Byte.vi&#xA;&#xA;Reads a byte from the port IO range.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA;&#xA;Copyright (c) 2002-2007, Rolf Kalbermatter &lt;rolf.kalbermatter@citeng.com&gt; &#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]408" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="57" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]59" Left="[float]110" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]5" Top="[float]79" Value="{DataItemBinding Id=19}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]81" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="59" LabelOwner="[UIModel]57" Left="[float]110" Text="[string]type" Top="[float]59" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]17" Id="60" Left="[float]615" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]31" Width="[float]206" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="4" DataType="Error" Id="14" Name="error in (no error)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
+			</p.TypeDefinitionTargets>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"The &lt;B&gt;error in&lt;/B&gt; cluster can accept error information wired from VIs previously called.  Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.&lt;br/&gt;&lt;br/&gt;The pop-up option &lt;B&gt;Explain Error&lt;/B&gt; (or Explain Warning) gives more information about the error displayed. "</p.UserDescription>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="2" DataType="Error" Id="15" Name="error out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
+			</p.TypeDefinitionTargets>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">The &lt;B&gt;error out&lt;/B&gt; cluster passes error or warning information out of a VI to be used by other VIs.&lt;br/&gt;&lt;br/&gt;The pop-up option &lt;B&gt;Explain Error&lt;/B&gt; (or Explain Warning) gives more information about the error displayed.</p.UserDescription>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" DataType="UInt16" Id="16" Name="address" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="UInt8" Id="17" Name="value" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="3" DataType="Boolean" Id="18" Name="fast (F)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="UInt8" Id="19" Name="type" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="OpenG\.Port\ IO:ogportio\.sli:PortIORead">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]PortIORead" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Port IO.gcomp" Top="[float]0" Width="[float]40" />
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[SLI]ogportio.sli" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Port\ IO:ogportio\.sli:PortIOReadDirect">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]PortIOReadDirect" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Port IO.gcomp" Top="[float]0" Width="[float]40" />
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[SLI]ogportio.sli" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Port\ IO:PORT\ IO\ Error\ Translation\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD1SURBVEhLxZTtFYMgDEXdqTt1p87SFbpCZ6FJXsAY5EMUe08OviC50j9dwjRYvZwGLoeqPyf4q5rWZgBoidTC5bhFPUxbTWsP7uT16q+QWrgcmfqtT2Yvu0t0qzFfXfXkK3AdVhMpEDaPqzuYr450qYdpq2m1YMfusyZiW8pwOQZvzZ8SkOFyjKtllu2Sd1B1P+H5oOIgahSAMeH7TkSkUgRkaZU1HUIUUDFQo7jFL9OzGTLCaL9F9qPISKVV1mTZnNja6V9Pil2pgJ6I+D4nnyFksygFNXVtLKL9HsV3jbHqW1C8lKYTFNUW3T3IBbcrMU0dwg+/k/jkqxfkfwAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Port IO.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="B5AD269B1A74DFC33A31DB40D804152C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Append Path to Root if Relative - Scalar" Id="1" OverloadGroup="Append Path to Root if Relative" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">&lt;p&gt;Ouputs &amp;quot;Absolute or Relative Path&amp;quot;. If &amp;quot;Absolute or Relative Path&amp;quot; is relative it is appended to &amp;quot;Root Path&amp;quot;. If &amp;quot;Absolute or Relative Path&amp;quot; is absolute it is passed straight through.&lt;/p&gt;</p.UserDescription>
+		<Icon Id="17" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="19" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="20" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="23" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEbSURBVEhLtY4BDsMwCAP3/7f1TxvMxCWGZYm0WS6Cw0F9XM/rT946/ehUtyTBZW7dPJtPC4F/cxoiCe7fUF6AS0ODCNeRqH2/WKHKCsTkvcySoLhqA5nflZQojxGaOcl73zwxeZ8XPg+hJ0RDSyDDe8yDzxtvhFgPkQTXeaiFWXVLElzm1nzJiiZvTbK6EwvzmdTqKUO6sEWnN2Oszqvd022tnjKkC1t0ejPGaga8ki78PqWSTPXWaXrnIn0SHRL+ydu5WbLN5vbgr83ro/C/TiMQFV0VoqeOx3IaTR6rhdcYSFSdUxXXlfUcMw/i30iw5gayEUYPSFXufaZSq4XbCEIOYvK+Jjh+NWO5gbzPcxai4k+89UH0zM/rBZiV0emQMoA4AAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 50" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<Literal Bounds="240 125 130 15" DataType="@9428b5fd18704135804a801832bad770" Facade="Enum" Id="34" Label="35" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<EnumBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="34" Bounds="240 108 56 14" Id="35" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Path Type</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="530 190 40 15" DataItem="14" Id="36" Label="37" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="36" Bounds="530 173 54 14" Id="37" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Root Path</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="905 200 40 15" DataItem="15" Id="38" Label="39" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="38" Bounds="905 183 151 14" Id="39" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Absolute or Appended Path</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="230 205 40 15" DataItem="16" Id="40" Label="41" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="40" Bounds="230 188 140 14" Id="41" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Absolute or Relative Path</p.Text>
+			</NodeLabel>
+			<PathType Bounds="390 175 30 30" Id="42" />
+			<ToUnsignedWordInteger Bounds="460 185 30 10" Id="43" />
+			<TypeCast Bounds="540 150 30 15" Id="44" />
+			<CaseStructure Bounds="600 130 280 110" DataType="@9428b5fd18704135804a801832bad770" Id="45" Selected="48" UserSelectorBounds="67 0 146 17">
+				<CaseStructure.Case Bounds="5 5 270 100" Id="46" Pattern="&quot;Absolute path&quot;">
+					<Comment Bounds="25 55 125 30" Id="53" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Pass absolute paths through*/</p.Text>
+					</Comment>
+					<Wire Id="58" Joints="N(50:46)|(4,75) h(11) v(-5) N(51:46)|(266,70)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 270 100" Id="47" Pattern="&quot;Not-a-path&quot;">
+					<Comment Bounds="25 70 165 15" Id="54" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Not-a-path is an error*/</p.Text>
+					</Comment>
+					<Wire Id="59" Joints="N(50:47)|(4,75) h(251) v(-5) N(51:47)|(266,70)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 270 100" Id="48" Pattern="&quot;Relative path&quot;">
+					<BuildPath Bounds="25 55 30 30" Id="55" />
+					<Comment Bounds="75 40 135 45" Id="56" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>/*Relative path Targets are relative to Build Root so append*/</p.Text>
+					</Comment>
+					<Wire Id="60" Joints="N(55:appended path)|(55,60) h(200) v(10) N(51:48)|(266,70)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="61" Joints="N(50:48)|(4,75) N(55:name or relative path)|(25,75)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="62" Joints="N(52:48)|(4,60) N(55:base path)|(25,60)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 20 13 10" Docking="Left" Id="49" Terminals="45=66, 46, 47, 48" />
+				<CaseStructure.Tunnel Bounds="-4 75 13 10" Docking="Left" Id="50" Terminals="45=67, 46=58, 47=59, 48=61" />
+				<CaseStructure.Tunnel Bounds="271 70 13 10" Docking="Right" Id="51" Terminals="45=68, 46=58, 47=59, 48=60" />
+				<CaseStructure.Tunnel Bounds="-4 60 13 10" Docking="Left" Id="52" Terminals="45=69, 46, 47, 48=62" />
+			</CaseStructure>
+			<Comment Bounds="390 115 120 30" Id="57" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>/*coerce I16 to U16 so typecast will work*/</p.Text>
+			</Comment>
+			<Wire Id="63" Joints="N(42:type)|(420,190) N(43:number)|(463,190)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="64" Joints="N(34:Out)|(370,130) h(185) N(44:type)|(555,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="65" Joints="N(43:unsigned 16bit integer)|(490,190) h(30) v(-35) N(44:x)|(540,155)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="66" Joints="N(44:*(type *\) &amp;x)|(570,155) N(49:45)|(596,155)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="67" Joints="N(40:Value)|(270,210) h(110) B(1) N(50:45)|(596,210) B(1) v(-20) N(42:path)|(390,190)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="68" Joints="N(51:45)|(884,205) N(38:Value)|(908,205)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="69" Joints="N(36:Value)|(570,195) N(52:45)|(596,195)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="24" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]26" Left="[float]100" MinHeight="[float]24" Path="{DataItemBinding Id=14}" TabIndex="[int]0" Top="[float]30" Width="[float]147" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="26" LabelOwner="[UIModel]24" Left="[float]100" Text="[string]Root Path" Top="[float]10" Width="[float]53" xmlns="http://www.ni.com/PanelCommon" />
+			<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="27" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" Label="[UIModel]29" Left="[float]363" MinHeight="[float]24" Path="{DataItemBinding Id=15}" TabIndex="[int]1" Top="[float]33" Width="[float]147" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="29" LabelOwner="[UIModel]27" Left="[float]363" Text="[string]Absolute or Appended Path" Top="[float]13" Width="[float]148" xmlns="http://www.ni.com/PanelCommon" />
+			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="30" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]32" Left="[float]101" MinHeight="[float]24" Path="{DataItemBinding Id=16}" TabIndex="[int]2" Top="[float]120" Width="[float]147" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="32" LabelOwner="[UIModel]30" Left="[float]101" Text="[string]Absolute or Relative Path" Top="[float]100" Width="[float]134" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]543" Id="33" Left="[float]104" Text="[string]Append Path to Root if Relative.vi&#xA;&#xA;Appends a path to the Root Path if the path is relative, or outputs the path if it is absolute.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;Copyright (c) 2010, Jonathon Green &lt;jg@jgcode.net&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]218" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="Path" Id="14" Name="Root Path" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Path" Id="15" Name="Absolute or Appended Path" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" CallUsage="Required" DataType="Path" Id="16" Name="Absolute or Relative Path" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="9428b5fd18704135804a801832bad770">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Absolute path" />
+					<EnumerationMember Value="1" Name="Relative path" />
+					<EnumerationMember Value="2" Name="Not-a-path" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

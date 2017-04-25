@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="F95C19816B8E663FC9EF93459FD06A23" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Reverse 2D Array (U8)" Id="1" OverloadGroup="Reverse 2D Array" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This polymorphic VI reverses the input 2D &lt;B&gt;Array&lt;/B&gt; and outputs the result as &lt;B&gt;Reversed Array&lt;/B&gt;.  Use the &lt;B&gt;by rows or columns&lt;/B&gt; input to specify whether to sort by row or by column.</p.UserDescription>
+		<Icon Id="17" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="19" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="20" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="23" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADFSURBVEhL1Y6BDsQgCEP3/9/mP+0YJUimg+pluVxTyNNB59HO9pL/N/rgZAucejTWGLY1pjvBJQuAAaIpX4CDdLhkW2M6iJFMLg33n/hmzvywFojoyadJd4JL5oe1OPkaox5N9ggla6kcRFMWAANK1gIRPULJWpx8jZFFv+TlaLyI8U40mV4PIWvUbWz0T199M5krXo6GmbfvRHtonn590xeY7DZwchOPox+jAdPj9Gb0ZjTjIjqCc7xPnE0w+4m/Ws58tg/4g4Q3yZSq2wAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 50" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="835 115 40 15" DataItem="14" Id="42" Label="43" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt8[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="42" Bounds="880 115 115 20" Id="43" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Reversed Array</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="200 90 40 15" DataItem="15" Id="44" Label="45" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt8[,]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="44" Bounds="150 90 45 20" Id="45" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="200 140 40 15" DataItem="16" Id="46" Label="47" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@08bf1556e6a44b838341936ae8b2a624" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="46" Bounds="-5 140 200 20" Id="47" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>by rows or columns (rows)</p.Text>
+			</NodeLabel>
+			<ArraySize Bounds="250 45 40 20" Id="48" />
+			<ArrayIndex Bounds="310 55 40 30" Id="49" Terminals="array=97, c0t0v=95, c0out=96" />
+			<ForLoop Bounds="400 65 248 105" DiagramId="51" Id="50" Label="54">
+				<LoopIteration Bounds="40 60 15 15" Id="52" />
+				<Decrement Bounds="25 0 30 30" Id="58" />
+				<Subtract Bounds="75 10 30 30" Id="59" />
+				<CaseStructure Bounds="155 5 80 85" DataType="@08bf1556e6a44b838341936ae8b2a624" Id="60" Selected="61" UserSelectorBounds="0 0 0 0">
+					<CaseStructure.Case Bounds="5 5 70 75" Id="61" Pattern="&quot;rows&quot;">
+						<ArrayIndex Bounds="15 25 40 40" Id="67" Rank="2" Terminals="array=79, c0t0v=78, c0t1v, c0out=77" />
+						<Wire Id="77" Joints="N(67:c0out)|(55,50) h(6) v(-5) N(66:61)|(66,45)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="78" Joints="N(65:61)|(4,45) h(6) v(5) N(67:c0t0v)|(15,50)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="79" Joints="N(64:61)|(4,25) h(6) v(5) N(67:array)|(15,30)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Case Bounds="5 5 70 75" Id="62" Pattern="&quot;columns&quot;">
+						<ArrayIndex Bounds="15 25 40 40" Id="68" Rank="2" Terminals="array=82, c0t0v, c0t1v=80, c0out=81" />
+						<Wire Id="80" Joints="N(65:62)|(4,45) h(6) v(15) N(68:c0t1v)|(15,60)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="81" Joints="N(68:c0out)|(55,50) h(6) v(-5) N(66:62)|(66,45)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="82" Joints="N(64:62)|(4,25) h(6) v(5) N(68:array)|(15,30)" xmlns="http://www.ni.com/PlatformFramework" />
+					</CaseStructure.Case>
+					<CaseStructure.Selector Bounds="-4 68 13 10" Docking="Left" Id="63" Terminals="60=83, 61, 62" />
+					<CaseStructure.Tunnel Bounds="-4 25 13 10" Docking="Left" Id="64" Terminals="60=89, 61=79, 62=82" />
+					<CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="65" Terminals="60=85, 61=78, 62=80" />
+					<CaseStructure.Tunnel Bounds="71 45 13 10" Docking="Right" Id="66" Terminals="60=84, 61=77, 62=81" />
+				</CaseStructure>
+				<Wire Id="83" Joints="N(57:i0)|(6,73) h(10) v(6) h(130) v(-1) N(63:60)|(151,78)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="84" Joints="N(66:60)|(239,55) h(-1.5) v(-2) N(56:i0)|(236,53)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="85" Joints="N(59:x-y)|(105,25) h(41) v(30) N(65:60)|(151,55)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="86" Joints="N(52:Output)|(55,65) h(5) v(-35) N(59:y)|(75,30)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="87" Joints="N(58:x-1)|(55,15) N(59:x)|(75,15)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="88" Joints="N(53:51)|(12,5) h(8) v(10) N(58:x)|(25,15)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="89" Joints="N(55:i0)|(6,33) h(10) v(11) h(117) v(-9) N(64:60)|(151,35)" xmlns="http://www.ni.com/PlatformFramework" />
+				<LoopCount Bounds="1 1 15 15" Docking="Left" Id="53" Terminals="50=96, 51=88" />
+				<LoopTunnel Bounds="-5 30 13 10" Docking="Left" Id="55" Terminals="o0=98, i0=89" />
+				<LoopTunnel AutoIndex="True" Bounds="238 50 13 10" Docking="Right" Id="56" Terminals="o0=94, i0=84" TunnelMode="0" />
+				<LoopTunnel Bounds="-5 70 13 10" Docking="Left" Id="57" Terminals="o0=95, i0=83" />
+			</ForLoop>
+			<NodeLabel AttachedTo="50" Bounds="400 42 130 20" Id="54" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Reverse 2d Array</p.Text>
+			</NodeLabel>
+			<CaseStructure Bounds="700 80 85 80" DataType="@08bf1556e6a44b838341936ae8b2a624" Id="69" Selected="71" UserSelectorBounds="0 0 0 0">
+				<CaseStructure.Case Bounds="5 5 75 70" Id="70" Pattern="&quot;rows&quot;">
+					<Wire Id="90" Joints="N(73:70)|(4,35) N(74:70)|(71,35)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 75 70" Id="71" Pattern="&quot;columns&quot;">
+					<Transpose2DArray Bounds="25 35 40 20" Id="75" />
+					<Wire Id="91" Joints="N(75:transposed array)|(65,40) h(3) v(-5) N(74:71)|(71,35)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="92" Joints="N(73:71)|(4,35) h(16) v(5) N(75:2D array)|(25,40)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 60 13 10" Docking="Left" Id="72" Terminals="69=95, 70, 71" />
+				<CaseStructure.Tunnel Bounds="-4 35 13 10" Docking="Left" Id="73" Terminals="69=94, 70=90, 71=92" />
+				<CaseStructure.Tunnel Bounds="76 35 13 10" Docking="Right" Id="74" Terminals="69=93, 70=90, 71=91" />
+			</CaseStructure>
+			<Comment Bounds="145 25 100 15" Id="76" xmlns="http://www.ni.com/MocCommon">
+				<p.Text># or rows or columns</p.Text>
+			</Comment>
+			<Wire Id="93" Joints="N(74:69)|(789,120) N(42:Value)|(838,120)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="94" Joints="N(56:o0)|(651,120) N(73:69)|(696,120)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="95" Joints="N(46:Value)|(240,145) h(55) B(1) h(95) B(2) v(-5) N(57:o0)|(395,140) B(2) v(34) h(301) v(-34) N(72:69)|(696,145) B(1) v(-65) N(49:c0t0v)|(310,80)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="96" Joints="N(49:c0out)|(350,80) h(41) v(-8) N(53:50)|(401,72)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="97" Joints="N(48:size(s\))|(290,60) N(49:array)|(310,60)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="98" Joints="N(44:Value)|(240,95) h(5) B(1) v(-45) N(48:array)|(250,50) B(1) v(5) N(55:o0)|(395,100)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Label Id="25" LabelOwner="[UIModel]24" Left="[float]326" Text="[string]Reversed Array" Top="[float]11" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]29" Columns="[int]2" Dimensions="[int]2" Height="[float]58" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="24" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]326" Rows="[int]2" TabIndex="[int]0" Top="[float]31" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]116" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="29" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" IsTabStop="[bool]True" Left="[float]47" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]19" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Label Id="32" LabelOwner="[UIModel]31" Left="[float]143" Text="[string]Array" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]36" Columns="[int]2" Dimensions="[int]2" Height="[float]60" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="31" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]32" Left="[float]143" Rows="[int]2" TabIndex="[int]1" Top="[float]30" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]138" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="36" Interval="[byte]1" IsTabStop="[bool]True" Left="[float]47" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]19" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]25" Id="38" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]40" Left="[float]127" MinHeight="[float]24" TabIndex="[int]2" Top="[float]128" Value="{DataItemBinding Id=16}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<EnumSelectorInfo DisplayValue="[string]rows" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]columns" Value="[ushort]1" ValueType="[Type]UInt16" />
+			</EnumSelector>
+			<Label Id="40" LabelOwner="[UIModel]38" Left="[float]127" Text="[string]by rows or columns (rows)" Top="[float]108" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]376" Id="41" Left="[float]100" Text="[string]Reverse 2D Array.vi&#xA;&#xA;This VI reverses, by row or by column, 2D array of any size.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jim Kring &lt;jim@jimkring.com&gt;&#xA;Copyright (c) 2002, Cal-Bay Systems, Inc. &lt;info@calbay.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]177" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="UInt8[,]" Id="14" Name="Reversed Array" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="UInt8[,]" Id="15" Name="Array" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="@08bf1556e6a44b838341936ae8b2a624" Id="16" Name="by rows or columns (rows)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="08bf1556e6a44b838341936ae8b2a624">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="rows" />
+					<EnumerationMember Value="1" Name="columns" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

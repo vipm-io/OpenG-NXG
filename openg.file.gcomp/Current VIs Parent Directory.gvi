@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="4998EF4EFC0AF144137D40E180260B56" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Current VIs Parent Directory" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Gets the path to the parent directory of the calling VI.  This may be used for building a path to a config file that exists in that directory or a directory relative to it.  This function will move up the file structure until it reaches and Operating System Directory.  It will not return the path to a built EXE or to an LLB.</p.UserDescription>
+		<Icon Id="16" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="18" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="19" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="20" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="22" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACoSURBVEhL7ZVRDsMgDEN7/7P1Tow06M0NgUnb+oGE9YSwY/LZHuUx7dVBe3XQsazOcv6duLr5u5j2TAo+ajMuSho6+lB1C7UXGOWV+ZN6mvAwyhUKqpjjgTDkCp00qacJD2qvSrS9fKSnCQ99aL2sCaHgNnmg9qoMp4rnnCY8EIYcJrmP/NJujBn4J0ZzxTup3tOPvS/46fGctnpB+R/hCe3VQSuuLuUFqaQ8jZsw3bwAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="55" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="505 320 40 15" DataItem="14" Id="30" Label="31" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="30" Bounds="550 320 220 20" Id="31" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Parent Directory (+ Relative)</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="275 335 40 15" DataItem="15" Id="32" Label="33" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="32" Bounds="145 335 125 20" Id="33" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Relative path (.)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="25 105 40 40" DomainName="OpenG.Application Control" Id="34" Label="35" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\appcontrol\\appcontrol.llb\\Current VIs Parents Ref.gvi&quot;" Target="OpenG\.Application\ Control:Current\ VIs\ Parents\ Ref\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="R1" Desc="Calling VI's Reference" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@44d9dceb9b514ee8a1b92cf38753540c" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="34" Bounds="25 84 244 18" Id="35" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Current VIs Parents Reference</p.Text>
+			</NodeLabel>
+			<PropertyNode Bounds="75 115 50 45" Id="36" InstanceDataType="@44d9dceb9b514ee8a1b92cf38753540c" IsPlaceholderNodeForConversion="True" ListViewAutoSize="False" Mode="InstanceProperties">
+				<PropertyItemTerminal Hotspot="50 25" Id="c0t0v" IsPlaceholderNodeForConversion="True" Path="Path" Usage="Optional" />
+			</PropertyNode>
+			<CloseReference Bounds="165 60 40 40" Id="37" />
+			<WhileLoop Bounds="160 110 255 205" DiagramId="39" Id="38">
+				<LoopCondition Bounds="225 140 15 15" Id="40" />
+				<LoopIteration Bounds="10 105 15 15" Id="41" />
+				<IsEmptyStringOrPath Bounds="100 160 30 30" Id="44" />
+				<IsNotANumberOrPathOrRefnum Bounds="100 140 30 30" Id="45" />
+				<MethodCall Bounds="40 15 40 40" DomainName="OpenG.File" Id="46" Label="47" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\file\\file.llb\\Strip Path - Traditional.gvi&quot;" Target="OpenG\.File:Strip\ Path\ \-\ Traditional\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<p.MethodDeclaration>
+						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+							<Parameter Id="L0" Desc="path" />
+							<Parameter Id="R0" Desc="stripped path" />
+							<Parameter Id="R2" Desc="name" />
+						</MethodDeclaration>
+					</p.MethodDeclaration>
+					<Terminal DataType="Path" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					<Terminal DataType="String" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				</MethodCall>
+				<NodeLabel AttachedTo="46" Bounds="40 -6 143 18" Id="47" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>Strip Path - Traditional</p.Text>
+				</NodeLabel>
+				<FileOrDirectoryInfo Bounds="100 65 40 40" Id="48" />
+				<LogicalOr Bounds="170 140 25 30" Id="49" Terminals="o=56, c0t0v=57, c1t0v=55, c2t0v=53" VerticalChunkCount="3" />
+				<Comment Bounds="105 115 35 15" Id="50" xmlns="http://www.ni.com/MocCommon">
+					<p.Text>is Dir?</p.Text>
+				</Comment>
+				<Wire Id="52" Joints="N(46:R0)|(80,20) h(7) B(1) h(149) v(5) N(42:39)|(241,25) B(1) v(50) N(48:path)|(100,70)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="53" Joints="N(44:empty?)|(130,175) h(15) v(-10) N(49:c2t0v)|(170,165)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="54" Joints="N(43:i0)|(4,25) h(31) B(1) v(-5) N(46:L0)|(40,20) B(1) v(130) B(4) N(45:number)|(100,155) B(4) v(20) N(44:string/path)|(100,175)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="55" Joints="N(45:NaN?)|(130,155) N(49:c1t0v)|(172,155)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="56" Joints="N(49:o)|(195,150) h(25) v(-5) N(40:Input)|(225,145)" xmlns="http://www.ni.com/PlatformFramework" />
+				<Wire Id="57" Joints="N(48:directory)|(125,65) v(-3) h(40) v(83) N(49:c0t0v)|(172,145)" xmlns="http://www.ni.com/PlatformFramework" />
+				<RightShiftRegister Bounds="246 25 13 10" Docking="Right" Id="42" Terminals="38=58, 39=52" />
+				<LeftShiftRegister Bounds="-4 25 13 10" Docking="Left" Id="43" RightRegister="42" Terminals="o0=62, i0=54" />
+			</WhileLoop>
+			<BuildPath Bounds="455 320 30 30" Id="51" />
+			<Wire Id="58" Joints="N(42:38)|(419,140) h(21) v(185) N(51:base path)|(455,325)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="59" Joints="N(32:Value)|(315,340) N(51:name or relative path)|(455,340)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="60" Joints="N(51:appended path)|(485,325) N(30:Value)|(508,325)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="61" Joints="N(36:instance out)|(125,120) h(13) v(-55) N(37:reference)|(165,65)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="62" Joints="N(36:c0t0v)|(125,140) N(43:o0)|(156,140)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="63" Joints="N(34:R1)|(65,120) N(36:instance in)|(75,120)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="23" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]365" MinHeight="[float]24" Path="{DataItemBinding Id=14}" TabIndex="[int]0" Top="[float]30" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="25" LabelOwner="[UIModel]23" Left="[float]365" Text="[string]Parent Directory (+ Relative)" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]376" Id="26" Left="[float]100" Text="[string]Current VI's Parent Directory.vi&#xA;&#xA;Gets the path to the parent directory of the calling VI.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jim Kring &lt;jim@jimkring.com&gt;&#xA;Copyright (c) 2002, Cal-Bay Systems, Inc. &lt;info@calbay.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]112" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
+			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="27" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]29" Left="[float]196" MinHeight="[float]24" Path="{DataItemBinding Id=15}" TabIndex="[int]1" Top="[float]30" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="29" LabelOwner="[UIModel]27" Left="[float]196" Text="[string]Relative path (.)" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Path" Id="14" Name="Parent Directory (+ Relative)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Optional" DataType="Path" Id="15" Name="Relative path (.)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="0">
+					<pE>.</pE>
+				</Path>
+			</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="44d9dceb9b514ee8a1b92cf38753540c">
+			<Attributed AttributedType="@9b7fd5daf5fb4f1ea287c90f78ec6c8f">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9b7fd5daf5fb4f1ea287c90f78ec6c8f">
+			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.VIRefnum" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="Read" Name="Exec.State" DataType="@2c3d5e0130054d1cbfb3093816652822" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2c3d5e0130054d1cbfb3093816652822">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Bad" />
+					<EnumerationMember Value="1" Name="Idle" />
+					<EnumerationMember Value="2" Name="Running Top Level" />
+					<EnumerationMember Value="3" Name="Running" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="OpenG\.Application\ Control:Current\ VIs\ Parents\ Ref\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACTSURBVEhL7VVbCsAgDNv9z+adnLUlhLrqBsoQDEHy0Px65WU40w6bTm+LlNN0/jFtRbdiuDuFoyKo2iQKJ0zj5FDAEfg+rxsGH8Izv+aFXMkue2Y/b08WqgXwzH7enixUC+BBK4JqKFQL4EErgmooVAvgQSuCyiUgV/V1fPWR9iaAvwY/kTa9Iey3WYAz7bDjdM43zZdw8so3ERAAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.Application Control.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.File:Strip\ Path\ \-\ Traditional\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVEhL3Y1REoQwCEO9/9m8k0KxkQaKnXX3ZzOx07wG3PZj/5GfV2+ZqJN6aXVN2r9UHiqnHJ3MhNURKqEcvbLa5KFyyjCqyUwjM35HH7ylZ1UaAGnvyZNJ75R9hIzDF+2ip/ukDEtMOUh7T55MeqcMIxIHmfE7DiG0xc8rujxUzrnLE9xTYjGpcQ69ZGYkEk0eKufc5QnuM5J6KKUzr1ZL1eQf4MhnTfK1Gmf029Um/wBHPmuSh1I6853Vmrs8wX1GUv/H6uj2I9ZKYXW1XWKsCvZcGAPxpMinfLWlNwxMRAW9yFcbA/GkyKd8taU3DIyxKthzYauSVgrPqz/0sZ8NNfD9IFKargAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]OpenG.File.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>
