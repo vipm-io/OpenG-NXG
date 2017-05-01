@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="D188BABEC7B7BA28C70A11FEC060F752" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="08384003E8E926DA3FFB424DDB894252" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
 		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
 		<ApplicationVersionInfo Build="4.9.1.56780" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
-	<DistributionDefinition BusId="0" Company="OpenG" ContentType="src" DisplayName="OpenG Library" DistributionOutputType="NiPackage" Homepage="http://www.lavag.org" IsStoreProduct="True" MaintainerEmail="support@jki.net" MaintainerName="Lavag.org" ModelId="0" OutputDirectory="&quot;C:\\dev\\pkg\\openg\\opengtoolkitnxg&quot;" Product="Library" ShortDescription="The OpenG package installs the OpenG Libraries." TargetedProduct="LabVIEW" VendorId="0" Version="1.0.0.3" xmlns="http://www.ni.com/GComponent.xsd">
+	<DistributionDefinition BusId="0" Company="OpenG" ContentType="src" DisplayName="OpenG Library" DistributionOutputType="NiPackage" Homepage="http://www.lavag.org" IsStoreProduct="True" MaintainerEmail="support@jki.net" MaintainerName="Lavag.org" ModelId="0" OutputDirectory="&quot;C:\\dev\\pkg\\openg\\opengtoolkitnxg&quot;" Product="Library" ShortDescription="The OpenG package installs the OpenG Libraries." TargetedProduct="LabVIEW" VendorId="0" Version="1.0.0.5" xmlns="http://www.ni.com/GComponent.xsd">
 		<DistributionMemberDependencySource Id="1" MemberContentType="Library" Target="openg\.library\.array\.gcomp" />
 		<DistributionMemberDependencySource Id="2" MemberContentType="Library" Target="openg\.library\.boolean\.gcomp" />
 		<DistributionMemberDependencySource Id="3" MemberContentType="Library" Target="openg\.library\.comparison\.gcomp" />
@@ -17,7 +17,7 @@
 		<DistributionMemberDependencySource Id="9" MemberContentType="Library" Target="openg\.library\.string\.gcomp" />
 		<DistributionMemberDependencySource Id="10" MemberContentType="Library" Target="openg\.library\.time\.gcomp" />
 		<DistributionMemberDependencySource Id="11" MemberContentType="Library" Target="openg\.library\.variantdata\.gcomp" />
-		<DistributionMemberDependencySource Id="12" Target="openg\.library\.gconversion" />
+		<DistributionMemberDependencySource Id="12" RelativeLocation="&quot;National Instruments\\LabVIEW NXG\\GlobalCGAPIs&quot;" RootLocation="ApplicationFiles_64" Target="openg\.library\.gconversion" />
 		<DistributionMemberDependencySource Id="14" MemberContentType="EULA" Target="LICENSE\.rtf" />
 	</DistributionDefinition>
 </SourceFile>
