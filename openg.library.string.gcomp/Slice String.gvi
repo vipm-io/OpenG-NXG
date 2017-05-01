@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="5863D8FDCE9C6C3CA04D6A98F36EF3E9" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Slice String" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">&lt;b&gt;This VI Is Depreciated&lt;/b&gt; &lt;br/&gt;Please use "Slice String 1.vi" (or newer version), available as "Slice String" from the Functions Palette.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Returns a &lt;B&gt;substring&lt;/B&gt;, specified by &lt;B&gt;subset&lt;/B&gt;, from &lt;B&gt;string&lt;/B&gt;. &lt;br/&gt;&lt;br/&gt;Slice String.vi was originally written to emulate the slice notation of Python. (See below for extended capabilities.) In Python, a slice is a subset of elements in a list and a string is a list of characters. If you want to access one character in the string (or one element in any list), you'd use the list name and the index value:&lt;br/&gt;&lt;br/&gt;&lt;B&gt;substring&lt;/B&gt; = &lt;B&gt;string&lt;/B&gt;[i]&lt;br/&gt;&lt;br/&gt;To get multple contiguous characters, use the slice i:j notation in place of the single index:&lt;br/&gt;&lt;br/&gt;&lt;B&gt;substring&lt;/B&gt; = &lt;B&gt;string&lt;/B&gt;[i:j]&lt;br/&gt;&lt;br/&gt;Characters (elements) are assigned to the output starting at the first index value, and continuing up to, but not including, the last value.&lt;br/&gt;&lt;br/&gt;In this notation, i and j are integers.&lt;br/&gt;The first character in &lt;B&gt;string&lt;/B&gt; has index zero.&lt;br/&gt;If i is ommitted it is assumed to be zero and &lt;B&gt;substring&lt;/B&gt;contains the leftmost characters of &lt;B&gt;string&lt;/B&gt;.&lt;br/&gt;If j is ommitted it is assumed to be length(string) and &lt;B&gt;substring&lt;/B&gt;contains the rightmost characters of &lt;B&gt;string&lt;/B&gt;.&lt;br/&gt;If i or j are negative numbers they are assumed to be referenced from the end of the string.&lt;br/&gt;&lt;br/&gt;In the LabVIEW implementation, the range of the slice is expressed in the string variable &lt;B&gt;subset&lt;/B&gt; as "i:j".&lt;br/&gt;&lt;br/&gt;Slice String.vi has now been extended to allow the (optional) inclusion of the last value as well (for those who are used to the closed interval syntax) by wiring a TRUE constant to the fourth terminal. (Only two of the examples below, in boldface, are affected.)&lt;br/&gt;&lt;br/&gt;Examples:&lt;br/&gt;&lt;br/&gt;If &lt;B&gt;string&lt;/B&gt; = "MyString" &lt;br/&gt;for &lt;B&gt;include string[j]&lt;/B&gt; = FALSE (default)      /      for &lt;B&gt;include string[j]&lt;/B&gt; = TRUE&lt;br/&gt;&lt;br/&gt;string[2:] = "String"                                               string[2:] = "String"&lt;br/&gt;string[:3] = "MyS"                                                 string[:3] = "&lt;B&gt;MySt&lt;/B&gt;"&lt;br/&gt;string[-1] = "g"                                                      string[-1] = "g"&lt;br/&gt;string[4] = "r"                                                        string[4] = "r"&lt;br/&gt;string[-4:-2] = "ri"                                                  string[-4:-2] = "&lt;B&gt;rin&lt;/B&gt;"&lt;br/&gt;</p.UserDescription>
+		<Icon Id="18" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="20" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="21" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="23" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="24" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADXSURBVEhL7VVBDsMwCNv/f9DXpsnMHAeSKtvKrZZFjQG32mWvkoYn2iEzOhHlOP7lIqS79qovYefWDe8Yop2O1ZFmE6oh8FBLCVOrsqdAjAu9iffqqE+65daiwtEZNQlTq3J60n8ZWroXE6cpSxMnav0AnjPEdJzdyN3oi49oHx/QfF2KxNI1LShWKpJtFUAcKbnDagLjFbHkaJefkbZDdb0Kpx3rCFMVQ0uLtMEb6jtyCjGprlexybqPE1YTGJMc7BMnDs3XpXtpL0mB/Ucm4Il2SIsu5QTbQ991selfVAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 50" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="0 80" Parameter="17" />
+			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 65" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="270 270 40 15" DataItem="14" Id="35" Label="36" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="35" Bounds="220 270 45 20" Id="36" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>string</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="270 300 40 15" DataItem="15" Id="37" Label="38" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="37" Bounds="230 300 35 20" Id="38" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>slice</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="405 300 40 15" DataItem="16" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="39" Bounds="450 300 70 20" Id="40" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>substring</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="270 240 40 15" DataItem="17" Id="41" Label="42" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="41" Bounds="145 240 120 20" Id="42" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>include string[j]</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="345 280 40 40" DomainName="openg.library.string" Id="43" Label="44" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\string\\string.llb\\Slice String 1.gvi&quot;" Target="openg\.library\.string:Slice\ String\ 1\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="String" />
+						<Parameter Id="L2" Desc="Subset (i:j)" />
+						<Parameter Id="T0" Desc="Include String[j] (false)" />
+						<Parameter Id="R2" Desc="Substring (String[i:j])" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="43" Bounds="345 259 168 18" Id="44" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Slice String</p.Text>
+			</NodeLabel>
+			<Comment Bounds="175 325 210 35" Id="45" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Depreciated VI calls new VI so it can benefit from future bug fixes etc...</p.Text>
+			</Comment>
+			<Comment Bounds="95 375 360 50" Id="46" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>"This VI Is Depreciated. \nPlease use "Slice String 1.vi" (or newer version), available as "Slice String" from the Functions Palette."</p.Text>
+			</Comment>
+			<Wire Id="47" Joints="N(43:R2)|(385,305) N(39:Value)|(408,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="48" Joints="N(41:Value)|(310,245) h(50) N(43:T0)|(360,280)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="49" Joints="N(37:Value)|(310,305) N(43:L2)|(345,305)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="50" Joints="N(35:Value)|(310,275) h(20) v(20) N(43:L1)|(345,295)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="25" IsTabStop="[bool]True" Label="[UIModel]26" Left="[float]158" TabIndex="[int]0" Text="{DataItemBinding Id=14}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]76" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="26" LabelOwner="[UIModel]25" Left="[float]158" Text="[string]string" Top="[float]56" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="27" IsTabStop="[bool]True" Label="[UIModel]28" Left="[float]159" TabIndex="[int]1" Text="{DataItemBinding Id=15}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]135" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="28" LabelOwner="[UIModel]27" Left="[float]159" Text="[string]slice" Top="[float]115" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="29" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]30" Left="[float]291" TabIndex="[int]2" Text="{DataItemBinding Id=16}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]106" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="30" LabelOwner="[UIModel]29" Left="[float]291" Text="[string]substring" Top="[float]86" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]354" Id="31" Left="[float]101" Text="[string]Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jim Kring &lt;jim@jimkring.com&gt;&#xA;Copyright (c) 2002, Cal-Bay Systems, Inc. &lt;info@calbay.com&gt;&#xA;Copyright (c) 2004, Paul F. Sullivan &lt;Paul@SULLutions.com&gt;&#xA;Copyright (c) 2011, Jonathon Green &lt;jg@jgcode.net&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]193" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
+			<Button ClickMode="[ClickMode]Press" Content="[string]Exclude string[j]" ContentVisibility="[Visibility]Visible" Height="[float]20" Id="32" IsMomentary="[bool]False" IsTabStop="[bool]True" Label="[UIModel]33" Left="[float]153" MinHeight="[float]13" MinWidth="[float]13" TabIndex="[int]3" Top="[float]30" Value="{DataItemBinding Id=17}" Width="[float]94" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">The last character of the slice can be (default) excluded from the substring, as in Python, or (if so wired) included in the substring.</p.InfoTipDescription>
+			</Button>
+			<Label Id="33" LabelOwner="[UIModel]32" Left="[float]153" Text="[string]include string[j]" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]47" Id="34" Left="[float]100" Text="[string]This VI Is Depreciated. &#xA;Please use &quot;Slice String 1.vi&quot; (or newer version), available as &quot;Slice String&quot; from the Functions Palette." TextWrapping="[TextWrapping]Wrap" Top="[float]596" Width="[float]360" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="String" Id="14" Name="string" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" CallUsage="Required" DataType="String" Id="15" Name="slice" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="String" Id="16" Name="substring" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="3" CallUsage="Optional" DataType="Boolean" Id="17" Name="include string[j]" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">The last character of the slice can be (default) excluded from the substring, as in Python, or (if so wired) included in the substring.</p.UserDescription>
+		</DataItem>
+	</VirtualInstrument>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="openg\.library\.string:Slice\ String\ 1\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADfSURBVEhL7VVRFsIwDPL+Z9udajoiZWTbm7r+jceLlCRY++OrTcMTbZgZPRFLW/5kXM8ccLj5VV8Cu/zxTAtuok3XaqQZgncfJj7UUsLUqhwpq7CXGYe6r476pA0H8DLpaI+ahKlVubsyXoaWztXE3ZQjE+mjF9YP4DpDIPrL0L2dV6NPLtEvX9B9HarE0DkzqFYqkscQQG0pOcOaAu0jYsiYm5+WHjfVzipMG6OFrorNkRaZjRXqG9mF2Kl2VnGRMY8V1hRok2xcJ1YM3dehe5lfMgX5HzkBT7RhWnRrb385eujyNdjGAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.string.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

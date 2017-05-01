@@ -1,0 +1,110 @@
+Application Control (unsupported)
+-Nearly every member VI is broken and does not have an NXG solution
+-Hardcoded relative paths to CG install locations
+-Various VI Server Application class and VI class properties and methods
+-A few helper VIs converted successfully, such as Mangle/UnMangle VI Name but are meaningless without the core pieces of this component
+
+Array (supported)
+
+Boolean (supported)
+
+Buttons (unsupported)
+-The button controls are not typedef'd, so they do not convert to NXG
+-Even if controls did convert, the cosmetics would likely be lost in conversion
+
+Comparison (supported)
+
+Dictionary (requires rewrite in NXG)
+-The core implementation relies on Call by References to operate on the dictionary data
+-Additionally there are calls to datalog file functionality, several deprecated LV 7.1 Semaphore VIs, and deprecated VI Server properties that did not convert
+-Conceptually, dictionaries in NXG can be implemented with variants and a DVR (replacing Semaphore usage), but the OpenG implementation would require a significant overhaul to get there
+
+Error (supported)
+-This api is supported but we should steer users to the NXG error api
+-Merge VI used to drop error case structure no longer supported
+-We have a few options for NXG compatibility:
+1) Remove these VIs from OpenG and steer customers in the direction of using the full-featured NXG error API in the palette via placeholder nodes
+2) Attempt compatibility VIs to map occurrences of Build Error Cluster, Clear All Errors, and Filter Error Code(s) to NXG's api
+3) Leave OpenG error api intact, including error string formatting
+-I think #3 with some cleanup seems like the safest option so we don't break callers operating directly on the error string
+
+File (supported but needs some work)
+-A few VIs attempt to build paths from native LV paths, such as "App.Dir" property, "vi.lib" primitive, "default directory" primitive, but those paths are unavailable in NXG:
+	VI Library__ogtk
+	Application Directory__ogtk
+	OpenG Library__ogtk
+	Instrument Library__ogtk
+	Default Directory__ogtk
+	User Library__ogtk
+-A few VIs rely on libraryn.llb functions; LLBs will not be supported in NXG:
+	List Top Level VIs__ogtk
+	Set VI Top Level__ogtk
+	
+-VI Server usage unsupported
+	Convert VI Libraries to Dirs (proxy)__ogtk
+
+Large File (supported)
+
+Mac Binary (unsupported)
+-NXG runs on Windows only. These VIs encode Macintosh files in MacBinary format.
+
+MD5 (supported)
+
+Message Queue (requires rewrite in NXG)
+-The implementation relied on legacy CG queue and notifier VIs which were deprecated in CG about 15 years ago, so they converted as placeholder nodes in NXG
+-The fix to this is to either replace the placeholder nodes with Queue/Notifier VIs in NXG or update the VIs in CG to use the primitives from the palette and re-convert
+
+Numeric (supported)
+-Contains merge VIs, which are not available in NXG
+
+Picture (unsupported)
+-The implementation included LabVIEW 6.1 picture VIs and some other deprecated VIs, such as vi.lib\_oldvers\_oldvers.llb\compatOverwrite.vi, which converted as placeholder nodes.
+-The picture control component was removed from CardA, so fundamental typedefs from vi.lib, such as vi.lib\picture\picture.llb\imagedata.ctl will not convert
+
+Port IO (unsupported)
+-Relative path to DLL is unsupported
+
+String (supported)
+
+Time (supported)
+
+Variant Configuration (requires rewrite)
+-Read/Write Key (Variant)__ogtk use VI Server
+-Read/Write Panel to INI__ogtk uses VI Server
+
+Variant Data (supported)
+
+Zip (unsupported)
+-Relative path to DLL is unsupported
+-Calls to deprecated CG VIs, such as LV70U32ToDateRec, GetDateTimeInSecsCompatVI, compatOverwrite
+
+--------------------
+
+Broken VIs that cannot be fixed:
+	Conditional Auto-Indexing Tunnel (CTL-REF)__ogtk
+	Slice 1D Array (CTL-REF)__ogtk
+	Convert Dirs to VI Libraries (proxy)__ogtk
+	Convert VI Libraries to Dirs (proxy)__ogtk
+	List Top Level VIs__ogtk
+	Read Key (Variant)__ogtk
+	Write Key (Variant)__ogtk
+	Set VI Top Level__ogtk
+	Instrument Library__ogtk
+	User Library__ogtk
+	Default Directory__ogtk
+	VI Library__ogtk
+	OpenG Library__ogtk
+	Application Directory__ogtk
+	Current VI's Path__ogtk
+	Current VIs Parent Directory__ogtk
+
+--------------------
+
+Other Recommendations:
+
+"Reorder Array2 *.gvi" should map to the same name but without the "2" in the name.
+The deprecated VIs named "Reorder Array *.gvi" should map to the new implementation, using a compatbility VI if necessary. 
+
+Cosmetic work on BD and FP
+-Cosmetic edits partially completed on Array component only, up to and including "Delete Elements" VIs
+	

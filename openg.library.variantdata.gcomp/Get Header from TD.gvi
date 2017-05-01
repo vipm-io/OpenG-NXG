@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="81F4422AE6072883F2EC11D71C61B96F" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.56780" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Get Header from TD" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns the Get Header from TD.</p.UserDescription>
+		<Icon Id="16" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="18" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="19" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="20" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="22" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVEhL7ZBRCoAwDEO9/9l2pzrNFrsI0g83GDSUUZP0fXjYNCValGjRvuhjgh50sRKcSHktui4UezI+QhOiCX9A39+Fc9VH8czdD334PXqh68vFv1U8c/ctwgK/R59oLv7SL1KD36M1PwQWxZ6Mj9CEaMJXdGQi5VXo39XQk5RoUaJFO6LNTrR6kd8gE1rwAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="70" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 50" Parameter="127" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="85 95 40 15" DataItem="14" Id="50" Label="51" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@d7c7c06f31d94836bfe3c442b0378951" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="50" Bounds="85 78 88 14" Id="51" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Type Descriptor</p.Text>
+			</NodeLabel>
+			<ArrayIndex Bounds="190 95 40 50" Id="54" Terminals="array=62, c0t0v, c0out=61, c1t0v, c1out=58, c2t0v, c2out=57" VerticalChunkCount="3" />
+			<SplitNumber Bounds="270 115 30 30" Id="55" />
+			<PropertyNode Bounds="330 90 80 80" HasErrorTerminals="False" Id="56" InstanceDataType="@67abf964f15243c4b65419efbbda2f4a" ListViewAutoSize="False" Mode="InstanceProperties">
+				<PropertyItemTerminal Action="Write" DataType="UInt16" Hotspot="0 15" Id="c0t0v" Path="length" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="UInt8" Hotspot="0 30" Id="c1t0v" Path="private" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@21ad3e960c2c41e7a11571534cdc955f" Hotspot="0 45" Id="c2t0v" Path="type" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="UInt16" Hotspot="0 60" Id="c3t0v" Path="# elements" Usage="Required" />
+			</PropertyNode>
+			<Wire Id="57" Joints="N(54:c2out)|(230,140) h(10) v(10) N(56:c3t0v)|(330,150)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="58" Joints="N(54:c1out)|(230,130) N(55:x)|(270,130)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="59" Joints="N(55:low(x\))|(300,135) N(56:c2t0v)|(330,135)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="60" Joints="N(55:high(x\))|(300,120) N(56:c1t0v)|(330,120)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="61" Joints="N(54:c0out)|(230,120) h(10) v(-15) N(56:c0t0v)|(330,105)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="62" Joints="N(50:Value)|(125,100) N(54:array)|(190,100)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="63" Joints="N(56:instance out)|(410,95) N(128:Value)|(448,95)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="445 90 40 15" DataItem="127" Id="128" Label="129" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@67abf964f15243c4b65419efbbda2f4a" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="128" Bounds="490 90 131 14" Id="129" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Type Descriptor Header</p.Text>
+			</NodeLabel>
+			<ClusterLiteral Bounds="200 0 111 86" DataType="@67abf964f15243c4b65419efbbda2f4a" Facade="Cluster" Id="131" p4:ControlDefinitionChecksum="wToPXVsZM3ko0dyk7i8kqw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0_0_0_0_</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Header\.gtype" />
+					<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Header\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<ClusterBehavior AutoArrange="ArrangeVertically" />
+				<Literal Bounds="2 2 40 15" DataType="UInt16" Facade="Numeric" Id="132" Label="133">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="132" Bounds="2 -16 30 15" Id="133" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>length</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 21 40 15" DataType="UInt8" Facade="Numeric" Id="134" Label="135">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="134" Bounds="2 3 30 15" Id="135" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>private</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 40 90 15" DataType="@21ad3e960c2c41e7a11571534cdc955f" Facade="Enum" Id="136" Label="137" p4:ControlDefinitionChecksum="3DF/zAbUWNb5oOtt6Bh2ZA==">
+					<p.Data>0</p.Data>
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
+						<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Enumeration\.gtype:ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+					<EnumBehavior />
+				</Literal>
+				<NodeLabel AttachedTo="136" Bounds="2 22 30 15" Id="137" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>type</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 59 40 15" DataType="UInt16" Facade="Numeric" Id="138" Label="139">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="138" Bounds="2 41 30 15" Id="139" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text># elements</p.Text>
+				</NodeLabel>
+			</ClusterLiteral>
+			<Wire Id="140" Joints="N(131:Out)|(311,5) h(14) v(90) N(56:instance in)|(330,95)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Label Height="[float]16" Id="115" LabelOwner="[UIModel]113" Left="[float]100" Text="[string]Type Descriptor" Top="[float]16" Width="[float]84" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]114" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="113" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]115" Left="[float]100" Rows="[int]1" TabIndex="[int]0" Top="[float]36" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]124" p4:ControlDefinitionChecksum="vJrnjOOhYGvJ/Rh9PrO76g==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="114" Interval="[short]1" IsTabStop="[bool]True" Left="[float]61" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]6" Value="[short]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Text Height="[float]543" Id="38" Left="[float]116" Text="[string]Get Header from TD.vi&#xA;&#xA;Returns the Get Header from TD.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jean-Pierre Drolet &lt;drolet_jp@hotmail.com&gt;&#xA;Copyright (c) 2002-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]292" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Height="[float]16" Id="39" Left="[float]444" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]53" Width="[float]205" xmlns="http://www.ni.com/PlatformFramework" />
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" ClusterType="[Type]@67abf964f15243c4b65419efbbda2f4a" Height="[float]216" Id="117" IsTabStop="[bool]True" Label="[UIModel]126" Left="[float]276" TabIndex="[int]1" Top="[float]36" Value="{DataItemBinding Id=127}" Width="[float]111" p4:ControlDefinitionChecksum="wToPXVsZM3ko0dyk7i8kqw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Header\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">Holds the info contained in a type descriptor header.</p.InfoTipDescription>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="118" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ushort]1" IsTabStop="[bool]True" Label="[UIModel]119" Left="[float]4" Maximum="[ushort]65535" MinHeight="[float]24" Minimum="[ushort]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=length}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt16" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="119" LabelOwner="[UIModel]118" Left="[float]4" Text="[string]length" Top="[float]4" Width="[float]34" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="120" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]121" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=private}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="121" LabelOwner="[UIModel]120" Left="[float]4" Text="[string]private" Top="[float]56" Width="[float]37" />
+				<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="122" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]123" Left="[float]4" MinHeight="[float]24" TabIndex="[int]2" Top="[float]128" Value="{ClusterBinding FieldName=type}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]95" p4:ControlDefinitionChecksum="3DF/zAbUWNb5oOtt6Bh2ZA==" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+					<p4:p.TypeDefinitionTargets>
+						<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Enumeration\.gtype:ControlDefinition" />
+					</p4:p.TypeDefinitionTargets>
+					<EnumSelectorInfo DisplayValue="[string]&lt;Null&gt;" Value="[byte]0" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]I8" Value="[byte]1" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]I16" Value="[byte]2" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]I32" Value="[byte]3" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]I64" Value="[byte]4" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]U8" Value="[byte]5" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]U16" Value="[byte]6" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]U32" Value="[byte]7" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]U64" Value="[byte]8" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]SGL" Value="[byte]9" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]DBL" Value="[byte]10" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]EXT" Value="[byte]11" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]CSG" Value="[byte]12" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]CDB" Value="[byte]13" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]CXT" Value="[byte]14" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x0F" Value="[byte]15" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x10" Value="[byte]16" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x11" Value="[byte]17" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x12" Value="[byte]18" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x13" Value="[byte]19" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x14" Value="[byte]20" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Enum U8" Value="[byte]21" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Enum U16" Value="[byte]22" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Enum U32" Value="[byte]23" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Enum U64" Value="[byte]24" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]SGL PQ" Value="[byte]25" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]DBL PQ" Value="[byte]26" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]EXT PQ" Value="[byte]27" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]CSG PQ" Value="[byte]28" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]CDB PQ" Value="[byte]29" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]CXT PQ" Value="[byte]30" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x1F" Value="[byte]31" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x20" Value="[byte]32" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Boolean" Value="[byte]33" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x22" Value="[byte]34" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x23" Value="[byte]35" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x24" Value="[byte]36" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x25" Value="[byte]37" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x26" Value="[byte]38" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x27" Value="[byte]39" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x28" Value="[byte]40" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x29" Value="[byte]41" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x2A" Value="[byte]42" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x2B" Value="[byte]43" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x2C" Value="[byte]44" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x2D" Value="[byte]45" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x2E" Value="[byte]46" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x2F" Value="[byte]47" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]String" Value="[byte]48" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x31" Value="[byte]49" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Path" Value="[byte]50" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Pict" Value="[byte]51" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x34" Value="[byte]52" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x35" Value="[byte]53" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x36" Value="[byte]54" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]DAQ" Value="[byte]55" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x38" Value="[byte]56" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x39" Value="[byte]57" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x3A" Value="[byte]58" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x3B" Value="[byte]59" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x3C" Value="[byte]60" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x3D" Value="[byte]61" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x3E" Value="[byte]62" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x3F" Value="[byte]63" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Array" Value="[byte]64" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x41" Value="[byte]65" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x42" Value="[byte]66" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x43" Value="[byte]67" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x44" Value="[byte]68" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x45" Value="[byte]69" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x46" Value="[byte]70" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x47" Value="[byte]71" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x48" Value="[byte]72" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x49" Value="[byte]73" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x4A" Value="[byte]74" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x4B" Value="[byte]75" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x4C" Value="[byte]76" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x4D" Value="[byte]77" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x4E" Value="[byte]78" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x4F" Value="[byte]79" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Cluster" Value="[byte]80" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x51" Value="[byte]81" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x52" Value="[byte]82" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Variant" Value="[byte]83" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Waveform" Value="[byte]84" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x55" Value="[byte]85" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x56" Value="[byte]86" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x57" Value="[byte]87" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x58" Value="[byte]88" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x59" Value="[byte]89" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x5A" Value="[byte]90" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x5B" Value="[byte]91" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x5C" Value="[byte]92" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x5D" Value="[byte]93" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x5E" Value="[byte]94" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x5F" Value="[byte]95" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x60" Value="[byte]96" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x61" Value="[byte]97" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x62" Value="[byte]98" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x63" Value="[byte]99" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x64" Value="[byte]100" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x65" Value="[byte]101" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x66" Value="[byte]102" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x67" Value="[byte]103" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x68" Value="[byte]104" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x69" Value="[byte]105" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x6A" Value="[byte]106" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x6B" Value="[byte]107" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x6C" Value="[byte]108" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x6D" Value="[byte]109" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x6E" Value="[byte]110" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]0x6F" Value="[byte]111" ValueType="[Type]UInt8" />
+					<EnumSelectorInfo DisplayValue="[string]Refnum" Value="[byte]112" ValueType="[Type]UInt8" />
+				</EnumSelector>
+				<p4:Label Height="[float]16" Id="123" LabelOwner="[UIModel]122" Left="[float]4" Text="[string]type" Top="[float]108" Width="[float]24" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="124" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ushort]1" IsTabStop="[bool]True" Label="[UIModel]125" Left="[float]4" Maximum="[ushort]65535" MinHeight="[float]24" Minimum="[ushort]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]3" Top="[float]180" Value="{ClusterBinding FieldName=#\ elements}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt16" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="125" LabelOwner="[UIModel]124" Left="[float]4" Text="[string]# elements" Top="[float]160" Width="[float]59" />
+			</Cluster>
+			<Label Height="[float]16" Id="126" LabelOwner="[UIModel]117" Left="[float]276" Text="[string]Type Descriptor Header" Top="[float]16" Width="[float]126" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="@d7c7c06f31d94836bfe3c442b0378951" Id="14" Name="Type Descriptor" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="0" DataType="@67abf964f15243c4b65419efbbda2f4a" Id="127" Name="Type Descriptor Header" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0_0_0_0_</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Header\.gtype" />
+			</p.TypeDefinitionTargets>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Holds the info contained in a type descriptor header.</p.UserDescription>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="d7c7c06f31d94836bfe3c442b0378951">
+			<Attributed AttributedType="@1f1e5fefc5f84e50975c5104cdcd3cf6">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="67abf964f15243c4b65419efbbda2f4a">
+			<Attributed AttributedType="@52ec150d8bc14ed29d2f4dff6c87e03a">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="21ad3e960c2c41e7a11571534cdc955f">
+			<Attributed AttributedType="@97d3d9cbc44d45348aae93714120fc20">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1f1e5fefc5f84e50975c5104cdcd3cf6">
+			<Typedef TypedefName="Type Descriptor.gtype" UnderlyingType="Int16[]" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="52ec150d8bc14ed29d2f4dff6c87e03a">
+			<Typedef TypedefName="Type Descriptor Header.gtype" UnderlyingType="@7c6a05d11c1f47f69c5befc8de735311" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="97d3d9cbc44d45348aae93714120fc20">
+			<Typedef TypedefName="Type Descriptor Enumeration.gtype" UnderlyingType="@df05968590a44ecb901622f1480b23be" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="7c6a05d11c1f47f69c5befc8de735311">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="length" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="private" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="type" DataType="@21ad3e960c2c41e7a11571534cdc955f" />
+					<Field FieldAccessPolicy="ReadWrite" Name="# elements" DataType="UInt16" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="df05968590a44ecb901622f1480b23be">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="&lt;Null&gt;" />
+					<EnumerationMember Value="1" Name="I8" />
+					<EnumerationMember Value="2" Name="I16" />
+					<EnumerationMember Value="3" Name="I32" />
+					<EnumerationMember Value="4" Name="I64" />
+					<EnumerationMember Value="5" Name="U8" />
+					<EnumerationMember Value="6" Name="U16" />
+					<EnumerationMember Value="7" Name="U32" />
+					<EnumerationMember Value="8" Name="U64" />
+					<EnumerationMember Value="9" Name="SGL" />
+					<EnumerationMember Value="10" Name="DBL" />
+					<EnumerationMember Value="11" Name="EXT" />
+					<EnumerationMember Value="12" Name="CSG" />
+					<EnumerationMember Value="13" Name="CDB" />
+					<EnumerationMember Value="14" Name="CXT" />
+					<EnumerationMember Value="15" Name="0x0F" />
+					<EnumerationMember Value="16" Name="0x10" />
+					<EnumerationMember Value="17" Name="0x11" />
+					<EnumerationMember Value="18" Name="0x12" />
+					<EnumerationMember Value="19" Name="0x13" />
+					<EnumerationMember Value="20" Name="0x14" />
+					<EnumerationMember Value="21" Name="Enum U8" />
+					<EnumerationMember Value="22" Name="Enum U16" />
+					<EnumerationMember Value="23" Name="Enum U32" />
+					<EnumerationMember Value="24" Name="Enum U64" />
+					<EnumerationMember Value="25" Name="SGL PQ" />
+					<EnumerationMember Value="26" Name="DBL PQ" />
+					<EnumerationMember Value="27" Name="EXT PQ" />
+					<EnumerationMember Value="28" Name="CSG PQ" />
+					<EnumerationMember Value="29" Name="CDB PQ" />
+					<EnumerationMember Value="30" Name="CXT PQ" />
+					<EnumerationMember Value="31" Name="0x1F" />
+					<EnumerationMember Value="32" Name="0x20" />
+					<EnumerationMember Value="33" Name="Boolean" />
+					<EnumerationMember Value="34" Name="0x22" />
+					<EnumerationMember Value="35" Name="0x23" />
+					<EnumerationMember Value="36" Name="0x24" />
+					<EnumerationMember Value="37" Name="0x25" />
+					<EnumerationMember Value="38" Name="0x26" />
+					<EnumerationMember Value="39" Name="0x27" />
+					<EnumerationMember Value="40" Name="0x28" />
+					<EnumerationMember Value="41" Name="0x29" />
+					<EnumerationMember Value="42" Name="0x2A" />
+					<EnumerationMember Value="43" Name="0x2B" />
+					<EnumerationMember Value="44" Name="0x2C" />
+					<EnumerationMember Value="45" Name="0x2D" />
+					<EnumerationMember Value="46" Name="0x2E" />
+					<EnumerationMember Value="47" Name="0x2F" />
+					<EnumerationMember Value="48" Name="String" />
+					<EnumerationMember Value="49" Name="0x31" />
+					<EnumerationMember Value="50" Name="Path" />
+					<EnumerationMember Value="51" Name="Pict" />
+					<EnumerationMember Value="52" Name="0x34" />
+					<EnumerationMember Value="53" Name="0x35" />
+					<EnumerationMember Value="54" Name="0x36" />
+					<EnumerationMember Value="55" Name="DAQ" />
+					<EnumerationMember Value="56" Name="0x38" />
+					<EnumerationMember Value="57" Name="0x39" />
+					<EnumerationMember Value="58" Name="0x3A" />
+					<EnumerationMember Value="59" Name="0x3B" />
+					<EnumerationMember Value="60" Name="0x3C" />
+					<EnumerationMember Value="61" Name="0x3D" />
+					<EnumerationMember Value="62" Name="0x3E" />
+					<EnumerationMember Value="63" Name="0x3F" />
+					<EnumerationMember Value="64" Name="Array" />
+					<EnumerationMember Value="65" Name="0x41" />
+					<EnumerationMember Value="66" Name="0x42" />
+					<EnumerationMember Value="67" Name="0x43" />
+					<EnumerationMember Value="68" Name="0x44" />
+					<EnumerationMember Value="69" Name="0x45" />
+					<EnumerationMember Value="70" Name="0x46" />
+					<EnumerationMember Value="71" Name="0x47" />
+					<EnumerationMember Value="72" Name="0x48" />
+					<EnumerationMember Value="73" Name="0x49" />
+					<EnumerationMember Value="74" Name="0x4A" />
+					<EnumerationMember Value="75" Name="0x4B" />
+					<EnumerationMember Value="76" Name="0x4C" />
+					<EnumerationMember Value="77" Name="0x4D" />
+					<EnumerationMember Value="78" Name="0x4E" />
+					<EnumerationMember Value="79" Name="0x4F" />
+					<EnumerationMember Value="80" Name="Cluster" />
+					<EnumerationMember Value="81" Name="0x51" />
+					<EnumerationMember Value="82" Name="0x52" />
+					<EnumerationMember Value="83" Name="Variant" />
+					<EnumerationMember Value="84" Name="Waveform" />
+					<EnumerationMember Value="85" Name="0x55" />
+					<EnumerationMember Value="86" Name="0x56" />
+					<EnumerationMember Value="87" Name="0x57" />
+					<EnumerationMember Value="88" Name="0x58" />
+					<EnumerationMember Value="89" Name="0x59" />
+					<EnumerationMember Value="90" Name="0x5A" />
+					<EnumerationMember Value="91" Name="0x5B" />
+					<EnumerationMember Value="92" Name="0x5C" />
+					<EnumerationMember Value="93" Name="0x5D" />
+					<EnumerationMember Value="94" Name="0x5E" />
+					<EnumerationMember Value="95" Name="0x5F" />
+					<EnumerationMember Value="96" Name="0x60" />
+					<EnumerationMember Value="97" Name="0x61" />
+					<EnumerationMember Value="98" Name="0x62" />
+					<EnumerationMember Value="99" Name="0x63" />
+					<EnumerationMember Value="100" Name="0x64" />
+					<EnumerationMember Value="101" Name="0x65" />
+					<EnumerationMember Value="102" Name="0x66" />
+					<EnumerationMember Value="103" Name="0x67" />
+					<EnumerationMember Value="104" Name="0x68" />
+					<EnumerationMember Value="105" Name="0x69" />
+					<EnumerationMember Value="106" Name="0x6A" />
+					<EnumerationMember Value="107" Name="0x6B" />
+					<EnumerationMember Value="108" Name="0x6C" />
+					<EnumerationMember Value="109" Name="0x6D" />
+					<EnumerationMember Value="110" Name="0x6E" />
+					<EnumerationMember Value="111" Name="0x6F" />
+					<EnumerationMember Value="112" Name="Refnum" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

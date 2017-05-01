@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="D28C7F0D639FF3D4C308A16ACA122ADB" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Convert File Extension (Path)" Id="1" OverloadGroup="Convert File Extension" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"Converts the file extension of a file. "new ending" will accept an extension prefixed with or without a period, or a blank ("") string.&lt;br/&gt;For example:&lt;br/&gt;&lt;br/&gt;file name =&gt; c:\\temp\\data.txt&lt;br/&gt;new ending =&gt; "csv" or ".csv"&lt;br/&gt;new filename =&gt; c:\\temp\\data.csv&lt;br/&gt;prev ending =&gt; ".txt"&lt;br/&gt;&lt;br/&gt;file name =&gt; c:\\temp\\data.txt&lt;br/&gt;new ending =&gt; ""&lt;br/&gt;new filename =&gt; c:\\temp\\data&lt;br/&gt;prev ending =&gt; ".txt""</p.UserDescription>
+		<Icon Id="18" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="20" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="21" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="23" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="24" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEXSURBVEhL1Y5RtgIxCEPd/9pmT0qBuUWgddT3PszJ6ZCQoLfjfvwTX5++dUiZlssQ/Xpos4rcnbZm7eNoZH0haaEVIt4NGNe/eXZqE0cj6wtJw9jHTM7mrnCGDCxgNaOjpQEcOE/zJlYzOruif06wgNWMjpYGcOCudt0RNrGkhRIyIFmtHKOWBlyygLabiXdO847BPpGyMyBZrRyjlgZcsnB94VB1hE3MPydYwGpGR0sDOHCe5k2sZnR2Rf+cYAGrGR0tDeDAXe26I2xiSQslZECyWjlGLQ24ZAF9/2OnE4lunJZ/f/r1v56J9ek08PqAAOI8JTqYz9sPCN4WKYCEyDmYiCBhsw0JNcM7pYlKch/z2/6S9+MB7NYAltFUBl0AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="100" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 50" Parameter="17" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 80" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="380 30 40 15" DataItem="14" Id="36" Label="37" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="36" Bounds="380 7 100 20" Id="37" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>new filename</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="75 40 40 15" DataItem="15" Id="38" Label="39" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Path" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="38" Bounds="75 17 70 20" Id="39" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>file name</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="380 95 40 15" DataItem="16" Id="40" Label="41" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="40" Bounds="380 72 90 20" Id="41" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>prev ending</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="75 95 40 15" DataItem="17" Id="42" Label="43" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="42" Bounds="75 72 140 20" Id="43" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>new ending (none)</p.Text>
+			</NodeLabel>
+			<StripPath Bounds="155 30 30 30" Id="44" />
+			<MethodCall Bounds="245 45 40 40" DomainName="openg.library.file" Id="45" Label="46" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\file\\file.llb\\Convert File Extension (String).gvi&quot;" Target="openg\.library\.file:Convert\ File\ Extension\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="file name" />
+						<Parameter Id="L2" Desc="new ending (none)" />
+						<Parameter Id="R0" Desc="new filename" />
+						<Parameter Id="R2" Desc="prev ending" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="String" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="45" Bounds="245 24 298 18" Id="46" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Convert File Extension (String)</p.Text>
+			</NodeLabel>
+			<BuildPath Bounds="320 30 30 30" Id="47" />
+			<Wire Id="48" Joints="N(45:R2)|(285,70) h(90) v(30) N(40:Value)|(383,100)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="49" Joints="N(47:appended path)|(350,35) N(36:Value)|(383,35)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="50" Joints="N(44:stripped path)|(185,35) N(47:base path)|(320,35)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="51" Joints="N(45:R0)|(285,50) N(47:name or relative path)|(320,50)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="52" Joints="N(42:Value)|(115,100) h(115) v(-30) N(45:L2)|(245,70)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="53" Joints="N(44:name)|(185,50) N(45:L0)|(245,50)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="54" Joints="N(38:Value)|(115,45) N(44:path)|(155,45)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="25" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" Label="[UIModel]27" Left="[float]256" MinHeight="[float]24" Path="{DataItemBinding Id=14}" TabIndex="[int]0" Top="[float]31" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="27" LabelOwner="[UIModel]25" Left="[float]256" Text="[string]new filename" Top="[float]11" xmlns="http://www.ni.com/PanelCommon" />
+			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="28" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]30" Left="[float]100" MinHeight="[float]24" Path="{DataItemBinding Id=15}" TabIndex="[int]1" Top="[float]30" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="30" LabelOwner="[UIModel]28" Left="[float]100" Text="[string]file name" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="31" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]32" Left="[float]256" TabIndex="[int]2" Text="{DataItemBinding Id=16}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]87" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="32" LabelOwner="[UIModel]31" Left="[float]256" Text="[string]prev ending" Top="[float]67" xmlns="http://www.ni.com/PanelCommon" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="33" IsTabStop="[bool]True" Label="[UIModel]34" Left="[float]100" TabIndex="[int]3" Text="{DataItemBinding Id=17}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]88" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="34" LabelOwner="[UIModel]33" Left="[float]100" Text="[string]new ending (none)" Top="[float]68" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]376" Id="35" Left="[float]102" Text="[string]Convert File Extension.vi&#xA;&#xA;Converts the file extension of a file&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA;&#xA;Copyright (c) 2002, Rolf Kalbermatter &lt;rolf.kalbermatter@citeng.com&gt; &#xA;Copyright (c) 2002-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]158" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Path" Id="14" Name="new filename" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="Path" Id="15" Name="file name" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Path a="1" />
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="2" DataType="String" Id="16" Name="prev ending" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="String" Id="17" Name="new ending (none)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="openg\.library\.file:Convert\ File\ Extension\ \(String\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEXSURBVEhL1Y5RtgIxCEPd/9pmT0qBuUWgddT3PszJ6ZCQoLfjfvwTX5++dUiZlssQ/Xpos4rcnbZm7eNoZH0haaEVIt4NGNe/eXZqE0cj6wtJw9jHTM7mrnCGDCxgNaOjpQEcOE/zJlYzOruif06wgNWMjpYGcOCudt0RNrGkhRIyIFmtHKOWBlyygLabiXdO847BPpGyMyBZrRyjlgZcsnB94VB1hE3MPydYwGpGR0sDOHCe5k2sZnR2Rf+cYAGrGR0tDeDAXe26I2xiSQslZECyWjlGLQ24ZAF9/2OnE4lunJZ/f/r1v56J9ek08PqAAOI8JTqYz9sPCN4WKYCEyDmYiCBhsw0JNcM7pYlKch/z2/6S9+MB7NYAltFUBl0AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.file.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

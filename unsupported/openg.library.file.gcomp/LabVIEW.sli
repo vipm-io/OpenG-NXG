@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="7F0C7E4C8994747D1F4D83E06805CAC6" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="External Code" Name="http://www.ni.com/ExternalCode" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<SharedLibrary CallingConvention="Cdecl" Id="1" PathToLibrary="LabVIEW" StringEncoding="CodePage" ThreadRequirements="AnyThread" xmlns="http://www.ni.com/ExternalCode">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+	</SharedLibrary>
+	<EnvoyManagerFile Id="5" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="6" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="7" Name="LabVIEW\.sli" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="8" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FGetInfo">
+				<SharedLibraryEntryPoint Id="9" Symbol="FGetInfo" xmlns="http://www.ni.com/ExternalCode">
+					<Icon Id="10" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+						<IconPanel Height="[float]40" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="12" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="13" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="14" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]36" Id="15" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]FGetInfo" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" Id="16" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+					<ConnectorPane Height="40" Id="17" ListViewHeight="145" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+						<ConnectorPaneTerminal />
+						<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 80" Parameter="25" />
+						<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 110" Parameter="29" />
+						<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="18" />
+						<ConnectorPaneTerminal Hotspot="15 0" />
+						<ConnectorPaneTerminal Hotspot="25 0" />
+						<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="22" />
+						<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 95" Parameter="26" />
+						<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 125" Parameter="30" />
+						<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="19" />
+						<ConnectorPaneTerminal Hotspot="15 40" />
+						<ConnectorPaneTerminal Hotspot="25 40" />
+					</ConnectorPane>
+					<SharedLibraryDiagramParameter CallDirection="Input" Category="Error" Id="18" Name="error in" />
+					<SharedLibraryDiagramParameter CallDirection="Output" Category="Error" Id="19" Name="error out" />
+					<SharedLibraryParameter Id="20" IsReturnParameter="True" Name="return">
+						<NumericType Id="21" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="22" Name="return" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="23" Name="path">
+						<PathType Const="True" Format="Path" Id="24" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="25" Name="path in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="26" Name="path out" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="27" Name="infop">
+						<ArrayType Dimensions="1" ElementDataType="UInt8" Id="28" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="29" Name="infop in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="30" Name="infop out" />
+					</SharedLibraryParameter>
+				</SharedLibraryEntryPoint>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="31" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FSetInfo">
+				<SharedLibraryEntryPoint Id="32" Symbol="FSetInfo" xmlns="http://www.ni.com/ExternalCode">
+					<Icon Id="33" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+						<IconPanel Height="[float]40" Id="34" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="35" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="36" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="37" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]36" Id="38" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]FSetInfo" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" Id="39" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+					<ConnectorPane Height="40" Id="40" ListViewHeight="145" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+						<ConnectorPaneTerminal />
+						<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 80" Parameter="48" />
+						<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 110" Parameter="52" />
+						<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="41" />
+						<ConnectorPaneTerminal Hotspot="15 0" />
+						<ConnectorPaneTerminal Hotspot="25 0" />
+						<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="45" />
+						<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 95" Parameter="49" />
+						<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 125" Parameter="53" />
+						<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="42" />
+						<ConnectorPaneTerminal Hotspot="15 40" />
+						<ConnectorPaneTerminal Hotspot="25 40" />
+					</ConnectorPane>
+					<SharedLibraryDiagramParameter CallDirection="Input" Category="Error" Id="41" Name="error in" />
+					<SharedLibraryDiagramParameter CallDirection="Output" Category="Error" Id="42" Name="error out" />
+					<SharedLibraryParameter Id="43" IsReturnParameter="True" Name="return">
+						<NumericType Id="44" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="45" Name="return" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="46" Name="path">
+						<PathType Format="Path" Id="47" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="48" Name="path in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="49" Name="path out" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="50" Name="infop">
+						<ArrayType Const="True" Dimensions="1" ElementDataType="UInt8" Id="51" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="52" Name="infop in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="53" Name="infop out" />
+					</SharedLibraryParameter>
+				</SharedLibraryEntryPoint>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="54" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FNewRefNum">
+				<SharedLibraryEntryPoint Id="55" Symbol="FNewRefNum" xmlns="http://www.ni.com/ExternalCode">
+					<Icon Id="56" ListViewIconCrop="0 0 40 50" xmlns="http://www.ni.com/PlatformFramework">
+						<IconPanel Height="[float]50" Id="57" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Id="58" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="59" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="60" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Id="61" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]FNewRefNum" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" Id="62" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+					<ConnectorPane Height="50" Id="63" ListViewHeight="175" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+						<ConnectorPaneTerminal />
+						<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 80" Parameter="71" />
+						<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 110" Parameter="75" />
+						<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="79" />
+						<ConnectorPaneTerminal Hotspot="15 0" />
+						<ConnectorPaneTerminal Hotspot="25 0" />
+						<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="68" />
+						<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 95" Parameter="72" />
+						<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 125" Parameter="76" />
+						<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="80" />
+						<ConnectorPaneTerminal Hotspot="15 50" />
+						<ConnectorPaneTerminal Hotspot="25 50" />
+						<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 140" Parameter="64" />
+						<ConnectorPaneTerminal Hotspot="40 45" ListViewHotspot="150 155" Parameter="65" />
+					</ConnectorPane>
+					<SharedLibraryDiagramParameter CallDirection="Input" Category="Error" Id="64" Name="error in" />
+					<SharedLibraryDiagramParameter CallDirection="Output" Category="Error" Id="65" Name="error out" />
+					<SharedLibraryParameter Id="66" IsReturnParameter="True" Name="return">
+						<NumericType Id="67" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="68" Name="return" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="69" Name="path">
+						<PathType Const="True" Format="Path" Id="70" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="71" Name="path in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="72" Name="path out" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="73" Name="refNum">
+						<NumericType DataType="UInt32" Id="74" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="75" Name="refNum in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="76" Name="refNum out" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="77" Name="fd">
+						<NumericType DataType="UInt32" Id="78" PassingMode="PointerToValue" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="79" Name="fd in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="80" Name="fd out" />
+					</SharedLibraryParameter>
+				</SharedLibraryEntryPoint>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="81" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FRefNumToFD">
+				<SharedLibraryEntryPoint Id="82" Symbol="FRefNumToFD" xmlns="http://www.ni.com/ExternalCode">
+					<Icon Id="83" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+						<IconPanel Height="[float]40" Id="84" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="85" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="86" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="87" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]36" Id="88" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]FRefNumToFD" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" Id="89" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+					<ConnectorPane Height="40" Id="90" ListViewHeight="145" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+						<ConnectorPaneTerminal />
+						<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 80" Parameter="98" />
+						<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 110" Parameter="102" />
+						<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="91" />
+						<ConnectorPaneTerminal Hotspot="15 0" />
+						<ConnectorPaneTerminal Hotspot="25 0" />
+						<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="95" />
+						<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 95" Parameter="99" />
+						<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 125" Parameter="103" />
+						<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="92" />
+						<ConnectorPaneTerminal Hotspot="15 40" />
+						<ConnectorPaneTerminal Hotspot="25 40" />
+					</ConnectorPane>
+					<SharedLibraryDiagramParameter CallDirection="Input" Category="Error" Id="91" Name="error in" />
+					<SharedLibraryDiagramParameter CallDirection="Output" Category="Error" Id="92" Name="error out" />
+					<SharedLibraryParameter Id="93" IsReturnParameter="True" Name="return">
+						<NumericType Id="94" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="95" Name="return" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="96" Name="refNum">
+						<NumericType DataType="UInt32" Id="97" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="98" Name="refNum in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="99" Name="refNum out" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="100" Name="fd">
+						<NumericType DataType="UInt32" Id="101" PassingMode="PointerToValue" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="102" Name="fd in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="103" Name="fd out" />
+					</SharedLibraryParameter>
+				</SharedLibraryEntryPoint>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="104" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="LStrPrintf">
+				<SharedLibraryEntryPoint Id="105" Symbol="LStrPrintf" xmlns="http://www.ni.com/ExternalCode">
+					<Icon Id="106" ListViewIconCrop="0 0 40 50" xmlns="http://www.ni.com/PlatformFramework">
+						<IconPanel Height="[float]50" Id="107" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Id="108" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="109" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="110" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" Id="111" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]LStrPrintf" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" Id="112" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+					<ConnectorPane Height="50" Id="113" ListViewHeight="175" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+						<ConnectorPaneTerminal />
+						<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 80" Parameter="121" />
+						<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 110" Parameter="125" />
+						<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="129" />
+						<ConnectorPaneTerminal Hotspot="15 0" />
+						<ConnectorPaneTerminal Hotspot="25 0" />
+						<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="118" />
+						<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 95" Parameter="122" />
+						<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 125" Parameter="126" />
+						<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="130" />
+						<ConnectorPaneTerminal Hotspot="15 50" />
+						<ConnectorPaneTerminal Hotspot="25 50" />
+						<ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 140" Parameter="114" />
+						<ConnectorPaneTerminal Hotspot="40 45" ListViewHotspot="150 155" Parameter="115" />
+					</ConnectorPane>
+					<SharedLibraryDiagramParameter CallDirection="Input" Category="Error" Id="114" Name="error in" />
+					<SharedLibraryDiagramParameter CallDirection="Output" Category="Error" Id="115" Name="error out" />
+					<SharedLibraryParameter Id="116" IsReturnParameter="True" Name="return">
+						<NumericType Id="117" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="118" Name="return" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="119" Name="dest">
+						<StringType Format="StringHandle" Id="120" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="121" Name="dest in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="122" Name="dest out" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="123" Name="fmt">
+						<StringType Const="True" Id="124" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="125" Name="fmt in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="126" Name="fmt out" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="127" Name="param">
+						<NumericType DataType="UInt32" Id="128" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="129" Name="param in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="130" Name="param out" />
+					</SharedLibraryParameter>
+				</SharedLibraryEntryPoint>
+			</EmbeddedDefinitionReference>
+			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="131" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="MoveBlock">
+				<SharedLibraryEntryPoint Id="132" Symbol="MoveBlock" xmlns="http://www.ni.com/ExternalCode">
+					<Icon Id="133" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+						<IconPanel Height="[float]40" Id="134" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="135" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="136" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="137" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]36" Id="138" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]MoveBlock" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" Id="139" />
+								</FileNameText>
+							</IconTemplate>
+						</IconPanel>
+					</Icon>
+					<ConnectorPane Height="40" Id="140" ListViewHeight="160" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+						<ConnectorPaneTerminal ListViewHotspot="0 65" Parameter="148" />
+						<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 95" Parameter="152" />
+						<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 125" Parameter="156" />
+						<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="141" />
+						<ConnectorPaneTerminal Hotspot="15 0" />
+						<ConnectorPaneTerminal Hotspot="25 0" />
+						<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 80" Parameter="149" />
+						<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 110" Parameter="153" />
+						<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 140" Parameter="157" />
+						<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 50" Parameter="142" />
+						<ConnectorPaneTerminal Hotspot="15 40" />
+						<ConnectorPaneTerminal Hotspot="25 40" />
+					</ConnectorPane>
+					<SharedLibraryDiagramParameter CallDirection="Input" Category="Error" Id="141" Name="error in" />
+					<SharedLibraryDiagramParameter CallDirection="Output" Category="Error" Id="142" Name="error out" />
+					<SharedLibraryParameter Id="143" IsReturnParameter="True" Name="return">
+						<VoidType Id="144" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="145" Name="return out" Visible="False" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="146" Name="src">
+						<NumericType DataType="UInt16" Id="147" PassingMode="PointerToValue" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="148" Name="src in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="149" Name="src out" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="150" Name="dst">
+						<StringType Id="151" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="152" Name="dst in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="153" Name="dst out" />
+					</SharedLibraryParameter>
+					<SharedLibraryParameter Id="154" Name="len">
+						<NumericType Id="155" />
+						<SharedLibraryDiagramParameter CallDirection="Input" Id="156" Name="len in" />
+						<SharedLibraryDiagramParameter CallDirection="Output" Id="157" Name="len out" />
+					</SharedLibraryParameter>
+				</SharedLibraryEntryPoint>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

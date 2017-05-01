@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="9F2C22B6438E0851C27A767E15206C03" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="14" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="16" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="17" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="18" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="19" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="20" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD1SURBVEhLxZTtFYMgDEXdqTt1p87SFbpCZ6FJXsAY5EMUe08OviC50j9dwjRYvZwGLoeqPyf4q5rWZgBoidTC5bhFPUxbTWsP7uT16q+QWrgcmfqtT2Yvu0t0qzFfXfXkK3AdVhMpEDaPqzuYr450qYdpq2m1YMfusyZiW8pwOQZvzZ8SkOFyjKtllu2Sd1B1P+H5oOIgahSAMeH7TkSkUgRkaZU1HUIUUDFQo7jFL9OzGTLCaL9F9qPISKVV1mTZnNja6V9Pil2pgJ6I+D4nnyFksygFNXVtLKL9HsV3jbHqW1C8lKYTFNUW3T3IBbcrMU0dwg+/k/jkqxfkfwAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<NodeLabel AttachedTo="21" Bounds="40 434 41 18" Id="22" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="40 455 65 38" DataType="Single[,]" Facade="Array" Id="21" Label="22" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0,0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Single" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Single" Facade="Numeric" Id="23">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<Literal Bounds="70 565 35 15" DataType="String" Facade="String" Id="24" Label="25" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>""</p.Data>
+				<StringBehavior TextDisplayMode="Default" />
+			</Literal>
+			<NodeLabel AttachedTo="24" Bounds="70 544 33 18" Id="25" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>slice</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="26" Bounds="40 574 59 18" Id="27" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array in</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="40 595 65 38" DataType="Double[,]" Facade="Array" Id="26" Label="27" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0,0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="28">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="29" Bounds="230 239 129 18" Id="30" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Elements to keep</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="230 260 54 21" DataType="Boolean[]" Facade="Array" Id="29" Label="30" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Boolean" IndexEditorWidth="42">
+					<p.DefaultElementValue>False</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 38 18" DataType="Boolean" Facade="False Constant" Id="31">
+					<p.Data>False</p.Data>
+					<BooleanBehavior />
+				</Literal>
+			</ArrayLiteral>
+			<Literal Bounds="95 640 10 18" DataType="@1cbf098de8104bbf834f0f97fe6886e6" Facade="Enum" Id="32" Label="33" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<EnumBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="32" Bounds="95 619 74 18" Id="33" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Sort By in</p.Text>
+			</NodeLabel>
+			<Literal Bounds="95 615 10 18" DataType="@31ca7ea46a904820a9acfb7b99795564" Facade="Enum" Id="34" Label="35" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<EnumBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="34" Bounds="95 594 42 18" Id="35" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Order</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="36" Bounds="390 399 132 18" Id="37" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Sorted Pointers in</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="390 420 51 25" DataType="Int32[]" Facade="Array" Id="36" Label="37" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Int32" IndexEditorWidth="42">
+					<p.DefaultElementValue>0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Int32" Facade="Numeric" Id="38">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="39" Bounds="35 654 41 18" Id="40" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="35 675 67 25" DataType="Double[]" Facade="Array" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="41">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="42" Bounds="35 514 39 18" Id="43" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>array</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="35 535 67 25" DataType="Double[]" Facade="Array" Id="42" Label="43" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="44">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="45" Bounds="35 349 85 18" Id="46" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Input Array</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="35 370 67 25" DataType="Double[]" Facade="Array" Id="45" Label="46" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="47">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="48" Bounds="35 289 41 18" Id="49" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="35 310 67 25" DataType="Double[]" Facade="Array" Id="48" Label="49" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="50">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="51" Bounds="230 284 59 18" Id="52" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array in</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="230 305 67 25" DataType="Double[]" Facade="Array" Id="51" Label="52" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="53">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="54" Bounds="360 454 41 18" Id="55" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="360 475 67 25" DataType="Double[]" Facade="Array" Id="54" Label="55" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="56">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<Literal Bounds="420 505 10 18" DataType="Double" Facade="Numeric" Id="57" Label="58" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0x0</p.Data>
+				<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+			</Literal>
+			<NodeLabel AttachedTo="57" Bounds="420 484 100 18" Id="58" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Element Data</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="59" Bounds="390 544 59 18" Id="60" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array in</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="390 565 67 25" DataType="Double[]" Facade="Array" Id="59" Label="60" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="61">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="62" Bounds="390 604 39 18" Id="63" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>array</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="390 625 67 25" DataType="Double[]" Facade="Array" Id="62" Label="63" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="64">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="65" Bounds="390 634 51 18" Id="66" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>indices</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="390 655 51 25" DataType="Int32[]" Facade="Array" Id="65" Label="66" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Int32" IndexEditorWidth="42">
+					<p.DefaultElementValue>0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Int32" Facade="Numeric" Id="67">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="68" Bounds="390 684 39 18" Id="69" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>array</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="390 705 67 25" DataType="Double[]" Facade="Array" Id="68" Label="69" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="70">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="71" Bounds="390 714 51 18" Id="72" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>indices</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="390 735 51 25" DataType="Int32[]" Facade="Array" Id="71" Label="72" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Int32" IndexEditorWidth="42">
+					<p.DefaultElementValue>0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Int32" Facade="Numeric" Id="73">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="74" Bounds="685 399 132 18" Id="75" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Sorted Pointers in</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="685 420 51 25" DataType="Int32[]" Facade="Array" Id="74" Label="75" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Int32" IndexEditorWidth="42">
+					<p.DefaultElementValue>0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Int32" Facade="Numeric" Id="76">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="77" Bounds="340 389 59 18" Id="78" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array in</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="340 410 69 38" DataType="Double[,]" Facade="Array" Id="77" Label="78" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0,0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="79">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<NodeLabel AttachedTo="80" Bounds="650 379 59 18" Id="81" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Array in</p.Text>
+			</NodeLabel>
+			<ArrayLiteral Bounds="650 400 69 38" DataType="Double[,]" Facade="Array" Id="80" Label="81" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Array Lengths="0,0" />
+				</p.Data>
+				<ArrayBehavior ElementType="Double" IndexEditorWidth="42">
+					<p.DefaultElementValue>0x0</p.DefaultElementValue>
+				</ArrayBehavior>
+				<Literal Bounds="0 0 10 18" DataType="Double" Facade="Numeric" Id="82">
+					<p.Data>0x0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:N2" />
+				</Literal>
+			</ArrayLiteral>
+			<MethodCall Bounds="805 400 40 40" DomainName="openg.library.array" Id="83" Label="84" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Reorder 2D Array2 (DBL).gvi&quot;" Target="openg\.library\.array:Reorder\ 2D\ Array2\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="array" />
+						<Parameter Id="L2" Desc="indices" />
+						<Parameter Id="L3" Desc="reorder (rows)" />
+						<Parameter Id="R0" Desc="reordered array" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[,]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@08bf1556e6a44b838341936ae8b2a624" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="83" Bounds="805 377 185 20" Id="84" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Reorder 2D Array (DBL)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="490 410 40 40" DomainName="openg.library.array" Id="85" Label="86" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Reorder 2D Array (DBL).gvi&quot;" Target="openg\.library\.array:Reorder\ 2D\ Array\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Array in" />
+						<Parameter Id="L1" Desc="Sorted Pointers in" />
+						<Parameter Id="L3" Desc="Sort By in" />
+						<Parameter Id="R0" Desc="Sorted Array out" />
+						<Parameter Id="R1" Desc="Sorted Pointers out" />
+						<Parameter Id="R3" Desc="Sort By out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[,]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@1cbf098de8104bbf834f0f97fe6886e6" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@1cbf098de8104bbf834f0f97fe6886e6" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="85" Bounds="490 387 175 20" Id="86" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Reorder 2D Array (DBL).vi</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="490 565 40 40" DomainName="openg.library.array" Id="87" Label="88" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Sort 1D Array (DBL).gvi&quot;" Target="openg\.library\.array:Sort\ 1D\ Array\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Array in" />
+						<Parameter Id="L2" Desc="Order" />
+						<Parameter Id="R0" Desc="Sorted Array out" />
+						<Parameter Id="R1" Desc="Sorted Pointers" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@31ca7ea46a904820a9acfb7b99795564" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="87" Bounds="490 542 150 20" Id="88" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Sort 1D Array (DBL)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="135 530 40 40" DomainName="openg.library.array" Id="89" Label="90" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Slice 1D Array (DBL).gvi&quot;" Target="openg\.library\.array:Slice\ 1D\ Array\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="array" />
+						<Parameter Id="L2" Desc="slice" />
+						<Parameter Id="R2" Desc="subarray (array[i:j])" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[]" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="89" Bounds="135 507 175 20" Id="90" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Slice 1D Array (DBL)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="135 665 40 40" DomainName="openg.library.array" Id="91" Label="92" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Empty 1D Array (DBL).gvi&quot;" Target="openg\.library\.array:Empty\ 1D\ Array\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="Array" />
+						<Parameter Id="R1" Desc="Empty Array?" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[]" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="91" Bounds="135 642 165 20" Id="92" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Empty 1D Array (DBL)?</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="135 595 40 40" DomainName="openg.library.array" Id="93" Label="94" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Sort 2D Array (DBL).gvi&quot;" Target="openg\.library\.array:Sort\ 2D\ Array\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Array in" />
+						<Parameter Id="L2" Desc="Order" />
+						<Parameter Id="L3" Desc="Sort By in" />
+						<Parameter Id="B0" Desc="Column/Row to Sort By" />
+						<Parameter Id="R0" Desc="Sorted Array out" />
+						<Parameter Id="R1" Desc="Sorted Pointers" />
+						<Parameter Id="R2" Desc="Index Out of Range?" />
+						<Parameter Id="R3" Desc="Sort By out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[,]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@31ca7ea46a904820a9acfb7b99795564" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@1cbf098de8104bbf834f0f97fe6886e6" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="15 40" Id="B0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[,]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@1cbf098de8104bbf834f0f97fe6886e6" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="93" Bounds="135 572 175 20" Id="94" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Sort 2D Array (DBL)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="135 455 40 40" DomainName="openg.library.array" Id="95" Label="96" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Reverse 2D Array (SGL).gvi&quot;" Target="openg\.library\.array:Reverse\ 2D\ Array\ \(SGL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Array" />
+						<Parameter Id="L2" Desc="by rows or columns (rows)" />
+						<Parameter Id="R0" Desc="Reversed Array" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Single[,]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@08bf1556e6a44b838341936ae8b2a624" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Single[,]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="95" Bounds="135 432 200 20" Id="96" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Reverse 2D Array (SGL)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="135 370 40 40" DomainName="openg.library.array" Id="97" Label="98" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Remove Duplicates from 1D Array (DBL).gvi&quot;" Target="openg\.library\.array:Remove\ Duplicates\ from\ 1D\ Array\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Input Array" />
+						<Parameter Id="R0" Desc="Output Array" />
+						<Parameter Id="R2" Desc="indices of removed elements" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="97" Bounds="135 347 325 20" Id="98" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Remove Duplicates from 1D Array (DBL)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="135 300 40 40" DomainName="openg.library.array" Id="99" Label="100" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Filter 1D Array (DBL).gvi&quot;" Target="openg\.library\.array:Filter\ 1D\ Array\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="array" />
+						<Parameter Id="L2" Desc="items to filter" />
+						<Parameter Id="R1" Desc="filtered array" />
+						<Parameter Id="R2" Desc="filtered item indices" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[]" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="99" Bounds="135 277 180 20" Id="100" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Filter 1D Array (DBL).vi</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="420 285 40 40" DomainName="openg.library.array" Id="101" Label="102" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Conditional Auto-Indexing Tunnel (DBL).gvi&quot;" Target="openg\.library\.array:Conditional\ Auto\-Indexing\ Tunnel\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="Elements to keep" />
+						<Parameter Id="L2" Desc="Array in" />
+						<Parameter Id="R2" Desc="Filtered Array out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Boolean[]" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="101" Bounds="420 262 320 20" Id="102" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Conditional Auto-Indexing Tunnel (DBL)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="490 490 40 40" DomainName="openg.library.array" Id="103" Label="104" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Search 1D Array (DBL).gvi&quot;" Target="openg\.library\.array:Search\ 1D\ Array\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Array" />
+						<Parameter Id="L1" Desc="Element Data" />
+						<Parameter Id="L2" Desc="Start Index (0)" />
+						<Parameter Id="R1" Desc="Indices of Elements" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="103" Bounds="490 467 170 20" Id="104" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Search 1D Array for All (DBL)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="490 630 40 40" DomainName="openg.library.array" Id="105" Label="106" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Index 1D Array Elements (DBL).gvi&quot;" Target="openg\.library\.array:Index\ 1D\ Array\ Elements\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="array" />
+						<Parameter Id="L2" Desc="indices" />
+						<Parameter Id="R2" Desc="elements" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="105" Bounds="490 607 230 20" Id="106" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Index 1D Array Elements (DBL).vi</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="490 710 40 40" DomainName="openg.library.array" Id="107" Label="108" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Delete Elements from 1D Array (DBL).gvi&quot;" Target="openg\.library\.array:Delete\ Elements\ from\ 1D\ Array\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="array" />
+						<Parameter Id="L2" Desc="indices" />
+						<Parameter Id="R0" Desc="array w/ subset deleted" />
+						<Parameter Id="R2" Desc="deleted elements" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Double[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Double[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="107" Bounds="490 687 275 20" Id="108" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Delete Elements from 1D Array (DBL).vi</p.Text>
+			</NodeLabel>
+			<Wire Id="109" Joints="N(74:Out)|(736,425) N(83:L2)|(805,425)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="110" Joints="N(80:Out)|(719,405) N(83:L0)|(805,405)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="111" Joints="N(71:Out)|(441,740) h(34) v(-5) N(107:L2)|(490,735)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="112" Joints="N(68:Out)|(457,710) h(18) v(5) N(107:L0)|(490,715)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="113" Joints="N(65:Out)|(441,660) h(34) v(-5) N(105:L2)|(490,655)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="114" Joints="N(62:Out)|(457,630) h(18) v(5) N(105:L0)|(490,635)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="115" Joints="N(59:Out)|(457,570) N(87:L0)|(490,570)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="116" Joints="N(57:Out)|(430,510) h(43) v(-5) N(103:L1)|(490,505)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="117" Joints="N(54:Out)|(427,480) h(36) v(15) N(103:L0)|(490,495)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="118" Joints="N(45:Out)|(102,375) N(97:L0)|(135,375)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="119" Joints="N(42:Out)|(102,540) h(18) v(5) N(89:L1)|(135,545)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="120" Joints="N(39:Out)|(102,680) N(91:L1)|(135,680)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="121" Joints="N(36:Out)|(441,425) N(85:L1)|(490,425)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="122" Joints="N(34:Out)|(105,620) N(93:L2)|(135,620)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="123" Joints="N(32:Out)|(105,645) h(5) v(-15) N(93:L3)|(135,630)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="124" Joints="N(77:Out)|(409,415) N(85:L0)|(490,415)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="125" Joints="N(51:Out)|(297,310) N(101:L2)|(420,310)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="126" Joints="N(29:Out)|(284,265) h(121) v(35) N(101:L1)|(420,300)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="127" Joints="N(26:Out)|(105,600) N(93:L0)|(135,600)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="128" Joints="N(24:Out)|(105,570) h(15) v(-15) N(89:L2)|(135,555)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="129" Joints="N(48:Out)|(102,315) h(5) B(1) N(99:L1)|(135,315) B(1) v(10) N(99:L2)|(135,325)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="130" Joints="N(21:Out)|(105,460) N(95:L0)|(135,460)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" />
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="1cbf098de8104bbf834f0f97fe6886e6">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="row" />
+					<EnumerationMember Value="1" Name="column" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="31ca7ea46a904820a9acfb7b99795564">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="ascending" />
+					<EnumerationMember Value="1" Name="descending" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="08bf1556e6a44b838341936ae8b2a624">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="rows" />
+					<EnumerationMember Value="1" Name="columns" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="openg\.library\.array:Reorder\ 2D\ Array2\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADTSURBVEhL1ZALDoMwDEO5/9l6Jyg4c9OknzDopEWe9fAS77OlPS3SWb3FRg5iU6oHDpGbIblyECOMDiGyD+kW/IZxiNwMyZWDIpM3by2XD+GlYe0apny9fPpxA34BYTNvb2jWrmHK1ys2PItMqcZZhOWs45AkhXobdZ6BCUaH3DmdpNMBy1nHIUlAkeFZZKR6kRZX8yeUtE7Mu0FJNZzDUOd4jGtebTiuSTUe82S+q3JfpS75Qk/vB/rrav3nPv+XIVv3Vm/WD6sNP9Fr39FrWfWeDhdgllhvscF5AAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Reorder\ 2D\ Array\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADqSURBVEhLvY+BEsMgCEP7/3/g125qaKSAFm/nuMi9Rsjc9SnlkFr0lStZyNWIXnSIHJrkRwfRQmkTInuT3YKfMB0ihyb50UGZqpNbw+NHuGlYdw2v3I93727AD8AM/XhCs+4aXrmfXHEtUyMaaxmWtUmHxBk0m3j6FeigtMmZ1knaXbCsTTokDihTXMuURB+SvFpbobPQbH0jYlc9fufVmeHx6t1oc+uH4fSzjK4clh4ga6ef+86DV70yt/w0MIb0BdlrdkW/bzeeRvyu89H8F2BAXuG6+97PrQrX/xhtOKlwfTslr2PRpXwBYmFtpnKW7FIAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Sort\ 1D\ Array\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD7SURBVEhLzU4JDsMwDOr/39Y/dWlICbFzONoqzaIWwZj6OK/zJdzRR6zKQqxq9KQD5F2RvOlglFAqAuReZLfEO0wHyLsiedPBIpWcW+b6E24arl3JkufPq083xBsgdvW+Q7l2JUuev1hxLVI1GmsRXtYGHShKZSNHqydCBaUiPXcnU3XCy9qgA0UBixTXIlWiX8IPonGjV/7p6tGNXimqjr1VkabG4P1Q8veUDgiMfKmBXBUbdy/lwtPDT/k0xKqGe4ymmgs+SwF0h2IEe+4l8sXPKR2pvW6kexinXfP7k1EX1W/f30Wrp7NmIraiFVF3yo1Eq2fvkA1c5wfP6VWZFZZ+ogAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Slice\ 1D\ Array\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACsSURBVEhL7ZVZDgIxDEO5/9nmTqXBIRh3k6aTn9FYT5WzGcQPr5KmJ1qUGZ2ooxxJWLR/yFlxHOPRv7rx/HK/9cLiDCWbeAF7YbbKQfOdLn62I45jhoN97h09+U1HLA5OJAZ2KfdRVgNJP8C0K5vyaguW2g6/o77WbMQztQ9J58+gwBj44CPuM7HT7fgrNZsldXMkm/Kq1d/BPtekdMG3zJH/RyboiRalRZfyBjfwuN1mbIDuAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Empty\ 1D\ Array\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACsSURBVEhL7dBBDoUwCATQ3v9s3qm2HdJgK5URdeWEBdTw+Pkpv5afHvItnVpkCOSc3vIWP2DSqMiBCzpywEWj2AMEjfIfoGmU5wBHQyzRo6xNMWmsrRsURllWWdF6ufcYh5f+KEQLTVdgcnuVT6KwdGn0uy58EqKF/tVzVZL9r4dm6Psoa1NMel1rFKFpD4oQtB9FXDSLIhf0PRQx6QiKnNNBFHmAsPLTh+S8Aw28NkmLqQBuAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Sort\ 2D\ Array\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD7SURBVEhLzU4JDsMwDOr/39Y/dWlICbFzONoqzaIWwZj6OK/zJdzRR6zKQqxq9KQD5F2RvOlglFAqAuReZLfEO0wHyLsiedPBIpWcW+b6E24arl3JkufPq083xBsgdvW+Q7l2JUuev1hxLVI1GmsRXtYGHShKZSNHqydCBaUiPXcnU3XCy9qgA0UBixTXIlWiX8IPonGjV/7p6tGNXimqjr1VkabG4P1Q8veUDgiMfKmBXBUbdy/lwtPDT/k0xKqGe4ymmgs+SwF0h2IEe+4l8sXPKR2pvW6kexinXfP7k1EX1W/f30Wrp7NmIraiFVF3yo1Eq2fvkA1c5wfP6VWZFZZ+ogAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Reverse\ 2D\ Array\ \(SGL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADFSURBVEhL1Y6BDsQgCEP3/9/mP+0YJUimg+pluVxTyNNB59HO9pL/N/rgZAucejTWGLY1pjvBJQuAAaIpX4CDdLhkW2M6iJFMLg33n/hmzvywFojoyadJd4JL5oe1OPkaox5N9ggla6kcRFMWAANK1gIRPULJWpx8jZFFv+TlaLyI8U40mV4PIWvUbWz0T199M5krXo6GmbfvRHtonn590xeY7DZwchOPox+jAdPj9Gb0ZjTjIjqCc7xPnE0w+4m/Ws58tg/4g4Q3yZSq2wAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Remove\ Duplicates\ from\ 1D\ Array\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEKSURBVEhLtY0BEoQwCAP9/9v8k1pDQ0pbxc7I5HBJCrftx/6T/j+9tcU4KVurZaZmZMCrdEXZQOeFHkb2AvbhfBf4VbpFcFaLBTMvW6tlpmYKGfEltwiFma31MLIXsM9dChnxJbcIhTVjwczL1mqZyQwQ+Fl+ZbQ+zZJdR4hcP6PsVX7l+bQWzLxsrZaZzABk7TP5lW69QJiV1ex1pShw6AXsI1eG71S+3EFjctaC2WsWYYtlpmYB2Nfkp0NXCJyUX8GyAvuamtMsxoh0zMtPu1W5/49ZpOKz5ik7IEjN4QMKqb3IrNG/ABw6wB0OWjCD4H/o1y8pLAB6JoBLx5CRLvdixGcfTn/TsZ9DhcT2KSU9rAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Filter\ 1D\ Array\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC/SURBVEhL1VbRDoQwDLr//zb/aedJj7FOu82kiRJCKGtJfPNT0vDS6kRsZUviY6rtSw+4p553qmE0P6XtzQCb3I8Pm+rd9GcIMbpXHZmob/ZOFXS5G6mgJZruBqBHjlFDVc05/pQPQ9QbGa9g1fOsZ4fGXK6GplSjNKUaOluN1SG4CYP7gP4Axt7+njkVJmZzMKM6xvQHMPYmIwwVJmZdHYKbMLgPON5QsjelmnBPPdeql5hZnQj7H0nAG6tL+QJhavf2sM90egAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Conditional\ Auto\-Indexing\ Tunnel\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD/SURBVEhL1ZNRFsIgDAQ5LaftnXBhgdJNQZvyY948u6RkxKohpcMSAi6Hm8CiKF+bdIs6v466P1QzbFZb9qh5Usu49SlVPbZ8hBjumZXML4BFnmchzZ61R83DNklR99YZUPxQsTy1b7np6huU0NRyg+p8+xxeZRmvmWu2zvDi1J1J1/s1XvKsZH7B9NSyzwGfyQ2zkvkFdcCWfIoC/ujP1MaQyd0YIhgDdjMDDK8z1cwXCRd4JbVb1Dg+961zV6uEiYsetp3agt2Y/BGqLejfl8wvqAO2ZJ8DkfTlZvUl9+TmPKYcf1z4oFG8uSNrB5BaL2D/bYmU4CeZa3bbTzo+DZ8NvAB2WLwAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Search\ 1D\ Array\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADsSURBVEhL7VDREoMgDPP/v81/ctCwEAsW9PD2sl7kkjTEzW0/9pfwr3bI1du66VRXbVxP9ZXHmSydlTikI2mCDH3yLJ0FzhNEVyR6ql8lrKvRaJzEnMIqHFy06wR4WD3zjkFCK2795IRxNUdN8gDjkOudR7mD+xyuuVJJTscFIItVhJxEDp4dh3YLp7h23fSXOF+dLsk5m+q4NU/6KtXEQKpZnfToAgOTPqWCPogF81QH6yswHaANwBlcm4G9vfZQLqi+wu+q9Z/eRXQTXy2N8ydRrpUOG+7gq7yFfjVPkGfoVy/BsqIWr1Uf+wep105IUEfo6wAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Index\ 1D\ Array\ Elements\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADISURBVEhL7Y1RDsMwCEN7/7P1TlkqZzYlRSGr+JtlRfBw3eNsZ5FH9RGL0V2rWiiYd72uhkjyXlc7kreqI+GK2JZVLTTNVdUQSd7rakfyVnUkXBHbsqqFprmqGiLJe13tSN6qjoQrYlu+fWMrojlvXx3JxpL+5Rv48ZcWvqrGa0V+DTxjH/RO3BUGnGMkWvpL3RJfYaVBLHdES38pm3AzHcVItPSXmmGfnQFxpcivgWfsg05k9mPGwsX3b4zf1KiV6V/tVFbd2geFfXK9VoRXrgAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Delete\ Elements\ from\ 1D\ Array\ \(DBL\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVEhLvZALEoQgDEP3/mfzTi5OSgilRVx1MxlJH7H7+Wz79pJt9ScXq7RdROpqdgjNMr1YtmHShkgAswzZSIoQZiVunJTrkUvbl8ptNUKYlbhxUq5H3oZIALMM2UiKEGYlbpyU65FL25fKbTVCmJXQ81eO4OYxQyS0XUSyAnsIYVay7rY6E25Ru+TuHV2R5XX71Zm0tuhf3oHDj1R4azWeKvIj8Bqz0Z64WxhwrJG0oTyprlGFkQZR7kgbypPShst0ViNpQ3lSIyzZGRC3FPkReI3Z6EBGhx2FJ+/f8furux9y9lcs2q97am/xH1e7fMePfUfvffsCehjCX1Fe3TAAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

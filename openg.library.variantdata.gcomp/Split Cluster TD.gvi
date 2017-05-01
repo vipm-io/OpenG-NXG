@@ -1,0 +1,984 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="352ED975FFCBA3CDA1476B45E41CECC5" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.56780" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Split Cluster TD" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Splits the TD of a Cluster into its elements TDs.</p.UserDescription>
+		<Icon Id="18" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="20" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="21" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="23" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="24" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEISURBVEhLxZIBEoMgDAR9ra/1TzRw9DwCaKq2zayZAMnKOC5b2r7ET9SLBDfvUC2mS2kjeIEGB+I0alhQaLbgQJypmgUyB+I0apLFbXAgzj5THSW4eYdnLEN+pX7qU4CQunz/HG7fUZtK5KU70yVhN2sEGxQeTdWuxtLy6T+6Fxgm2EXR15ZpRKHZomnGsIIzBndQODUL5KbZniHs0NqyKQj2NZpmDPfgmDWXqBFsUHg0VSvotnD7PbUvrr7G/9Trsh7gmh3nav0llKgaH17h1bLIfjmDRanZ4AapOlJj3qvfmQ1u8EM1wTvuq8Fu1HdIgxv06hlVPaKXOqa3BrzaENcMore+TtpewGF0VZZZj24AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="100" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 80" Parameter="217" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 50" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 65" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="60 85 40 15" DataItem="14" Id="65" Label="66" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="65" Bounds="60 68 100 14" Id="66" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error in (no error)</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="1790 85 40 15" DataItem="15" Id="67" Label="68" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="67" Bounds="1790 68 50 14" Id="68" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error out</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="1790 255 40 15" DataItem="16" Id="69" Label="70" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@757e72e169994e2ba05b6d5b67b415b4" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="69" Bounds="1790 238 94 14" Id="70" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Type Descriptors</p.Text>
+			</NodeLabel>
+			<CaseStructure Bounds="180 0 1585 500" DataType="Error" Id="73" Selected="74" UserSelectorBounds="740 0 106 17">
+				<CaseStructure.Case Bounds="5 5 1575 490" Id="74" Pattern="No Error">
+					<MethodCall Bounds="25 120 40 40" DomainName="openg.library.variant data" Id="80" Label="81" ResolveFailedHint="&quot;C:\\Users\\lvadmin\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Header from TD.gvi&quot;" Target="openg\.library\.variant\ data:Get\ Header\ from\ TD\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L0" Desc="Type Descriptor" />
+								<Parameter Id="R0" Desc="Type Descriptor Header" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="@d7c7c06f31d94836bfe3c442b0378951" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@67abf964f15243c4b65419efbbda2f4a" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<NodeLabel AttachedTo="80" Bounds="25 99 219 18" Id="81" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>Get Header from TD</p.Text>
+					</NodeLabel>
+					<PropertyNode Bounds="85 120 80 50" HasErrorTerminals="False" Id="82" InstanceDataType="@67abf964f15243c4b65419efbbda2f4a" ListViewAutoSize="False" Mode="InstanceProperties">
+						<PropertyItemTerminal DataType="@21ad3e960c2c41e7a11571534cdc955f" Hotspot="80 15" Id="c0t0v" Path="type" Usage="Optional" />
+						<PropertyItemTerminal DataType="UInt16" Hotspot="80 30" Id="c1t0v" Path="# elements" Usage="Optional" />
+					</PropertyNode>
+					<CaseStructure Bounds="175 15 1345 455" DataType="@21ad3e960c2c41e7a11571534cdc955f" Default="84" Id="83" Selected="85" UserSelectorBounds="618 0 109 17">
+						<CaseStructure.Case Bounds="5 5 1335 445" Id="84" Pattern="Default">
+							<Literal Bounds="150 60 140 15" DataType="Int32" Facade="Ring" Id="91" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>1</p.Data>
+								<RingBehavior ValueFormatter="LV:G6">
+									<RingConstantInfo DisplayValue="No error" ValueType="Int32">
+										<p.Value>0</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Argument error" ValueType="Int32">
+										<p.Value>1</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Memory is full" ValueType="Int32">
+										<p.Value>2</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Out of zone" ValueType="Int32">
+										<p.Value>3</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="End of file" ValueType="Int32">
+										<p.Value>4</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="File already open" ValueType="Int32">
+										<p.Value>5</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Generic file I/O error" ValueType="Int32">
+										<p.Value>6</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="File not found" ValueType="Int32">
+										<p.Value>7</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="File permission error" ValueType="Int32">
+										<p.Value>8</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Disk is full" ValueType="Int32">
+										<p.Value>9</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Duplicate path" ValueType="Int32">
+										<p.Value>10</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Too many files open" ValueType="Int32">
+										<p.Value>11</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="System feature not enabled" ValueType="Int32">
+										<p.Value>12</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Resource file not found" ValueType="Int32">
+										<p.Value>13</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Cannot add resource" ValueType="Int32">
+										<p.Value>14</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Resource not found" ValueType="Int32">
+										<p.Value>15</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Image not found" ValueType="Int32">
+										<p.Value>16</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Image memory error" ValueType="Int32">
+										<p.Value>17</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Pen does not exist" ValueType="Int32">
+										<p.Value>18</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Config type invalid" ValueType="Int32">
+										<p.Value>19</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Config token not found" ValueType="Int32">
+										<p.Value>20</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Config parse error" ValueType="Int32">
+										<p.Value>21</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Config memory error" ValueType="Int32">
+										<p.Value>22</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad external code format" ValueType="Int32">
+										<p.Value>23</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad external code offset" ValueType="Int32">
+										<p.Value>24</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="External code not present" ValueType="Int32">
+										<p.Value>25</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Null window" ValueType="Int32">
+										<p.Value>26</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Destroy window error" ValueType="Int32">
+										<p.Value>27</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Null menu" ValueType="Int32">
+										<p.Value>28</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Print aborted" ValueType="Int32">
+										<p.Value>29</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad print record" ValueType="Int32">
+										<p.Value>30</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Print driver error" ValueType="Int32">
+										<p.Value>31</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Windows error during printing" ValueType="Int32">
+										<p.Value>32</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Memory error during printing" ValueType="Int32">
+										<p.Value>33</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Print dialog error" ValueType="Int32">
+										<p.Value>34</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Generic print error" ValueType="Int32">
+										<p.Value>35</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Invalid device refnum" ValueType="Int32">
+										<p.Value>36</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Device not found" ValueType="Int32">
+										<p.Value>37</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Device parameter error" ValueType="Int32">
+										<p.Value>38</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Device unit error" ValueType="Int32">
+										<p.Value>39</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Cannot open device" ValueType="Int32">
+										<p.Value>40</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Device call aborted" ValueType="Int32">
+										<p.Value>41</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Generic error" ValueType="Int32">
+										<p.Value>42</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Cancelled by user" ValueType="Int32">
+										<p.Value>43</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Object ID too low" ValueType="Int32">
+										<p.Value>44</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Object ID too high" ValueType="Int32">
+										<p.Value>45</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Object not in heap" ValueType="Int32">
+										<p.Value>46</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown heap" ValueType="Int32">
+										<p.Value>47</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown object (invalid DefProc)" ValueType="Int32">
+										<p.Value>48</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown object (DefProc not in table)" ValueType="Int32">
+										<p.Value>49</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Message out of range" ValueType="Int32">
+										<p.Value>50</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Invalid (null) method" ValueType="Int32">
+										<p.Value>51</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown message" ValueType="Int32">
+										<p.Value>52</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Manager call not supported" ValueType="Int32">
+										<p.Value>53</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad address" ValueType="Int32">
+										<p.Value>54</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Network operation in progress" ValueType="Int32">
+										<p.Value>55</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Network operation timed out" ValueType="Int32">
+										<p.Value>56</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Connection is busy" ValueType="Int32">
+										<p.Value>57</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Network attribute not supported" ValueType="Int32">
+										<p.Value>58</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Network error" ValueType="Int32">
+										<p.Value>59</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Address in use" ValueType="Int32">
+										<p.Value>60</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="System out of memory" ValueType="Int32">
+										<p.Value>61</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Connection aborted" ValueType="Int32">
+										<p.Value>62</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Connection refused" ValueType="Int32">
+										<p.Value>63</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Not connected" ValueType="Int32">
+										<p.Value>64</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Already connected" ValueType="Int32">
+										<p.Value>65</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Connection closed" ValueType="Int32">
+										<p.Value>66</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Initialization error (interapplication manager)" ValueType="Int32">
+										<p.Value>67</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad occurrence" ValueType="Int32">
+										<p.Value>68</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Wait on unbound occurrence handler" ValueType="Int32">
+										<p.Value>69</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Occurrence queue overflow" ValueType="Int32">
+										<p.Value>70</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Datalog type conflict" ValueType="Int32">
+										<p.Value>71</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unused" ValueType="Int32">
+										<p.Value>72</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unrecognized type (interapplication manager)" ValueType="Int32">
+										<p.Value>73</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Memory corrupt" ValueType="Int32">
+										<p.Value>74</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Failed to make temporary DLL" ValueType="Int32">
+										<p.Value>75</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Old CIN version" ValueType="Int32">
+										<p.Value>76</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Drag socket not found" ValueType="Int32">
+										<p.Value>77</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Failed to load drop-object" ValueType="Int32">
+										<p.Value>78</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Failed to register OLE object" ValueType="Int32">
+										<p.Value>79</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Failed to release OLE object" ValueType="Int32">
+										<p.Value>80</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Format specifier type mismatch" ValueType="Int32">
+										<p.Value>81</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown format specifier" ValueType="Int32">
+										<p.Value>82</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Too few format specifiers" ValueType="Int32">
+										<p.Value>83</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Too many format specifiers" ValueType="Int32">
+										<p.Value>84</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Scan failed" ValueType="Int32">
+										<p.Value>85</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Newer CIN version" ValueType="Int32">
+										<p.Value>86</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Error converting to variant" ValueType="Int32">
+										<p.Value>87</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Runtime menu error" ValueType="Int32">
+										<p.Value>88</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Password tampered" ValueType="Int32">
+										<p.Value>89</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Variant attribute not found" ValueType="Int32">
+										<p.Value>90</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Incompatible variant data type" ValueType="Int32">
+										<p.Value>91</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Event data is not available" ValueType="Int32">
+										<p.Value>92</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Event Store is not present" ValueType="Int32">
+										<p.Value>93</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Occurrence is not found" ValueType="Int32">
+										<p.Value>94</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Event Queue is not created" ValueType="Int32">
+										<p.Value>95</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Event info is not available" ValueType="Int32">
+										<p.Value>96</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Refnum passed is NULL" ValueType="Int32">
+										<p.Value>97</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Error retrieving Class GUID" ValueType="Int32">
+										<p.Value>98</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Error retrieving CoClass GUID" ValueType="Int32">
+										<p.Value>99</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Error retrieving TypeLib GUID." ValueType="Int32">
+										<p.Value>100</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad built application magic bytes." ValueType="Int32">
+										<p.Value>101</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Specific driver is different from the specific driver associated with the Logical Name." ValueType="Int32">
+										<p.Value>102</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="There is no session opened to the class driver." ValueType="Int32">
+										<p.Value>103</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Max Error" ValueType="Int32">
+										<p.Value>104</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="MAX - Error with config objects" ValueType="Int32">
+										<p.Value>105</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="MAX - Error loading configuration" ValueType="Int32">
+										<p.Value>106</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="MAX - Group not supported" ValueType="Int32">
+										<p.Value>107</p.Value>
+									</RingConstantInfo>
+								</RingBehavior>
+							</Literal>
+							<ArrayLiteral Bounds="1182 230 131 47" DataType="@379f12dc05f04c54a6137ebbd3a199fe" Facade="Array" Id="92" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>
+									<Array Lengths="0" />
+								</p.Data>
+								<ArrayBehavior ElementType="@c0915e1e123c44fdadd442842a1214e6" IndexEditorWidth="42">
+									<p.DefaultElementValue>
+										<Cluster>
+											<Field1>null</Field1>
+										</Cluster>
+									</p.DefaultElementValue>
+								</ArrayBehavior>
+								<ClusterLiteral Bounds="47 4 70 39" DataType="@c0915e1e123c44fdadd442842a1214e6" Facade="Cluster" Id="93">
+									<p.Data>
+										<Cluster>
+											<Field1>null</Field1>
+										</Cluster>
+									</p.Data>
+									<ClusterBehavior AutoArrange="SizeToFit" />
+									<ArrayLiteral Bounds="2 2 49 25" DataType="Int16[]" Facade="Array" Id="94" Label="96">
+										<p.Data>null</p.Data>
+										<ArrayBehavior ElementType="Int16" IndexEditorWidth="42">
+											<p.DefaultElementValue>0</p.DefaultElementValue>
+										</ArrayBehavior>
+										<Literal Bounds="43 1 10 18" DataType="Int16" Facade="Numeric" Id="95">
+											<p.Data>0</p.Data>
+											<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+										</Literal>
+									</ArrayLiteral>
+									<NodeLabel AttachedTo="94" Bounds="2 -13 60 15" Id="96" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>Element 1</p.Text>
+									</NodeLabel>
+								</ClusterLiteral>
+							</ArrayLiteral>
+							<Literal Bounds="10 55 185 15" DataType="String" Facade="String" Id="97" Label="98" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>Unexpected Datatype &lt;%s&gt;</p.Data>
+								<StringBehavior TextDisplayMode="Default" />
+							</Literal>
+							<NodeLabel AttachedTo="97" Bounds="10 73 103 18" Id="98" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>Format String</p.Text>
+							</NodeLabel>
+							<FormatIntoString Bounds="215 80 40 40" Id="99" Terminals="formatString=149, outString=148, c0t0v=147" />
+							<MethodCall Bounds="310 60 40 40" DomainName="openg.library.error" Id="100" Label="101" ResolveFailedHint="&quot;C:\\Users\\lvadmin\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+								<p.MethodDeclaration>
+									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+										<Parameter Id="L0" Desc="code" />
+										<Parameter Id="L2" Desc="String to Prepend to source (&quot;&quot;)" />
+										<Parameter Id="R0" Desc="error out" />
+									</MethodDeclaration>
+								</p.MethodDeclaration>
+								<Terminal DataType="Int32" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							</MethodCall>
+							<NodeLabel AttachedTo="100" Bounds="310 103 205 18" Id="101" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>Build Error Cluster</p.Text>
+							</NodeLabel>
+							<Wire Id="147" Joints="N(86:84)|(4,115) N(99:c0t0v)|(215,115)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="148" Joints="N(99:outString)|(255,85) N(100:L2)|(310,85)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="149" Joints="N(97:Out)|(195,60) h(45) N(99:formatString)|(240,80)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="150" Joints="N(92:Out)|(1313,235) N(89:84)|(1331,235)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="151" Joints="N(100:R0)|(350,65) N(90:84)|(1331,65)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="152" Joints="N(91:Out)|(290,65) N(100:L0)|(310,65)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Case Bounds="5 5 1335 445" Id="85" Pattern="&quot;Cluster&quot;">
+							<Literal Bounds="185 225 40 15" DataType="Int32" Facade="Numeric" Id="102" Label="103" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>3</p.Data>
+								<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+							</Literal>
+							<NodeLabel AttachedTo="102" Bounds="185 208 166 14" Id="103" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>Offset past Cluster TD Header</p.Text>
+							</NodeLabel>
+							<ClusterLiteral Bounds="1250 15 61 89" DataType="Error" Facade="Cluster" Id="106" Label="113" p8:ControlDefinitionChecksum="!" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>
+									<Cluster>
+										<Field1>False</Field1>
+										<Field2>0</Field2>
+										<Field3>""</Field3>
+									</Cluster>
+								</p.Data>
+								<p8:p.TypeDefinitionTargets>
+									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
+									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
+								</p8:p.TypeDefinitionTargets>
+								<ClusterBehavior AutoArrange="SizeToFit" />
+								<Literal Bounds="13 2 15 15" DataType="Boolean" Facade="False Constant" Id="107" Label="108">
+									<p.Data>False</p.Data>
+									<BooleanBehavior />
+								</Literal>
+								<NodeLabel AttachedTo="107" Bounds="13 -16 30 15" Id="108" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>status</p.Text>
+								</NodeLabel>
+								<Literal Bounds="2 32 40 15" DataType="Int32" Facade="Numeric" Id="109" Label="110">
+									<p.Data>0</p.Data>
+									<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
+								</Literal>
+								<NodeLabel AttachedTo="109" Bounds="-3 -33 30 15" Id="110" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>code</p.Text>
+								</NodeLabel>
+								<Literal Bounds="2 62 40 15" DataType="String" Facade="String" Id="111" Label="112">
+									<p.Data>""</p.Data>
+									<StringBehavior TextDisplayMode="Default" />
+								</Literal>
+								<NodeLabel AttachedTo="111" Bounds="-3 -33 30 15" Id="112" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>source</p.Text>
+								</NodeLabel>
+							</ClusterLiteral>
+							<NodeLabel AttachedTo="106" Bounds="1250 107 66 18" Id="113" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>error out</p.Text>
+							</NodeLabel>
+							<ForLoop Bounds="373 123 890 311" DiagramId="115" Id="114" Label="118">
+								<LoopIteration Bounds="0 281 15 15" Id="116" />
+								<Literal Bounds="55 140 40 15" DataType="UInt16" Facade="Numeric" Id="123" Label="124" xmlns="http://www.ni.com/MocCommon">
+									<p.Data>2</p.Data>
+									<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+								</Literal>
+								<NodeLabel AttachedTo="123" Bounds="55 123 75 14" Id="124" xmlns="http://www.ni.com/PlatformFramework">
+									<p.Text>bytes per I16</p.Text>
+								</NodeLabel>
+								<ArrayIndex Bounds="45 90 40 30" Id="125" Terminals="array=161, c0t0v=159, c0out=157" />
+								<ToUnsignedWordInteger Bounds="105 110 30 10" Id="126" />
+								<QuotientAndRemainder Bounds="215 125 30 30" Id="127" />
+								<ToLongInteger Bounds="265 140 30 10" Id="128" />
+								<ArraySubset Bounds="725 110 40 40" Id="129" Terminals="array=161, subarray=162, index0=159, length0=153" />
+								<PropertyNode Bounds="800 100 50 35" HasErrorTerminals="False" Id="130" InstanceDataType="@5b94548172344c17a8e1f3b290648324" ListViewAutoSize="False" Mode="InstanceProperties">
+									<PropertyItemTerminal Action="Write" DataType="@d7c7c06f31d94836bfe3c442b0378951" Hotspot="0 15" Id="c0t0v" Path="TypeDescriptor" Usage="Required" />
+								</PropertyNode>
+								<ClusterLiteral Bounds="788 100 12 9" DataType="@5b94548172344c17a8e1f3b290648324" Facade="DockedConstantFacade" Id="131" xmlns="http://www.ni.com/MocCommon">
+									<p.Data>
+										<Cluster>
+											<Field1>null</Field1>
+										</Cluster>
+									</p.Data>
+									<ClusterBehavior AutoArrange="ArrangeVertically" />
+									<ArrayLiteral Bounds="2 2 93 25" DataType="@d7c7c06f31d94836bfe3c442b0378951" Facade="Array" Id="227" Label="229" p10:ControlDefinitionChecksum="vJrnjOOhYGvJ/Rh9PrO76g==" xmlns:p10="http://www.ni.com/PanelCommon">
+										<p.Data>null</p.Data>
+										<p10:p.TypeDefinitionTargets>
+											<p10:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype" />
+											<p10:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype:ControlDefinition" />
+										</p10:p.TypeDefinitionTargets>
+										<ArrayBehavior ElementType="Int16" IndexEditorWidth="42">
+											<p.DefaultElementValue>0</p.DefaultElementValue>
+										</ArrayBehavior>
+										<Literal Bounds="49 4 40 15" DataType="Int16" Facade="Numeric" Id="228">
+											<p.Data>0</p.Data>
+											<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+										</Literal>
+									</ArrayLiteral>
+									<NodeLabel AttachedTo="227" Bounds="2 -16 30 15" Id="229" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>TypeDescriptor</p.Text>
+									</NodeLabel>
+									<DockedConstantFacade UndockedSize="114 39" />
+								</ClusterLiteral>
+								<Wire Facade="WireInvisibleFacade" Id="135" Joints="N(131:Out)|(902,105) v(-10) h(-107) v(10) N(130:instance in)|(800,105)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+								<Add Bounds="725 70 30 30" Id="136" Terminals="o=160, c0t0v=153, c1t0v=159" />
+								<Comment Bounds="440 140 105 15" Id="137" xmlns="http://www.ni.com/MocCommon">
+									<p.Text>"Get TD Length  "</p.Text>
+								</Comment>
+								<Comment Bounds="725 30 120 35" Id="138" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+									<p.Text>this offset + this length = next offset</p.Text>
+								</Comment>
+								<Comment Bounds="55 160 140 15" Id="139" xmlns="http://www.ni.com/MocCommon">
+									<p.Text>cluster element offset</p.Text>
+								</Comment>
+								<Comment Bounds="565 130 120 30" Id="140" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+									<p.Text>Get Element TD Subset from Cluster TD</p.Text>
+								</Comment>
+								<Comment Bounds="315 130 105 30" Id="141" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+									<p.Text>Convert length to U16 before math.</p.Text>
+								</Comment>
+								<Wire Id="153" Joints="N(128:32bit integer)|(295,145) h(400) B(1) N(129:length0)|(725,145) B(1) v(-70) N(136:c0t0v)|(725,75)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="154" Joints="N(126:unsigned 16bit integer)|(135,115) h(70) v(15) N(127:x)|(215,130)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="155" Joints="N(130:instance out)|(850,105) N(122:i0)|(878,105)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="156" Joints="N(123:Out)|(95,145) N(127:y)|(215,145)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="157" Joints="N(125:c0out)|(85,115) N(126:number)|(108,115)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="158" Joints="N(127:floor(x/y\))|(245,145) N(128:number)|(268,145)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="159" Joints="N(120:i0)|(6,85) h(19) B(1) h(680) v(5) B(3) N(136:c1t0v)|(725,90) B(3) v(45) N(129:index0)|(725,135) B(1) v(30) N(125:c0t0v)|(45,115)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="160" Joints="N(136:o)|(755,85) N(119:115)|(878,85)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="161" Joints="N(121:i0)|(6,70) h(29) B(1) h(680) v(45) N(129:array)|(725,115) B(1) v(25) N(125:array)|(45,95)" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Id="162" Joints="N(129:subarray)|(765,115) N(130:c0t0v)|(800,115)" xmlns="http://www.ni.com/PlatformFramework" />
+								<LoopCount Bounds="1 1 15 15" Docking="Left" Id="117" Terminals="114=166, 115" />
+								<RightShiftRegister Bounds="880 82 13 10" Docking="Right" Id="119" Terminals="114, 115=160" />
+								<LeftShiftRegister Bounds="-5 82 13 10" Docking="Left" Id="120" RightRegister="119" Terminals="o0=167, i0=159" />
+								<LoopTunnel Bounds="-5 67 13 10" Docking="Left" Id="121" Terminals="o0=165, i0=161" />
+								<LoopTunnel AutoIndex="True" Bounds="880 102 13 10" Docking="Right" Id="122" Terminals="o0=164, i0=155" TunnelMode="0" />
+							</ForLoop>
+							<NodeLabel AttachedTo="114" Bounds="373 106 154 14" Id="118" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>For Each Element in Cluster</p.Text>
+							</NodeLabel>
+							<Wire Id="163" Joints="N(106:Out)|(1311,20) h(9) v(45) N(90:85)|(1331,65)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="164" Joints="N(122:o0)|(1266,230) h(54) v(5) N(89:85)|(1331,235)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="165" Joints="N(88:85)|(4,195) N(121:o0)|(368,195)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="166" Joints="N(87:85)|(4,130) N(117:114)|(374,130)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="167" Joints="N(102:Out)|(225,230) h(135) v(-20) N(120:o0)|(368,210)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Selector Bounds="-4 115 13 10" Docking="Left" Id="86" Terminals="83=173, 84=147, 85" />
+						<CaseStructure.Tunnel Bounds="-4 130 13 10" Docking="Left" Id="87" Terminals="83=172, 84, 85=166" />
+						<CaseStructure.Tunnel Bounds="-4 195 13 10" Docking="Left" Id="88" Terminals="83=168, 84, 85=165" />
+						<CaseStructure.Tunnel Bounds="1336 235 13 10" Docking="Right" Id="89" Terminals="83=171, 84=150, 85=164" />
+						<CaseStructure.Tunnel Bounds="1336 65 13 10" Docking="Right" Id="90" Terminals="83=170, 84=151, 85=163" />
+					</CaseStructure>
+					<Wire Id="168" Joints="N(79:74)|(4,215) h(16) B(1) N(88:83)|(171,215) B(1) v(-90) N(80:L0)|(25,125)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="169" Joints="N(80:R0)|(65,125) N(82:instance in)|(85,125)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="170" Joints="N(90:83)|(1524,85) N(78:74)|(1571,85)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="171" Joints="N(89:83)|(1524,255) N(77:74)|(1571,255)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="172" Joints="N(82:c1t0v)|(165,150) N(87:83)|(171,150)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="173" Joints="N(82:c0t0v)|(165,135) N(86:83)|(171,135)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 1575 490" Id="75" Pattern="Error">
+					<ArrayLiteral Bounds="1422 250 131 47" DataType="@379f12dc05f04c54a6137ebbd3a199fe" Facade="Array" Id="142" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>
+							<Array Lengths="0" />
+						</p.Data>
+						<ArrayBehavior ElementType="@c0915e1e123c44fdadd442842a1214e6" IndexEditorWidth="42">
+							<p.DefaultElementValue>
+								<Cluster>
+									<Field1>null</Field1>
+								</Cluster>
+							</p.DefaultElementValue>
+						</ArrayBehavior>
+						<ClusterLiteral Bounds="47 4 70 39" DataType="@c0915e1e123c44fdadd442842a1214e6" Facade="Cluster" Id="143">
+							<p.Data>
+								<Cluster>
+									<Field1>null</Field1>
+								</Cluster>
+							</p.Data>
+							<ClusterBehavior AutoArrange="SizeToFit" />
+							<ArrayLiteral Bounds="2 2 49 25" DataType="Int16[]" Facade="Array" Id="144" Label="146">
+								<p.Data>null</p.Data>
+								<ArrayBehavior ElementType="Int16" IndexEditorWidth="42">
+									<p.DefaultElementValue>0</p.DefaultElementValue>
+								</ArrayBehavior>
+								<Literal Bounds="43 1 10 18" DataType="Int16" Facade="Numeric" Id="145">
+									<p.Data>0</p.Data>
+									<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+								</Literal>
+							</ArrayLiteral>
+							<NodeLabel AttachedTo="144" Bounds="2 -13 60 15" Id="146" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>Element 1</p.Text>
+							</NodeLabel>
+						</ClusterLiteral>
+					</ArrayLiteral>
+					<Wire Id="174" Joints="N(76:75)|(4,85) N(78:75)|(1571,85)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="175" Joints="N(142:Out)|(1553,255) N(77:75)|(1571,255)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 85 13 10" Docking="Left" Id="76" Terminals="73=179, 74, 75=174" />
+				<CaseStructure.Tunnel Bounds="1576 255 13 10" Docking="Right" Id="77" Terminals="73=178, 74=171, 75=175" />
+				<CaseStructure.Tunnel Bounds="1576 85 13 10" Docking="Right" Id="78" Terminals="73=177, 74=170, 75=174" />
+				<CaseStructure.Tunnel Bounds="-4 215 13 10" Docking="Left" Id="79" Terminals="73=176, 74=168, 75" />
+			</CaseStructure>
+			<Wire Id="176" Joints="N(218:Value)|(165,220) N(79:73)|(176,220)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="177" Joints="N(78:73)|(1769,90) N(67:Value)|(1793,90)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="178" Joints="N(77:73)|(1769,260) N(69:Value)|(1793,260)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="179" Joints="N(65:Value)|(100,90) N(76:73)|(176,90)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="125 215 40 15" DataItem="217" Id="218" Label="219" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@d7c7c06f31d94836bfe3c442b0378951" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="218" Bounds="32 215 88 14" Id="219" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Type Descriptor</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="180" IsTabStop="[bool]True" Label="[UIModel]187" Left="[float]112" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]141" Value="{DataItemBinding Id=14}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="181" Label="[UIModel]182" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="182" LabelOwner="[UIModel]181" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="183" Label="[UIModel]184" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="184" LabelOwner="[UIModel]183" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="185" Label="[UIModel]186" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="186" LabelOwner="[UIModel]185" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="187" LabelOwner="[UIModel]180" Left="[float]112" Text="[string]error in (no error)" Top="[float]121" Width="[float]93" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="189" IsTabStop="[bool]True" Label="[UIModel]196" Left="[float]405" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]1" Top="[float]144" Value="{DataItemBinding Id=15}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="190" IsReadOnly="[bool]True" Label="[UIModel]191" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="191" LabelOwner="[UIModel]190" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="192" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]193" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="193" LabelOwner="[UIModel]192" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="194" IsReadOnly="[bool]True" Label="[UIModel]195" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="195" LabelOwner="[UIModel]194" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="196" LabelOwner="[UIModel]189" Left="[float]405" Text="[string]error out" Top="[float]124" Width="[float]47" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="46" LabelOwner="[UIModel]45" Left="[float]405" Text="[string]Type Descriptors" Top="[float]0" Width="[float]89" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]50" Columns="[int]1" Dimensions="[int]1" Height="[float]84" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="45" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]46" Left="[float]405" Rows="[int]1" TabIndex="[int]2" Top="[float]20" Value="{DataItemBinding Id=16}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]207" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>
+					<Cluster>
+						<Field1>null</Field1>
+					</Cluster>
+				</p.DefaultElementValue>
+				<Cluster AutoArrange="[AutoArrange]SizeToFit" ClusterType="[Type]@433429ed7b304d59b5d60f81f4c60e5f" Height="[float]72" Id="50" IsTabStop="[bool]True" Label="[UIModel]51" Left="[float]61" TabIndex="[int]0" Top="[float]6" Width="[float]140">
+					<Label Id="51" IsVisualChild="[bool]False" LabelOwner="[UIModel]50" Left="[float]61" Text="[string]Cluster" Top="[float]-14" />
+					<ArrayViewer ArrayElement="[UIModel]221" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="220" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]222" Left="[float]4" Rows="[int]1" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Type\ Descriptor}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]124" p6:ControlDefinitionChecksum="vJrnjOOhYGvJ/Rh9PrO76g==" xmlns:p6="http://www.ni.com/PanelCommon">
+						<p.DefaultElementValue>0</p.DefaultElementValue>
+						<p6:p.TypeDefinitionTargets>
+							<p6:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype:ControlDefinition" />
+						</p6:p.TypeDefinitionTargets>
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="221" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[short]1" IsTabStop="[bool]True" Left="[float]61" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]6" Value="[short]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					</ArrayViewer>
+					<Label Height="[float]16" Id="222" LabelOwner="[UIModel]220" Left="[float]4" Text="[string]Type Descriptor" Top="[float]4" Width="[float]95" />
+				</Cluster>
+			</ArrayViewer>
+			<Text Height="[float]543" Id="59" Left="[float]109" Text="[string]Split Cluster TD.vi&#xA;&#xA;Splits the TD of a Cluster into its elements TDs.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jean-Pierre Drolet &lt;drolet_jp@hotmail.com&gt;&#xA;Copyright (c) 2002-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]356" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Height="[float]16" Id="64" Left="[float]644" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]40" Width="[float]205" xmlns="http://www.ni.com/PlatformFramework" />
+			<ArrayViewer ArrayElement="[UIModel]215" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="214" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]216" Left="[float]112" Rows="[int]1" TabIndex="[int]3" Top="[float]52" Value="{DataItemBinding Id=217}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]124" p4:ControlDefinitionChecksum="vJrnjOOhYGvJ/Rh9PrO76g==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="215" Interval="[short]1" IsTabStop="[bool]True" Left="[float]61" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]6" Value="[short]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Label Height="[float]16" Id="216" LabelOwner="[UIModel]214" Left="[float]112" Text="[string]Type Descriptor" Top="[float]32" Width="[float]84" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="Error" Id="14" Name="error in (no error)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
+			</p.TypeDefinitionTargets>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"The &lt;B&gt;error in&lt;/B&gt; cluster can accept error information wired from VIs previously called.  Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.&lt;br/&gt;&lt;br/&gt;The pop-up option &lt;B&gt;Explain Error&lt;/B&gt; (or Explain Warning) gives more information about the error displayed. "</p.UserDescription>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="2" DataType="Error" Id="15" Name="error out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
+			</p.TypeDefinitionTargets>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">The &lt;B&gt;error out&lt;/B&gt; cluster passes error or warning information out of a VI to be used by other VIs.&lt;br/&gt;&lt;br/&gt;The pop-up option &lt;B&gt;Explain Error&lt;/B&gt; (or Explain Warning) gives more information about the error displayed.</p.UserDescription>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@757e72e169994e2ba05b6d5b67b415b4" Id="16" Name="Type Descriptors" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="0" DataType="@d7c7c06f31d94836bfe3c442b0378951" Id="217" Name="Type Descriptor" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="757e72e169994e2ba05b6d5b67b415b4">
+			<VariableArray DereferenceType="@433429ed7b304d59b5d60f81f4c60e5f" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="d7c7c06f31d94836bfe3c442b0378951">
+			<Attributed AttributedType="@1f1e5fefc5f84e50975c5104cdcd3cf6">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="67abf964f15243c4b65419efbbda2f4a">
+			<Attributed AttributedType="@52ec150d8bc14ed29d2f4dff6c87e03a">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="21ad3e960c2c41e7a11571534cdc955f">
+			<Attributed AttributedType="@97d3d9cbc44d45348aae93714120fc20">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="379f12dc05f04c54a6137ebbd3a199fe">
+			<VariableArray DereferenceType="@c0915e1e123c44fdadd442842a1214e6" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="c0915e1e123c44fdadd442842a1214e6">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Element 1" DataType="Int16[]" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="5b94548172344c17a8e1f3b290648324">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="TypeDescriptor" DataType="@d7c7c06f31d94836bfe3c442b0378951" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="433429ed7b304d59b5d60f81f4c60e5f">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Type Descriptor" DataType="@d7c7c06f31d94836bfe3c442b0378951" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1f1e5fefc5f84e50975c5104cdcd3cf6">
+			<Typedef TypedefName="Type Descriptor.gtype" UnderlyingType="Int16[]" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="52ec150d8bc14ed29d2f4dff6c87e03a">
+			<Typedef TypedefName="Type Descriptor Header.gtype" UnderlyingType="@7c6a05d11c1f47f69c5befc8de735311" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="97d3d9cbc44d45348aae93714120fc20">
+			<Typedef TypedefName="Type Descriptor Enumeration.gtype" UnderlyingType="@df05968590a44ecb901622f1480b23be" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="7c6a05d11c1f47f69c5befc8de735311">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="length" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="private" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="type" DataType="@21ad3e960c2c41e7a11571534cdc955f" />
+					<Field FieldAccessPolicy="ReadWrite" Name="# elements" DataType="UInt16" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="df05968590a44ecb901622f1480b23be">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="&lt;Null&gt;" />
+					<EnumerationMember Value="1" Name="I8" />
+					<EnumerationMember Value="2" Name="I16" />
+					<EnumerationMember Value="3" Name="I32" />
+					<EnumerationMember Value="4" Name="I64" />
+					<EnumerationMember Value="5" Name="U8" />
+					<EnumerationMember Value="6" Name="U16" />
+					<EnumerationMember Value="7" Name="U32" />
+					<EnumerationMember Value="8" Name="U64" />
+					<EnumerationMember Value="9" Name="SGL" />
+					<EnumerationMember Value="10" Name="DBL" />
+					<EnumerationMember Value="11" Name="EXT" />
+					<EnumerationMember Value="12" Name="CSG" />
+					<EnumerationMember Value="13" Name="CDB" />
+					<EnumerationMember Value="14" Name="CXT" />
+					<EnumerationMember Value="15" Name="0x0F" />
+					<EnumerationMember Value="16" Name="0x10" />
+					<EnumerationMember Value="17" Name="0x11" />
+					<EnumerationMember Value="18" Name="0x12" />
+					<EnumerationMember Value="19" Name="0x13" />
+					<EnumerationMember Value="20" Name="0x14" />
+					<EnumerationMember Value="21" Name="Enum U8" />
+					<EnumerationMember Value="22" Name="Enum U16" />
+					<EnumerationMember Value="23" Name="Enum U32" />
+					<EnumerationMember Value="24" Name="Enum U64" />
+					<EnumerationMember Value="25" Name="SGL PQ" />
+					<EnumerationMember Value="26" Name="DBL PQ" />
+					<EnumerationMember Value="27" Name="EXT PQ" />
+					<EnumerationMember Value="28" Name="CSG PQ" />
+					<EnumerationMember Value="29" Name="CDB PQ" />
+					<EnumerationMember Value="30" Name="CXT PQ" />
+					<EnumerationMember Value="31" Name="0x1F" />
+					<EnumerationMember Value="32" Name="0x20" />
+					<EnumerationMember Value="33" Name="Boolean" />
+					<EnumerationMember Value="34" Name="0x22" />
+					<EnumerationMember Value="35" Name="0x23" />
+					<EnumerationMember Value="36" Name="0x24" />
+					<EnumerationMember Value="37" Name="0x25" />
+					<EnumerationMember Value="38" Name="0x26" />
+					<EnumerationMember Value="39" Name="0x27" />
+					<EnumerationMember Value="40" Name="0x28" />
+					<EnumerationMember Value="41" Name="0x29" />
+					<EnumerationMember Value="42" Name="0x2A" />
+					<EnumerationMember Value="43" Name="0x2B" />
+					<EnumerationMember Value="44" Name="0x2C" />
+					<EnumerationMember Value="45" Name="0x2D" />
+					<EnumerationMember Value="46" Name="0x2E" />
+					<EnumerationMember Value="47" Name="0x2F" />
+					<EnumerationMember Value="48" Name="String" />
+					<EnumerationMember Value="49" Name="0x31" />
+					<EnumerationMember Value="50" Name="Path" />
+					<EnumerationMember Value="51" Name="Pict" />
+					<EnumerationMember Value="52" Name="0x34" />
+					<EnumerationMember Value="53" Name="0x35" />
+					<EnumerationMember Value="54" Name="0x36" />
+					<EnumerationMember Value="55" Name="DAQ" />
+					<EnumerationMember Value="56" Name="0x38" />
+					<EnumerationMember Value="57" Name="0x39" />
+					<EnumerationMember Value="58" Name="0x3A" />
+					<EnumerationMember Value="59" Name="0x3B" />
+					<EnumerationMember Value="60" Name="0x3C" />
+					<EnumerationMember Value="61" Name="0x3D" />
+					<EnumerationMember Value="62" Name="0x3E" />
+					<EnumerationMember Value="63" Name="0x3F" />
+					<EnumerationMember Value="64" Name="Array" />
+					<EnumerationMember Value="65" Name="0x41" />
+					<EnumerationMember Value="66" Name="0x42" />
+					<EnumerationMember Value="67" Name="0x43" />
+					<EnumerationMember Value="68" Name="0x44" />
+					<EnumerationMember Value="69" Name="0x45" />
+					<EnumerationMember Value="70" Name="0x46" />
+					<EnumerationMember Value="71" Name="0x47" />
+					<EnumerationMember Value="72" Name="0x48" />
+					<EnumerationMember Value="73" Name="0x49" />
+					<EnumerationMember Value="74" Name="0x4A" />
+					<EnumerationMember Value="75" Name="0x4B" />
+					<EnumerationMember Value="76" Name="0x4C" />
+					<EnumerationMember Value="77" Name="0x4D" />
+					<EnumerationMember Value="78" Name="0x4E" />
+					<EnumerationMember Value="79" Name="0x4F" />
+					<EnumerationMember Value="80" Name="Cluster" />
+					<EnumerationMember Value="81" Name="0x51" />
+					<EnumerationMember Value="82" Name="0x52" />
+					<EnumerationMember Value="83" Name="Variant" />
+					<EnumerationMember Value="84" Name="Waveform" />
+					<EnumerationMember Value="85" Name="0x55" />
+					<EnumerationMember Value="86" Name="0x56" />
+					<EnumerationMember Value="87" Name="0x57" />
+					<EnumerationMember Value="88" Name="0x58" />
+					<EnumerationMember Value="89" Name="0x59" />
+					<EnumerationMember Value="90" Name="0x5A" />
+					<EnumerationMember Value="91" Name="0x5B" />
+					<EnumerationMember Value="92" Name="0x5C" />
+					<EnumerationMember Value="93" Name="0x5D" />
+					<EnumerationMember Value="94" Name="0x5E" />
+					<EnumerationMember Value="95" Name="0x5F" />
+					<EnumerationMember Value="96" Name="0x60" />
+					<EnumerationMember Value="97" Name="0x61" />
+					<EnumerationMember Value="98" Name="0x62" />
+					<EnumerationMember Value="99" Name="0x63" />
+					<EnumerationMember Value="100" Name="0x64" />
+					<EnumerationMember Value="101" Name="0x65" />
+					<EnumerationMember Value="102" Name="0x66" />
+					<EnumerationMember Value="103" Name="0x67" />
+					<EnumerationMember Value="104" Name="0x68" />
+					<EnumerationMember Value="105" Name="0x69" />
+					<EnumerationMember Value="106" Name="0x6A" />
+					<EnumerationMember Value="107" Name="0x6B" />
+					<EnumerationMember Value="108" Name="0x6C" />
+					<EnumerationMember Value="109" Name="0x6D" />
+					<EnumerationMember Value="110" Name="0x6E" />
+					<EnumerationMember Value="111" Name="0x6F" />
+					<EnumerationMember Value="112" Name="Refnum" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="openg\.library\.variant\ data:Get\ Header\ from\ TD\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACISURBVEhL7ZBRCoAwDEO9/9l2pzrNFrsI0g83GDSUUZP0fXjYNCValGjRvuhjgh50sRKcSHktui4UezI+QhOiCX9A39+Fc9VH8czdD334PXqh68vFv1U8c/ctwgK/R59oLv7SL1KD36M1PwQWxZ6Mj9CEaMJXdGQi5VXo39XQk5RoUaJFO6LNTrR6kd8gE1rwAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.variantdata.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.error:Build\ Error\ Cluster\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVEhLxY4BCsMgFEM9bU/rnboPgZDFqp21++Mxkm94tNSzvkSeushPLxwMGI3UwswwJUmt0MgwZT4yl9UBqeplUr/aXFYH3Bqt8b76OMpGXI3wnAx1hGVMdaFGmKI6VAvedY1KtDLr0oJ3XWu1e0u79G6KqETvLRwweB8o4olo5auF7kMEgKoXHPX/MnQfIgBUveCoGdVC9+FXbqmXMZX35/xXvZEv9X7O+gFjl3fri8yRFgAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.error.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

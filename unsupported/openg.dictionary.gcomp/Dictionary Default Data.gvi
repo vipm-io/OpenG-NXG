@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="7D7FBEBF4D154892EEC3E5A5BE768E35" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.56780" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Dictionary Default Data" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="15" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="17" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="18" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="19" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="20" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="21" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADvSURBVEhL3ZBrDoMwDIO5/w12J+7E2rm4XtL0IZUfW2SFL04w047zOh9SiT6OCmAPlDoGPpvbUVc7wPgK5NQ95K4XZk1g1xFFNmYeYZnuoemDPZSD8ui+qT5XqdQ3Y2bSduWPP1XmUxtV/ykWd6rIh5rbGl0td9fPTcKBOStDM1oBTODWdAD0dafsOxUd2LPyENffkXUVdaoMyWXV3T02TWV1AJlJ2zUb/ZIyq0jjaB/nnaYG0Z2UzgoaR6OjaLLgNDUVrSMc7ZGWo7UDIv3rr9b3OQJSceU1iIaYwg7oayoaQmIq40daiF7VL0Zf5xttAl4FqslC7wAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="55" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="165 145 40 15" DataItem="14" Id="32" Label="33" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@50a07c0cd26b499680a2376ab663d1ef" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="32" Bounds="165 122 65 20" Id="33" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data out</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Label Id="41" LabelOwner="[UIModel]34" Left="[float]143" Text="[string]Data out" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" ClusterType="[Type]@50a07c0cd26b499680a2376ab663d1ef" Height="[float]226" Id="34" IsTabStop="[bool]True" Label="[UIModel]41" Left="[float]143" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" Width="[float]172" p4:ControlDefinitionChecksum="gPFaOhQ+n6/P7OfszMJNfQ==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="OpenG\.Dictionary:Dictionary\ Data\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<p4:ArrayViewer ArrayElement="[UIModel]39" Columns="[int]1" Dimensions="[int]1" Height="[float]81" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="35" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]36" Left="[float]4" Rows="[int]1" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=keys}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]156">
+					<p.DefaultElementValue>
+						<Variant>
+							<InnerType>Void</InnerType>
+							<VariantData>null</VariantData>
+						</Variant>
+					</p.DefaultElementValue>
+					<VariantControl BaseName="[string]Variant" Height="[float]75" Id="39" IsIndicator="[bool]True" IsTabStop="[bool]True" Left="[float]35" TabIndex="[int]0" Top="[float]22" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				</p4:ArrayViewer>
+				<p4:Label Id="36" LabelOwner="[UIModel]35" Left="[float]4" Text="[string]keys" Top="[float]4" />
+				<p4:ArrayViewer ArrayElement="[UIModel]40" Columns="[int]1" Dimensions="[int]1" Height="[float]81" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="37" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]38" Left="[float]4" Rows="[int]1" TabIndex="[int]1" Top="[float]133" Value="{ClusterBinding FieldName=values}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]156">
+					<p.DefaultElementValue>
+						<Variant>
+							<InnerType>Void</InnerType>
+							<VariantData>null</VariantData>
+						</Variant>
+					</p.DefaultElementValue>
+					<VariantControl BaseName="[string]Variant" Height="[float]75" Id="40" IsIndicator="[bool]True" IsTabStop="[bool]True" Left="[float]35" TabIndex="[int]0" Top="[float]22" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				</p4:ArrayViewer>
+				<p4:Label Id="38" LabelOwner="[UIModel]37" Left="[float]4" Text="[string]values" Top="[float]113" />
+			</Cluster>
+			<Text Height="[float]365" Id="31" Left="[float]100" Text="[string]&lt;VI Name&gt;&#xA;&#xA;&lt;VI Description&gt;&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2003, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]278" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@50a07c0cd26b499680a2376ab663d1ef" Id="14" Name="Data out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>null</Field1>
+					<Field2>null</Field2>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="OpenG\.Dictionary:Dictionary\ Data\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="50a07c0cd26b499680a2376ab663d1ef">
+			<Attributed AttributedType="@638ec29e3d2b415fb4e4bfbc4bf4e1d9">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Dictionary" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="638ec29e3d2b415fb4e4bfbc4bf4e1d9">
+			<Typedef TypedefName="Dictionary Data.gtype" UnderlyingType="@0b99383bd2f64a7d8a9af87460f8742c" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="0b99383bd2f64a7d8a9af87460f8742c">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="keys" DataType="@2ef2be26dbb04676b34ec143791bb3be" />
+					<Field FieldAccessPolicy="ReadWrite" Name="values" DataType="@2ef2be26dbb04676b34ec143791bb3be" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2ef2be26dbb04676b34ec143791bb3be">
+			<VariableArray DereferenceType="@4529452f36c34cebab2f83e17d79fd2a" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="4529452f36c34cebab2f83e17d79fd2a">
+			<Composite Id="1" Name="Variant" Sealed="" GenericTypeDefinition="Void" BaseType="Void" />
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

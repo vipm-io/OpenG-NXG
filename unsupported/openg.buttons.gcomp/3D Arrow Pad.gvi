@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="A412C9BA38A333E1F3FAA5E023389B2E" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="3D Arrow Pad (Grouped Controls)" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="18" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="20" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="21" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="23" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="24" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEbSURBVEhLxZThEYMgDEZdwVk6nLO4grN0J/vql0sFA+iJ1/crkOQZONphfYz/qV9VrKhAQz0MwztimiZSVlTggprYlz3Vm9boqd6ECajHcbSiAqfUiDSmpKKbelkWqQmAHWIrKtBWy5txVv0dpgwHDyFlzzvip+bUR+Z5LqWAfotS1BWo97FObYsDmdor/a4SNYHjRUodcbXqBctAvaV+qIg7/XZHhGpQV3vqplozOizVlajZ4lUp9hd2Rq1iGhWwQ5yoldijos0TgNq9e3I1MGCG9s10AHWly9QVwmah/gpttQ2Z4qeucEFN7Mtn1dyJFRU4pZZ0Tze1ju+w7KbWg5VXsT5mRQXaaiz8T2b0UfPTCLl7IXd4TL2uH5NRlGhp1lNVAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="70 115 40 15" DataItem="17" Id="37" Label="38" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="37" Bounds="70 92 20 20" Id="38" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Up</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="70 195 40 15" DataItem="16" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="39" Bounds="70 172 30 20" Id="40" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Left</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="70 235 40 15" DataItem="15" Id="41" Label="42" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="41" Bounds="70 212 40 20" Id="42" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Right</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="70 155 40 15" DataItem="14" Id="43" Label="44" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="43" Bounds="70 132 45 20" Id="44" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Down</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Switch BaseName="[string]Square LED" ClickMode="[ClickMode]Release" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" FalseContentVisibility="[Visibility]Collapsed" Height="[float]72" Id="25" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]27" Left="[float]133" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]3" Top="[float]84" TrueContent="[string]On" Value="{DataItemBinding Id=14}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="27" LabelOwner="[UIModel]25" Left="[float]133" Text="[string]Down" Top="[float]64" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Square LED" ClickMode="[ClickMode]Release" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" FalseContentVisibility="[Visibility]Collapsed" Height="[float]72" Id="28" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]30" Left="[float]166" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]2" Top="[float]57" TrueContent="[string]On" Value="{DataItemBinding Id=15}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="30" LabelOwner="[UIModel]28" Left="[float]166" Text="[string]Right" Top="[float]37" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Square LED" ClickMode="[ClickMode]Release" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" FalseContentVisibility="[Visibility]Collapsed" Height="[float]72" Id="31" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]33" Left="[float]100" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]1" Top="[float]57" TrueContent="[string]On" Value="{DataItemBinding Id=16}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="33" LabelOwner="[UIModel]31" Left="[float]100" Text="[string]Left" Top="[float]37" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Square LED" ClickMode="[ClickMode]Release" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" FalseContentVisibility="[Visibility]Collapsed" Height="[float]72" Id="34" IsMomentary="[bool]False" IsReadOnly="[bool]False" IsTabStop="[bool]True" Label="[UIModel]36" Left="[float]133" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]0" Top="[float]30" TrueContent="[string]On" Value="{DataItemBinding Id=17}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="36" LabelOwner="[UIModel]34" Left="[float]133" Text="[string]Up" Top="[float]10" Visible="[bool]False" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem DataType="Boolean" Id="14" IsLatched="True" Name="Down" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Boolean" Id="15" IsLatched="True" Name="Right" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Boolean" Id="16" IsLatched="True" Name="Left" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem DataType="Boolean" Id="17" IsLatched="True" Name="Up" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+</SourceFile>

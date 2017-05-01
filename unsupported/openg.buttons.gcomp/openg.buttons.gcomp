@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="18DEAE163285FDA169A5B7E02BBC1745" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6881" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6881" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6881" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Buttons" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration AssociatedPalettes="19" Id="10" Name="Default">
+			<CompilerSymbolTable Id="11" xmlns="http://www.ni.com/PlatformFramework" />
+			<ComponentItemProperties AssociatedEnvoyId="14" Exported="True" Id="16" />
+			<ComponentItemProperties AssociatedEnvoyId="15" Exported="True" Id="17" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="7" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot,ComponentDefinitionEnvoyHierarchyRoot,EmbeddedReference" Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="13" Name="OpenG\.Buttons">
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="\3D\ Arrow\ Pad\.gvi" StoragePath="3D Arrow Pad.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ buttons\.gvi" StoragePath="VI Tree - buttons.gvi" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot,ComponentDefinitionContentReferenceRoot,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="openg\.buttons\.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.ComponentEditor.SourceModel.ComponentConfiguration" ContentIdentifier="10" Id="12" Name="Default" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>
