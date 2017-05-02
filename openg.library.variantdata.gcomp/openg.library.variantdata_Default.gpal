@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7DE8983C65A9BBF24868D650E2DEEC50" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="82B99BA5A4F461DB6D90DEB238D7F5B8" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ApplicationVersionInfo Build="4.9.1.56780" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6881" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6881" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<PaletteDefinition PaletteBaseName="Diagram" xmlns="http://www.ni.com/PlatformFramework">
 		<PaletteContentCategory Display="Add-ons" Id="1" ShortName="Add-ons" UniqueId="NI.LabVIEW.VI:PaletteCategory.Addons" Weight="35">
@@ -79,7 +79,55 @@
 						<PaletteContentLeaf Id="153" MethodTarget="Get\ Refnum\ Type\ Enum\ from\ TD\.gvi" />
 						<PaletteContentLeaf Id="154" MethodTarget="Get\ Default\ Data\ from\ TD\.gvi" />
 						<PaletteContentLeaf Id="155" MethodTarget="Get\ Data\ Name\ from\ TD\.gvi" />
+						<PaletteContentLeaf Id="163" MethodTarget="openg\.library\.variant\ data:Size\ of\ Data\ from\ TD\.gvi" />
+						<PaletteContentLeaf Id="164" MethodTarget="openg\.library\.variant\ data:Parse\ String\ with\ TDs\.gvi" />
+						<PaletteContentLeaf Id="165" MethodTarget="openg\.library\.variant\ data:Get\ Cluster\ Elements\ TDs\.gvi" />
+						<PaletteContentLeaf Id="166" MethodTarget="openg\.library\.variant\ data:Split\ Cluster\ TD\.gvi" />
+						<PaletteContentLeaf Id="167" MethodTarget="openg\.library\.variant\ data:Get\ Data\ TD\ from\ Datalog\ Ref\.gvi" />
+						<PaletteContentLeaf Id="168" MethodTarget="openg\.library\.variant\ data:Array\ Dim\(s\)\ from\ TD\.gvi" />
+						<PaletteContentLeaf Id="169" MethodTarget="openg\.library\.variant\ data:Get\ Element\ TD\ from\ Array\ TD\.gvi" />
+						<PaletteContentLeaf Id="170" MethodTarget="openg\.library\.variant\ data:Get\ Physical\ Units\ from\ TD\.gvi" />
+						<PaletteContentLeaf Id="171" MethodTarget="openg\.library\.variant\ data:Remove\ Typedefs\ from\ Variant\.gvi" />
+						<PaletteContentLeaf Id="172" MethodTarget="openg\.library\.variant\ data:Get\ Strings\ from\ Enum\ TD\.gvi" />
 					</PaletteContentCategory>
+					<PaletteContentCategory Display="VNumeric" Id="173" UniqueId="OpenG.Variant Data.VNumeric">
+						<p.InfoTipTitle>VNumeric</p.InfoTipTitle>
+						<IconPanel Height="[float]40" Id="174" Left="[float]0" Top="[float]0" Width="[float]40">
+							<IconTemplate Id="175" Left="[float]0" TemplateName="Blank" Top="[float]0" />
+							<Path Data="[PathGeometry]M 18,0 L 19,2 H 38 V 3 H 2 V 2 L 4,2 L 5,0 H 18 Z M 39,5 H 1 V 39 H 39 V 5  M 40,7 V 40 H 0 V 4 H 40 V 7 Z" EditMode="[ShapeEditMode]EditablePath" Fill="[SMSolidColorBrush]#ff8d9194" Height="[float]40" Id="176" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Stroke="[SMSolidColorBrush]#00ffffff" StrokeThickness="[float]1" Top="[float]0" Width="[float]40" />
+							<Path Data="[PathGeometry]M 39,39 H 1 V 5 H 39 V 39 Z" EditMode="[ShapeEditMode]EditablePath" Fill="[SMSolidColorBrush]#fff3f4f5" Height="[float]40" Id="177" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Stroke="[SMSolidColorBrush]#00ffffff" StrokeThickness="[float]1" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+						<PaletteContentLeaf Id="183" MethodTarget="openg\.library\.variant\ data:Strip\ Units\.gvi" />
+						<PaletteContentLeaf Id="184" MethodTarget="openg\.library\.variant\ data:Get\ Physical\ Units\.gvi" />
+					</PaletteContentCategory>
+					<PaletteContentCategory Display="VVariant" Id="185" UniqueId="OpenG.Variant Data.VVariant">
+						<IconPanel Height="[float]40" Id="186" Left="[float]0" Top="[float]0" Width="[float]40">
+							<IconTemplate Id="187" Left="[float]0" TemplateName="Blank" Top="[float]0" />
+							<Path Data="[PathGeometry]M 18,0 L 19,2 H 38 V 3 H 2 V 2 L 4,2 L 5,0 H 18 Z M 39,5 H 1 V 39 H 39 V 5  M 40,7 V 40 H 0 V 4 H 40 V 7 Z" EditMode="[ShapeEditMode]EditablePath" Fill="[SMSolidColorBrush]#ff8d9194" Height="[float]40" Id="188" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Stroke="[SMSolidColorBrush]#00ffffff" StrokeThickness="[float]1" Top="[float]0" Width="[float]40" />
+							<Path Data="[PathGeometry]M 39,39 H 1 V 5 H 39 V 39 Z" EditMode="[ShapeEditMode]EditablePath" Fill="[SMSolidColorBrush]#fff3f4f5" Height="[float]40" Id="189" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Stroke="[SMSolidColorBrush]#00ffffff" StrokeThickness="[float]1" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+						<PaletteContentLeaf Id="190" MethodTarget="openg\.library\.variant\ data:Unwrap\ VVariant\.gvi" />
+					</PaletteContentCategory>
+					<PaletteContentCategory Display="Additional Object Functions" Id="191" UniqueId="OpenG.Variant Data.Additional Object Functions">
+						<IconPanel Height="[float]40" Id="192" Left="[float]0" Top="[float]0" Width="[float]40">
+							<IconTemplate Id="193" Left="[float]0" TemplateName="Blank" Top="[float]0" />
+							<Path Data="[PathGeometry]M 18,0 L 19,2 H 38 V 3 H 2 V 2 L 4,2 L 5,0 H 18 Z M 39,5 H 1 V 39 H 39 V 5  M 40,7 V 40 H 0 V 4 H 40 V 7 Z" EditMode="[ShapeEditMode]EditablePath" Fill="[SMSolidColorBrush]#ff8d9194" Height="[float]40" Id="194" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Stroke="[SMSolidColorBrush]#00ffffff" StrokeThickness="[float]1" Top="[float]0" Width="[float]40" />
+							<Path Data="[PathGeometry]M 39,39 H 1 V 5 H 39 V 39 Z" EditMode="[ShapeEditMode]EditablePath" Fill="[SMSolidColorBrush]#fff3f4f5" Height="[float]40" Id="195" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Stroke="[SMSolidColorBrush]#00ffffff" StrokeThickness="[float]1" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+						<PaletteContentLeaf Id="196" MethodTarget="openg\.library\.variant\ data:Get\ GOOP\ Object\ Type\.gvi" />
+					</PaletteContentCategory>
+					<PaletteContentLeaf Id="197" MethodTarget="openg\.library\.variant\ data:Get\ Data\ Name\.gvi" />
+					<PaletteContentLeaf Id="198" MethodTarget="openg\.library\.variant\ data:Set\ Data\ Name\.gvi" />
+					<PaletteContentLeaf Id="199" MethodTarget="openg\.library\.variant\ data:Get\ Variant\ Attributes\.gvi" />
+					<PaletteContentLeaf Id="200" MethodTarget="openg\.library\.variant\ data:Variant\ to\ Header\ Info\.gvi" />
+					<PaletteContentLeaf Id="201" MethodTarget="openg\.library\.variant\ data:Get\ TDEnum\ from\ Data\.gvi" />
+					<PaletteContentLeaf Id="202" MethodTarget="openg\.library\.variant\ data:Get\ Waveform\ Type\ Enum\ from\ Data\.gvi" />
+					<PaletteContentLeaf Id="203" MethodTarget="openg\.library\.variant\ data:Get\ Refnum\ Type\ Enum\ from\ Data\.gvi" />
+					<PaletteContentLeaf Id="204" MethodTarget="openg\.library\.variant\ data:Get\ Default\ Data\ from\ Variant\.gvi" />
+					<PaletteContentLeaf Id="205" MethodTarget="openg\.library\.variant\ data:LVOOP\ Get\ Default\ Object\.gvi" />
+					<PaletteContentLeaf Id="206" MethodTarget="openg\.library\.variant\ data:LVOOP\ Is\ Default\ Value\.gvi" />
+					<PaletteContentLeaf Id="207" MethodTarget="openg\.library\.variant\ data:LVOOP\ Is\ Same\ Or\ Descendant\ Class\.gvi" />
+					<PaletteContentLeaf Id="208" MethodTarget="openg\.library\.variant\ data:LVOOP\ Return\ Class\ Name\.gvi" />
 				</PaletteContentCategory>
 			</PaletteContentCategory>
 		</PaletteContentCategory>
