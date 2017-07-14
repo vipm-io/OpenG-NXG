@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="0577794E85791645FACD4F782505DD12" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Multi-line String to Array" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Converts a multiline input &lt;B&gt;string&lt;/B&gt; to a 1D array of &lt;B&gt;lines&lt;/B&gt; (without EOLs). If the input string ends in an EOL, then the last line will be removed (since it is empty) -- this behavior is useful for instrument communication where the last line ends with a EOL character that we do not wish to treat as a seperate line (since it contains no data).</p.UserDescription>
+		<Icon Id="16" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="18" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="19" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="20" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="22" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADlSURBVEhLvVEBEsIgDNv/38aftnbBUEqLTsFcyKUNxN15lLMch+ojZk9kDzRvYzBcklmKfVU6x0m1RADHTBXiOFgvwDimoemUjrRxNmbeqYIxwJiGIxle6NTNX4yES+/dcM95m3Ik3Z2mdEvYVS9HV81hFVv1Dmi1/RHRhdz85Zu4uXrTt/+9Wv+E36AlKKKC1mebCYNqGG5CYxkuhdjfp0fLBnUMl8L6xM68Ojehx2hNEDgfburjucoZKdkIl8I4BeuG85x8OdalKucT4jZ9ffwy3FvTgjltxVs+rn4EfWLfr+RZLngzJGQtXcMxAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="70" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 50" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="155 145 40 15" DataItem="14" Id="33" Label="34" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="33" Bounds="118 145 32 14" Id="34" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>string</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="1085 195 40 15" DataItem="15" Id="35" Label="36" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="35" Bounds="1130 195 26 14" Id="36" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>lines</p.Text>
+			</NodeLabel>
+			<Literal Bounds="110 165 85 15" DataType="@37e1d420e151452595fa312ea5360405" Facade="Enum" Id="37" Label="38" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>2</p.Data>
+				<EnumBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="37" Bounds="110 183 85 18" Id="38" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Convert to:</p.Text>
+			</NodeLabel>
+			<Literal Bounds="125 130 45 15" DataType="String" Facade="String" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>"\r\n"</p.Data>
+				<StringBehavior TextDisplayMode="Escaped" />
+			</Literal>
+			<NodeLabel AttachedTo="39" Bounds="125 148 111 18" Id="40" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>delimiter (Tab)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="215 145 40 40" DomainName="openg.library.string" Id="41" Label="42" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\string\\string.llb\\Convert EOLs (String).gvi&quot;" Target="openg\.library\.string:Convert\ EOLs\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="String in" />
+						<Parameter Id="L2" Desc="Convert to:" />
+						<Parameter Id="R2" Desc="String out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@37e1d420e151452595fa312ea5360405" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="41" Bounds="215 188 169 18" Id="42" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Convert EOLs (String)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="275 155 40 40" DomainName="openg.library.string" Id="43" Label="44" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\string\\string.llb\\String to 1D Array.gvi&quot;" Target="openg\.library\.string:String\ to\ 1D\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="string" />
+						<Parameter Id="T0" Desc="delimiter (Tab)" />
+						<Parameter Id="T1" Desc="ignore duplicate delimiters? (F=No)" />
+						<Parameter Id="R2" Desc="Array of Strings" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String[]" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="43" Bounds="275 198 205 18" Id="44" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>String to 1D Array</p.Text>
+			</NodeLabel>
+			<DeleteFromArray Bounds="415 175 40 40" Id="45" Terminals="inArray=61, length (1), outArray=57, deleted=58, index0" />
+			<IsEmptyStringOrPath Bounds="845 185 30 30" Id="46" />
+			<Select Bounds="1025 180 40 40" Id="47" />
+			<Comment Bounds="415 220 60 15" Id="48" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>all lines</p.Text>
+			</Comment>
+			<Comment Bounds="895 195 110 15" Id="49" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>discard last line?</p.Text>
+			</Comment>
+			<Comment Bounds="415 140 125 30" Id="50" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>delete last line (element) from array</p.Text>
+			</Comment>
+			<Comment Bounds="580 195 60 15" Id="51" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>last line</p.Text>
+			</Comment>
+			<Comment Bounds="580 175 100 15" Id="52" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>all but last line</p.Text>
+			</Comment>
+			<Comment Bounds="660 195 145 15" Id="53" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Is last element empty?</p.Text>
+			</Comment>
+			<Comment Bounds="125 70 130 55" Id="54" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Convert all EOLs to CRLF and then split string at CRLF.  Outputs array of lines (without EOLs).</p.Text>
+			</Comment>
+			<Comment Bounds="335 175 60 15" Id="55" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>all lines</p.Text>
+			</Comment>
+			<Wire Id="56" Joints="N(46:empty?)|(875,200) N(47:s)|(1025,200)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="57" Joints="N(45:outArray)|(455,180) h(560) v(5) N(47:t)|(1025,185)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="58" Joints="N(45:deleted)|(455,200) N(46:string/path)|(845,200)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="59" Joints="N(47:s? t:f)|(1065,200) N(35:Value)|(1088,200)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="60" Joints="N(33:Value)|(195,150) h(10) v(10) N(41:L1)|(215,160)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="61" Joints="N(43:R2)|(315,180) h(90) B(1) N(45:inArray)|(415,180) B(1) v(45) h(610) v(-10) N(47:f)|(1025,215)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="62" Joints="N(41:R2)|(255,170) N(43:L1)|(275,170)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="63" Joints="N(39:Out)|(170,135) h(120) N(43:T0)|(290,155)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="64" Joints="N(37:Out)|(195,170) N(41:L2)|(215,170)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="23" IsTabStop="[bool]True" Label="[UIModel]24" Left="[float]107" TabIndex="[int]0" Text="{DataItemBinding Id=14}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]94" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="24" LabelOwner="[UIModel]23" Left="[float]107" Text="[string]string" Top="[float]74" Width="[float]31" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="26" LabelOwner="[UIModel]25" Left="[float]384" Text="[string]lines" Top="[float]75" Width="[float]24" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]30" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="25" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]26" Left="[float]384" Rows="[int]1" TabIndex="[int]1" Top="[float]95" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]167" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>""</p.DefaultElementValue>
+				<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="30" IsReadOnly="[bool]True" IsTabStop="[bool]True" Left="[float]61" TabIndex="[int]0" Text="[string]" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]6" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Text Height="[float]527" Id="31" Left="[float]100" Text="[string]Multi-line String to Array.vi&#xA;&#xA;Converts a multiline string to a 1D array of lines without EOLs.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002-2007, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]208" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Height="[float]16" Id="32" Left="[float]553" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]205" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="String" Id="14" Name="string" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="String[]" Id="15" Name="lines" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="37e1d420e151452595fa312ea5360405">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="CR" />
+					<EnumerationMember Value="1" Name="LF" />
+					<EnumerationMember Value="2" Name="CRLF" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="openg\.library\.string:Convert\ EOLs\ \(String\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC9SURBVEhL7VVBDsMwDNr/39Y/ZYtwGWFuokz1rYhZNsY0t71aGZ5oQ2V0IY52FLFHx0c2oSkpI9rqFemZ28DBygNtTNQ6p7vt0iK4NT3lYNWDuaL6Fd3NmzSCoukpv9ZdaErKteNvJtH2IrxxF/1QU8BYnB/QkWJKeqKhihm9KtqoQVcUh8pOFwZdsU7GaKByoWM4pNHtun5+HJRUfm+WYjRQJ4R1F/2Q92hu5P2JJJ5fg/iPLMATbSiLbu0NQKw0yKkP508AAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.string.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.string:String\ to\ 1D\ Array\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADjSURBVEhL1VBBEoQgDPP/b/NPriUYYwu7xYHDdmInTUNQt/3Ye9iucnoS2Wj0IQy8NUkSA+4l0eXV73LbHtK+q5z+BSPW0R+yqCwa8bxqCmo0Ki4cKObN5QGTw+TUqZRlm4OQl+VzHTvglGjzK12QuA44pWdT0SpKUCj2SI9bJ5uIGr2oLJpXTccjGrfNwo/o8nFvys66IB2TSkQ3Wg+TR9IcAYgN39lBVGl2EHLqtVOFpAWFqyaJ/R4xKM6FMymgFEslrt8jBgUd4LHUpoqK1qkmoUE9vI/OlDn12Fz8Y/SxfwD0eLqaYNLRIgAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.string.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

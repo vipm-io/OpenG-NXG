@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="0242570AB16A5B32E901E4EDF33D779A" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Delete Elements from 2D Array (CDB).vi" Id="1" OverloadGroup="Delete Elements from Array" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This polymorphic VI deletes elements from a 1D or 2D &lt;B&gt;array&lt;/B&gt; at the corresponding &lt;B&gt;indices&lt;/B&gt;, returning &lt;B&gt;array w/ subset deleted&lt;/B&gt; and &lt;B&gt;deleted elements&lt;/B&gt;.  For 2D arrays, wire the &lt;B&gt;delete (rows or columns)&lt;/B&gt; input to specify whether to delete rows or columns.</p.UserDescription>
+		<Icon Id="19" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="21" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="22" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="23" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="24" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="25" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD5SURBVEhLvZALEoQgDEP3/mfzTi5OSgilRVx1MxlJH7H7+Wz79pJt9ScXq7RdROpqdgjNMr1YtmHShkgAswzZSIoQZiVunJTrkUvbl8ptNUKYlbhxUq5H3oZIALMM2UiKEGYlbpyU65FL25fKbTVCmJXQ81eO4OYxQyS0XUSyAnsIYVay7rY6E25Ru+TuHV2R5XX71Zm0tuhf3oHDj1R4azWeKvIj8Bqz0Z64WxhwrJG0oTyprlGFkQZR7kgbypPShst0ViNpQ3lSIyzZGRC3FPkReI3Z6EBGhx2FJ+/f8furux9y9lcs2q97am/xH1e7fMePfUfvffsCehjCX1Fe3TAAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="115" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 50" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 65" Parameter="17" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 80" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 95" Parameter="18" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="515 605 40 15" DataItem="14" Id="58" Label="59" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="58" Bounds="515 588 38 14" Id="59" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>indices</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="515 455 40 15" DataItem="15" Id="60" Label="61" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="ComplexDouble[,]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="60" Bounds="515 438 30 14" Id="61" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>array</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="1300 455 40 15" DataItem="16" Id="62" Label="63" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="ComplexDouble[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="62" Bounds="1300 438 132 14" Id="63" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>array w/ subset deleted</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="515 395 40 15" DataItem="17" Id="64" Label="65" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@08bf1556e6a44b838341936ae8b2a624" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="64" Bounds="515 378 139 14" Id="65" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>delete (rows or columns)</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="1300 490 40 15" DataItem="18" Id="66" Label="67" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="ComplexDouble[,]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="66" Bounds="1300 473 95 14" Id="67" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>deleted elements</p.Text>
+			</NodeLabel>
+			<Literal Bounds="515 625 120 15" DataType="@31ca7ea46a904820a9acfb7b99795564" Facade="Enum" Id="68" Label="69" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>1</p.Data>
+				<EnumBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="68" Bounds="515 604 42 18" Id="69" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Order</p.Text>
+			</NodeLabel>
+			<Literal Bounds="830 635 115 15" DataType="@31ca7ea46a904820a9acfb7b99795564" Facade="Enum" Id="70" Label="71" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<EnumBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="70" Bounds="830 614 42 18" Id="71" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Order</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="655 605 40 40" DomainName="openg.library.array" Id="72" Label="73" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Sort 1D Array (I32).gvi&quot;" Target="openg\.library\.array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Array in" />
+						<Parameter Id="L2" Desc="Order" />
+						<Parameter Id="R0" Desc="Sorted Array out" />
+						<Parameter Id="R1" Desc="Sorted Pointers" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Int32[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@31ca7ea46a904820a9acfb7b99795564" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="72" Bounds="655 584 146 18" Id="73" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Sort 1D Array (I32)</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="965 615 40 40" DomainName="openg.library.array" Id="74" Label="75" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Sort 1D Array (I32).gvi&quot;" Target="openg\.library\.array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Array in" />
+						<Parameter Id="L2" Desc="Order" />
+						<Parameter Id="R0" Desc="Sorted Array out" />
+						<Parameter Id="R1" Desc="Sorted Pointers" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Int32[]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@31ca7ea46a904820a9acfb7b99795564" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="74" Bounds="965 594 146 18" Id="75" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Sort 1D Array (I32)</p.Text>
+			</NodeLabel>
+			<CaseStructure Bounds="815 345 375 255" DataType="@08bf1556e6a44b838341936ae8b2a624" Id="78" Selected="79" UserSelectorBounds="130 0 116 17">
+				<CaseStructure.Case Bounds="5 5 365 245" Id="79" Pattern="&quot;rows&quot;">
+					<Literal Bounds="245 215 85 15" DataType="@08bf1556e6a44b838341936ae8b2a624" Facade="Enum" Id="87" Label="88" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>0</p.Data>
+						<EnumBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="87" Bounds="245 194 108 18" Id="88" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reorder (rows)</p.Text>
+					</NodeLabel>
+					<ForLoop Bounds="25 40 145 136" DiagramId="90" Id="89" Label="93">
+						<LoopIteration Bounds="10 108 15 15" Id="91" />
+						<DeleteFromArray Bounds="55 63 40 50" Id="98" Rank="2" Terminals="inArray=121, length (1), outArray=122, deleted=120, index0=123, index1" />
+						<Comment Bounds="40 20 75 15" Id="99" xmlns="http://www.ni.com/MocCommon">
+							<p.Text>delete row</p.Text>
+						</Comment>
+						<Wire Id="120" Joints="N(98:deleted)|(95,88) h(33) v(15) N(97:i0)|(133,103)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="121" Joints="N(95:i0)|(6,68) N(98:inArray)|(55,68)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="122" Joints="N(98:outArray)|(95,68) N(94:90)|(133,68)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="123" Joints="N(96:i0)|(6,98) N(98:index0)|(55,98)" xmlns="http://www.ni.com/PlatformFramework" />
+						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="92" Terminals="89, 90" />
+						<RightShiftRegister Bounds="135 65 13 10" Docking="Right" Id="94" Terminals="89=128, 90=122" />
+						<LeftShiftRegister Bounds="-5 65 13 10" Docking="Left" Id="95" RightRegister="94" Terminals="o0=126, i0=121" />
+						<LoopTunnel AutoIndex="True" Bounds="-5 95 13 10" Docking="Left" Id="96" Terminals="o0=127, i0=123" TunnelMode="0" />
+						<LoopTunnel AutoIndex="True" Bounds="135 100 13 10" Docking="Right" Id="97" Terminals="o0=125, i0=120" TunnelMode="0" />
+					</ForLoop>
+					<NodeLabel AttachedTo="89" Bounds="25 23 125 14" Id="93" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>For Each row to delete</p.Text>
+					</NodeLabel>
+					<Wire Id="124" Joints="N(87:Out)|(330,220) N(86:79)|(361,220)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="125" Joints="N(97:o0)|(173,145) N(85:79)|(361,145)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="126" Joints="N(84:79)|(4,110) N(95:o0)|(20,110)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="127" Joints="N(83:79)|(4,140) N(96:o0)|(20,140)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="128" Joints="N(94:89)|(173,110) N(82:79)|(361,110)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 365 245" Id="80" Pattern="&quot;columns&quot;">
+					<Literal Bounds="235 215 105 15" DataType="@08bf1556e6a44b838341936ae8b2a624" Facade="Enum" Id="100" Label="101" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>1</p.Data>
+						<EnumBehavior />
+					</Literal>
+					<NodeLabel AttachedTo="100" Bounds="235 194 108 18" Id="101" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reorder (rows)</p.Text>
+					</NodeLabel>
+					<ForLoop Bounds="25 40 145 146" DiagramId="103" Id="102" Label="106">
+						<LoopIteration Bounds="10 118 15 15" Id="104" />
+						<DeleteFromArray Bounds="55 63 40 50" Id="111" Rank="2" Terminals="inArray=131, length (1), outArray=132, deleted=130, index0, index1=129" />
+						<Comment Bounds="35 20 95 15" Id="112" xmlns="http://www.ni.com/MocCommon">
+							<p.Text>delete column</p.Text>
+						</Comment>
+						<Wire Id="129" Joints="N(109:i0)|(6,98) h(9) v(10) N(111:index1)|(55,108)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="130" Joints="N(111:deleted)|(95,88) h(33) v(15) N(110:i0)|(133,103)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="131" Joints="N(108:i0)|(6,68) N(111:inArray)|(55,68)" xmlns="http://www.ni.com/PlatformFramework" />
+						<Wire Id="132" Joints="N(111:outArray)|(95,68) N(107:103)|(133,68)" xmlns="http://www.ni.com/PlatformFramework" />
+						<LoopCount Bounds="1 1 15 15" Docking="Left" Id="105" Terminals="102, 103" />
+						<RightShiftRegister Bounds="135 65 13 10" Docking="Right" Id="107" Terminals="102=138, 103=132" />
+						<LeftShiftRegister Bounds="-5 65 13 10" Docking="Left" Id="108" RightRegister="107" Terminals="o0=136, i0=131" />
+						<LoopTunnel AutoIndex="True" Bounds="-5 95 13 10" Docking="Left" Id="109" Terminals="o0=137, i0=129" TunnelMode="0" />
+						<LoopTunnel AutoIndex="True" Bounds="135 100 13 10" Docking="Right" Id="110" Terminals="o0=135, i0=130" TunnelMode="0" />
+					</ForLoop>
+					<NodeLabel AttachedTo="102" Bounds="25 23 144 14" Id="106" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>For each column to delete</p.Text>
+					</NodeLabel>
+					<Transpose2DArray Bounds="260 140 40 20" Id="113" />
+					<Comment Bounds="230 165 125 15" Id="114" xmlns="http://www.ni.com/MocCommon">
+						<p.Text>Convert to columns</p.Text>
+					</Comment>
+					<Wire Id="133" Joints="N(100:Out)|(340,220) N(86:80)|(361,220)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="134" Joints="N(113:transposed array)|(300,145) N(85:80)|(361,145)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="135" Joints="N(110:o0)|(173,145) N(113:2D array)|(260,145)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="136" Joints="N(84:80)|(4,110) N(108:o0)|(20,110)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="137" Joints="N(83:80)|(4,140) N(109:o0)|(20,140)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="138" Joints="N(107:102)|(173,110) N(82:80)|(361,110)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 50 13 10" Docking="Left" Id="81" Terminals="78=150, 79, 80" />
+				<CaseStructure.Tunnel Bounds="366 110 13 10" Docking="Right" Id="82" Terminals="78=151, 79=128, 80=138" />
+				<CaseStructure.Tunnel Bounds="-4 140 13 10" Docking="Left" Id="83" Terminals="78=146, 79=127, 80=137" />
+				<CaseStructure.Tunnel Bounds="-4 110 13 10" Docking="Left" Id="84" Terminals="78=144, 79=126, 80=136" />
+				<CaseStructure.Tunnel Bounds="366 145 13 10" Docking="Right" Id="85" Terminals="78=142, 79=125, 80=134" />
+				<CaseStructure.Tunnel Bounds="366 220 13 10" Docking="Right" Id="86" Terminals="78=140, 79=124, 80=133" />
+			</CaseStructure>
+			<MethodCall Bounds="1220 490 40 40" DomainName="openg.library.array" Id="115" Label="116" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\array\\array.llb\\Reorder 2D Array2 (CDB).gvi&quot;" Target="openg\.library\.array:Reorder\ 2D\ Array2\ \(CDB\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="array" />
+						<Parameter Id="L2" Desc="indices" />
+						<Parameter Id="L3" Desc="reorder (rows)" />
+						<Parameter Id="R0" Desc="reordered array" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="ComplexDouble[,]" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Int32[]" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@08bf1556e6a44b838341936ae8b2a624" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="ComplexDouble[,]" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="115" Bounds="1220 469 182 18" Id="116" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Reorder 2D Array (CDB)</p.Text>
+			</NodeLabel>
+			<Comment Bounds="875 665 225 55" Id="117" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Reorder the deleted elements by getting the sorted pointers of the sorted pointers -- this is order of the deleted elements.</p.Text>
+			</Comment>
+			<Comment Bounds="580 660 190 50" Id="118" SizeToText="False" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>Sort Indices, descending, to delete array elements from the back of the array to the front.</p.Text>
+			</Comment>
+			<Comment Bounds="825 615 100 15" Id="119" xmlns="http://www.ni.com/MocCommon">
+				<p.Text>sorted pointers</p.Text>
+			</Comment>
+			<Wire Id="139" Joints="N(74:R1)|(1005,630) h(200) v(-115) N(115:L2)|(1220,515)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="140" Joints="N(86:78)|(1194,570) h(21) v(-45) N(115:L3)|(1220,525)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="141" Joints="N(115:R0)|(1260,495) N(66:Value)|(1303,495)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="142" Joints="N(85:78)|(1194,495) N(115:L0)|(1220,495)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="144" Joints="N(60:Value)|(555,460) N(84:78)|(811,460)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="145" Joints="N(58:Value)|(555,610) N(72:L0)|(655,610)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="146" Joints="N(72:R0)|(695,610) h(105) v(-120) N(83:78)|(811,490)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="147" Joints="N(72:R1)|(695,620) N(74:L0)|(965,620)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="148" Joints="N(70:Out)|(945,640) N(74:L2)|(965,640)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="149" Joints="N(68:Out)|(635,630) N(72:L2)|(655,630)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="150" Joints="N(64:Value)|(555,400) N(81:78)|(811,400)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="151" Joints="N(82:78)|(1194,460) N(62:Value)|(1303,460)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Label Height="[float]16" Id="27" LabelOwner="[UIModel]26" Left="[float]148" Text="[string]indices" Top="[float]112" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]31" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="26" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]27" Left="[float]148" Rows="[int]1" TabIndex="[int]0" Top="[float]132" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]132" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="31" Interval="[int]1" IsTabStop="[bool]True" Left="[float]61" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]6" Value="[int]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Label Height="[float]16" Id="34" LabelOwner="[UIModel]33" Left="[float]148" Text="[string]array" Top="[float]12" Width="[float]27" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]38" Columns="[int]1" Dimensions="[int]2" FirstIndex="[ArrayElementIndex]0,0" Height="[float]60" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="33" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]34" Left="[float]148" Rows="[int]1" TabIndex="[int]1" Top="[float]32" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]132" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="38" Interval="[ComplexDouble]1 + 0i" IsTabStop="[bool]True" Left="[float]61" Maximum="[ComplexDouble]Infinity + 0i" MinHeight="[float]24" Minimum="[ComplexDouble]-Infinity + 0i" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]6" Value="[ComplexDouble]0 + 0i" ValueFormatter="[string]LV:N2" ValueType="[Type]ComplexDouble" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Label Height="[float]16" Id="41" LabelOwner="[UIModel]40" Left="[float]413" Text="[string]array w/ subset deleted" Top="[float]12" Width="[float]124" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]45" Columns="[int]1" Dimensions="[int]2" FirstIndex="[ArrayElementIndex]0,0" Height="[float]60" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="40" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]41" Left="[float]413" Rows="[int]1" TabIndex="[int]2" Top="[float]32" Value="{DataItemBinding Id=16}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]121" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="45" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ComplexDouble]1 + 0i" IsTabStop="[bool]True" Left="[float]61" Maximum="[ComplexDouble]Infinity + 0i" MinHeight="[float]24" Minimum="[ComplexDouble]-Infinity + 0i" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]6" Value="[ComplexDouble]0 + 0i" ValueFormatter="[string]LV:N2" ValueType="[Type]ComplexDouble" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+			<Text Height="[float]559" Id="47" Left="[float]100" Text="[string]Delete Elements from Array.vi&#xA;&#xA;This polymorphic VI deletes elements from a 1D or 2D array at the corresponding indices&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2007, JKI &lt;info@jameskring.com&gt; &#xA;Copyright (c) 2007, Jim Kring &lt;jim.kring@jameskring.com&gt;&#xA;Copyright (c) 2011, Jonathon Green &lt;jg@jgcode.net&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]271" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]25" Id="48" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]50" Left="[float]148" MinHeight="[float]24" TabIndex="[int]3" Top="[float]228" Value="{DataItemBinding Id=17}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<EnumSelectorInfo DisplayValue="[string]rows" Value="[ushort]0" ValueType="[Type]UInt16" />
+				<EnumSelectorInfo DisplayValue="[string]columns" Value="[ushort]1" ValueType="[Type]UInt16" />
+			</EnumSelector>
+			<Label Height="[float]16" Id="50" LabelOwner="[UIModel]48" Left="[float]148" Text="[string]delete (rows or columns)" Top="[float]208" Width="[float]131" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="52" LabelOwner="[UIModel]51" Left="[float]419" Text="[string]deleted elements" Top="[float]129" Width="[float]92" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]56" Columns="[int]1" Dimensions="[int]2" FirstIndex="[ArrayElementIndex]0,0" Height="[float]60" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="51" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]52" Left="[float]419" Rows="[int]1" TabIndex="[int]4" Top="[float]149" Value="{DataItemBinding Id=18}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]121" xmlns="http://www.ni.com/PanelCommon">
+				<p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="56" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[ComplexDouble]1 + 0i" IsTabStop="[bool]True" Left="[float]61" Maximum="[ComplexDouble]Infinity + 0i" MinHeight="[float]24" Minimum="[ComplexDouble]-Infinity + 0i" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]6" Value="[ComplexDouble]0 + 0i" ValueFormatter="[string]LV:N2" ValueType="[Type]ComplexDouble" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			</ArrayViewer>
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="2" CallUsage="Required" DataType="Int32[]" Id="14" Name="indices" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="ComplexDouble[,]" Id="15" Name="array" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="ComplexDouble[,]" Id="16" Name="array w/ subset deleted" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="3" CallUsage="Required" DataType="@08bf1556e6a44b838341936ae8b2a624" Id="17" Name="delete (rows or columns)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="2" DataType="ComplexDouble[,]" Id="18" Name="deleted elements" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>null</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="08bf1556e6a44b838341936ae8b2a624">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="rows" />
+					<EnumerationMember Value="1" Name="columns" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+		<p.TypeReference TypeId="31ca7ea46a904820a9acfb7b99795564">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="ascending" />
+					<EnumerationMember Value="1" Name="descending" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="openg\.library\.array:Sort\ 1D\ Array\ \(I32\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD7SURBVEhLzU4JDsMwDOr/39Y/dWlICbFzONoqzaIWwZj6OK/zJdzRR6zKQqxq9KQD5F2RvOlglFAqAuReZLfEO0wHyLsiedPBIpWcW+b6E24arl3JkufPq083xBsgdvW+Q7l2JUuev1hxLVI1GmsRXtYGHShKZSNHqydCBaUiPXcnU3XCy9qgA0UBixTXIlWiX8IPonGjV/7p6tGNXimqjr1VkabG4P1Q8veUDgiMfKmBXBUbdy/lwtPDT/k0xKqGe4ymmgs+SwF0h2IEe+4l8sXPKR2pvW6kexinXfP7k1EX1W/f30Wrp7NmIraiFVF3yo1Eq2fvkA1c5wfP6VWZFZZ+ogAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.array:Reorder\ 2D\ Array2\ \(CDB\)\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADTSURBVEhL1ZALDoMwDEO5/9l6Jyg4c9OknzDopEWe9fAS77OlPS3SWb3FRg5iU6oHDpGbIblyECOMDiGyD+kW/IZxiNwMyZWDIpM3by2XD+GlYe0apny9fPpxA34BYTNvb2jWrmHK1ys2PItMqcZZhOWs45AkhXobdZ6BCUaH3DmdpNMBy1nHIUlAkeFZZKR6kRZX8yeUtE7Mu0FJNZzDUOd4jGtebTiuSTUe82S+q3JfpS75Qk/vB/rrav3nPv+XIVv3Vm/WD6sNP9Fr39FrWfWeDhdgllhvscF5AAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.array.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

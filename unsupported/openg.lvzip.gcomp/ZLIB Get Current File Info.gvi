@@ -1,0 +1,1530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="B3614CDFBB03538DF5B747D04727E043" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.56780" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.56780" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="ZLIB Get Current File Info" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Gets the info of the current file in an archive in an unzip session.</p.UserDescription>
+		<Icon Id="20" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="22" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="23" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="24" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="25" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="26" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHySURBVEhLlZSLlcMgDATdk1tILbSQWmghtdDC1eLb1S6OAOc30YtBSAPm3WVrv7OBWhjbdrRytB0DryW+UtPVmzEoFZ8dUcp+gMbBWXDyQR3O7S/QGCJIw1i5QWVIDdwWvFSrVFKBKU57qvHd4I2z+34KrwjYoEdGy/Z1mFJ/3IY2iNlealcrYgN6pBPsX6SA2VYZ0dy9PC9yRwSuxd5JzeYrKdAqXz7sR2tQK3BeeRUNzqwW1iyg4vF4oMBqHln2pjdQyIv1QW3HFfLWig7UxstbzaBU34hSMPxBLe+pZoxqXZF0HK4XYtMC1M9T84wXatqljtN/qx4uRC9eS+N/9tWpV7X0lo1IDSa1glOqw1Xwx/67ej51tzuzqsNLrR9Xdi097UDqsFuNyOruBd+qwf1+Zyv8YZ/U649f2mSxK5/VIvzPK5IaCdWfvFMD5KGe7DxiuIjUixeMr/Di4CBvkAk9cV3ig1p4uW8wcekFc/aVHbhi3OCVF3yrRl5LrguQ8eiKee12u0kxEWbnVYmpBkIFwhk9AKQCa1Jk1ONJTN2WUI0nUluZQIUdHbUBjdm52GM9qS0bQYWMGXUCd6axmDIc2TeCIisTap6QCMxTP5cNUGRfJ7eB8LzLDGvA4gB1ti5eMGVo7Tijx8SkPqt/oLV/lu8aodZhEqoAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="130" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="16" />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 50" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" ListViewHotspot="150 65" Parameter="17" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 80" Parameter="18" />
+			<ConnectorPaneTerminal Hotspot="40 25" ListViewHotspot="150 95" Parameter="19" />
+			<ConnectorPaneTerminal Hotspot="40 35" ListViewHotspot="150 110" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="90 85 40 15" DataItem="14" Id="89" Label="90" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="89" Bounds="90 68 100 14" Id="90" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error in (no error)</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="1475 85 40 15" DataItem="15" Id="91" Label="92" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Error" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="91" Bounds="1475 68 50 14" Id="92" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>error out</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="215 190 40 15" DataItem="16" Id="93" Label="94" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@47f085f2467b486f829b34cc420675dc" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="93" Bounds="215 173 77 14" Id="94" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>unzip Refnum</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="310 395 40 15" DataItem="17" Id="95" Label="96" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@47f085f2467b486f829b34cc420675dc" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="95" Bounds="310 378 98 14" Id="96" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>unzip Refnum out</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="1545 240 40 15" DataItem="19" Id="97" Label="98" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@2ede7938cc6f4c30810ca2c459620b97" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="97" Bounds="1545 223 41 14" Id="98" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>file info</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="1475 220 40 15" DataItem="18" Id="99" Label="100" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="String" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="99" Bounds="1475 203 31 14" Id="100" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>name</p.Text>
+			</NodeLabel>
+			<ClusterLiteral Bounds="210 205 82 404" DataType="@034e313e7a844564bb5812f271b9d913" Facade="Cluster" Id="101" Label="144" p4:ControlDefinitionChecksum="9pcXWD43SNGLGkufuaX6uA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_</p.Data>
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="OpenG\.Zip:ZLIB\ Uncompress\ File\ Info__ogtk\.gtype" />
+					<p4:TypeDefinitionTarget TargetName="OpenG\.Zip:ZLIB\ Uncompress\ File\ Info__ogtk\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<ClusterBehavior AutoArrange="ArrangeVertically" />
+				<Literal Bounds="2 2 40 15" DataType="UInt32" Facade="Numeric" Id="102" Label="103">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="102" Bounds="2 -16 30 15" Id="103" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>version</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 21 40 15" DataType="UInt32" Facade="Numeric" Id="104" Label="105">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="104" Bounds="2 3 30 15" Id="105" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>version needed</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 40 40 15" DataType="UInt32" Facade="Numeric" Id="106" Label="107">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="106" Bounds="2 22 30 15" Id="107" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>flag</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 59 40 15" DataType="UInt32" Facade="Numeric" Id="108" Label="109">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="108" Bounds="2 41 30 15" Id="109" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>compression</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 78 40 15" DataType="UInt32" Facade="Numeric" Id="110" Label="111">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="110" Bounds="2 60 30 15" Id="111" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>dos date</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 97 40 15" DataType="UInt32" Facade="Numeric" Id="112" Label="113">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" Radix="Hexadecimal" RadixVisibility="Visible" ValueFormatter="Hexadecimal, Uppercase, Unsigned" />
+				</Literal>
+				<NodeLabel AttachedTo="112" Bounds="2 79 30 15" Id="113" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>crc</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 116 40 15" DataType="UInt32" Facade="Numeric" Id="114" Label="115">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="114" Bounds="2 98 30 15" Id="115" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>compressed size</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 135 40 15" DataType="UInt32" Facade="Numeric" Id="116" Label="117">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="116" Bounds="2 117 30 15" Id="117" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>uncompressed size</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 154 40 15" DataType="UInt32" Facade="Numeric" Id="118" Label="119">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="118" Bounds="2 136 30 15" Id="119" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>size filename</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 173 40 15" DataType="UInt32" Facade="Numeric" Id="120" Label="121">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="120" Bounds="2 155 30 15" Id="121" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>size file extra</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 192 40 15" DataType="UInt32" Facade="Numeric" Id="122" Label="123">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="122" Bounds="2 174 30 15" Id="123" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>size file comment</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 211 40 15" DataType="UInt32" Facade="Numeric" Id="124" Label="125">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				</Literal>
+				<NodeLabel AttachedTo="124" Bounds="2 193 30 15" Id="125" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>disk num start</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 230 40 15" DataType="UInt32" Facade="Numeric" Id="126" Label="127">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" Radix="Hexadecimal" RadixVisibility="Visible" ValueFormatter="Hexadecimal, Uppercase, Unsigned" />
+				</Literal>
+				<NodeLabel AttachedTo="126" Bounds="2 212 30 15" Id="127" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>internal fa</p.Text>
+				</NodeLabel>
+				<Literal Bounds="2 249 40 15" DataType="UInt32" Facade="Numeric" Id="128" Label="129">
+					<p.Data>0</p.Data>
+					<NumericBehavior Interpretation="Exact" Radix="Hexadecimal" RadixVisibility="Visible" ValueFormatter="Hexadecimal, Uppercase, Unsigned" />
+				</Literal>
+				<NodeLabel AttachedTo="128" Bounds="2 231 30 15" Id="129" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>external fa</p.Text>
+				</NodeLabel>
+				<ClusterLiteral Bounds="2 268 61 124" DataType="@b30a451d77ff42fcb5ce2d15d36c4d1c" Facade="Cluster" Id="130" Label="131">
+					<p.Data>0_0_0_0_0_0_</p.Data>
+					<ClusterBehavior AutoArrange="ArrangeVertically" />
+					<Literal Bounds="2 2 40 15" DataType="Int32" Facade="Numeric" Id="132" Label="133">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					</Literal>
+					<NodeLabel AttachedTo="132" Bounds="2 -16 30 15" Id="133" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>sec</p.Text>
+					</NodeLabel>
+					<Literal Bounds="2 21 40 15" DataType="Int32" Facade="Numeric" Id="134" Label="135">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					</Literal>
+					<NodeLabel AttachedTo="134" Bounds="2 3 30 15" Id="135" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>min</p.Text>
+					</NodeLabel>
+					<Literal Bounds="2 40 40 15" DataType="Int32" Facade="Numeric" Id="136" Label="137">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					</Literal>
+					<NodeLabel AttachedTo="136" Bounds="2 22 30 15" Id="137" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>hour</p.Text>
+					</NodeLabel>
+					<Literal Bounds="2 59 40 15" DataType="Int32" Facade="Numeric" Id="138" Label="139">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					</Literal>
+					<NodeLabel AttachedTo="138" Bounds="2 41 30 15" Id="139" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>mday</p.Text>
+					</NodeLabel>
+					<Literal Bounds="2 78 40 15" DataType="Int32" Facade="Numeric" Id="140" Label="141">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					</Literal>
+					<NodeLabel AttachedTo="140" Bounds="2 60 30 15" Id="141" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>mon</p.Text>
+					</NodeLabel>
+					<Literal Bounds="2 97 40 15" DataType="Int32" Facade="Numeric" Id="142" Label="143">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					</Literal>
+					<NodeLabel AttachedTo="142" Bounds="2 79 30 15" Id="143" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>year</p.Text>
+					</NodeLabel>
+				</ClusterLiteral>
+				<NodeLabel AttachedTo="130" Bounds="2 250 30 15" Id="131" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>date time</p.Text>
+				</NodeLabel>
+			</ClusterLiteral>
+			<NodeLabel AttachedTo="101" Bounds="210 184 55 18" Id="144" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>file info</p.Text>
+			</NodeLabel>
+			<PropertyNode Bounds="220 50 55 35" HasErrorTerminals="False" Id="145" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties">
+				<PropertyItemTerminal DataType="Boolean" Hotspot="55 15" Id="c0t0v" Path="status" Usage="Optional" />
+			</PropertyNode>
+			<CaseStructure Bounds="310 40 1140 330" Default="147" Id="146" Selected="147" UserSelectorBounds="526 0 88 17">
+				<CaseStructure.Case Bounds="5 5 1130 320" Id="147" Pattern="False">
+					<Literal Bounds="110 125 40 15" DataType="UInt32" Facade="Numeric" Id="158" Label="159" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					</Literal>
+					<NodeLabel AttachedTo="158" Bounds="110 104 52 18" Id="159" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>unzFile</p.Text>
+					</NodeLabel>
+					<Literal Bounds="170 190 40 15" DataType="UInt32" Facade="Numeric" Id="160" Label="161" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>0</p.Data>
+						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					</Literal>
+					<NodeLabel AttachedTo="160" Bounds="170 169 65 18" Id="161" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>fileName</p.Text>
+					</NodeLabel>
+					<TypeCast Bounds="175 150 30 15" Id="162" />
+					<MethodCall Bounds="230 140 40 100" DomainName="OpenG.Zip:lvzlib.sli" Id="163" ResolveFailedHint="lvzip_unzGetCurrentFileInfo" Target="OpenG\.Zip:lvzlib\.sli:lvzip_unzGetCurrentFileInfo" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+						<p.MethodDeclaration>
+							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+								<Parameter Id="L1" Desc="unzFile in" />
+								<Parameter Id="L2" Desc="fileInfo in" />
+								<Parameter Id="L3" Desc="fileName in" />
+								<Parameter Id="L4" Desc="fileNameLen in" />
+								<Parameter Id="L5" Desc="extraField in" />
+								<Parameter Id="L6" Desc="extraFieldLen in" />
+								<Parameter Id="L7" Desc="comment in" />
+								<Parameter Id="L8" Desc="commentLen in" />
+								<Parameter Id="L9" Desc="error in" />
+								<Parameter Id="R0" Desc="return" />
+								<Parameter Id="R1" Desc="unzFile out" />
+								<Parameter Id="R2" Desc="fileInfo out" />
+								<Parameter Id="R3" Desc="fileName out" />
+								<Parameter Id="R4" Desc="fileNameLen out" />
+								<Parameter Id="R5" Desc="extraField out" />
+								<Parameter Id="R6" Desc="extraFieldLen out" />
+								<Parameter Id="R7" Desc="comment out" />
+								<Parameter Id="R8" Desc="commentLen out" />
+								<Parameter Id="R9" Desc="error out" />
+							</MethodDeclaration>
+						</p.MethodDeclaration>
+						<Terminal DataType="UInt32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@3c2c2c9ef2da4c0fa490196443ae1e4d" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Input" Hotspot="0 55" Id="L5" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Input" Hotspot="0 65" Id="L6" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Input" Hotspot="0 75" Id="L7" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Input" Hotspot="0 85" Id="L8" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Input" Hotspot="0 95" Id="L9" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@3c2c2c9ef2da4c0fa490196443ae1e4d" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Output" Hotspot="40 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Output" Hotspot="40 55" Id="R5" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Output" Hotspot="40 65" Id="R6" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Output" Hotspot="40 75" Id="R7" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="UInt32" Direction="Output" Hotspot="40 85" Id="R8" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="Error" Direction="Output" Hotspot="40 95" Id="R9" xmlns="http://www.ni.com/PlatformFramework" />
+					</MethodCall>
+					<CaseStructure Bounds="290 20 790 280" DataType="Int32" Default="165" Id="164" Selected="166" UserSelectorBounds="345 0 100 17">
+						<CaseStructure.Case Bounds="5 5 780 270" Id="165" Pattern="Default">
+							<Literal Bounds="680 15 15 15" DataType="Int32" Facade="Ring" Id="176" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>7</p.Data>
+								<RingBehavior ValueFormatter="LV:G6">
+									<RingConstantInfo DisplayValue="No error" ValueType="Int32">
+										<p.Value>0</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Argument error" ValueType="Int32">
+										<p.Value>1</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Memory is full" ValueType="Int32">
+										<p.Value>2</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Out of zone" ValueType="Int32">
+										<p.Value>3</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="End of file" ValueType="Int32">
+										<p.Value>4</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="File already open" ValueType="Int32">
+										<p.Value>5</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Generic file I/O error" ValueType="Int32">
+										<p.Value>6</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="File not found" ValueType="Int32">
+										<p.Value>7</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="File permission error" ValueType="Int32">
+										<p.Value>8</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Disk is full" ValueType="Int32">
+										<p.Value>9</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Duplicate path" ValueType="Int32">
+										<p.Value>10</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Too many files open" ValueType="Int32">
+										<p.Value>11</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="System feature not enabled" ValueType="Int32">
+										<p.Value>12</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Resource file not found" ValueType="Int32">
+										<p.Value>13</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Cannot add resource" ValueType="Int32">
+										<p.Value>14</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Resource not found" ValueType="Int32">
+										<p.Value>15</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Image not found" ValueType="Int32">
+										<p.Value>16</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Image memory error" ValueType="Int32">
+										<p.Value>17</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Pen does not exist" ValueType="Int32">
+										<p.Value>18</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Config type invalid" ValueType="Int32">
+										<p.Value>19</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Config token not found" ValueType="Int32">
+										<p.Value>20</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Config parse error" ValueType="Int32">
+										<p.Value>21</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Config memory error" ValueType="Int32">
+										<p.Value>22</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad external code format" ValueType="Int32">
+										<p.Value>23</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad external code offset" ValueType="Int32">
+										<p.Value>24</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="External code not present" ValueType="Int32">
+										<p.Value>25</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Null window" ValueType="Int32">
+										<p.Value>26</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Destroy window error" ValueType="Int32">
+										<p.Value>27</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Null menu" ValueType="Int32">
+										<p.Value>28</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Print aborted" ValueType="Int32">
+										<p.Value>29</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad print record" ValueType="Int32">
+										<p.Value>30</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Print driver error" ValueType="Int32">
+										<p.Value>31</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Windows error during printing" ValueType="Int32">
+										<p.Value>32</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Memory error during printing" ValueType="Int32">
+										<p.Value>33</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Print dialog error" ValueType="Int32">
+										<p.Value>34</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Generic print error" ValueType="Int32">
+										<p.Value>35</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Invalid device refnum" ValueType="Int32">
+										<p.Value>36</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Device not found" ValueType="Int32">
+										<p.Value>37</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Device parameter error" ValueType="Int32">
+										<p.Value>38</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Device unit error" ValueType="Int32">
+										<p.Value>39</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Cannot open device" ValueType="Int32">
+										<p.Value>40</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Device call aborted" ValueType="Int32">
+										<p.Value>41</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Generic error" ValueType="Int32">
+										<p.Value>42</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Cancelled by user" ValueType="Int32">
+										<p.Value>43</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Object ID too low" ValueType="Int32">
+										<p.Value>44</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Object ID too high" ValueType="Int32">
+										<p.Value>45</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Object not in heap" ValueType="Int32">
+										<p.Value>46</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown heap" ValueType="Int32">
+										<p.Value>47</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown object (invalid DefProc)" ValueType="Int32">
+										<p.Value>48</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown object (DefProc not in table)" ValueType="Int32">
+										<p.Value>49</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Message out of range" ValueType="Int32">
+										<p.Value>50</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Invalid (null) method" ValueType="Int32">
+										<p.Value>51</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown message" ValueType="Int32">
+										<p.Value>52</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Manager call not supported" ValueType="Int32">
+										<p.Value>53</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad address" ValueType="Int32">
+										<p.Value>54</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Network operation in progress" ValueType="Int32">
+										<p.Value>55</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Network operation timed out" ValueType="Int32">
+										<p.Value>56</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Connection is busy" ValueType="Int32">
+										<p.Value>57</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Network attribute not supported" ValueType="Int32">
+										<p.Value>58</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Network error" ValueType="Int32">
+										<p.Value>59</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Address in use" ValueType="Int32">
+										<p.Value>60</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="System out of memory" ValueType="Int32">
+										<p.Value>61</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Connection aborted" ValueType="Int32">
+										<p.Value>62</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Connection refused" ValueType="Int32">
+										<p.Value>63</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Not connected" ValueType="Int32">
+										<p.Value>64</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Already connected" ValueType="Int32">
+										<p.Value>65</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Connection closed" ValueType="Int32">
+										<p.Value>66</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Initialization error (interapplication manager)" ValueType="Int32">
+										<p.Value>67</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad occurrence" ValueType="Int32">
+										<p.Value>68</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Wait on unbound occurrence handler" ValueType="Int32">
+										<p.Value>69</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Occurrence queue overflow" ValueType="Int32">
+										<p.Value>70</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Datalog type conflict" ValueType="Int32">
+										<p.Value>71</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unused" ValueType="Int32">
+										<p.Value>72</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unrecognized type (interapplication manager)" ValueType="Int32">
+										<p.Value>73</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Memory corrupt" ValueType="Int32">
+										<p.Value>74</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Failed to make temporary DLL" ValueType="Int32">
+										<p.Value>75</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Old CIN version" ValueType="Int32">
+										<p.Value>76</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Drag socket not found" ValueType="Int32">
+										<p.Value>77</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Failed to load drop-object" ValueType="Int32">
+										<p.Value>78</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Failed to register OLE object" ValueType="Int32">
+										<p.Value>79</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Failed to release OLE object" ValueType="Int32">
+										<p.Value>80</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Format specifier type mismatch" ValueType="Int32">
+										<p.Value>81</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Unknown format specifier" ValueType="Int32">
+										<p.Value>82</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Too few format specifiers" ValueType="Int32">
+										<p.Value>83</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Too many format specifiers" ValueType="Int32">
+										<p.Value>84</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Scan failed" ValueType="Int32">
+										<p.Value>85</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Newer CIN version" ValueType="Int32">
+										<p.Value>86</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Error converting to variant" ValueType="Int32">
+										<p.Value>87</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Runtime menu error" ValueType="Int32">
+										<p.Value>88</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Password tampered" ValueType="Int32">
+										<p.Value>89</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Variant attribute not found" ValueType="Int32">
+										<p.Value>90</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Incompatible variant data type" ValueType="Int32">
+										<p.Value>91</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Event data is not available" ValueType="Int32">
+										<p.Value>92</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Event Store is not present" ValueType="Int32">
+										<p.Value>93</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Occurrence is not found" ValueType="Int32">
+										<p.Value>94</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Event Queue is not created" ValueType="Int32">
+										<p.Value>95</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Event info is not available" ValueType="Int32">
+										<p.Value>96</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Refnum passed is NULL" ValueType="Int32">
+										<p.Value>97</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Error retrieving Class GUID" ValueType="Int32">
+										<p.Value>98</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Error retrieving CoClass GUID" ValueType="Int32">
+										<p.Value>99</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Error retrieving TypeLib GUID." ValueType="Int32">
+										<p.Value>100</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Bad built application magic bytes." ValueType="Int32">
+										<p.Value>101</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Specific driver is different from the specific driver associated with the Logical Name." ValueType="Int32">
+										<p.Value>102</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="There is no session opened to the class driver." ValueType="Int32">
+										<p.Value>103</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="Max Error" ValueType="Int32">
+										<p.Value>104</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="MAX - Error with config objects" ValueType="Int32">
+										<p.Value>105</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="MAX - Error loading configuration" ValueType="Int32">
+										<p.Value>106</p.Value>
+									</RingConstantInfo>
+									<RingConstantInfo DisplayValue="MAX - Group not supported" ValueType="Int32">
+										<p.Value>107</p.Value>
+									</RingConstantInfo>
+								</RingBehavior>
+							</Literal>
+							<Literal Bounds="720 180 35 15" DataType="String" Facade="String" Id="177" Label="178" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>""</p.Data>
+								<StringBehavior SizeToContent="False" TextDisplayMode="Default" />
+							</Literal>
+							<NodeLabel AttachedTo="177" Bounds="720 159 65 18" Id="178" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>fileName</p.Text>
+							</NodeLabel>
+							<MethodCall Bounds="715 15 40 40" DomainName="openg.library.error" Id="179" Label="180" ResolveFailedHint="&quot;C:\\Users\\lvadmin\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+								<p.MethodDeclaration>
+									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+										<Parameter Id="L0" Desc="code" />
+										<Parameter Id="L2" Desc="String to Prepend to source (&quot;&quot;)" />
+										<Parameter Id="R0" Desc="error out" />
+									</MethodDeclaration>
+								</p.MethodDeclaration>
+								<Terminal DataType="Int32" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+							</MethodCall>
+							<NodeLabel AttachedTo="179" Bounds="715 58 205 18" Id="180" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+								<p.Text>Build Error Cluster</p.Text>
+							</NodeLabel>
+							<Wire Id="211" Joints="N(177:Out)|(755,185) h(10) B(1) N(175:165)|(776,185) B(1) v(-30) N(173:165)|(776,155) B(1) v(20) N(174:165)|(776,205)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="212" Joints="N(170:165)|(4,140) N(172:165)|(776,140)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="213" Joints="N(176:Out)|(695,20) N(179:L0)|(715,20)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="214" Joints="N(179:R0)|(755,20) N(169:165)|(776,20)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Case Bounds="5 5 780 270" Id="166" Pattern="0">
+							<Literal Bounds="180 170 40 15" DataType="UInt8" Facade="Numeric" Id="181" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>0</p.Data>
+								<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+							</Literal>
+							<PropertyNode Bounds="35 135 115 65" HasErrorTerminals="False" Id="182" InstanceDataType="@3c2c2c9ef2da4c0fa490196443ae1e4d" ListViewAutoSize="False" Mode="InstanceProperties">
+								<PropertyItemTerminal DataType="UInt32" Hotspot="115 15" Id="c0t0v" Path="size filename" Usage="Optional" />
+								<PropertyItemTerminal DataType="UInt32" Hotspot="115 30" Id="c1t0v" Path="size file extra" Usage="Optional" />
+								<PropertyItemTerminal DataType="UInt32" Hotspot="115 45" Id="c2t0v" Path="size file comment" Usage="Optional" />
+							</PropertyNode>
+							<InitializeArray Bounds="250 170 40 30" Id="183" Terminals="element=233, outArray=227, c0t0v=224" />
+							<Increment Bounds="185 135 30 30" Id="184" />
+							<InitializeArray Bounds="250 125 40 30" Id="185" Terminals="element=233, outArray=229, c0t0v=232" />
+							<ByteArrayToString Bounds="310 135 40 20" Id="186" />
+							<Literal Bounds="334 123 12 9" DataType="@58662a74462f499abb5650bbd43b480d" Facade="DockedConstantFacade" Id="187" p8:ControlDefinitionChecksum="!" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>2</p.Data>
+								<p8:p.TypeDefinitionTargets>
+									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
+									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype:ControlDefinition" />
+								</p8:p.TypeDefinitionTargets>
+								<EnumBehavior />
+								<DockedConstantFacade UndockedSize="10 18" />
+							</Literal>
+							<Wire Facade="WireInvisibleFacade" Id="188" Joints="N(187:Out)|(346,128) v(7) N(186:encoding)|(330,135)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+							<Increment Bounds="185 225 30 30" Id="189" />
+							<InitializeArray Bounds="250 215 40 30" Id="190" Terminals="element=233, outArray=226, c0t0v=231" />
+							<ByteArrayToString Bounds="310 215 40 20" Id="191" />
+							<Literal Bounds="334 203 12 9" DataType="@58662a74462f499abb5650bbd43b480d" Facade="DockedConstantFacade" Id="192" p8:ControlDefinitionChecksum="!" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>2</p.Data>
+								<p8:p.TypeDefinitionTargets>
+									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
+									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype:ControlDefinition" />
+								</p8:p.TypeDefinitionTargets>
+								<EnumBehavior />
+								<DockedConstantFacade UndockedSize="10 18" />
+							</Literal>
+							<Wire Facade="WireInvisibleFacade" Id="193" Joints="N(192:Out)|(346,208) v(7) N(191:encoding)|(330,215)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+							<MethodCall Bounds="390 120 40 100" DomainName="OpenG.Zip:lvzlib.sli" Id="194" ResolveFailedHint="lvzip_unzGetCurrentFileInfo_2" Target="OpenG\.Zip:lvzlib\.sli:lvzip_unzGetCurrentFileInfo_2" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+								<p.MethodDeclaration>
+									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+										<Parameter Id="L1" Desc="unzFile in" />
+										<Parameter Id="L2" Desc="fileInfo in" />
+										<Parameter Id="L3" Desc="fileName in" />
+										<Parameter Id="L4" Desc="fileNameLen in" />
+										<Parameter Id="L5" Desc="extraField in" />
+										<Parameter Id="L6" Desc="extraFieldLen in" />
+										<Parameter Id="L7" Desc="comment in" />
+										<Parameter Id="L8" Desc="commentLen in" />
+										<Parameter Id="L9" Desc="error in" />
+										<Parameter Id="R0" Desc="return" />
+										<Parameter Id="R1" Desc="unzFile out" />
+										<Parameter Id="R2" Desc="fileInfo out" />
+										<Parameter Id="R3" Desc="fileName out" />
+										<Parameter Id="R4" Desc="fileNameLen out" />
+										<Parameter Id="R5" Desc="extraField out" />
+										<Parameter Id="R6" Desc="extraFieldLen out" />
+										<Parameter Id="R7" Desc="comment out" />
+										<Parameter Id="R8" Desc="commentLen out" />
+										<Parameter Id="R9" Desc="error out" />
+									</MethodDeclaration>
+								</p.MethodDeclaration>
+								<Terminal DataType="UInt32" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@3c2c2c9ef2da4c0fa490196443ae1e4d" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="String" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt8[]" Direction="Input" Hotspot="0 55" Id="L5" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Input" Hotspot="0 65" Id="L6" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="String" Direction="Input" Hotspot="0 75" Id="L7" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Input" Hotspot="0 85" Id="L8" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Input" Hotspot="0 95" Id="L9" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Int32" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="@3c2c2c9ef2da4c0fa490196443ae1e4d" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="String" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Output" Hotspot="40 45" Id="R4" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt8[]" Direction="Output" Hotspot="40 55" Id="R5" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Output" Hotspot="40 65" Id="R6" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="String" Direction="Output" Hotspot="40 75" Id="R7" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="UInt32" Direction="Output" Hotspot="40 85" Id="R8" xmlns="http://www.ni.com/PlatformFramework" />
+								<Terminal DataType="Error" Direction="Output" Hotspot="40 95" Id="R9" xmlns="http://www.ni.com/PlatformFramework" />
+							</MethodCall>
+							<ByteArrayToString Bounds="450 180 40 20" Id="195" />
+							<Literal Bounds="474 168 12 9" DataType="@58662a74462f499abb5650bbd43b480d" Facade="DockedConstantFacade" Id="196" p8:ControlDefinitionChecksum="!" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+								<p.Data>2</p.Data>
+								<p8:p.TypeDefinitionTargets>
+									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
+									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype:ControlDefinition" />
+								</p8:p.TypeDefinitionTargets>
+								<EnumBehavior />
+								<DockedConstantFacade UndockedSize="10 18" />
+							</Literal>
+							<Wire Facade="WireInvisibleFacade" Id="197" Joints="N(196:Out)|(486,173) v(7) N(195:encoding)|(470,180)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+							<CaseStructure Bounds="450 30 280 110" DataType="Int32" Default="200" Id="198" Selected="200" UserSelectorBounds="90 0 100 17">
+								<CaseStructure.Case Bounds="5 5 270 100" Id="199" Pattern="0">
+									<Wire Id="215" Joints="N(202:199)|(4,20) N(203:199)|(266,20)" xmlns="http://www.ni.com/PlatformFramework" />
+								</CaseStructure.Case>
+								<CaseStructure.Case Bounds="5 5 270 100" Id="200" Pattern="Default">
+									<Literal Bounds="55 15 130 15" DataType="Int32" Facade="Ring" Id="204" xmlns="http://www.ni.com/MocCommon">
+										<p.Data>7</p.Data>
+										<RingBehavior ValueFormatter="LV:G6">
+											<RingConstantInfo DisplayValue="No error" ValueType="Int32">
+												<p.Value>0</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Argument error" ValueType="Int32">
+												<p.Value>1</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Memory is full" ValueType="Int32">
+												<p.Value>2</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Out of zone" ValueType="Int32">
+												<p.Value>3</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="End of file" ValueType="Int32">
+												<p.Value>4</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="File already open" ValueType="Int32">
+												<p.Value>5</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Generic file I/O error" ValueType="Int32">
+												<p.Value>6</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="File not found" ValueType="Int32">
+												<p.Value>7</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="File permission error" ValueType="Int32">
+												<p.Value>8</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Disk is full" ValueType="Int32">
+												<p.Value>9</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Duplicate path" ValueType="Int32">
+												<p.Value>10</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Too many files open" ValueType="Int32">
+												<p.Value>11</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="System feature not enabled" ValueType="Int32">
+												<p.Value>12</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Resource file not found" ValueType="Int32">
+												<p.Value>13</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Cannot add resource" ValueType="Int32">
+												<p.Value>14</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Resource not found" ValueType="Int32">
+												<p.Value>15</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Image not found" ValueType="Int32">
+												<p.Value>16</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Image memory error" ValueType="Int32">
+												<p.Value>17</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Pen does not exist" ValueType="Int32">
+												<p.Value>18</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Config type invalid" ValueType="Int32">
+												<p.Value>19</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Config token not found" ValueType="Int32">
+												<p.Value>20</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Config parse error" ValueType="Int32">
+												<p.Value>21</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Config memory error" ValueType="Int32">
+												<p.Value>22</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Bad external code format" ValueType="Int32">
+												<p.Value>23</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Bad external code offset" ValueType="Int32">
+												<p.Value>24</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="External code not present" ValueType="Int32">
+												<p.Value>25</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Null window" ValueType="Int32">
+												<p.Value>26</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Destroy window error" ValueType="Int32">
+												<p.Value>27</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Null menu" ValueType="Int32">
+												<p.Value>28</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Print aborted" ValueType="Int32">
+												<p.Value>29</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Bad print record" ValueType="Int32">
+												<p.Value>30</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Print driver error" ValueType="Int32">
+												<p.Value>31</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Windows error during printing" ValueType="Int32">
+												<p.Value>32</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Memory error during printing" ValueType="Int32">
+												<p.Value>33</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Print dialog error" ValueType="Int32">
+												<p.Value>34</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Generic print error" ValueType="Int32">
+												<p.Value>35</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Invalid device refnum" ValueType="Int32">
+												<p.Value>36</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Device not found" ValueType="Int32">
+												<p.Value>37</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Device parameter error" ValueType="Int32">
+												<p.Value>38</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Device unit error" ValueType="Int32">
+												<p.Value>39</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Cannot open device" ValueType="Int32">
+												<p.Value>40</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Device call aborted" ValueType="Int32">
+												<p.Value>41</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Generic error" ValueType="Int32">
+												<p.Value>42</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Cancelled by user" ValueType="Int32">
+												<p.Value>43</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Object ID too low" ValueType="Int32">
+												<p.Value>44</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Object ID too high" ValueType="Int32">
+												<p.Value>45</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Object not in heap" ValueType="Int32">
+												<p.Value>46</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Unknown heap" ValueType="Int32">
+												<p.Value>47</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Unknown object (invalid DefProc)" ValueType="Int32">
+												<p.Value>48</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Unknown object (DefProc not in table)" ValueType="Int32">
+												<p.Value>49</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Message out of range" ValueType="Int32">
+												<p.Value>50</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Invalid (null) method" ValueType="Int32">
+												<p.Value>51</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Unknown message" ValueType="Int32">
+												<p.Value>52</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Manager call not supported" ValueType="Int32">
+												<p.Value>53</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Bad address" ValueType="Int32">
+												<p.Value>54</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Network operation in progress" ValueType="Int32">
+												<p.Value>55</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Network operation timed out" ValueType="Int32">
+												<p.Value>56</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Connection is busy" ValueType="Int32">
+												<p.Value>57</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Network attribute not supported" ValueType="Int32">
+												<p.Value>58</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Network error" ValueType="Int32">
+												<p.Value>59</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Address in use" ValueType="Int32">
+												<p.Value>60</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="System out of memory" ValueType="Int32">
+												<p.Value>61</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Connection aborted" ValueType="Int32">
+												<p.Value>62</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Connection refused" ValueType="Int32">
+												<p.Value>63</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Not connected" ValueType="Int32">
+												<p.Value>64</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Already connected" ValueType="Int32">
+												<p.Value>65</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Connection closed" ValueType="Int32">
+												<p.Value>66</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Initialization error (interapplication manager)" ValueType="Int32">
+												<p.Value>67</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Bad occurrence" ValueType="Int32">
+												<p.Value>68</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Wait on unbound occurrence handler" ValueType="Int32">
+												<p.Value>69</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Occurrence queue overflow" ValueType="Int32">
+												<p.Value>70</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Datalog type conflict" ValueType="Int32">
+												<p.Value>71</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Unused" ValueType="Int32">
+												<p.Value>72</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Unrecognized type (interapplication manager)" ValueType="Int32">
+												<p.Value>73</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Memory corrupt" ValueType="Int32">
+												<p.Value>74</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Failed to make temporary DLL" ValueType="Int32">
+												<p.Value>75</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Old CIN version" ValueType="Int32">
+												<p.Value>76</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Drag socket not found" ValueType="Int32">
+												<p.Value>77</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Failed to load drop-object" ValueType="Int32">
+												<p.Value>78</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Failed to register OLE object" ValueType="Int32">
+												<p.Value>79</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Failed to release OLE object" ValueType="Int32">
+												<p.Value>80</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Format specifier type mismatch" ValueType="Int32">
+												<p.Value>81</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Unknown format specifier" ValueType="Int32">
+												<p.Value>82</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Too few format specifiers" ValueType="Int32">
+												<p.Value>83</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Too many format specifiers" ValueType="Int32">
+												<p.Value>84</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Scan failed" ValueType="Int32">
+												<p.Value>85</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Newer CIN version" ValueType="Int32">
+												<p.Value>86</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Error converting to variant" ValueType="Int32">
+												<p.Value>87</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Runtime menu error" ValueType="Int32">
+												<p.Value>88</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Password tampered" ValueType="Int32">
+												<p.Value>89</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Variant attribute not found" ValueType="Int32">
+												<p.Value>90</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Incompatible variant data type" ValueType="Int32">
+												<p.Value>91</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Event data is not available" ValueType="Int32">
+												<p.Value>92</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Event Store is not present" ValueType="Int32">
+												<p.Value>93</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Occurrence is not found" ValueType="Int32">
+												<p.Value>94</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Event Queue is not created" ValueType="Int32">
+												<p.Value>95</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Event info is not available" ValueType="Int32">
+												<p.Value>96</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Refnum passed is NULL" ValueType="Int32">
+												<p.Value>97</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Error retrieving Class GUID" ValueType="Int32">
+												<p.Value>98</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Error retrieving CoClass GUID" ValueType="Int32">
+												<p.Value>99</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Error retrieving TypeLib GUID." ValueType="Int32">
+												<p.Value>100</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Bad built application magic bytes." ValueType="Int32">
+												<p.Value>101</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Specific driver is different from the specific driver associated with the Logical Name." ValueType="Int32">
+												<p.Value>102</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="There is no session opened to the class driver." ValueType="Int32">
+												<p.Value>103</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="Max Error" ValueType="Int32">
+												<p.Value>104</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="MAX - Error with config objects" ValueType="Int32">
+												<p.Value>105</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="MAX - Error loading configuration" ValueType="Int32">
+												<p.Value>106</p.Value>
+											</RingConstantInfo>
+											<RingConstantInfo DisplayValue="MAX - Group not supported" ValueType="Int32">
+												<p.Value>107</p.Value>
+											</RingConstantInfo>
+										</RingBehavior>
+									</Literal>
+									<MethodCall Bounds="205 15 40 40" DomainName="openg.library.error" Id="205" Label="206" ResolveFailedHint="&quot;C:\\Users\\lvadmin\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+										<p.MethodDeclaration>
+											<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+												<Parameter Id="L0" Desc="code" />
+												<Parameter Id="L2" Desc="String to Prepend to source (&quot;&quot;)" />
+												<Parameter Id="R0" Desc="error out" />
+											</MethodDeclaration>
+										</p.MethodDeclaration>
+										<Terminal DataType="Int32" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+										<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+										<Terminal DataType="Error" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+									</MethodCall>
+									<NodeLabel AttachedTo="205" Bounds="205 -6 205 18" Id="206" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+										<p.Text>Build Error Cluster</p.Text>
+									</NodeLabel>
+									<Wire Id="216" Joints="N(205:R0)|(245,20) N(203:200)|(266,20)" xmlns="http://www.ni.com/PlatformFramework" />
+									<Wire Id="217" Joints="N(204:Out)|(185,20) N(205:L0)|(205,20)" xmlns="http://www.ni.com/PlatformFramework" />
+								</CaseStructure.Case>
+								<CaseStructure.Selector Bounds="-4 80 13 10" Docking="Left" Id="201" Terminals="198=222, 199, 200" />
+								<CaseStructure.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="202" Terminals="198=221, 199=215, 200" />
+								<CaseStructure.Tunnel Bounds="271 20 13 10" Docking="Right" Id="203" Terminals="198, 199=215, 200=216" />
+							</CaseStructure>
+							<Wire Id="218" Joints="N(194:R3)|(430,155) N(173:166)|(776,155)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="219" Joints="N(195:string)|(490,185) N(175:166)|(776,185)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="220" Joints="N(194:R5)|(430,175) h(10) v(10) N(195:unsigned byte array)|(450,185)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="221" Joints="N(168:166)|(4,20) h(436) B(1) N(169:166)|(776,20) B(1) v(35) N(202:198)|(446,55)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="222" Joints="N(194:R0)|(430,125) h(10) v(-10) N(201:198)|(446,115)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="223" Joints="N(194:R7)|(430,195) h(10) v(10) N(174:166)|(776,205)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="224" Joints="N(182:c1t0v)|(150,165) h(20) v(40) h(70) B(3) h(60) v(-20) N(194:L6)|(390,185) B(3) v(-10) N(183:c0t0v)|(250,195)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="225" Joints="N(191:string)|(350,220) h(10) v(-25) N(194:L7)|(390,195)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="226" Joints="N(190:outArray)|(290,220) N(191:unsigned byte array)|(310,220)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="227" Joints="N(183:outArray)|(290,175) N(194:L5)|(390,175)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="228" Joints="N(186:string)|(350,140) h(10) v(15) N(194:L3)|(390,155)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="229" Joints="N(185:outArray)|(290,130) h(10) v(10) N(186:unsigned byte array)|(310,140)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="230" Joints="N(194:R2)|(430,145) h(335) v(-5) N(172:166)|(776,140)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="231" Joints="N(189:x+1)|(215,240) h(15) B(1) N(190:c0t0v)|(250,240) B(1) v(10) h(140) v(-45) N(194:L8)|(390,205)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="232" Joints="N(184:x+1)|(215,150) h(15) B(1) N(185:c0t0v)|(250,150) B(1) v(15) N(194:L4)|(390,165)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="233" Joints="N(181:Out)|(220,175) h(10) B(1) h(10) B(2) N(183:element)|(250,175) B(2) v(-45) N(185:element)|(250,130) B(1) v(45) N(190:element)|(250,220)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="234" Joints="N(182:c2t0v)|(150,180) h(10) v(60) N(189:x)|(185,240)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="235" Joints="N(182:c0t0v)|(150,150) N(184:x)|(185,150)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="236" Joints="N(170:166)|(4,140) h(21) B(1) N(182:instance in)|(35,140) B(1) v(-30) h(345) v(35) N(194:L2)|(390,145)" xmlns="http://www.ni.com/PlatformFramework" />
+							<Wire Id="237" Joints="N(171:166)|(4,130) h(11) v(-30) h(365) v(35) N(194:L1)|(390,135)" xmlns="http://www.ni.com/PlatformFramework" />
+						</CaseStructure.Case>
+						<CaseStructure.Selector Bounds="-4 120 13 10" Docking="Left" Id="167" Terminals="164=251, 165, 166" />
+						<CaseStructure.Tunnel Bounds="-4 20 13 10" Docking="Left" Id="168" Terminals="164=250, 165, 166=221" />
+						<CaseStructure.Tunnel Bounds="781 20 13 10" Docking="Right" Id="169" Terminals="164=249, 165=214, 166=221" />
+						<CaseStructure.Tunnel Bounds="-4 140 13 10" Docking="Left" Id="170" Terminals="164=244, 165=212, 166=236" />
+						<CaseStructure.Tunnel Bounds="-4 130 13 10" Docking="Left" Id="171" Terminals="164=242, 165, 166=237" />
+						<CaseStructure.Tunnel Bounds="781 140 13 10" Docking="Right" Id="172" Terminals="164=238, 165=212, 166=230" />
+						<CaseStructure.Tunnel Bounds="781 155 13 10" Docking="Right" Id="173" Terminals="164=241, 165=211, 166=218" />
+						<CaseStructure.Tunnel Bounds="781 205 13 10" Docking="Right" Id="174" Terminals="164=240, 165=211, 166=223" />
+						<CaseStructure.Tunnel Bounds="781 185 13 10" Docking="Right" Id="175" Terminals="164=239, 165=211, 166=219" />
+					</CaseStructure>
+					<Wire Id="238" Joints="N(172:164)|(1084,165) N(154:147)|(1126,165)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="239" Joints="N(175:164)|(1084,210) N(157:147)|(1126,210)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="240" Joints="N(174:164)|(1084,230) h(31) v(-10) N(156:147)|(1126,220)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="241" Joints="N(173:164)|(1084,180) N(155:147)|(1126,180)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="242" Joints="N(163:R1)|(270,155) N(171:164)|(286,155)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="243" Joints="N(160:Out)|(210,195) h(10) B(1) N(163:L5)|(230,195) B(1) v(-10) B(3) N(163:L4)|(230,185) B(3) v(-10) N(163:L3)|(230,175) B(1) v(10) B(7) N(163:L6)|(230,205) B(7) v(10) B(9) N(163:L7)|(230,215) B(9) v(10) N(163:L8)|(230,225)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="244" Joints="N(163:R2)|(270,165) N(170:164)|(286,165)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="245" Joints="N(153:147)|(4,165) N(163:L2)|(230,165)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="246" Joints="N(162:*(type *\) &amp;x)|(205,155) N(163:L1)|(230,155)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="247" Joints="N(152:147)|(4,150) h(156) v(5) N(162:x)|(175,155)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="248" Joints="N(158:Out)|(150,130) h(40) N(162:type)|(190,150)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="249" Joints="N(169:164)|(1084,45) N(151:147)|(1126,45)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="250" Joints="N(150:147)|(4,45) N(168:164)|(286,45)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="251" Joints="N(163:R0)|(270,145) N(167:164)|(286,145)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 1130 320" Id="148" Pattern="True">
+					<Literal Bounds="1070 215 35 15" DataType="String" Facade="String" Id="207" Label="208" xmlns="http://www.ni.com/MocCommon">
+						<p.Data>""</p.Data>
+						<StringBehavior TextDisplayMode="Default" />
+					</Literal>
+					<NodeLabel AttachedTo="207" Bounds="1070 194 65 18" Id="208" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>fileName</p.Text>
+					</NodeLabel>
+					<Wire Id="252" Joints="N(153:148)|(4,165) N(154:148)|(1126,165)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="253" Joints="N(207:Out)|(1105,220) h(10) B(1) N(156:148)|(1126,220) B(1) v(-10) B(3) N(157:148)|(1126,210) B(3) v(-30) N(155:148)|(1126,180)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="254" Joints="N(150:148)|(4,45) N(151:148)|(1126,45)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 20 13 10" Docking="Left" Id="149" Terminals="146=264, 147, 148" />
+				<CaseStructure.Tunnel Bounds="-4 45 13 10" Docking="Left" Id="150" Terminals="146=263, 147=250, 148=254" />
+				<CaseStructure.Tunnel Bounds="1131 45 13 10" Docking="Right" Id="151" Terminals="146=261, 147=249, 148=254" />
+				<CaseStructure.Tunnel Bounds="-4 150 13 10" Docking="Left" Id="152" Terminals="146=262, 147=247, 148" />
+				<CaseStructure.Tunnel Bounds="-4 165 13 10" Docking="Left" Id="153" Terminals="146=260, 147=245, 148=252" />
+				<CaseStructure.Tunnel Bounds="1131 165 13 10" Docking="Right" Id="154" Terminals="146=259, 147=238, 148=252" />
+				<CaseStructure.Tunnel Bounds="1131 180 13 10" Docking="Right" Id="155" Terminals="146=258, 147=241, 148=253" />
+				<CaseStructure.Tunnel Bounds="1131 220 13 10" Docking="Right" Id="156" Terminals="146=257, 147=240, 148=253" />
+				<CaseStructure.Tunnel Bounds="1131 210 13 10" Docking="Right" Id="157" Terminals="146=255, 147=239, 148=253" />
+			</CaseStructure>
+			<MethodCall Bounds="1480 240 40 40" DomainName="OpenG.Zip" Id="209" Label="210" ResolveFailedHint="&quot;C:\\Users\\lvadmin\\Documents\\OpenG-NXG\\openg.lvzip.gcomp\\ZLIB Convert File Info.gvi&quot;" Target="OpenG\.Zip:ZLIB\ Convert\ File\ Info\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="uncompress file info in" />
+						<Parameter Id="L1" Desc="extra field" />
+						<Parameter Id="L2" Desc="comment" />
+						<Parameter Id="R0" Desc="file info out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@3c2c2c9ef2da4c0fa490196443ae1e4d" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="String" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@2ede7938cc6f4c30810ca2c459620b97" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="209" Bounds="1480 219 232 18" Id="210" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>ZLIB Convert File Info</p.Text>
+			</NodeLabel>
+			<Wire Id="255" Joints="N(157:146)|(1454,255) N(209:L1)|(1480,255)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="256" Joints="N(209:R0)|(1520,245) N(97:Value)|(1548,245)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="257" Joints="N(156:146)|(1454,265) N(209:L2)|(1480,265)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="258" Joints="N(155:146)|(1454,225) N(99:Value)|(1478,225)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="259" Joints="N(154:146)|(1454,210) h(11) v(35) N(209:L0)|(1480,245)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="260" Joints="N(101:Out)|(292,210) N(153:146)|(306,210)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="261" Joints="N(151:146)|(1454,90) N(91:Value)|(1478,90)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="262" Joints="N(93:Value)|(255,195) h(45) B(1) N(152:146)|(306,195) B(1) v(205) N(95:Value)|(313,400)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="263" Joints="N(89:Value)|(130,90) h(70) B(1) N(150:146)|(306,90) B(1) v(-35) N(145:instance in)|(220,55)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="264" Joints="N(145:c0t0v)|(275,65) N(149:146)|(306,65)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="265" IsTabStop="[bool]True" Label="[UIModel]272" Left="[float]106" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]239" Value="{DataItemBinding Id=14}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="266" Label="[UIModel]267" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="267" LabelOwner="[UIModel]266" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="268" Label="[UIModel]269" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="269" LabelOwner="[UIModel]268" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="270" Label="[UIModel]271" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="271" LabelOwner="[UIModel]270" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="272" LabelOwner="[UIModel]265" Left="[float]106" Text="[string]error in (no error)" Top="[float]219" Width="[float]93" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="274" IsTabStop="[bool]True" Label="[UIModel]281" Left="[float]474" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]1" Top="[float]239" Value="{DataItemBinding Id=15}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<LVCheckBox Content="[string]" ContentVisibility="[Visibility]Collapsed" Height="[float]22" Id="275" IsReadOnly="[bool]True" Label="[UIModel]276" Left="[float]3" MinHeight="[float]22" MinWidth="[float]22" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=status}" Width="[float]22" p6:DisplayAsErrorStatus="True" xmlns:p6="http://www.ni.com/Controls.LabVIEW.Design" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="276" LabelOwner="[UIModel]275" Left="[float]3" Text="[string]status" Top="[float]4" Width="[float]32" />
+				<NumericText Height="[float]24" Id="277" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Label="[UIModel]278" Left="[float]54" MinHeight="[float]24" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=code}" ValueFormatter="[string]LV:G6" ValueType="[Type]Int32" Width="[float]111" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="278" LabelOwner="[UIModel]277" Left="[float]54" Text="[string]code" Top="[float]4" Width="[float]26" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]95" Id="279" IsReadOnly="[bool]True" Label="[UIModel]280" Left="[float]3" MinHeight="[float]24" TabIndex="[int]2" Text="{ClusterBinding FieldName=source}" Top="[float]70" Width="[float]162" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Height="[float]16" Id="280" LabelOwner="[UIModel]279" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
+			</Cluster>
+			<Label Height="[float]16" Id="281" LabelOwner="[UIModel]274" Left="[float]474" Text="[string]error out" Top="[float]219" Width="[float]47" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Id="316" LabelOwner="[UIModel]315" Left="[float]107" Text="[string]unzip Refnum" Top="[float]15" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]31" Id="315" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]316" Left="[float]107" MinHeight="[float]24" TabIndex="[int]2" Top="[float]35" Value="{DataItemBinding Id=16}" ValueType="[Type]@47f085f2467b486f829b34cc420675dc" Width="[float]49" p4:ControlDefinitionChecksum="6aGbuudu1dzTSMRzZqbBDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="OpenG\.Zip:ZLIB\ Unzip\ Handle\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+			</NumericText>
+			<Label Id="319" LabelOwner="[UIModel]318" Left="[float]505" Text="[string]unzip Refnum out" Top="[float]15" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]31" Id="318" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]319" Left="[float]505" MinHeight="[float]24" TabIndex="[int]3" Top="[float]35" Value="{DataItemBinding Id=17}" ValueType="[Type]@47f085f2467b486f829b34cc420675dc" Width="[float]49" p4:ControlDefinitionChecksum="6aGbuudu1dzTSMRzZqbBDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="OpenG\.Zip:ZLIB\ Unzip\ Handle\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+			</NumericText>
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="53" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]54" Left="[float]487" TabIndex="[int]4" Text="{DataItemBinding Id=18}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]106" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Height="[float]16" Id="54" LabelOwner="[UIModel]53" Left="[float]487" Text="[string]name" Top="[float]86" Width="[float]30" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Id="313" LabelOwner="[UIModel]282" Left="[float]280" Text="[string]file info" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster AutoArrange="[AutoArrange]SizeToFit" ClusterType="[Type]@2ede7938cc6f4c30810ca2c459620b97" Height="[float]287" Id="282" IsTabStop="[bool]True" Label="[UIModel]313" Left="[float]280" TabIndex="[int]5" Top="[float]30" Value="{DataItemBinding Id=19}" Width="[float]118" p4:ControlDefinitionChecksum="i7g7NXIKK2vUSDQ6XZDpEw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="OpenG\.Zip:ZLIB\ File\ Info\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="283" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]284" Left="[float]56" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]25" Value="{ClusterBinding FieldName=version}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="284" LabelOwner="[UIModel]283" Left="[float]56" Text="[string]version" Top="[float]5" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="285" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]286" Left="[float]56" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=version\ needed}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="286" LabelOwner="[UIModel]285" Left="[float]56" Text="[string]version needed" Top="[float]4" />
+				<Switch BaseName="[string]Square LED" ClickMode="[ClickMode]Press" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" FalseContentVisibility="[Visibility]Collapsed" Height="[float]72" Id="287" IsMomentary="[bool]False" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]288" Left="[float]4" MinHeight="[float]36" MinWidth="[float]34" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]2" Top="[float]42" TrueContent="[string]" Value="{ClusterBinding FieldName=encrypted}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="288" LabelOwner="[UIModel]287" Left="[float]4" Text="[string]encrypted" Top="[float]22" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="289" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]290" Left="[float]56" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]3" Top="[float]42" Value="{ClusterBinding FieldName=flag}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="290" LabelOwner="[UIModel]289" Left="[float]56" Text="[string]flag" Top="[float]22" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="291" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]292" Left="[float]56" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]4" Top="[float]61" Value="{ClusterBinding FieldName=compression}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="292" LabelOwner="[UIModel]291" Left="[float]56" Text="[string]compression" Top="[float]41" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="293" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]294" Left="[float]56" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]5" Top="[float]80" Value="{ClusterBinding FieldName=dos\ date}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="294" LabelOwner="[UIModel]293" Left="[float]56" Text="[string]dos date" Top="[float]60" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="295" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]296" Left="[float]42" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Hexadecimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]6" Top="[float]99" Value="{ClusterBinding FieldName=crc}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt32" Width="[float]64" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="296" LabelOwner="[UIModel]295" Left="[float]42" Text="[string]crc" Top="[float]79" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="297" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]298" Left="[float]56" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]7" Top="[float]118" Value="{ClusterBinding FieldName=compressed\ size}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="298" LabelOwner="[UIModel]297" Left="[float]56" Text="[string]compressed size" Top="[float]98" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="299" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]300" Left="[float]56" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]8" Top="[float]137" Value="{ClusterBinding FieldName=uncompressed\ size}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="300" LabelOwner="[UIModel]299" Left="[float]56" Text="[string]uncompressed size" Top="[float]117" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="301" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]302" Left="[float]6" TabIndex="[int]9" Text="{ClusterBinding FieldName=extra\ info}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]156" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="302" LabelOwner="[UIModel]301" Left="[float]6" Text="[string]extra info" Top="[float]136" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="303" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]304" Left="[float]6" TabIndex="[int]10" Text="{ClusterBinding FieldName=file\ comment}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]175" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="304" LabelOwner="[UIModel]303" Left="[float]6" Text="[string]file comment" Top="[float]155" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="305" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]306" Left="[float]56" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]11" Top="[float]194" Value="{ClusterBinding FieldName=disk\ num\ start}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="306" LabelOwner="[UIModel]305" Left="[float]56" Text="[string]disk num start" Top="[float]174" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="307" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]308" Left="[float]42" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Hexadecimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]12" Top="[float]213" Value="{ClusterBinding FieldName=internal\ fa}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt32" Width="[float]64" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="308" LabelOwner="[UIModel]307" Left="[float]42" Text="[string]internal fa" Top="[float]193" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="309" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]310" Left="[float]42" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Hexadecimal" RadixVisibility="[SMVisibility]Visible" TabIndex="[int]13" Top="[float]232" Value="{ClusterBinding FieldName=external\ fa}" ValueFormatter="[string]Hexadecimal, Uppercase, Unsigned" ValueType="[Type]UInt32" Width="[float]64" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="310" LabelOwner="[UIModel]309" Left="[float]42" Text="[string]external fa" Top="[float]212" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="311" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]312" Left="[float]42" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]14" Top="[float]251" Value="{ClusterBinding FieldName=file\ timestamp}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]64" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<p4:Label Id="312" LabelOwner="[UIModel]311" Left="[float]42" Text="[string]file timestamp" Top="[float]231" />
+			</Cluster>
+			<Text Height="[float]479" Id="88" Left="[float]100" Text="[string]Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (C) 2002-2004 Rolf Kalbermatter rolf.kalbermatter@citeng.com&#xA;Copyright (C) 2002 Jim Kring jim@jimkring.com&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###  " TextWrapping="[TextWrapping]Wrap" Top="[float]459" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="Error" Id="14" Name="error in (no error)" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
+			</p.TypeDefinitionTargets>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"The &lt;B&gt;error in&lt;/B&gt; cluster can accept error information wired from VIs previously called.  Use this information to decide if any functionality should be bypassed in the event of errors from other VIs.&lt;br/&gt;&lt;br/&gt;The pop-up option &lt;B&gt;Explain Error&lt;/B&gt; (or Explain Warning) gives more information about the error displayed. "</p.UserDescription>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="4" DataType="Error" Id="15" Name="error out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>False</Field1>
+					<Field2>0</Field2>
+					<Field3>""</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
+			</p.TypeDefinitionTargets>
+			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">The &lt;B&gt;error out&lt;/B&gt; cluster passes error or warning information out of a VI to be used by other VIs.&lt;br/&gt;&lt;br/&gt;The pop-up option &lt;B&gt;Explain Error&lt;/B&gt; (or Explain Warning) gives more information about the error displayed.</p.UserDescription>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="@47f085f2467b486f829b34cc420675dc" Id="16" Name="unzip Refnum" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="OpenG\.Zip:ZLIB\ Unzip\ Handle\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@47f085f2467b486f829b34cc420675dc" Id="17" Name="unzip Refnum out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="OpenG\.Zip:ZLIB\ Unzip\ Handle\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="2" DataType="String" Id="18" Name="name" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>""</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="3" DataType="@2ede7938cc6f4c30810ca2c459620b97" Id="19" Name="file info" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>0</Field1>
+					<Field2>0</Field2>
+					<Field3>False</Field3>
+					<Field4>0</Field4>
+					<Field5>0</Field5>
+					<Field6>0</Field6>
+					<Field7>0</Field7>
+					<Field8>0</Field8>
+					<Field9>0</Field9>
+					<Field10>""</Field10>
+					<Field11>""</Field11>
+					<Field12>0</Field12>
+					<Field13>0</Field13>
+					<Field14>0</Field14>
+					<Field15>0</Field15>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="OpenG\.Zip:ZLIB\ File\ Info\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="47f085f2467b486f829b34cc420675dc">
+			<Attributed AttributedType="@11445ef915254116993d9c67ef10d515">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Zip" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2ede7938cc6f4c30810ca2c459620b97">
+			<Attributed AttributedType="@99d4c9fb250a4917bb26428956e67b02">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Zip" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="034e313e7a844564bb5812f271b9d913">
+			<Attributed AttributedType="@8b9c672219c24338a27549699dcc34cc">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Zip" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b30a451d77ff42fcb5ce2d15d36c4d1c">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="sec" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="min" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="hour" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="mday" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="mon" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="year" DataType="Int32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3c2c2c9ef2da4c0fa490196443ae1e4d">
+			<Attributed AttributedType="@1e7e955e8a944f3a817cfb25331c308a">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]OpenG\.Zip" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="58662a74462f499abb5650bbd43b480d">
+			<Attributed AttributedType="@a6ee63a0e142422994ede50b981cfe59">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:G\ Core:Strings" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="11445ef915254116993d9c67ef10d515">
+			<Typedef TypedefName="ZLIB Unzip Handle.gtype" UnderlyingType="Int32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="99d4c9fb250a4917bb26428956e67b02">
+			<Typedef TypedefName="ZLIB File Info.gtype" UnderlyingType="@db2086ea330c46f5b837fcb6590d663e" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="8b9c672219c24338a27549699dcc34cc">
+			<Typedef TypedefName="ZLIB Uncompress File Info__ogtk.gtype" UnderlyingType="@f964d3eec3434ac1bb5c34f15184a322" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="1e7e955e8a944f3a817cfb25331c308a">
+			<Typedef TypedefName="ZLIB Uncompress File Info.gtype" UnderlyingType="@f964d3eec3434ac1bb5c34f15184a322" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="a6ee63a0e142422994ede50b981cfe59">
+			<Typedef TypedefName="String Encoding.gtype" UnderlyingType="@f8aef513f859491a83ce530d579feb7f" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="db2086ea330c46f5b837fcb6590d663e">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="version" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="version needed" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="encrypted" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="flag" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="compression" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="dos date" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="crc" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="compressed size" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="uncompressed size" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="extra info" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="file comment" DataType="String" />
+					<Field FieldAccessPolicy="ReadWrite" Name="disk num start" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="internal fa" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="external fa" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="file timestamp" DataType="UInt32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f964d3eec3434ac1bb5c34f15184a322">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="version" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="version needed" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="flag" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="compression" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="dos date" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="crc" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="compressed size" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="uncompressed size" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="size filename" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="size file extra" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="size file comment" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="disk num start" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="internal fa" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="external fa" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="date time" DataType="@b30a451d77ff42fcb5ce2d15d36c4d1c" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f8aef513f859491a83ce530d579feb7f">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="UTF-8" />
+					<EnumerationMember Value="1" Name="UTF-16" />
+					<EnumerationMember Value="2" Name="Extended ASCII" />
+				</Members>
+				<DataType>UInt16</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="OpenG\.Zip:lvzlib\.sli:lvzip_unzGetCurrentFileInfo">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 100">
+						<IconPanel Height="[float]100" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]100" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]96" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]lvzip_unzGetCurrentFileInfo" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]100" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.lvzip.gcomp" Top="[float]0" Width="[float]40" />
+							<IconTemplate Height="[float]100" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[SLI]lvzlib.sli" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="openg\.library\.error:Build\ Error\ Cluster\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACtSURBVEhLxY4BCsMgFEM9bU/rnboPgZDFqp21++Mxkm94tNSzvkSeushPLxwMGI3UwswwJUmt0MgwZT4yl9UBqeplUr/aXFYH3Bqt8b76OMpGXI3wnAx1hGVMdaFGmKI6VAvedY1KtDLr0oJ3XWu1e0u79G6KqETvLRwweB8o4olo5auF7kMEgKoXHPX/MnQfIgBUveCoGdVC9+FXbqmXMZX35/xXvZEv9X7O+gFjl3fri8yRFgAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.error.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Zip:lvzlib\.sli:lvzip_unzGetCurrentFileInfo_2">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 100">
+						<IconPanel Height="[float]100" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]100" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]96" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]lvzip_unzGetCurrentFileInfo_2" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]100" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.lvzip.gcomp" Top="[float]0" Width="[float]40" />
+							<IconTemplate Height="[float]100" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[SLI]lvzlib.sli" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="OpenG\.Zip:ZLIB\ Convert\ File\ Info\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADVSURBVEhLvY9RFoMwCAS9/6UtFoNrWCCpsfOBGyDz4ra/xn/VG6BH7QvWMbRPSWexWo9CYo8H7Q5VG9qn8Bne8TmadpBBt71YbeBRs1+IyGYPWazG/4AEP5hkq13QbOHI56edhWvWtgcrBoG17ntYaRB48/x+u7iB2SoG4Vi6TwXLV2s5hRofhU8bIdvuXIvVqsOKIadQY/A1J9tI1CNMqzVYTqg3fiZU03eNPNaYWZ3xCsWrpZoxyhG1uqs0UMKZl3qjBUo481IUScYjpRg/4TX1vn8ASqbclIKNW5YAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.lvzip.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

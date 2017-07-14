@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="D28ED34A76E7546A289530F08008C5B9" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@7cb2f945aa98412d9dcf5a25a4121711" Id="1" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="10" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="13" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="14" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="15" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="16" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC+SURBVEhL7ZHBDsMgDEP7/z/NTB1MCAGpmrjxDontUO+wpxzjVgdudeB89fP035CGCDktBVCuOQhbL0G8FxOyID1heluFrfGR5mxBesL0tgpbzQO9EAoJQyDrQ2C5rfFLzdmC9KRJUbWt5gF1fzFakJ40Kaq21Tyg7i+coKYAyjUHwXWCWx1YVs//ElFIaFM+VG9syvqw7Qo2ZX1w0CrnJAxTdtVe7G3K+rDtCjZlfZi6iA+9mFke/udWD5TyA2id8X+p4Fi/AAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@7cb2f945aa98412d9dcf5a25a4121711" Id="19" Name="macbinary header">
+			<p.DefaultValue>0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_0_</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="5" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="6" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="7" Name="MACBIN\ Macbinary\ Header\.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy,Envoy,DefinitionReference,NationalInstruments.PanelCommon.SourceModel.ControlDefinition,EmbeddedReference" Id="8" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="9" xmlns="http://www.ni.com/MocCommon">
+					<Label Id="18" LabelOwner="[UIModel]17" Left="[float]112" Text="[string]macbinary header" Top="[float]69" xmlns="http://www.ni.com/PanelCommon" />
+					<Cluster AutoArrange="[AutoArrange]SizeToFit" ClusterType="[Type]@7cb2f945aa98412d9dcf5a25a4121711" Height="[float]465" Id="17" IsTabStop="[bool]True" Label="[UIModel]18" Left="[float]112" TabIndex="[int]0" Top="[float]89" Value="{DataItemBinding Id=19}" Width="[float]73" xmlns="http://www.ni.com/PanelCommon">
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="20" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]22" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]25" Value="{ClusterBinding FieldName=Finder\ flags}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="22" LabelOwner="[UIModel]20" Left="[float]4" Text="[string]Finder flags" Top="[float]5" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="23" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=zero0}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="25" LabelOwner="[UIModel]23" Left="[float]4" Text="[string]zero0" Top="[float]4" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="26" Interval="[ushort]1" IsTabStop="[bool]True" Label="[UIModel]28" Left="[float]4" Maximum="[ushort]65535" MinHeight="[float]24" Minimum="[ushort]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]2" Top="[float]42" Value="{ClusterBinding FieldName=vertical\ pos}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="28" LabelOwner="[UIModel]26" Left="[float]4" Text="[string]vertical pos" Top="[float]22" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="29" Interval="[ushort]1" IsTabStop="[bool]True" Label="[UIModel]31" Left="[float]4" Maximum="[ushort]65535" MinHeight="[float]24" Minimum="[ushort]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]3" Top="[float]61" Value="{ClusterBinding FieldName=horizontal\ pos}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="31" LabelOwner="[UIModel]29" Left="[float]4" Text="[string]horizontal pos" Top="[float]41" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="32" Interval="[ushort]1" IsTabStop="[bool]True" Label="[UIModel]34" Left="[float]4" Maximum="[ushort]65535" MinHeight="[float]24" Minimum="[ushort]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]4" Top="[float]80" Value="{ClusterBinding FieldName=finder\ id}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="34" LabelOwner="[UIModel]32" Left="[float]4" Text="[string]finder id" Top="[float]60" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="35" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]37" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]5" Top="[float]99" Value="{ClusterBinding FieldName=protected}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="37" LabelOwner="[UIModel]35" Left="[float]4" Text="[string]protected" Top="[float]79" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="38" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]40" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]6" Top="[float]118" Value="{ClusterBinding FieldName=zero1}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="40" LabelOwner="[UIModel]38" Left="[float]4" Text="[string]zero1" Top="[float]98" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="41" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]43" Left="[float]4" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]7" Top="[float]137" Value="{ClusterBinding FieldName=data\ length}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="43" LabelOwner="[UIModel]41" Left="[float]4" Text="[string]data length" Top="[float]117" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="44" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]46" Left="[float]4" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]8" Top="[float]156" Value="{ClusterBinding FieldName=res\ length}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="46" LabelOwner="[UIModel]44" Left="[float]4" Text="[string]res length" Top="[float]136" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="47" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]49" Left="[float]4" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]9" Top="[float]175" Value="{ClusterBinding FieldName=creation\ date}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="49" LabelOwner="[UIModel]47" Left="[float]4" Text="[string]creation date" Top="[float]155" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="50" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]52" Left="[float]4" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]10" Top="[float]207" Value="{ClusterBinding FieldName=last\ mod}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="52" LabelOwner="[UIModel]50" Left="[float]4" Text="[string]last mod" Top="[float]187" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="53" Interval="[short]1" IsTabStop="[bool]True" Label="[UIModel]55" Left="[float]4" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]11" Top="[float]239" Value="{ClusterBinding FieldName=comment\ length}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="55" LabelOwner="[UIModel]53" Left="[float]4" Text="[string]comment length" Top="[float]219" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="56" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]58" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]12" Top="[float]258" Value="{ClusterBinding FieldName=Finder\ flags\ 2}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="58" LabelOwner="[UIModel]56" Left="[float]4" Text="[string]Finder flags 2" Top="[float]238" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="59" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]61" Left="[float]4" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]13" Top="[float]277" Value="{ClusterBinding FieldName=file\ identifier}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="61" LabelOwner="[UIModel]59" Left="[float]4" Text="[string]file identifier" Top="[float]257" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="62" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]64" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]14" Top="[float]296" Value="{ClusterBinding FieldName=script\ id}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="64" LabelOwner="[UIModel]62" Left="[float]4" Text="[string]script id" Top="[float]276" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="65" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]67" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]15" Top="[float]315" Value="{ClusterBinding FieldName=ext\ finder\ flags}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="67" LabelOwner="[UIModel]65" Left="[float]4" Text="[string]ext finder flags" Top="[float]295" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="68" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]70" Left="[float]4" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]16" Top="[float]334" Value="{ClusterBinding FieldName=zero2}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="70" LabelOwner="[UIModel]68" Left="[float]4" Text="[string]zero2" Top="[float]314" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="71" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]73" Left="[float]4" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]17" Top="[float]353" Value="{ClusterBinding FieldName=zero3}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="73" LabelOwner="[UIModel]71" Left="[float]4" Text="[string]zero3" Top="[float]333" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="74" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]76" Left="[float]4" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]18" Top="[float]372" Value="{ClusterBinding FieldName=total\ length}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="76" LabelOwner="[UIModel]74" Left="[float]4" Text="[string]total length" Top="[float]352" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="77" Interval="[ushort]1" IsTabStop="[bool]True" Label="[UIModel]79" Left="[float]4" Maximum="[ushort]65535" MinHeight="[float]24" Minimum="[ushort]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]19" Top="[float]391" Value="{ClusterBinding FieldName=sec\ hdr\ length}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="79" LabelOwner="[UIModel]77" Left="[float]4" Text="[string]sec hdr length" Top="[float]371" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="80" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]82" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]20" Top="[float]410" Value="{ClusterBinding FieldName=creator\ version}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="82" LabelOwner="[UIModel]80" Left="[float]4" Text="[string]creator version" Top="[float]390" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="83" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]85" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]21" Top="[float]429" Value="{ClusterBinding FieldName=minimum\ version}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<Label Id="85" LabelOwner="[UIModel]83" Left="[float]4" Text="[string]minimum version" Top="[float]409" />
+					</Cluster>
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="7cb2f945aa98412d9dcf5a25a4121711">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Finder flags" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="zero0" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="vertical pos" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="horizontal pos" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="finder id" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="protected" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="zero1" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="data length" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="res length" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="creation date" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="last mod" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="comment length" DataType="Int16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Finder flags 2" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="file identifier" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="script id" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="ext finder flags" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="zero2" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="zero3" DataType="Int32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="total length" DataType="UInt32" />
+					<Field FieldAccessPolicy="ReadWrite" Name="sec hdr length" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="creator version" DataType="UInt8" />
+					<Field FieldAccessPolicy="ReadWrite" Name="minimum version" DataType="UInt8" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

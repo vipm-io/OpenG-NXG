@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="8CEE3D53539D85EC2DC445E0FDFD00E4" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Error Codes Ring Constant" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="14" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="16" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="17" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="18" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="19" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<LVImage Height="[float]30" Id="20" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB5SURBVEhL7YxBDsAgCAT9/6ftUpRSMB5a8MTE2tk12dbTqGlDTRsyp1vDF3+OTAeymIYJlL+ynqbfb45PM6OdjY/edYOLXyg+pthEcS8AyonKxxSbKO4FQDlRKSaMB4WPunk7nVumRXFwOvwkT9OVQ00batqQNt37BUFA0KAWyegoAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="40" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<Literal Bounds="20 70 15 15" DataType="Int32" Facade="Ring" Id="21" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<RingBehavior ValueFormatter="LV:G6">
+					<RingConstantInfo DisplayValue="No error" ValueType="Int32">
+						<p.Value>0</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Argument error" ValueType="Int32">
+						<p.Value>1</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Memory is full" ValueType="Int32">
+						<p.Value>2</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Out of zone" ValueType="Int32">
+						<p.Value>3</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="End of file" ValueType="Int32">
+						<p.Value>4</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="File already open" ValueType="Int32">
+						<p.Value>5</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Generic file I/O error" ValueType="Int32">
+						<p.Value>6</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="File not found" ValueType="Int32">
+						<p.Value>7</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="File permission error" ValueType="Int32">
+						<p.Value>8</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Disk is full" ValueType="Int32">
+						<p.Value>9</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Duplicate path" ValueType="Int32">
+						<p.Value>10</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Too many files open" ValueType="Int32">
+						<p.Value>11</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="System feature not enabled" ValueType="Int32">
+						<p.Value>12</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Resource file not found" ValueType="Int32">
+						<p.Value>13</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Cannot add resource" ValueType="Int32">
+						<p.Value>14</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Resource not found" ValueType="Int32">
+						<p.Value>15</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Image not found" ValueType="Int32">
+						<p.Value>16</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Image memory error" ValueType="Int32">
+						<p.Value>17</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Pen does not exist" ValueType="Int32">
+						<p.Value>18</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Config type invalid" ValueType="Int32">
+						<p.Value>19</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Config token not found" ValueType="Int32">
+						<p.Value>20</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Config parse error" ValueType="Int32">
+						<p.Value>21</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Config memory error" ValueType="Int32">
+						<p.Value>22</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Bad external code format" ValueType="Int32">
+						<p.Value>23</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Bad external code offset" ValueType="Int32">
+						<p.Value>24</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="External code not present" ValueType="Int32">
+						<p.Value>25</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Null window" ValueType="Int32">
+						<p.Value>26</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Destroy window error" ValueType="Int32">
+						<p.Value>27</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Null menu" ValueType="Int32">
+						<p.Value>28</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Print aborted" ValueType="Int32">
+						<p.Value>29</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Bad print record" ValueType="Int32">
+						<p.Value>30</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Print driver error" ValueType="Int32">
+						<p.Value>31</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Windows error during printing" ValueType="Int32">
+						<p.Value>32</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Memory error during printing" ValueType="Int32">
+						<p.Value>33</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Print dialog error" ValueType="Int32">
+						<p.Value>34</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Generic print error" ValueType="Int32">
+						<p.Value>35</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Invalid device refnum" ValueType="Int32">
+						<p.Value>36</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Device not found" ValueType="Int32">
+						<p.Value>37</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Device parameter error" ValueType="Int32">
+						<p.Value>38</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Device unit error" ValueType="Int32">
+						<p.Value>39</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Cannot open device" ValueType="Int32">
+						<p.Value>40</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Device call aborted" ValueType="Int32">
+						<p.Value>41</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Generic error" ValueType="Int32">
+						<p.Value>42</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Cancelled by user" ValueType="Int32">
+						<p.Value>43</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Object ID too low" ValueType="Int32">
+						<p.Value>44</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Object ID too high" ValueType="Int32">
+						<p.Value>45</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Object not in heap" ValueType="Int32">
+						<p.Value>46</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Unknown heap" ValueType="Int32">
+						<p.Value>47</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Unknown object (invalid DefProc)" ValueType="Int32">
+						<p.Value>48</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Unknown object (DefProc not in table)" ValueType="Int32">
+						<p.Value>49</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Message out of range" ValueType="Int32">
+						<p.Value>50</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Invalid (null) method" ValueType="Int32">
+						<p.Value>51</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Unknown message" ValueType="Int32">
+						<p.Value>52</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Manager call not supported" ValueType="Int32">
+						<p.Value>53</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Bad address" ValueType="Int32">
+						<p.Value>54</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Network operation in progress" ValueType="Int32">
+						<p.Value>55</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Network operation timed out" ValueType="Int32">
+						<p.Value>56</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Connection is busy" ValueType="Int32">
+						<p.Value>57</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Network attribute not supported" ValueType="Int32">
+						<p.Value>58</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Network error" ValueType="Int32">
+						<p.Value>59</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Address in use" ValueType="Int32">
+						<p.Value>60</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="System out of memory" ValueType="Int32">
+						<p.Value>61</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Connection aborted" ValueType="Int32">
+						<p.Value>62</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Connection refused" ValueType="Int32">
+						<p.Value>63</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Not connected" ValueType="Int32">
+						<p.Value>64</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Already connected" ValueType="Int32">
+						<p.Value>65</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Connection closed" ValueType="Int32">
+						<p.Value>66</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Initialization error (interapplication manager)" ValueType="Int32">
+						<p.Value>67</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Bad occurrence" ValueType="Int32">
+						<p.Value>68</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Wait on unbound occurrence handler" ValueType="Int32">
+						<p.Value>69</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Occurrence queue overflow" ValueType="Int32">
+						<p.Value>70</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Datalog type conflict" ValueType="Int32">
+						<p.Value>71</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Unused" ValueType="Int32">
+						<p.Value>72</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Unrecognized type (interapplication manager)" ValueType="Int32">
+						<p.Value>73</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Memory corrupt" ValueType="Int32">
+						<p.Value>74</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Failed to make temporary DLL" ValueType="Int32">
+						<p.Value>75</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Old CIN version" ValueType="Int32">
+						<p.Value>76</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Drag socket not found" ValueType="Int32">
+						<p.Value>77</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Failed to load drop-object" ValueType="Int32">
+						<p.Value>78</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Failed to register OLE object" ValueType="Int32">
+						<p.Value>79</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Failed to release OLE object" ValueType="Int32">
+						<p.Value>80</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Format specifier type mismatch" ValueType="Int32">
+						<p.Value>81</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Unknown format specifier" ValueType="Int32">
+						<p.Value>82</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Too few format specifiers" ValueType="Int32">
+						<p.Value>83</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Too many format specifiers" ValueType="Int32">
+						<p.Value>84</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Scan failed" ValueType="Int32">
+						<p.Value>85</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Newer CIN version" ValueType="Int32">
+						<p.Value>86</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Error converting to variant" ValueType="Int32">
+						<p.Value>87</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Runtime menu error" ValueType="Int32">
+						<p.Value>88</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Password tampered" ValueType="Int32">
+						<p.Value>89</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Variant attribute not found" ValueType="Int32">
+						<p.Value>90</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Incompatible variant data type" ValueType="Int32">
+						<p.Value>91</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Event data is not available" ValueType="Int32">
+						<p.Value>92</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Event Store is not present" ValueType="Int32">
+						<p.Value>93</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Occurrence is not found" ValueType="Int32">
+						<p.Value>94</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Event Queue is not created" ValueType="Int32">
+						<p.Value>95</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Event info is not available" ValueType="Int32">
+						<p.Value>96</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Refnum passed is NULL" ValueType="Int32">
+						<p.Value>97</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Error retrieving Class GUID" ValueType="Int32">
+						<p.Value>98</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Error retrieving CoClass GUID" ValueType="Int32">
+						<p.Value>99</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Error retrieving TypeLib GUID." ValueType="Int32">
+						<p.Value>100</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Bad built application magic bytes." ValueType="Int32">
+						<p.Value>101</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Specific driver is different from the specific driver associated with the Logical Name." ValueType="Int32">
+						<p.Value>102</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="There is no session opened to the class driver." ValueType="Int32">
+						<p.Value>103</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="Max Error" ValueType="Int32">
+						<p.Value>104</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="MAX - Error with config objects" ValueType="Int32">
+						<p.Value>105</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="MAX - Error loading configuration" ValueType="Int32">
+						<p.Value>106</p.Value>
+					</RingConstantInfo>
+					<RingConstantInfo DisplayValue="MAX - Group not supported" ValueType="Int32">
+						<p.Value>107</p.Value>
+					</RingConstantInfo>
+				</RingBehavior>
+			</Literal>
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" />
+	</VirtualInstrument>
+</SourceFile>

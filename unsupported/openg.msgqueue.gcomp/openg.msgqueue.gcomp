@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="7073357EEE08236AD0D4009325DB367E" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="5.0.0.497" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.0.0.497" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
+		<ApplicationVersionInfo Build="5.0.0.497" Name="NI Application" Version="5.0.0.497" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Message Queue" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="10" Name="Default">
+			<CompilerSymbolTable Id="11" xmlns="http://www.ni.com/PlatformFramework" />
+			<ComponentItemProperties AssociatedEnvoyId="14" Exported="True" Id="29" />
+			<ComponentItemProperties AssociatedEnvoyId="15" Exported="True" Id="30" />
+			<ComponentItemProperties AssociatedEnvoyId="16" Exported="True" Id="31" />
+			<ComponentItemProperties AssociatedEnvoyId="17" Exported="True" Id="32" />
+			<ComponentItemProperties AssociatedEnvoyId="18" Exported="True" Id="33" />
+			<ComponentItemProperties AssociatedEnvoyId="19" Exported="True" Id="34" />
+			<ComponentItemProperties AssociatedEnvoyId="20" Exported="True" Id="35" />
+			<ComponentItemProperties AssociatedEnvoyId="21" Exported="True" Id="36" />
+			<ComponentItemProperties AssociatedEnvoyId="22" Exported="True" Id="37" />
+			<ComponentItemProperties AssociatedEnvoyId="23" Exported="True" Id="38" />
+			<ComponentItemProperties AssociatedEnvoyId="24" Exported="True" Id="39" />
+			<ComponentItemProperties AssociatedEnvoyId="25" Exported="True" Id="40" />
+			<ComponentItemProperties AssociatedEnvoyId="26" Exported="True" Id="41" />
+			<ComponentItemProperties AssociatedEnvoyId="27" Exported="True" Id="42" />
+			<ComponentItemProperties AssociatedEnvoyId="28" Exported="True" Id="43" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
+		<ProjectSettings Id="7" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
+		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot,ComponentDefinitionEnvoyHierarchyRoot,EmbeddedReference" Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="13" Name="OpenG\.Message\ Queue">
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Cast\ Msg\ Queue\ to\ Queue\.gvi" StoragePath="Cast Msg Queue to Queue.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Cast\ Msg\ to\ Msg\ Cluster\.gvi" StoragePath="Cast Msg to Msg Cluster.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="16" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Cast\ Msgs\ to\ Msg\ Clusters\.gvi" StoragePath="Cast Msgs to Msg Clusters.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="17" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Cast\ Queue\ to\ Msg\ Queue\.gvi" StoragePath="Cast Queue to Msg Queue.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="18" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Create\ Msg\ Queue\.gvi" StoragePath="Create Msg Queue.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="19" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Default\ Message\ Cluster\.gvi" StoragePath="Default Message Cluster.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="20" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Destroy\ Msg\ Queue\.gvi" StoragePath="Destroy Msg Queue.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="21" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Flush\ Msg\ Queue\.gvi" StoragePath="Flush Msg Queue.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="22" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Get\ Msg\ Queue\ Status\.gvi" StoragePath="Get Msg Queue Status.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="23" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Insert\ Msg\ Queue\ Element\.gvi" StoragePath="Insert Msg Queue Element.gvi" />
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="24" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Msg\ Cluster\.gtype" StoragePath="Msg Cluster.gtype\Msg Cluster.gtype" />
+				<SourceFileReference Bindings="EnvoyManager,Envoy,DefinitionReference,NationalInstruments.MocCommon.Modeling.TypeDefinition,FileReference,SourceFileReference" Id="25" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Msg\ Queue\ RefNum\.gtype" StoragePath="Msg Queue RefNum.gtype\Msg Queue RefNum.gtype" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="26" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Not\ A\ Msg\ Queue\.gvi" StoragePath="Not A Msg Queue.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="27" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Remove\ Msg\ Queue\ Element\.gvi" StoragePath="Remove Msg Queue Element.gvi" />
+				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="28" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ Msg\ Queue\.gvi" StoragePath="VI Tree - Msg Queue.gvi" />
+				<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType,ProjectItemDragDropDefaultService,EmbeddedReference" Id="44" ModelDefinitionType="NationalInstruments.ProjectExplorer.ExternalFileSupport.Modeling.ExternalFileType" Name="openg\.msgqueue\.upgrade">
+					<ExternalFile>
+						<p.StoragePath>openg.msgqueue.upgrade</p.StoragePath>
+					</ExternalFile>
+				</EmbeddedDefinitionReference>
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot,ComponentDefinitionContentReferenceRoot,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="openg\.msgqueue\.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.ComponentEditor.SourceModel.ComponentConfiguration" ContentIdentifier="10" Id="12" Name="Default" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

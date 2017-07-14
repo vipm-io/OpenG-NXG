@@ -1,0 +1,41 @@
+﻿Architecture: windows_x64
+CompatibilityVersion: 170100
+Conflicts: ni-package-manager
+Description: End-User License Agreement
+DisplayName: eula-openg-license
+EulaPriority: 0
+EulaTitle: eula-openg-license
+Filename: eula-openg-license_2.0.0.1_windows_x64.nipkg
+MD5Sum: fd4bdb910dfc108331e09e6f24bf1247
+Maintainer: support@jki.net
+Package: eula-openg-license
+Plugin: eula
+Section: Infrastructure
+Size: 1556
+UserVisible: no
+Version: 2.0.0.1
+
+Architecture: windows_x64
+Built-Using: nipkg
+CompatibilityVersion: 170100
+Depends: ni-labview-nxg-2.0.0
+Description: The OpenG package installs the OpenG Libraries.
+DisplayName: OpenG Library
+Essential: no
+Eula: eula-openg-license
+Filename: openg-library-labview-opengnxg-src-2_2.0.0.1_windows_x64.nipkg
+Homepage: http://www.lavag.org
+MD5Sum: 3a2b39b3d6c3867f7e9feacded5812cd
+Maintainer: Lavag.org <support@jki.net>
+Package: openg-library-labview-opengnxg-src-2
+Plugin: file
+Priority: optional
+Provides: openg-library-opengnxg
+Recommends: 
+Section: Add-Ons
+Size: 2895746
+StoreProduct: yes
+Suggests: 
+UserVisible: yes
+Version: 2.0.0.1
+
