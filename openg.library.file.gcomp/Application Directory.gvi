@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="525C0D9F559D793A0B314A043F7B74EF" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="8A95A7554A076C28BE5D5A84C4441022" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.2" Version="5.1.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4577" Name="LabVIEW NXG" Version="2.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Application Directory" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns the LV App directory + Relative path.</p.UserDescription>
@@ -48,7 +48,7 @@
 			<NodeLabel AttachedTo="32" Bounds="185 113 91 14" Id="33" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Relative path (.)</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="195 55 65 45" Id="34" InstanceDataType="@4cb018c231c7415db2e8d073cfd4d7a0" IsPlaceholderNodeForConversion="True" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+			<PropertyNode Bounds="195 55 65 45" Id="34" InstanceDataType="@f6b084e338b9496796296aa11d6ef686" IsPlaceholderNodeForConversion="True" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 				<PropertyItemTerminal DataType="@2c3d5e0130054d1cbfb3093816652822" Hotspot="65 25" Id="c0t0v" Path="Exec.State" PathElementMemberKinds="Field" Usage="Optional" />
 			</PropertyNode>
 			<BuildPath Bounds="330 75 30 30" Id="35" />
@@ -78,8 +78,8 @@
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="4cb018c231c7415db2e8d073cfd4d7a0">
-			<Attributed AttributedType="@396c0b5617564684a3ce133a849c664d">
+		<p.TypeReference TypeId="f6b084e338b9496796296aa11d6ef686">
+			<Attributed AttributedType="@b40ff31d3033403d9503e86955429fcf">
 				<AttributeValues>
 					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
 				</AttributeValues>
@@ -96,7 +96,7 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="396c0b5617564684a3ce133a849c664d">
+		<p.TypeReference TypeId="b40ff31d3033403d9503e86955429fcf">
 			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.VIRefnum" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="Read" Name="Exec.State" DataType="@2c3d5e0130054d1cbfb3093816652822" />

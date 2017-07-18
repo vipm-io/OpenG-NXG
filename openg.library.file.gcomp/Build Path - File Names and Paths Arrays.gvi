@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F64EBD70AC26689983D776D2D308BEF7" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="17A3697102B2D0883846A66EF4B3A586" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Build Path - File Names and Paths Arrays" Id="1" OverloadGroup="Build Path" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Functions identically to LabVIEW "Build Path" function, but is polymorphic to also allow the   path and/or  input to be an array.  There are two array modes:&lt;br/&gt;(1) if "base path" and "name or relative path" are arrays then the output array is built element by element with the ideces of base path corresponding to those of "name or relative path"&lt;br/&gt;(2) if "base path" is a literal and "name or relative path" is an array then the output array is build by appending each element in "name or relative path" onto base path.</p.UserDescription>
 		<Icon Id="17" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="19" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="20" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="20" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 				</IconTemplate>
-				<LVImage Height="[float]30" Id="23" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAESSURBVEhLtYwBDsMwCAP3/7f1T1uIKSU2YdXUWRaCw/A63seffOv1qxJl1HdffyXqP78eOSgvwKkJK1H766jZgzQrImq/hC4qilUEiKiXBB3Mn0aIl0Rd3EDoA6IJZ2LpqSDOeV6fZrgj5YkRnk8RzCORGTcFcb4MsoaLs0mI8wgE5UW2rkDm0frulPWYo5bWlV0nZX5VdBDWal2BzKNlBTJkfV7sjKgS4jzmYefd6+ihIM5pLl2cra+JwM+8hoI4p7l0cSZkmOCTr4cHh6zPi50R7Qk835qsz3NWpO8Ewr6j12h0bAK9lwOtNFLt7bl8gFFFgdH0Xg600ki1t+fyAY1NoPcVJS2hSjlQ+nviR7+PDySz8P11exldAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+				<Image Height="[float]30" Id="23" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAESSURBVEhLtYwBDsMwCAP3/7f1T1uIKSU2YdXUWRaCw/A63seffOv1qxJl1HdffyXqP78eOSgvwKkJK1H766jZgzQrImq/hC4qilUEiKiXBB3Mn0aIl0Rd3EDoA6IJZ2LpqSDOeV6fZrgj5YkRnk8RzCORGTcFcb4MsoaLs0mI8wgE5UW2rkDm0frulPWYo5bWlV0nZX5VdBDWal2BzKNlBTJkfV7sjKgS4jzmYefd6+ihIM5pLl2cra+JwM+8hoI4p7l0cSZkmOCTr4cHh6zPi50R7Qk835qsz3NWpO8Ewr6j12h0bAK9lwOtNFLt7bl8gFFFgdH0Xg600ki1t+fyAY1NoPcVJS2hSjlQ+nviR7+PDySz8P11exldAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
 			</IconPanel>
 		</Icon>
 		<ConnectorPane Height="40" Id="9" ListViewHeight="85" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
@@ -34,7 +34,7 @@
 			<ConnectorPaneTerminal Hotspot="25 40" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="65 115 40 15" DataItem="14" Id="45" Label="46" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Path[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -69,27 +69,28 @@
 			<Wire Id="63" Joints="N(47:Value)|(40,160) N(56:o0)|(138,160)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="64" Joints="N(45:Value)|(105,120) h(25) v(25) N(55:o0)|(138,145)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Label Height="[float]16" Id="25" LabelOwner="[UIModel]24" Left="[float]136" Text="[string]base path" Top="[float]10" Width="[float]52" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]29" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="24" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]136" Rows="[int]1" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]167" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>
 					<Path a="1" />
 				</p.DefaultElementValue>
-				<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="29" InitialDirectory="[string]" IsTabStop="[bool]True" Left="[float]61" MinHeight="[float]24" TabIndex="[int]0" Top="[float]6" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="29" InitialDirectory="[string]" IsTabStop="[bool]True" MinHeight="[float]24" TabIndex="[int]0" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="32" LabelOwner="[UIModel]31" Left="[float]123" Text="[string]name or relative path" Top="[float]83" Width="[float]114" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]36" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="31" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]32" Left="[float]123" Rows="[int]1" TabIndex="[int]1" Top="[float]103" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]167" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>""</p.DefaultElementValue>
-				<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="36" IsTabStop="[bool]True" Left="[float]61" TabIndex="[int]0" Text="[string]" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]6" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="36" IsTabStop="[bool]True" MinHeight="[float]24" TabIndex="[int]0" TextDisplayMode="[SMTextDisplayMode]Default" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="38" LabelOwner="[UIModel]37" Left="[float]351" Text="[string]appended path" Top="[float]15" Width="[float]81" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]42" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="37" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]38" Left="[float]351" Rows="[int]1" TabIndex="[int]2" Top="[float]35" Value="{DataItemBinding Id=16}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]167" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>
 					<Path a="1" />
 				</p.DefaultElementValue>
-				<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="42" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" Left="[float]61" MinHeight="[float]24" TabIndex="[int]0" Top="[float]6" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="42" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" MinHeight="[float]24" TabIndex="[int]0" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Text Height="[float]527" Id="44" Left="[float]100" Text="[string]Build Path.vi&#xA;&#xA;Allows arrays or literals to be used&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]155" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+			<PanelExecutionWindow Id="65" />
 		</CPFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="Path[]" Id="14" Name="base path" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>

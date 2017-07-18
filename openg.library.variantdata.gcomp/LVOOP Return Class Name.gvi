@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="53D16755BE6E47C2FAB480338CC0122A" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6BD6273E62A384D7DCFCFA11935076BA" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Return Class Name" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns the &lt;b&gt;Class Base Name&lt;/b&gt;, &lt;b&gt;Qualified Name&lt;/b&gt; and &lt;b&gt;Qualified Name Array&lt;/b&gt; of &lt;b&gt;Object&lt;/b&gt;.&lt;br/&gt;&lt;br/&gt;For example if &lt;b&gt;Object&lt;/b&gt; is of type &lt;b&gt;Library.lvlib:Class 1.lvclass&lt;/b&gt; then:&lt;br/&gt;&lt;b&gt;Class Base Name&lt;/b&gt; = Class 1&lt;br/&gt;&lt;b&gt;Qualified Name&lt;/b&gt; = Library.lvlib:Class 1.lvclass&lt;br/&gt;&lt;b&gt;Qualified Name Array&lt;/b&gt; = [Library.lvlib, Class 1.lvclass]&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Notes:&lt;/b&gt;&lt;br/&gt;This VI benefits from being generic (e.g. good for probes/scripting) however, is most likely inefficient to the cost of flattening the entire object data to a string (as is any VI that does this). Although this VI is optimised to only use the default object data.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;The following alternative method is recommended for high performance applications:&lt;/b&gt;&lt;br/&gt;Add a dynamic dispatch method to the root Class (e.g. called "Get Class Name.vi") and override that VI at every level of the hierarchy to return a string constant of the desired name. This avoids the memory allocation and performance hit of the flattening to the string. An example of a use case is creating a by-name-lookup object hierarchy.</p.UserDescription>
 		<Icon Id="18" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="20" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="21" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="21" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="22" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="23" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 				</IconTemplate>
-				<LVImage Height="[float]30" Id="24" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADISURBVEhL7ZIBDsIgDEV3/7NxJ6x5rCvdgCLZoonNk5TCfxLjlnK6iWfV215uPkuVx5hzArb2whQliUWlFo40EOdQq8VJKQ3EqdTOSM+qgTgXamtkldJAnKYaHXP6WR55tZRVs6WR0kCcKoMFo3rthSkukhil3Fwpx6Nv/fxRQt++pBY69q9Uv39sU+5UWHp1sTYevqQWWl5hVd3hr3aE1PZvcO4pJgxLo6MO3D7nB6t8hgwUpxWOroOLSWMndq1O2d/BL6pzegGhlhjyHEYK9QAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+				<Image Height="[float]30" Id="24" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADISURBVEhL7ZIBDsIgDEV3/7NxJ6x5rCvdgCLZoonNk5TCfxLjlnK6iWfV215uPkuVx5hzArb2whQliUWlFo40EOdQq8VJKQ3EqdTOSM+qgTgXamtkldJAnKYaHXP6WR55tZRVs6WR0kCcKoMFo3rthSkukhil3Fwpx6Nv/fxRQt++pBY69q9Uv39sU+5UWHp1sTYevqQWWl5hVd3hr3aE1PZvcO4pJgxLo6MO3D7nB6t8hgwUpxWOroOLSWMndq1O2d/BL6pzegGhlhjyHEYK9QAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
 			</IconPanel>
 		</Icon>
 		<ConnectorPane Height="40" Id="9" ListViewHeight="100" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
@@ -34,7 +34,7 @@
 			<ConnectorPaneTerminal Hotspot="25 40" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000" />
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="140 295 40 15" DataItem="14" Id="39" Label="40" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@34494154f749429290c58b62ef103a3e" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -48,7 +48,7 @@
 			<NodeLabel AttachedTo="41" Bounds="1845 280 96 14" Id="42" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Class Base Name</p.Text>
 			</NodeLabel>
-			<Literal Bounds="1310 310 65 15" DataType="String" Facade="String" Id="43" Label="44" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="1310 310 65 15" DataType="String" Id="43" Label="44" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>.lvclass</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
@@ -67,37 +67,37 @@
 			<NodeLabel AttachedTo="47" Bounds="1845 400 85 14" Id="48" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Qualified Name</p.Text>
 			</NodeLabel>
-			<Literal Bounds="365 390 40 15" DataType="Int32" Facade="Numeric" Id="49" Label="50" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="365 390 40 15" DataType="Int32" Id="49" Label="50" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>4</p.Data>
-				<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
 			</Literal>
 			<NodeLabel AttachedTo="49" Bounds="365 369 70 18" Id="50" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>offset (0)</p.Text>
 			</NodeLabel>
-			<Literal Bounds="365 415 40 15" DataType="Int32" Facade="Numeric" Id="51" Label="52" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="365 415 40 15" DataType="Int32" Id="51" Label="52" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>1</p.Data>
-				<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
 			</Literal>
 			<NodeLabel AttachedTo="51" Bounds="365 394 94 18" Id="52" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>length (rest)</p.Text>
 			</NodeLabel>
-			<Literal Bounds="400 355 40 15" DataType="UInt8" Facade="Numeric" Id="53" Label="54" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="400 355 40 15" DataType="UInt8" Id="53" Label="54" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0</p.Data>
-				<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
 			</Literal>
 			<NodeLabel AttachedTo="53" Bounds="400 338 16 14" Id="54" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>U8</p.Text>
 			</NodeLabel>
-			<Literal Bounds="470 320 40 15" DataType="UInt8" Facade="Numeric" Id="55" Label="56" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="470 320 40 15" DataType="UInt8" Id="55" Label="56" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>5</p.Data>
-				<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
 			</Literal>
 			<NodeLabel AttachedTo="55" Bounds="470 299 9 18" Id="56" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>y</p.Text>
 			</NodeLabel>
-			<Literal Bounds="670 430 40 15" DataType="Int32" Facade="Numeric" Id="57" Label="58" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="670 430 40 15" DataType="Int32" Id="57" Label="58" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>0</p.Data>
-				<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+				<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
 			</Literal>
 			<NodeLabel AttachedTo="57" Bounds="670 409 70 18" Id="58" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>offset (0)</p.Text>
@@ -105,7 +105,7 @@
 			<FlattenToByteArray Bounds="255 305 40 40" Id="59" />
 			<MatchPattern Bounds="1405 280 40 40" Id="60" />
 			<DeleteFromArray Bounds="1340 260 40 40" Id="63" Terminals="inArray=108, length (1), outArray, deleted=124, index0" />
-			<MethodCall Bounds="200 295 40 40" DomainName="openg.library.variant data" Id="64" Label="65" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\lvdata\\lvdata.llb\\LVOOP Get Default Object.gvi&quot;" Target="openg\.library\.variant\ data:LVOOP\ Get\ Default\ Object\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="200 295 40 40" DomainName="openg.library.variant data" Id="64" Label="65" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\LVOOP Get Default Object.gvi&quot;" Target="openg\.library\.variant\ data:LVOOP\ Get\ Default\ Object\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Object" />
@@ -127,16 +127,16 @@
 			<WhileLoop Bounds="760 325 365 190" DiagramId="71" Id="70" Label="74">
 				<LoopCondition Bounds="335 155 15 15" Id="72" />
 				<LoopIteration Bounds="10 155 15 15" Id="73" />
-				<Literal Bounds="40 40 40 15" DataType="UInt8" Facade="Numeric" Id="79" Label="80" xmlns="http://www.ni.com/MocCommon">
+				<Literal Bounds="40 40 40 15" DataType="UInt8" Id="79" Label="80" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>0</p.Data>
-					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
 				</Literal>
 				<NodeLabel AttachedTo="79" Bounds="40 23 16 14" Id="80" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>U8</p.Text>
 				</NodeLabel>
-				<Literal Bounds="10 95 40 15" DataType="Int32" Facade="Numeric" Id="81" Label="82" xmlns="http://www.ni.com/MocCommon">
+				<Literal Bounds="10 95 40 15" DataType="Int32" Id="81" Label="82" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>1</p.Data>
-					<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+					<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
 				</Literal>
 				<NodeLabel AttachedTo="81" Bounds="10 74 94 18" Id="82" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>length (rest)</p.Text>
@@ -200,7 +200,7 @@
 			<TypeCast Bounds="325 305 30 15" Id="126" />
 			<Wire Id="127" Joints="N(126:*(type *\) &amp;x)|(355,310) h(37) B(1) N(68:string)|(555,310) B(1) v(75) N(66:string)|(425,385)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="128" Joints="N(59:data bytes)|(295,310) N(126:x)|(325,310)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Literal Bounds="290 260 40 15" DataType="String" Facade="String" Id="129" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="290 260 40 15" DataType="String" Id="129" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>""</p.Data>
 				<StringBehavior TextDisplayMode="Default" />
 			</Literal>
@@ -222,19 +222,20 @@
 				<DisableStructure.Tunnel Bounds="316 45 13 10" Docking="Right" Id="367" Terminals="132=122, 133, 134=366" />
 			</DisableStructure>
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<ValueClassControl BaseName="[string]G object" Height="[float]48" Id="25" IsReadOnly="[bool]False" IsTabStop="[bool]False" Label="[UIModel]27" Left="[float]100" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" ValueClassControl="[Type]@34494154f749429290c58b62ef103a3e" Width="[float]48" xmlns="http://www.ni.com/MocCommon" />
 			<Label Height="[float]16" Id="27" LabelOwner="[UIModel]25" Left="[float]100" Text="[string]Object" Top="[float]10" Width="[float]35" xmlns="http://www.ni.com/PanelCommon" />
-			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="28" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]29" Left="[float]447" TabIndex="[int]1" Text="{DataItemBinding Id=15}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]32" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="28" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]29" Left="[float]447" MinHeight="[float]24" TabIndex="[int]1" Text="{DataItemBinding Id=15}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]32" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="29" LabelOwner="[UIModel]28" Left="[float]447" Text="[string]Class Base Name" Top="[float]12" Width="[float]90" xmlns="http://www.ni.com/PanelCommon" />
 			<Label Height="[float]16" Id="31" LabelOwner="[UIModel]30" Left="[float]488" Text="[string]Qualified Name Array" Top="[float]177" Width="[float]115" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]35" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="30" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]31" Left="[float]488" Rows="[int]1" TabIndex="[int]2" Top="[float]197" Value="{DataItemBinding Id=16}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]167" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>""</p.DefaultElementValue>
-				<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="35" IsReadOnly="[bool]True" IsTabStop="[bool]True" Left="[float]61" TabIndex="[int]0" Text="[string]" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]6" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="35" IsReadOnly="[bool]True" IsTabStop="[bool]True" MinHeight="[float]24" TabIndex="[int]0" TextDisplayMode="[SMTextDisplayMode]Default" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
-			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="36" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]37" Left="[float]447" TabIndex="[int]3" Text="{DataItemBinding Id=17}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]110" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="36" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]37" Left="[float]447" MinHeight="[float]24" TabIndex="[int]3" Text="{DataItemBinding Id=17}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]110" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="37" LabelOwner="[UIModel]36" Left="[float]447" Text="[string]Qualified Name" Top="[float]90" Width="[float]83" xmlns="http://www.ni.com/PanelCommon" />
 			<Text Height="[float]479" Id="38" Left="[float]100" Text="[string]Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2012, James David Powell &lt;drjdpowell@gmail.com&gt;&#xA;Copyright (c) 2012, Jonathon Green &lt;jg@jgcode.net&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of OpenG.org nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]228" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
+			<PanelExecutionWindow Id="368" />
 		</CPFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="@34494154f749429290c58b62ef103a3e" Id="14" Name="Object" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
@@ -260,12 +261,12 @@
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
 						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 							</IconTemplate>
-							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADYSURBVEhL7Y5RDsQgCER7/7N5J5fucylStNJkk350MiEKjwlbqeVPfqOdnxG9bTts69y5qyURuX7oRHRL/clNz37M1a7OHRD7VV+5fuiGRnDXAqq1YL4WsGY6gduHgXLWjHRhHT6ideA4BJaCu2gH8aaCpeAg2kJUEVgKHkZD0OetpulgHtSGjWhbRWAp+IgWWZovDxFYCo53tIosYM10AgebQCLXD93QCF7av+dhdHgI5kzkRtbT2UK661vPZuLRMrki17e+iBa3jF46Uuzs6+jbfqM71/IBs6qyF9JSzuEAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
-							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.variant data.gcomp" Top="[float]0" Width="[float]40" />
+							<Image Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADYSURBVEhL7Y5RDsQgCER7/7N5J5fucylStNJkk350MiEKjwlbqeVPfqOdnxG9bTts69y5qyURuX7oRHRL/clNz37M1a7OHRD7VV+5fuiGRnDXAqq1YL4WsGY6gduHgXLWjHRhHT6ideA4BJaCu2gH8aaCpeAg2kJUEVgKHkZD0OetpulgHtSGjWhbRWAp+IgWWZovDxFYCo53tIosYM10AgebQCLXD93QCF7av+dhdHgI5kzkRtbT2UK661vPZuLRMrki17e+iBa3jF46Uuzs6+jbfqM71/IBs6qyF9JSzuEAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]openg.library.variantdata.gcomp" Top="[float]0" Width="[float]40" />
 						</IconPanel>
 					</Icon>
 				</MergeItem>

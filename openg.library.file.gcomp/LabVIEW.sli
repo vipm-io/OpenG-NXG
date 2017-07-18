@@ -1,25 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7F0C7E4C8994747D1F4D83E06805CAC6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A50850A40614784265DE21BE52EA1BF2" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="External Code" Name="http://www.ni.com/ExternalCode" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="External Code" Name="http://www.ni.com/ExternalCode" OldestCompatibleVersion="5.1.0.0" Version="5.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
-	<SharedLibrary CallingConvention="Cdecl" Id="1" PathToLibrary="LabVIEW" StringEncoding="CodePage" ThreadRequirements="AnyThread" xmlns="http://www.ni.com/ExternalCode">
+	<SharedLibrary CallingConvention="Cdecl" Id="1" StringEncoding="CodePage" ThreadRequirements="AnyThread" xmlns="http://www.ni.com/ExternalCode">
+		<p.PlatformAgnosticPathToLibrary>
+			<Path a="0">
+				<pE>LabVIEW</pE>
+			</Path>
+		</p.PlatformAgnosticPathToLibrary>
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="Blank" Top="[float]0" Width="[float]40" />
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
 	</SharedLibrary>
 	<EnvoyManagerFile Id="5" xmlns="http://www.ni.com/PlatformFramework">
 		<ProjectSettings Id="6" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
-		<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="7" Name="LabVIEW\.sli" NameTracksFileName="True">
-			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="8" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FGetInfo">
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="7" Name="LabVIEW\.sli" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Id="8" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FGetInfo">
 				<SharedLibraryEntryPoint Id="9" Symbol="FGetInfo" xmlns="http://www.ni.com/ExternalCode">
 					<Icon Id="10" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 						<IconPanel Height="[float]40" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="12" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="12" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="13" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="14" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								<FileNameText Attached="[bool]True" Height="[float]36" Id="15" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]FGetInfo" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
@@ -60,11 +65,11 @@
 					</SharedLibraryParameter>
 				</SharedLibraryEntryPoint>
 			</EmbeddedDefinitionReference>
-			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="31" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FSetInfo">
+			<EmbeddedDefinitionReference Id="31" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FSetInfo">
 				<SharedLibraryEntryPoint Id="32" Symbol="FSetInfo" xmlns="http://www.ni.com/ExternalCode">
 					<Icon Id="33" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 						<IconPanel Height="[float]40" Id="34" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="35" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="35" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="36" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="37" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								<FileNameText Attached="[bool]True" Height="[float]36" Id="38" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]FSetInfo" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
@@ -105,11 +110,11 @@
 					</SharedLibraryParameter>
 				</SharedLibraryEntryPoint>
 			</EmbeddedDefinitionReference>
-			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="54" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FNewRefNum">
+			<EmbeddedDefinitionReference Id="54" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FNewRefNum">
 				<SharedLibraryEntryPoint Id="55" Symbol="FNewRefNum" xmlns="http://www.ni.com/ExternalCode">
 					<Icon Id="56" ListViewIconCrop="0 0 40 50" xmlns="http://www.ni.com/PlatformFramework">
 						<IconPanel Height="[float]50" Id="57" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Id="58" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Id="58" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="59" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="60" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								<FileNameText Attached="[bool]True" Height="[float]46" Id="61" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]FNewRefNum" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
@@ -157,11 +162,11 @@
 					</SharedLibraryParameter>
 				</SharedLibraryEntryPoint>
 			</EmbeddedDefinitionReference>
-			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="81" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FRefNumToFD">
+			<EmbeddedDefinitionReference Id="81" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="FRefNumToFD">
 				<SharedLibraryEntryPoint Id="82" Symbol="FRefNumToFD" xmlns="http://www.ni.com/ExternalCode">
 					<Icon Id="83" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 						<IconPanel Height="[float]40" Id="84" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="85" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="85" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="86" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="87" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								<FileNameText Attached="[bool]True" Height="[float]36" Id="88" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]FRefNumToFD" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
@@ -202,11 +207,11 @@
 					</SharedLibraryParameter>
 				</SharedLibraryEntryPoint>
 			</EmbeddedDefinitionReference>
-			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="104" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="LStrPrintf">
+			<EmbeddedDefinitionReference Id="104" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="LStrPrintf">
 				<SharedLibraryEntryPoint Id="105" Symbol="LStrPrintf" xmlns="http://www.ni.com/ExternalCode">
 					<Icon Id="106" ListViewIconCrop="0 0 40 50" xmlns="http://www.ni.com/PlatformFramework">
 						<IconPanel Height="[float]50" Id="107" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Id="108" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Id="108" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="109" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="110" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								<FileNameText Attached="[bool]True" Height="[float]46" Id="111" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]LStrPrintf" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">
@@ -254,11 +259,11 @@
 					</SharedLibraryParameter>
 				</SharedLibraryEntryPoint>
 			</EmbeddedDefinitionReference>
-			<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint,NationalInstruments.ExternalCodeReference.SourceModel.SharedLibraryEntryPointContent.Moc,EmbeddedReference" Id="131" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="MoveBlock">
+			<EmbeddedDefinitionReference Id="131" ModelDefinitionType="{http://www.ni.com/ExternalCode}SharedLibraryEntryPoint" Name="MoveBlock">
 				<SharedLibraryEntryPoint Id="132" Symbol="MoveBlock" xmlns="http://www.ni.com/ExternalCode">
 					<Icon Id="133" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 						<IconPanel Height="[float]40" Id="134" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="135" Left="[float]0" TemplateName="Gray" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="135" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="136" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="137" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 								<FileNameText Attached="[bool]True" Height="[float]36" Id="138" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]MoveBlock" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]36">

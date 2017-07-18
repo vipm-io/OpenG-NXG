@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="25B9DD918A63EB76B779F58BA476F61B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="2CA8328B057758171A4F195F525A8C46" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6881" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6881" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ApplicationVersionInfo Build="4.9.1.6881" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.1.0.3" Version="5.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="MD5" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition AutoIncrementOnBuild="False" Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="MD5" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="Blank" Top="[float]0" Width="[float]40" />
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
 		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
@@ -30,27 +30,27 @@
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
 		<ProjectSettings Id="7" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
-		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot,ComponentDefinitionEnvoyHierarchyRoot,EmbeddedReference" Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
+		<EmbeddedDefinitionReference Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
-			<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="13" Name="openg\.library\.md5">
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ F\ function\.gvi" StoragePath="MD5 F function.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ FGHI\ functions\.gvi" StoragePath="MD5 FGHI functions.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="16" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ G\ function\.gvi" StoragePath="MD5 G function.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="17" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ H\ function\.gvi" StoragePath="MD5 H function.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="18" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Hash\.gvi" StoragePath="MD5 Hash.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="19" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ I\ function\.gvi" StoragePath="MD5 I function.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="20" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Message\ Digest\ \(Binary\ String\)\.gvi" StoragePath="MD5 Message Digest (Binary String).gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="21" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Message\ Digest\ \(Hexadecimal\ String\)\.gvi" StoragePath="MD5 Message Digest (Hexadecimal String).gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="22" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Padding\.gvi" StoragePath="MD5 Padding.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="23" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ ti\.gvi" StoragePath="MD5 ti.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="24" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Unrecoverable\ character\ padding\.gvi" StoragePath="MD5 Unrecoverable character padding.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="25" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ md5\.gvi" StoragePath="VI Tree - md5.gvi" />
-				<SourceFileReference Bindings="NationalInstruments.SourceModel.PaletteDocument,NationalInstruments.SourceModel.PaletteDefinition,Envoy,DefinitionReference,ProjectItemInfoDefaultService,FileReference,SourceFileReference" Id="38" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.md5_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.md5_Default.gpal" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="13" Name="openg\.library\.md5">
+				<SourceFileReference Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ F\ function\.gvi" StoragePath="MD5 F function.gvi" />
+				<SourceFileReference Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ FGHI\ functions\.gvi" StoragePath="MD5 FGHI functions.gvi" />
+				<SourceFileReference Id="16" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ G\ function\.gvi" StoragePath="MD5 G function.gvi" />
+				<SourceFileReference Id="17" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ H\ function\.gvi" StoragePath="MD5 H function.gvi" />
+				<SourceFileReference Id="18" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Hash\.gvi" StoragePath="MD5 Hash.gvi" />
+				<SourceFileReference Id="19" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ I\ function\.gvi" StoragePath="MD5 I function.gvi" />
+				<SourceFileReference Id="20" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Message\ Digest\ \(Binary\ String\)\.gvi" StoragePath="MD5 Message Digest (Binary String).gvi" />
+				<SourceFileReference Id="21" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Message\ Digest\ \(Hexadecimal\ String\)\.gvi" StoragePath="MD5 Message Digest (Hexadecimal String).gvi" />
+				<SourceFileReference Id="22" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Padding\.gvi" StoragePath="MD5 Padding.gvi" />
+				<SourceFileReference Id="23" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ ti\.gvi" StoragePath="MD5 ti.gvi" />
+				<SourceFileReference Id="24" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="MD5\ Unrecoverable\ character\ padding\.gvi" StoragePath="MD5 Unrecoverable character padding.gvi" />
+				<SourceFileReference Id="25" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ md5\.gvi" StoragePath="VI Tree - md5.gvi" />
+				<SourceFileReference Id="38" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.md5_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.md5_Default.gpal" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
-		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot,ComponentDefinitionContentReferenceRoot,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="openg\.library\.md5\.gcomp" NameTracksFileName="True">
+		<NameScopingEnvoy Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="openg\.library\.md5\.gcomp" NameTracksFileName="True">
 			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
-			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.ComponentEditor.SourceModel.ComponentConfiguration" ContentIdentifier="10" Id="12" Name="Default" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+			<ContentReference ContentIdentifier="10" Id="12" Name="Default" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 </SourceFile>

@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B43F133F9C1E190800ABE0550517E4D7" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="4FB237D1D476919AB4D1AA3E27DE0DD6" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="LF Seek File" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Reads and eventually modifies the current read/write file pointer using a double float as offset to work for files larger than 2GB.</p.UserDescription>
 		<Icon Id="21" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="23" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="24" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="24" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="25" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="26" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 				</IconTemplate>
-				<LVImage Height="[float]30" Id="27" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEkSURBVEhLtY8BsgIxCEO9k6fdO3mnFRpMEUrFHc2w/BTCG//tOI8/1XX0rZYFEAppDtGX27OWZZDjMQx9ntADkVWivfcreD7FAFF1zSDHAxj6PKEHgiY8NYOcPRJobFTZe2LumpHvQhFBE56a8Qf9IiLrN+hK36GRDpNKFmB0Xzzg037hSghfR++lGX+wLMu+xKH9wpUQ+4yWGkyVnwABlmjsVfCaYXpfSPsniEt9hw4lx3tpphkVIdkvh74/pNm/5IThb9DqhwZ5PnnTrBINrkgfY8WbZi3QQVzxplkRvdY7GrPKzC6f7eR+UyPNs+CDsc5RZIUqiPDZqLc/ohciKqGRZ8/GOkdEPJz8fCaT92Z2+WzXQ/drHiilFmP9unLTqvN4AhJ+oNl2SFllAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+				<Image Height="[float]30" Id="27" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEkSURBVEhLtY8BsgIxCEO9k6fdO3mnFRpMEUrFHc2w/BTCG//tOI8/1XX0rZYFEAppDtGX27OWZZDjMQx9ntADkVWivfcreD7FAFF1zSDHAxj6PKEHgiY8NYOcPRJobFTZe2LumpHvQhFBE56a8Qf9IiLrN+hK36GRDpNKFmB0Xzzg037hSghfR++lGX+wLMu+xKH9wpUQ+4yWGkyVnwABlmjsVfCaYXpfSPsniEt9hw4lx3tpphkVIdkvh74/pNm/5IThb9DqhwZ5PnnTrBINrkgfY8WbZi3QQVzxplkRvdY7GrPKzC6f7eR+UyPNs+CDsc5RZIUqiPDZqLc/ohciKqGRZ8/GOkdEPJz8fCaT92Z2+WzXQ/drHiilFmP9unLTqvN4AhJ+oNl2SFllAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
 			</IconPanel>
 		</Icon>
 		<ConnectorPane Height="40" Id="9" ListViewHeight="145" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
@@ -34,16 +34,16 @@
 			<ConnectorPaneTerminal Hotspot="25 40" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000" />
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="210 245 40 15" DataItem="14" Id="65" Label="66" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@1aee40edcb9d43b09b5bece60e234a9f" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@ddeee12e6cb04151b4470a3ebbb6726c" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="65" Bounds="210 228 40 14" Id="66" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>refnum</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="500 245 40 15" DataItem="15" Id="67" Label="68" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@1aee40edcb9d43b09b5bece60e234a9f" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@ddeee12e6cb04151b4470a3ebbb6726c" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="67" Bounds="500 228 62 14" Id="68" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>refnum out</p.Text>
@@ -78,7 +78,7 @@
 			<NodeLabel AttachedTo="77" Bounds="500 268 53 14" Id="78" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>offset out</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="330 320 40 40" DomainName="openg.library.large file" Id="79" Label="80" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\largefile\\largefile.llb\\LFU Retrieve File Handle.gvi&quot;" Target="openg\.library\.large\ file:LFU\ Retrieve\ File\ Handle\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="330 320 40 40" DomainName="openg.library.large file" Id="79" Label="80" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Retrieve File Handle.gvi&quot;" Target="openg\.library\.large\ file:LFU\ Retrieve\ File\ Handle\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="file refnum" />
@@ -87,7 +87,7 @@
 						<Parameter Id="R3" Desc="error out" />
 					</MethodDeclaration>
 				</p.MethodDeclaration>
-				<Terminal DataType="@1aee40edcb9d43b09b5bece60e234a9f" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@ddeee12e6cb04151b4470a3ebbb6726c" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 				<Terminal DataType="Error" Direction="Output" Hotspot="40 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
@@ -95,7 +95,7 @@
 			<NodeLabel AttachedTo="79" Bounds="330 299 250 18" Id="80" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LFU Retrieve File Handle</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="410 320 40 40" DomainName="openg.library.large file" Id="81" Label="82" ResolveFailedHint="&quot;C:\\OpenG\\_OpenG.lib\\largefile\\largefile.llb\\LFU Set File Pointer.gvi&quot;" Target="openg\.library\.large\ file:LFU\ Set\ File\ Pointer\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="410 320 40 40" DomainName="openg.library.large file" Id="81" Label="82" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Set File Pointer.gvi&quot;" Target="openg\.library\.large\ file:LFU\ Set\ File\ Pointer\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="handle" />
@@ -127,10 +127,10 @@
 			<Wire Id="89" Joints="N(65:Value)|(250,250) h(5) B(1) N(67:Value)|(503,250) B(1) v(75) N(79:L0)|(330,325)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="90" Joints="N(69:Value)|(250,355) N(79:L3)|(330,355)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MatchFileName="[bool]False" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
-			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]27" Id="28" IsTabStop="[bool]True" Label="[UIModel]30" Left="[float]125" RefnumType="[Type]@1aee40edcb9d43b09b5bece60e234a9f" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" Width="[float]21" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]27" Id="28" IsTabStop="[bool]True" Label="[UIModel]30" Left="[float]125" RefnumType="[Type]@ddeee12e6cb04151b4470a3ebbb6726c" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" Width="[float]21" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="30" LabelOwner="[UIModel]28" Left="[float]125" Text="[string]refnum" Top="[float]10" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
-			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]27" Id="31" IsTabStop="[bool]True" Label="[UIModel]33" Left="[float]455" RefnumType="[Type]@1aee40edcb9d43b09b5bece60e234a9f" TabIndex="[int]1" Top="[float]33" Value="{DataItemBinding Id=15}" Width="[float]21" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<OpaqueRefnum BaseName="[string]OpaqueRefnum" Height="[float]27" Id="31" IsTabStop="[bool]True" Label="[UIModel]33" Left="[float]455" RefnumType="[Type]@ddeee12e6cb04151b4470a3ebbb6726c" TabIndex="[int]1" Top="[float]33" Value="{DataItemBinding Id=15}" Width="[float]21" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="33" LabelOwner="[UIModel]31" Left="[float]455" Text="[string]refnum out" Top="[float]13" Width="[float]60" xmlns="http://www.ni.com/PanelCommon" />
 			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="91" IsTabStop="[bool]True" Label="[UIModel]98" Left="[float]106" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]2" Top="[float]203" Value="{DataItemBinding Id=16}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
@@ -162,17 +162,18 @@
 				<EnumSelectorInfo DisplayValue="[string]current" Value="[ushort]2" ValueType="[Type]UInt16" />
 			</EnumSelector>
 			<Label Height="[float]16" Id="56" LabelOwner="[UIModel]54" Left="[float]115" Text="[string]pos mode (current)" Top="[float]72" Width="[float]102" xmlns="http://www.ni.com/PanelCommon" />
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="57" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" IsTabStop="[bool]True" Label="[UIModel]59" Left="[float]103" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]5" Top="[float]144" Value="{DataItemBinding Id=19}" ValueFormatter="[string]LV:N0" Width="[float]83" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="57" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" IsTabStop="[bool]True" Label="[UIModel]59" Left="[float]103" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]5" Top="[float]144" Value="{DataItemBinding Id=19}" ValueFormatter="[string]LV:0" Width="[float]83" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="59" LabelOwner="[UIModel]57" Left="[float]103" Text="[string]offset in (0)" Top="[float]124" Width="[float]60" xmlns="http://www.ni.com/PanelCommon" />
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="60" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Label="[UIModel]62" Left="[float]433" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]6" Top="[float]148" Value="{DataItemBinding Id=20}" ValueFormatter="[string]LV:N0" Width="[float]76" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="60" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Label="[UIModel]62" Left="[float]433" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]6" Top="[float]148" Value="{DataItemBinding Id=20}" ValueFormatter="[string]LV:0" Width="[float]76" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="62" LabelOwner="[UIModel]60" Left="[float]433" Text="[string]offset out" Top="[float]128" Width="[float]52" xmlns="http://www.ni.com/PanelCommon" />
 			<Text Height="[float]495" Id="63" Left="[float]100" Text="[string]LF Seek File.vi&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA;&#xA;Copyright (c) 2003, Rolf Kalbermatter &lt;rolf.kalbermatter@citeng.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]426" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
 			<Text Height="[float]48" Id="64" Left="[float]196" Text="[string]max offset is limited to about&#xA;2^51 (1 000 000 000 000 000)  bytes&#xA;to maintain full resolution of 1 bytes " TextWrapping="[TextWrapping]Wrap" Top="[float]132" Width="[float]196" xmlns="http://www.ni.com/PlatformFramework" />
+			<PanelExecutionWindow Id="108" />
 		</CPFrontPanel>
-		<DataItem CallDirection="Input" CallIndex="1" DataType="@1aee40edcb9d43b09b5bece60e234a9f" Id="14" Name="refnum" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Input" CallIndex="1" DataType="@ddeee12e6cb04151b4470a3ebbb6726c" Id="14" Name="refnum" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
-		<DataItem CallDirection="Output" CallIndex="1" DataType="@1aee40edcb9d43b09b5bece60e234a9f" Id="15" Name="refnum out" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@ddeee12e6cb04151b4470a3ebbb6726c" Id="15" Name="refnum out" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
 		<DataItem CallDirection="Input" CallIndex="4" DataType="Error" Id="16" Name="error in (no error)" xmlns="http://www.ni.com/MocCommon">
@@ -212,7 +213,7 @@
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="1aee40edcb9d43b09b5bece60e234a9f">
+		<p.TypeReference TypeId="ddeee12e6cb04151b4470a3ebbb6726c">
 			<Attributed AttributedType="@0a27a86d90f64bada6ad049986f1baed">
 				<AttributeValues>
 					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
@@ -239,12 +240,12 @@
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
 						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 							</IconTemplate>
-							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAESSURBVEhLtVILFoMwCPO0ntY7bUD4jbbKnMtLMdCQ+XzbtmP/F2vf5wnUAFNx+xB1dvtawzzY8WUI1+PEtEYMWEdnna+gvbWIVRUPdmxBhetxYlojSuIkWpshyDHonDhW8dC5QY8oic9GFzwTvcJv0cQTqMGt2vd+7M5bt6MvwJ6V2+dTfv3Wjjyc0v4JyCLIGkM1e/IC941c4p1v3eQl2NO0EuDs0x712zn8KnaatEdEc4qAg1MbO03ao0ZLLCOGvtOkPSK64LHoKT6iIUpb5lrtgt9wDXXH2qwCMaEjjWYsoG6sAeeaKx1pIuITMTfnsgIxoSONR0AAee7OdqUjjUdAAHmuzj6TOoXb+qz9Uzz2N7Zs+DJ9m8WmAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
-							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.large file.gcomp" Top="[float]0" Width="[float]40" />
+							<Image Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAESSURBVEhLtVILFoMwCPO0ntY7bUD4jbbKnMtLMdCQ+XzbtmP/F2vf5wnUAFNx+xB1dvtawzzY8WUI1+PEtEYMWEdnna+gvbWIVRUPdmxBhetxYlojSuIkWpshyDHonDhW8dC5QY8oic9GFzwTvcJv0cQTqMGt2vd+7M5bt6MvwJ6V2+dTfv3Wjjyc0v4JyCLIGkM1e/IC941c4p1v3eQl2NO0EuDs0x712zn8KnaatEdEc4qAg1MbO03ao0ZLLCOGvtOkPSK64LHoKT6iIUpb5lrtgt9wDXXH2qwCMaEjjWYsoG6sAeeaKx1pIuITMTfnsgIxoSONR0AAee7OdqUjjUdAAHmuzj6TOoXb+qz9Uzz2N7Zs+DJ9m8WmAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]openg.library.largefile.gcomp" Top="[float]0" Width="[float]40" />
 						</IconPanel>
 					</Icon>
 				</MergeItem>
@@ -255,12 +256,12 @@
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
 						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 							</IconTemplate>
-							<LVImage Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEUSURBVEhLtVIBEoMwCPO1vtY/baWEwGirzLlcpIGGzPO2bcf+L+a+zhPAoKbk5lDr7Pa1hnl0h8sqqMeJaUQMWEdHHa9Us7WIVe0e3bEFCOpxYhoRKXESjWYIIgYdE8faPe25QUakxGejE56JXuG36MYTwEAr+tqP3XnrcvQFxLNycz7l129NxOGU9k/QrIa+JoAWT1yQvpDbeOdbF3kJ8RStDeqs04787Qhe+U6Rdni0pHRIcGh9p0g7cnSPFfiQO0Xa4dEJj0VP8RFNUCfhtT29kTdcA26uJZ0Eqo2QsQDcuqagngrROBCtVxE+V6f5vY4C1UaMUKGIczoB6iS8tqc3jFChiHM46wzqFLTVmfuneOxvKAD6ljktQVYAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
-							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[Comp]openg.library.large file.gcomp" Top="[float]0" Width="[float]40" />
+							<Image Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEUSURBVEhLtVIBEoMwCPO1vtY/baWEwGirzLlcpIGGzPO2bcf+L+a+zhPAoKbk5lDr7Pa1hnl0h8sqqMeJaUQMWEdHHa9Us7WIVe0e3bEFCOpxYhoRKXESjWYIIgYdE8faPe25QUakxGejE56JXuG36MYTwEAr+tqP3XnrcvQFxLNycz7l129NxOGU9k/QrIa+JoAWT1yQvpDbeOdbF3kJ8RStDeqs04787Qhe+U6Rdni0pHRIcGh9p0g7cnSPFfiQO0Xa4dEJj0VP8RFNUCfhtT29kTdcA26uJZ0Eqo2QsQDcuqagngrROBCtVxE+V6f5vY4C1UaMUKGIczoB6iS8tqc3jFChiHM46wzqFLTVmfuneOxvKAD6ljktQVYAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]openg.library.largefile.gcomp" Top="[float]0" Width="[float]40" />
 						</IconPanel>
 					</Icon>
 				</MergeItem>

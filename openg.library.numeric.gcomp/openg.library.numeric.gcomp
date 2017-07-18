@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="867E1E04C799F3AF847CE2B8C7A986D1" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A293235E7837EAA15415344BC07E1F63" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6881" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6881" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ApplicationVersionInfo Build="4.9.1.6881" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.1.0.3" Version="5.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Numeric" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition AutoIncrementOnBuild="False" Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Numeric" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="Blank" Top="[float]0" Width="[float]40" />
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
 		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
@@ -24,21 +24,21 @@
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
 		<ProjectSettings Id="7" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
-		<EmbeddedDefinitionReference Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot,ComponentDefinitionEnvoyHierarchyRoot,EmbeddedReference" Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
+		<EmbeddedDefinitionReference Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
-			<NameScopingEnvoy AutomaticallyResolveUp="True" Bindings="Envoy,DefinitionReference,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy," Id="13" Name="OpenG\.Numeric">
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Coerce\ to\ Enum\.gvi" StoragePath="Coerce to Enum.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ \-\ Within\ Range\.gvi" StoragePath="Random Number - Within Range.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="16" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ Within\ Range\ \-\ DBL\.gvi" StoragePath="Random Number Within Range - DBL.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="17" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ Within\ Range\ \-\ I32\.gvi" StoragePath="Random Number Within Range - I32.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="18" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Timestamp\ Constant\.gvi" StoragePath="Timestamp Constant.gvi" />
-				<SourceFileReference Bindings="Envoy,DefinitionReference,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument,NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument.Moc,FileReference,SourceFileReference" Id="19" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ numeric\.gvi" StoragePath="VI Tree - numeric.gvi" />
-				<SourceFileReference Bindings="NationalInstruments.SourceModel.PaletteDocument,NationalInstruments.SourceModel.PaletteDefinition,Envoy,DefinitionReference,ProjectItemInfoDefaultService,FileReference,SourceFileReference" Id="26" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.numeric_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.numeric_Default.gpal" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="13" Name="OpenG\.Numeric">
+				<SourceFileReference Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Coerce\ to\ Enum\.gvi" StoragePath="Coerce to Enum.gvi" />
+				<SourceFileReference Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ \-\ Within\ Range\.gvi" StoragePath="Random Number - Within Range.gvi" />
+				<SourceFileReference Id="16" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ Within\ Range\ \-\ DBL\.gvi" StoragePath="Random Number Within Range - DBL.gvi" />
+				<SourceFileReference Id="17" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ Within\ Range\ \-\ I32\.gvi" StoragePath="Random Number Within Range - I32.gvi" />
+				<SourceFileReference Id="18" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Timestamp\ Constant\.gvi" StoragePath="Timestamp Constant.gvi" />
+				<SourceFileReference Id="19" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ numeric\.gvi" StoragePath="VI Tree - numeric.gvi" />
+				<SourceFileReference Id="26" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.numeric_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.numeric_Default.gpal" />
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
-		<NameScopingEnvoy Bindings="Envoy,DefinitionReference,{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot,ComponentDefinitionContentReferenceRoot,EmbeddedReference,ScopingEnvoy,NameScopingEnvoy" Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="openg\.library\.numeric\.gcomp" NameTracksFileName="True">
+		<NameScopingEnvoy Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="openg\.library\.numeric\.gcomp" NameTracksFileName="True">
 			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
-			<ContentReference Bindings="Envoy,ContentReference,NationalInstruments.ComponentEditor.SourceModel.ComponentConfiguration" ContentIdentifier="10" Id="12" Name="Default" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+			<ContentReference ContentIdentifier="10" Id="12" Name="Default" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 </SourceFile>

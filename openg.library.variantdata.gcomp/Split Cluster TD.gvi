@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="24ADE5FF432FEF2727F7903D7BBFFFC5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="14AB2CAF114899D2E92A115AF0D2AA5D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.2" Version="5.1.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4577" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4577" Name="LabVIEW NXG" Version="2.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Split Cluster TD" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Splits the TD of a Cluster into its elements TDs.</p.UserDescription>
@@ -56,7 +56,7 @@
 			</NodeLabel>
 			<CaseStructure Bounds="180 0 1585 500" DataType="Error" Id="73" Selected="74" UserSelectorBounds="740 0 106 17">
 				<CaseStructure.Case Bounds="5 5 1575 490" Id="74" Pattern="No Error">
-					<MethodCall Bounds="25 120 40 40" DomainName="openg.library.variant data" Id="80" Label="81" ResolveFailedHint="" Target="openg\.library\.variant\ data:Get\ Header\ from\ TD\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 120 40 40" DomainName="openg.library.variant data" Id="80" Label="81" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Header from TD.gvi&quot;" Target="openg\.library\.variant\ data:Get\ Header\ from\ TD\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Type Descriptor" />
@@ -438,7 +438,7 @@
 								<p.Text>Format String</p.Text>
 							</NodeLabel>
 							<FormatIntoString Bounds="215 80 40 40" Id="99" Terminals="formatString=149, outString=148, c0t0v=147" />
-							<MethodCall Bounds="310 60 40 40" DomainName="openg.library.error" Id="100" Label="101" ResolveFailedHint="" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="310 60 40 40" DomainName="openg.library.error" Id="100" Label="101" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="code" />
@@ -533,7 +533,8 @@
 										</Cluster>
 									</p.Data>
 									<ClusterBehavior AutoArrange="ArrangeVertically" />
-									<ArrayLiteral Bounds="2 19 93 25" DataType="@7c5e7b68e4514786a3afd32894f15395" Id="243" Label="245" p10:ControlDefinitionChecksum="RwUTheQVRRZSWxe3EfHlzQ==" xmlns:p10="http://www.ni.com/PanelCommon">
+									<DockedConstantFacade UndockedSize="114 56" />
+									<ArrayLiteral Bounds="-5 19 100 25" DataType="@7c5e7b68e4514786a3afd32894f15395" Id="243" Label="245" p10:ControlDefinitionChecksum="gi9HDgKeqDNfK2PZj9IBAg==" xmlns:p10="http://www.ni.com/PanelCommon">
 										<p.Data>null</p.Data>
 										<p10:p.TypeDefinitionTargets>
 											<p10:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype" />
@@ -542,16 +543,15 @@
 										<ArrayBehavior ElementType="Int16" IndexEditorWidth="42">
 											<p.DefaultElementValue>0</p.DefaultElementValue>
 										</ArrayBehavior>
-										<Literal Bounds="49 4 40 15" DataType="Int16" Id="244">
-											<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
+										<Literal Bounds="0 0 40 15" DataType="Int16" Id="256">
+											<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
 										</Literal>
 									</ArrayLiteral>
-									<NodeLabel AttachedTo="243" Bounds="2 2 87 14" Id="245" xmlns="http://www.ni.com/PlatformFramework">
+									<NodeLabel AttachedTo="243" Bounds="-5 2 87 14" Id="245" xmlns="http://www.ni.com/PlatformFramework">
 										<p.Text>Type Descriptor</p.Text>
 									</NodeLabel>
-									<DockedConstantFacade UndockedSize="114 56" />
 								</ClusterLiteral>
-								<Wire Facade="WireInvisibleFacade" Id="135" Joints="N(131:Out)|(902,105) v(-10) h(-107) v(10) N(130:instance in)|(800,105)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+								<Wire Facade="WireInvisibleFacade" Id="135" Joints="N(131:Out)|(800,105) N(130:instance in)|(800,105)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 								<Add Bounds="725 70 30 30" Id="136" Terminals="o=160, c0t0v=153, c1t0v=159" />
 								<Comment Bounds="440 140 105 15" Id="137" xmlns="http://www.ni.com/MocCommon">
 									<p.Text>"Get TD Length  "</p.Text>
@@ -684,28 +684,28 @@
 						<Field1>null</Field1>
 					</Cluster>
 				</p.DefaultElementValue>
-				<Cluster AutoArrange="[AutoArrange]SizeToFit" ClusterType="[Type]@433429ed7b304d59b5d60f81f4c60e5f" Height="[float]72" Id="50" IsTabStop="[bool]True" Label="[UIModel]51" TabIndex="[int]0" Width="[float]140">
-					<Label Id="51" IsVisualChild="[bool]False" LabelOwner="[UIModel]50" Left="[float]61" Text="[string]Cluster" Top="[float]-14" />
-					<ArrayViewer ArrayElement="[UIModel]236" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="220" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]222" Left="[float]4" Rows="[int]1" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Type\ Descriptor}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]124" p6:ControlDefinitionChecksum="RwUTheQVRRZSWxe3EfHlzQ==" xmlns:p6="http://www.ni.com/PanelCommon">
+				<Cluster AutoArrange="[AutoArrange]SizeToFit" ClusterType="[Type]@433429ed7b304d59b5d60f81f4c60e5f" Height="[float]63" Id="50" IsTabStop="[bool]True" Label="[UIModel]51" TabIndex="[int]0" Width="[float]79">
+					<Label Id="51" IsVisualChild="[bool]False" LabelOwner="[UIModel]50" Left="[float]0" Text="[string]Cluster" Top="[float]-20" />
+					<ArrayViewer ArrayElement="[UIModel]251" Columns="[int]1" Dimensions="[int]1" Height="[float]27" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="220" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]222" Left="[float]4" Rows="[int]1" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=Type\ Descriptor}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]63" p6:ControlDefinitionChecksum="gi9HDgKeqDNfK2PZj9IBAg==" xmlns:p6="http://www.ni.com/PanelCommon">
 						<p.DefaultElementValue>0</p.DefaultElementValue>
 						<p6:p.TypeDefinitionTargets>
 							<p6:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype:ControlDefinition" />
 						</p6:p.TypeDefinitionTargets>
-						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="236" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[short]1" IsTabStop="[bool]True" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="251" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[short]1" IsTabStop="[bool]True" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 					</ArrayViewer>
 					<Label Id="222" LabelOwner="[UIModel]220" Left="[float]4" Text="[string]Type Descriptor" Top="[float]4" />
 				</Cluster>
 			</ArrayViewer>
 			<Text Height="[float]543" Id="59" Left="[float]109" Text="[string]Split Cluster TD.vi&#xA;&#xA;Splits the TD of a Cluster into its elements TDs.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jean-Pierre Drolet &lt;drolet_jp@hotmail.com&gt;&#xA;Copyright (c) 2002-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]356" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
 			<Text Height="[float]16" Id="64" Left="[float]644" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]40" Width="[float]203" xmlns="http://www.ni.com/PlatformFramework" />
-			<ArrayViewer ArrayElement="[UIModel]232" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="214" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]216" Left="[float]112" Rows="[int]1" TabIndex="[int]3" Top="[float]52" Value="{DataItemBinding Id=217}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]124" p4:ControlDefinitionChecksum="RwUTheQVRRZSWxe3EfHlzQ==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<ArrayViewer ArrayElement="[UIModel]247" Columns="[int]1" Dimensions="[int]1" Height="[float]27" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="214" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]216" Left="[float]112" Rows="[int]1" TabIndex="[int]3" Top="[float]52" Value="{DataItemBinding Id=217}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]63" p4:ControlDefinitionChecksum="gi9HDgKeqDNfK2PZj9IBAg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0</p.DefaultElementValue>
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="232" Interval="[short]1" IsTabStop="[bool]True" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]Decimal, Uppercase, Signed" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="247" Interval="[short]1" IsTabStop="[bool]True" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
-			<Label Height="[float]16" Id="216" LabelOwner="[UIModel]214" Left="[float]112" Text="[string]Type Descriptor" Top="[float]32" Width="[float]83" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Id="216" LabelOwner="[UIModel]214" Left="[float]112" Text="[string]Type Descriptor" Top="[float]32" xmlns="http://www.ni.com/PanelCommon" />
 			<PanelExecutionWindow Id="230" />
 		</CPFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="2" DataType="Error" Id="14" Name="error in (no error)" xmlns="http://www.ni.com/MocCommon">

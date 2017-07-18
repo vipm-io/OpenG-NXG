@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="84A777DBC1B2A91CC86D54CEE68ED7ED" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6242A3DC9C3DAF6737B01E096F638B9C" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="4.8.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="4.9.1.6757" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="4.9.0.0" Version="4.9.0.49152" />
-		<ApplicationVersionInfo Build="4.9.1.6757" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" OverloadGroup="Sort 2D Array" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This polymorphic VI sorts a 2D array of numerics or strings, regardless of the array size. You can specify whether to sort by column or row, which column or row to sort by, and whether to sort in ascending or descending order. You also can specify a secondary row or column to sort by.</p.UserDescription>
 		<Icon Id="22" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="24" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="25" Left="[float]0" TemplateName="GrayNoText" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="25" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
 					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="26" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="27" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
 				</IconTemplate>
-				<LVImage Height="[float]30" Id="28" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD7SURBVEhLzU4JDsMwDOr/39Y/dWlICbFzONoqzaIWwZj6OK/zJdzRR6zKQqxq9KQD5F2RvOlglFAqAuReZLfEO0wHyLsiedPBIpWcW+b6E24arl3JkufPq083xBsgdvW+Q7l2JUuev1hxLVI1GmsRXtYGHShKZSNHqydCBaUiPXcnU3XCy9qgA0UBixTXIlWiX8IPonGjV/7p6tGNXimqjr1VkabG4P1Q8veUDgiMfKmBXBUbdy/lwtPDT/k0xKqGe4ymmgs+SwF0h2IEe+4l8sXPKR2pvW6kexinXfP7k1EX1W/f30Wrp7NmIraiFVF3yo1Eq2fvkA1c5wfP6VWZFZZ+ogAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+				<Image Height="[float]30" Id="28" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD7SURBVEhLzU4JDsMwDOr/39Y/dWlICbFzONoqzaIWwZj6OK/zJdzRR6zKQqxq9KQD5F2RvOlglFAqAuReZLfEO0wHyLsiedPBIpWcW+b6E24arl3JkufPq083xBsgdvW+Q7l2JUuev1hxLVI1GmsRXtYGHShKZSNHqydCBaUiPXcnU3XCy9qgA0UBixTXIlWiX8IPonGjV/7p6tGNXimqjr1VkabG4P1Q8veUDgiMfKmBXBUbdy/lwtPDT/k0xKqGe4ymmgs+SwF0h2IEe+4l8sXPKR2pvW6kexinXfP7k1EX1W/f30Wrp7NmIraiFVF3yo1Eq2fvkA1c5wfP6VWZFZZ+ogAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
 			</IconPanel>
 		</Icon>
 		<ConnectorPane Height="40" Id="9" ListViewHeight="160" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
@@ -34,7 +34,7 @@
 			<ConnectorPaneTerminal Hotspot="25 40" />
 		</ConnectorPane>
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
-		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" Top="[float]0" Width="[float]2000" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000" />
 		<BlockDiagram Id="12">
 			<DataAccessor Bounds="15 250 40 15" DataItem="14" Id="66" Label="67" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="Single[,]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
@@ -88,9 +88,9 @@
 			<Decrement Bounds="235 310 30 30" Id="83" />
 			<CaseStructure Bounds="315 215 190 175" DataType="@1cbf098de8104bbf834f0f97fe6886e6" Id="84" Selected="85" UserSelectorBounds="0 0 0 0">
 				<CaseStructure.Case Bounds="5 5 180 165" Id="85" Pattern="&quot;column&quot;">
-					<Literal Bounds="5 125 10 18" DataType="Int32" Facade="Numeric" Id="93" Label="94" xmlns="http://www.ni.com/MocCommon">
+					<Literal Bounds="5 125 10 18" DataType="Int32" Id="93" Label="94" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>1</p.Data>
-						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+						<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
 					</Literal>
 					<NodeLabel AttachedTo="93" Bounds="5 104 43 18" Id="94" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Index</p.Text>
@@ -107,9 +107,9 @@
 					<Wire Id="155" Joints="N(88:85)|(4,40) h(126) v(5) N(97:2D array)|(135,45)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 180 165" Id="86" Pattern="&quot;row&quot;">
-					<Literal Bounds="5 125 10 18" DataType="Int32" Facade="Numeric" Id="98" Label="99" xmlns="http://www.ni.com/MocCommon">
+					<Literal Bounds="5 125 10 18" DataType="Int32" Id="98" Label="99" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>0</p.Data>
-						<NumericBehavior Interpretation="Exact" RadixVisibility="Hidden" ValueFormatter="LV:G0" />
+						<NumericBehavior Interpretation="Exact" Radix="Decimal" RadixVisibility="Hidden" ValueFormatter="Decimal, Uppercase, Signed" />
 					</Literal>
 					<NodeLabel AttachedTo="98" Bounds="5 104 43 18" Id="99" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Index</p.Text>
@@ -136,21 +136,21 @@
 			<ArrayIndex Bounds="555 300 40 40" Id="103" Rank="2" Terminals="array=189, c0t0v=183, c0t1v, c0out=179" />
 			<ForLoop Bounds="625 295 113 95" DiagramId="105" Id="104">
 				<LoopIteration Bounds="10 35 15 15" Id="106" />
-				<PropertyNode Bounds="50 25 50 50" HasErrorTerminals="False" Id="110" InstanceDataType="@6b0a323eb25541f5a1d0fd81f85d2c65" ListViewAutoSize="False" Mode="InstanceProperties">
-					<PropertyItemTerminal Action="Write" DataType="Single" Hotspot="0 15" Id="c0t0v" Path="Numeric" Usage="Required" />
-					<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 30" Id="c1t0v" Path="Element 2" Usage="Required" />
+				<PropertyNode Bounds="50 25 50 50" HasErrorTerminals="False" Id="110" InstanceDataType="@6b0a323eb25541f5a1d0fd81f85d2c65" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+					<PropertyItemTerminal Action="Write" DataType="Single" Hotspot="0 15" Id="c0t0v" Path="Numeric" PathElementMemberKinds="Field" Usage="Required" />
+					<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 30" Id="c1t0v" Path="Element 2" PathElementMemberKinds="Field" Usage="Required" />
 				</PropertyNode>
-				<ClusterLiteral Bounds="38 26 12 9" DataType="@6b0a323eb25541f5a1d0fd81f85d2c65" Facade="DockedConstantFacade" Id="111" xmlns="http://www.ni.com/MocCommon">
+				<ClusterLiteral Bounds="38 26 12 9" DataType="@6b0a323eb25541f5a1d0fd81f85d2c65" Id="111" xmlns="http://www.ni.com/MocCommon">
 					<p.Data>0x0_0_</p.Data>
 					<ClusterBehavior AutoArrange="ArrangeVertically" />
-					<Literal Bounds="5 20 40 15" DataType="Single" Facade="Numeric" Id="112" Label="113">
+					<Literal Bounds="5 20 40 15" DataType="Single" Id="112" Label="113">
 						<p.Data>0x0</p.Data>
 						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 					</Literal>
 					<NodeLabel AttachedTo="112" Bounds="0 -15 30 15" Id="113" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Numeric</p.Text>
 					</NodeLabel>
-					<Literal Bounds="5 50 40 15" DataType="Int32" Facade="Numeric" Id="114" Label="115">
+					<Literal Bounds="5 50 40 15" DataType="Int32" Id="114" Label="115">
 						<p.Data>0</p.Data>
 						<NumericBehavior Interpretation="Exact" ValueFormatter="LV:G6" />
 					</Literal>
@@ -186,9 +186,9 @@
 			</CaseStructure>
 			<ForLoop Bounds="1010 235 143 163" DiagramId="127" Id="126">
 				<LoopIteration Bounds="5 135 15 15" Id="128" />
-				<PropertyNode Bounds="20 80 50 50" HasErrorTerminals="False" Id="134" InstanceDataType="@6b0a323eb25541f5a1d0fd81f85d2c65" ListViewAutoSize="False" Mode="InstanceProperties">
-					<PropertyItemTerminal DataType="Single" Hotspot="50 15" Id="c0t0v" Path="Numeric" Usage="Optional" />
-					<PropertyItemTerminal DataType="Int32" Hotspot="50 30" Id="c1t0v" Path="Element 2" Usage="Optional" />
+				<PropertyNode Bounds="20 80 50 50" HasErrorTerminals="False" Id="134" InstanceDataType="@6b0a323eb25541f5a1d0fd81f85d2c65" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+					<PropertyItemTerminal DataType="Single" Hotspot="50 15" Id="c0t0v" Path="Numeric" PathElementMemberKinds="Field" Usage="Optional" />
+					<PropertyItemTerminal DataType="Int32" Hotspot="50 30" Id="c1t0v" Path="Element 2" PathElementMemberKinds="Field" Usage="Optional" />
 				</PropertyNode>
 				<ArrayIndex Bounds="90 45 40 40" Id="135" Rank="2" Terminals="array=170, c0t0v, c0t1v=168, c0out=169" />
 				<Wire Id="168" Joints="N(134:c1t0v)|(70,110) h(13) B(1) v(-30) N(135:c0t1v)|(90,80) B(1) N(133:i0)|(83,151)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -252,16 +252,16 @@
 			<Label Id="30" LabelOwner="[UIModel]29" Left="[float]142" Text="[string]Array in" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]34" Columns="[int]1" Dimensions="[int]2" Height="[float]34" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="29" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]30" Left="[float]142" Rows="[int]1" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]73" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="34" Interval="[float]1" IsTabStop="[bool]True" Left="[float]47" Maximum="[float]Infinity" MinHeight="[float]24" Minimum="[float]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]21" ValueFormatter="[string]LV:N2" ValueType="[Type]Single" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="34" Interval="[float]1" IsTabStop="[bool]True" Maximum="[float]Infinity" MinHeight="[float]24" Minimum="[float]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" ValueType="[Type]Single" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Id="37" LabelOwner="[UIModel]36" Left="[float]395" Text="[string]Sorted Array out" Top="[float]14" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]41" Columns="[int]1" Dimensions="[int]2" Height="[float]33" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="36" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]37" Left="[float]395" Rows="[int]1" TabIndex="[int]1" Top="[float]34" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]62" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="41" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[float]1" IsTabStop="[bool]True" Left="[float]47" Maximum="[float]Infinity" MinHeight="[float]24" Minimum="[float]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]21" ValueFormatter="[string]LV:N2" ValueType="[Type]Single" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="41" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[float]1" IsTabStop="[bool]True" Maximum="[float]Infinity" MinHeight="[float]24" Minimum="[float]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" ValueType="[Type]Single" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="43" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]45" Left="[float]230" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]2" Top="[float]198" Value="{DataItemBinding Id=16}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="43" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]45" Left="[float]230" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]2" Top="[float]198" Value="{DataItemBinding Id=16}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="45" LabelOwner="[UIModel]43" Left="[float]230" Text="[string]Column/Row to Sort By" Top="[float]178" xmlns="http://www.ni.com/PanelCommon" />
-			<LED BaseName="[string]Square LED" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" FalseContentVisibility="[Visibility]Collapsed" Height="[float]24" Id="46" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]48" Left="[float]390" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]3" Top="[float]156" TrueContent="[string]" Value="{DataItemBinding Id=17}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<LED BaseName="[string]Square LED" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" Height="[float]24" Id="46" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]48" Left="[float]390" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]3" Top="[float]156" TrueContent="[string]" Value="{DataItemBinding Id=17}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="48" LabelOwner="[UIModel]46" Left="[float]390" Text="[string]Index Out of Range?" Top="[float]136" xmlns="http://www.ni.com/PanelCommon" />
 			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]25" Id="49" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]51" Left="[float]138" MinHeight="[float]24" TabIndex="[int]4" Top="[float]157" Value="{DataItemBinding Id=18}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]66" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<EnumSelectorInfo DisplayValue="[string]ascending" Value="[ushort]0" ValueType="[Type]UInt16" />
@@ -277,13 +277,14 @@
 			<Label Id="57" LabelOwner="[UIModel]56" Left="[float]395" Text="[string]Sorted Pointers" Top="[float]84" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]61" Columns="[int]1" Dimensions="[int]1" Height="[float]33" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="56" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]57" Left="[float]395" Rows="[int]1" TabIndex="[int]6" Top="[float]104" Value="{DataItemBinding Id=20}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]62" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="61" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsTabStop="[bool]True" Left="[float]47" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]23" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="61" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsTabStop="[bool]True" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]25" Id="63" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]65" Left="[float]388" MinHeight="[float]24" TabIndex="[int]7" Top="[float]197" Value="{DataItemBinding Id=21}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<EnumSelectorInfo DisplayValue="[string]row" Value="[ushort]0" ValueType="[Type]UInt16" />
 				<EnumSelectorInfo DisplayValue="[string]column" Value="[ushort]1" ValueType="[Type]UInt16" />
 			</EnumSelector>
 			<Label Id="65" LabelOwner="[UIModel]63" Left="[float]388" Text="[string]Sort By out" Top="[float]177" xmlns="http://www.ni.com/PanelCommon" />
+			<PanelExecutionWindow Id="190" />
 		</CPFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="Single[,]" Id="14" Name="Array in" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
