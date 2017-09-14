@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F921A1B1540AF15CAF1296B8CE11F24D" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D524A17D8B2F0F35B4EF5FB8B2BD7EBE" Timestamp="1D320F98AD5A8A7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="C" Name="http://www.ni.com/CCode" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Text based nodes" Name="http://www.ni.com/TextCode.Editor" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="C" Name="http://www.ni.com/CCode" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Text based nodes" Name="http://www.ni.com/TextCode.Editor" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Set Data Name" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Changes the Data Name of Variant Data.&lt;br/&gt;&lt;b&gt;Note:&lt;/b&gt; Variant attributes will persist after this operation.</p.UserDescription>
@@ -77,7 +77,7 @@
 					<NodeLabel AttachedTo="73" Bounds="2025 164 9 18" Id="74" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>y</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="90 140 40 40" DomainName="openg.library.variant data" Id="75" Label="76" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Variant to Header Info.gvi&quot;" Target="openg\.library\.variant\ data:Variant\ to\ Header\ Info\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="90 140 40 40" DomainName="openg:library:variant data" Id="75" Label="76" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Variant to Header Info.gvi&quot;" Target="openg:library:variant\ data:Variant\ to\ Header\ Info\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="Variant" />
@@ -87,15 +87,19 @@
 							</MethodDeclaration>
 						</p.MethodDeclaration>
 						<Terminal DataType="@4529452f36c34cebab2f83e17d79fd2a" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@62d9ec428361406a92c4ba022e177bfe" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@7c5e7b68e4514786a3afd32894f15395" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@dd3f97722e604f4486ab07758d96ff29" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@9a8fb7e82524477984dd9a1aa5cff565" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="String" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
 					<NodeLabel AttachedTo="75" Bounds="90 183 235 18" Id="76" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Variant to Header Info</p.Text>
 					</NodeLabel>
-					<PropertyNode Bounds="165 105 80 50" HasErrorTerminals="False" Id="77" InstanceDataType="@62d9ec428361406a92c4ba022e177bfe" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
-						<PropertyItemTerminal DataType="@22880521cbed454da65407f8a694d8e6" Hotspot="80 15" Id="c0t0v" Path="type" PathElementMemberKinds="Field" Usage="Optional" />
+					<PropertyNode Bounds="165 105 80 20" HasErrorTerminals="False" Id="77" InstanceDataType="@dd3f97722e604f4486ab07758d96ff29" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+						<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+							<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Header\.gtype" />
+							<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
+						</p.TypeDefinitionTargets>
+						<PropertyItemTerminal DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" Hotspot="80 15" Id="c0t0v" Path="type" PathElementMemberKinds="Field" Usage="Optional" />
 						<PropertyItemTerminal DataType="UInt16" Hotspot="80 30" Id="c1t0v" Path="# elements" PathElementMemberKinds="Field" Usage="Optional" />
 					</PropertyNode>
 					<TypeCast Bounds="190 180 30 15" Id="78" />
@@ -105,7 +109,7 @@
 						<DockedConstantFacade />
 					</Literal>
 					<Wire Facade="WireInvisibleFacade" Id="80" Joints="N(79:Out)|(222,173) v(7) N(78:type)|(205,180)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
-					<CaseStructure Bounds="265 40 930 255" DataType="@22880521cbed454da65407f8a694d8e6" Default="90" Id="81" Selected="87" UserSelectorBounds="344 0 242 17">
+					<CaseStructure Bounds="265 40 930 255" DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" Default="90" Id="81" Selected="87" UserSelectorBounds="344 0 242 17">
 						<CaseStructure.Case Bounds="5 5 920 245" Id="82" Pattern="&quot;I8&quot;..&quot;CXT&quot;, &quot;Boolean&quot;, &quot;Variant&quot;">
 							<Literal Bounds="885 135 10 18" DataType="Int32" Id="98" Label="99" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>2</p.Data>
@@ -131,7 +135,7 @@
 							</NodeLabel>
 							<ForLoop Bounds="333 53 140 170" DiagramId="104" Id="103">
 								<LoopIteration Bounds="0 140 15 15" Id="105" />
-								<MethodCall Bounds="65 60 40 40" DomainName="openg.library.variant data" Id="110" Label="111" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get PString.gvi&quot;" Target="openg\.library\.variant\ data:Get\ PString\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+								<MethodCall Bounds="65 60 40 40" DomainName="openg:library:variant data" Id="110" Label="111" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get PString.gvi&quot;" Target="openg:library:variant\ data:Get\ PString\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 									<p.MethodDeclaration>
 										<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 											<Parameter Id="L0" Desc="String" />
@@ -173,7 +177,7 @@
 								<CVariable Bounds="-25 40 45 15" DataType="UInt16" Direction="Input" Hotspot="-25 45" Id="1" IsTypeFixed="True" Name="x" Usage="Required" />
 								<CVariable Bounds="180 40 50 15" DataType="UInt16" Direction="Output" Hotspot="230 45" Id="2" IsTypeFixed="True" Name="x" Usage="Optional" />
 							</CCodeNode>
-							<MethodCall Bounds="330 80 40 40" DomainName="NI:G Core:Error:Legacy" Id="116" ResolveFailedHint="Clear Errors.gvi, Package: (ni-g-stdlib-src-1.0.4.11, Version: 1.0.4.11)" Target="NI:G\ Core:Error:Legacy:Clear\ Errors\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="330 80 40 40" DomainName="NI:G Core:Error:Legacy" Id="116" ResolveFailedHint="Clear Errors.gvi, Package: (NI G Standard Library, Version: 1.0.5.14)" Target="NI:G\ Core:Error:Legacy:Clear\ Errors\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="specific error code to clear" />
@@ -216,7 +220,7 @@
 								<CVariable Bounds="-25 40 45 15" DataType="UInt16" Direction="Input" Hotspot="-25 45" Id="1" IsTypeFixed="True" Name="x" Usage="Required" />
 								<CVariable Bounds="180 40 50 15" DataType="UInt16" Direction="Output" Hotspot="230 45" Id="2" IsTypeFixed="True" Name="x" Usage="Optional" />
 							</CCodeNode>
-							<MethodCall Bounds="330 45 40 40" DomainName="NI:G Core:Error:Legacy" Id="124" ResolveFailedHint="Clear Errors.gvi, Package: (ni-g-stdlib-src-1.0.4.11, Version: 1.0.4.11)" Target="NI:G\ Core:Error:Legacy:Clear\ Errors\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="330 45 40 40" DomainName="NI:G Core:Error:Legacy" Id="124" ResolveFailedHint="Clear Errors.gvi, Package: (NI G Standard Library, Version: 1.0.5.14)" Target="NI:G\ Core:Error:Legacy:Clear\ Errors\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="specific error code to clear" />
@@ -285,7 +289,7 @@
 							<NodeLabel AttachedTo="142" Bounds="340 114 9 18" Id="143" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>y</p.Text>
 							</NodeLabel>
-							<MethodCall Bounds="150 135 40 40" DomainName="openg.library.variant data" Id="144" Label="145" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Last PString.gvi&quot;" Target="openg\.library\.variant\ data:Get\ Last\ PString\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="150 135 40 40" DomainName="openg:library:variant data" Id="144" Label="145" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Last PString.gvi&quot;" Target="openg:library:variant\ data:Get\ Last\ PString\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="String" />
@@ -318,7 +322,7 @@
 							<NodeLabel AttachedTo="148" Bounds="340 114 9 18" Id="149" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>y</p.Text>
 							</NodeLabel>
-							<MethodCall Bounds="150 135 40 40" DomainName="openg.library.variant data" Id="150" Label="151" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Last PString.gvi&quot;" Target="openg\.library\.variant\ data:Get\ Last\ PString\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="150 135 40 40" DomainName="openg:library:variant data" Id="150" Label="151" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Last PString.gvi&quot;" Target="openg:library:variant\ data:Get\ Last\ PString\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="String" />
@@ -688,7 +692,7 @@
 								<p.Text>PString Offset</p.Text>
 							</NodeLabel>
 							<FormatIntoString Bounds="520 85 40 40" Id="159" Terminals="formatString=286, outString=284, c0t0v=285" />
-							<MethodCall Bounds="580 65 40 40" DomainName="openg.library.error" Id="160" Label="161" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="580 65 40 40" DomainName="openg:library:error" Id="160" Label="161" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="code" />
@@ -860,7 +864,7 @@
 					<Multiply Bounds="2085 170 30 30" Id="213" Terminals="o=340, c0t0v=342, c1t0v=341" />
 					<ReplaceArraySubset Bounds="2135 150 40 40" Id="214" Terminals="inArray=339, outArray=338, c0t0v, c0new=340" />
 					<FlattenedByteArrayToVariant Bounds="2195 305 40 40" Id="215" />
-					<MethodCall Bounds="25 345 40 40" DomainName="openg.library.variant data" Id="216" Label="217" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Variant Attributes.gvi&quot;" Target="openg\.library\.variant\ data:Get\ Variant\ Attributes\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 345 40 40" DomainName="openg:library:variant data" Id="216" Label="217" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Variant Attributes.gvi&quot;" Target="openg:library:variant\ data:Get\ Variant\ Attributes\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Variant" />
@@ -973,7 +977,7 @@
 			<Wire Id="354" Joints="N(55:Value)|(310,390) N(68:65)|(326,390)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="355" Joints="N(69:65)|(2839,350) N(57:Value)|(2863,350)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="356" IsTabStop="[bool]True" Label="[UIModel]363" Left="[float]104" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]189" Value="{DataItemBinding Id=14}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
@@ -1006,7 +1010,7 @@
 			<VariantControl BaseName="[string]Variant" Height="[float]75" Id="52" IsIndicator="[bool]True" IsTabStop="[bool]True" Label="[UIModel]54" Left="[float]393" TabIndex="[int]4" Top="[float]30" VariantValue="{DataItemBinding Id=18}" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="54" LabelOwner="[UIModel]52" Left="[float]393" Text="[string]Renamed Data" Top="[float]10" Width="[float]79" xmlns="http://www.ni.com/PanelCommon" />
 			<PanelExecutionWindow Id="383" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="3" DataType="Error" Id="14" Name="error in (no error)" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
@@ -1057,32 +1061,32 @@
 		<p.TypeReference TypeId="4529452f36c34cebab2f83e17d79fd2a">
 			<Composite Id="1" Name="Variant" Sealed="" GenericTypeDefinition="Void" BaseType="Void" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="62d9ec428361406a92c4ba022e177bfe">
-			<Attributed AttributedType="@52ec150d8bc14ed29d2f4dff6c87e03a">
+		<p.TypeReference TypeId="dd3f97722e604f4486ab07758d96ff29">
+			<Attributed AttributedType="@e536b6be7aa04a2caf96490036f915ed">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="7c5e7b68e4514786a3afd32894f15395">
+		<p.TypeReference TypeId="9a8fb7e82524477984dd9a1aa5cff565">
 			<Attributed AttributedType="@1f1e5fefc5f84e50975c5104cdcd3cf6">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="22880521cbed454da65407f8a694d8e6">
+		<p.TypeReference TypeId="8b5dfbea269845f7b5a67e0f8b1a48e5">
 			<Attributed AttributedType="@97d3d9cbc44d45348aae93714120fc20">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
 		<p.TypeReference TypeId="2ef2be26dbb04676b34ec143791bb3be">
 			<VariableArray DereferenceType="@4529452f36c34cebab2f83e17d79fd2a" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="52ec150d8bc14ed29d2f4dff6c87e03a">
-			<Typedef TypedefName="Type Descriptor Header.gtype" UnderlyingType="@7c6a05d11c1f47f69c5befc8de735311" />
+		<p.TypeReference TypeId="e536b6be7aa04a2caf96490036f915ed">
+			<Typedef TypedefName="Type Descriptor Header.gtype" UnderlyingType="@39023d3f463c4853bc264f32f20f23ce" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="1f1e5fefc5f84e50975c5104cdcd3cf6">
 			<Typedef TypedefName="Type Descriptor.gtype" UnderlyingType="Int16[]" />
@@ -1090,12 +1094,12 @@
 		<p.TypeReference TypeId="97d3d9cbc44d45348aae93714120fc20">
 			<Typedef TypedefName="Type Descriptor Enumeration.gtype" UnderlyingType="@df05968590a44ecb901622f1480b23be" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="7c6a05d11c1f47f69c5befc8de735311">
+		<p.TypeReference TypeId="39023d3f463c4853bc264f32f20f23ce">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="length" DataType="UInt16" />
 					<Field FieldAccessPolicy="ReadWrite" Name="private" DataType="UInt8" />
-					<Field FieldAccessPolicy="ReadWrite" Name="type" DataType="@22880521cbed454da65407f8a694d8e6" />
+					<Field FieldAccessPolicy="ReadWrite" Name="type" DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" />
 					<Field FieldAccessPolicy="ReadWrite" Name="# elements" DataType="UInt16" />
 				</Members>
 			</Composite>
@@ -1222,7 +1226,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.variant\ data:Variant\ to\ Header\ Info\.gvi">
+		<p.IconModel Target="openg:library:variant\ data:Variant\ to\ Header\ Info\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -1238,7 +1242,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.variant\ data:Get\ PString\.gvi">
+		<p.IconModel Target="openg:library:variant\ data:Get\ PString\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -1259,7 +1263,6 @@
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
 						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
-							<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]40" Left="[float]0" Top="[float]0" Width="[float]40" />
 							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
 								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
 								<Rectangle Fill="[SMSolidColorBrush]#ffe6e6e6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
@@ -1267,21 +1270,21 @@
 								<Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #fffafafa 0}, {Stop: #ffe6e6e6 1}}" Height="[float]6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]2,2,2,0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" />
 							</IconTemplate>
 							<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Left="[float]0" Top="[float]0">
-								<Path Data="[PathGeometry]M 4,0 L 36,0 C 38.209,0 40,1.791 40,4 L 40,36 C 40,38.209 38.209,40 36,40 L 4,40 C 1.791,40 0,38.209 0,36 L 0,4 C 0,1.791 1.791,0 4,0 " Fill="[SMSolidColorBrush]#ff727272" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
-								<Path Data="[PathGeometry]M 4,1 L 36,1 C 37.657,1 39,2.343 39,4 L 39,36 C 39,37.657 37.657,39 36,39 L 4,39 C 2.343,39 1,37.657 1,36 L 1,4 C 1,2.343 2.343,1 4,1 " Fill="[SMSolidColorBrush]#ffffffff" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
-								<Path Data="[PathGeometry]M 4,2 L 36,2 C 37.105,2 38,2.896 38,4 L 38,36 C 38,37.104 37.105,38 36,38 L 4,38 C 2.896,38 2,37.104 2,36 L 2,4 C 2,2.896 2.896,2 4,2 " Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
-								<Path Data="[PathGeometry]M 11,27 L 4,30 L 4,27 L 11,27 Z M 12,25 L 4,21 L 7,20 L 12,25 Z M 17,36.28 L 14.766,36.28 L 14.766,34 L 17,34 L 17,36.28 Z M 17,33 L 14.739,33 L 14.592,27.192 C 15.365,27.771 16.192,28.292 17.001,28.648 L 17,33 Z" Fill="[SMSolidColorBrush]#7f000000" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
-								<Path Data="[PathGeometry]M 18.345,26.915 C 17.722,27.537 16.247,27.071 14.588,25.412 C 12.929,23.752 12.463,22.278 13.085,21.655 L 15.714,19.026 L 20.974,24.286 L 18.345,26.915  M 32.056,6.817 L 26.233,10.01 L 29,9.312 L 29,12.264 L 30,11.701 L 29.99,13.767 L 33.183,7.944 L 32.056,6.817 Z M 25.482,9.259 L 36,4 L 30.741,14.518 L 24.73,20.528 L 19.471,15.269 L 25.482,9.259 Z M 17.298,17.604 L 22.558,22.863 C 22.941,23.246 22.178,23.986 21.807,23.614 L 16.548,18.355 C 16.168,17.976 16.931,17.236 17.298,17.604 Z M 18.79,16.091 L 24.05,21.35 C 24.433,21.733 23.67,22.473 23.299,22.101 L 18.039,16.842 C 17.659,16.463 18.423,15.723 18.79,16.091 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 4,0 L 36,0 C 38.2089996,0 40,1.79100001 40,4 L 40,36 C 40,38.2089996 38.2089996,40 36,40 L 4,40 C 1.79100001,40 0,38.2089996 0,36 L 0,4 C 0,1.79100001 1.79100001,0 4,0" Fill="[SMSolidColorBrush]#ff727272" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 4,1 L 36,1 C 37.6570015,1 39,2.34299994 39,4 L 39,36 C 39,37.6570015 37.6570015,39 36,39 L 4,39 C 2.34299994,39 1,37.6570015 1,36 L 1,4 C 1,2.34299994 2.34299994,1 4,1" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 4,2 L 36,2 C 37.1049995,2 38,2.89599991 38,4 L 38,36 C 38,37.1040001 37.1049995,38 36,38 L 4,38 C 2.89599991,38 2,37.1040001 2,36 L 2,4 C 2,2.89599991 2.89599991,2 4,2" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 11,27 L 4,30 L 4,27 L 11,27 Z M 12,25 L 4,21 L 7,20 L 12,25 Z M 17,36.2799988 L 14.7659998,36.2799988 L 14.7659998,34 L 17,34 L 17,36.2799988 Z M 17,33 L 14.7390003,33 L 14.592,27.1919994 C 15.3649998,27.7709999 16.1919994,28.2919998 17.0009995,28.6480007 L 17,33 Z" Fill="[SMSolidColorBrush]#7f000000" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+								<Path Data="[PathGeometry]M 18.3449993,26.9150009 C 17.7220001,27.5370007 16.2469997,27.0709991 14.5880003,25.4120007 C 12.9289999,23.7520008 12.4630003,22.2779999 13.085,21.6550007 L 15.7139997,19.0259991 L 20.9740009,24.2859993 L 18.3449993,26.9150009 M 32.0559998,6.81699991 L 26.2329998,10.0100002 L 29,9.31200027 L 29,12.2639999 L 30,11.7010002 L 29.9899998,13.7670002 L 33.1829987,7.94399977 L 32.0559998,6.81699991 Z M 25.4820004,9.25899982 L 36,4 L 30.7409992,14.5179996 L 24.7299995,20.5279999 L 19.4710007,15.2690001 L 25.4820004,9.25899982 Z M 17.2980003,17.6040001 L 22.5580006,22.8630009 C 22.941,23.2460003 22.1779995,23.9860001 21.8069992,23.6140003 L 16.5480003,18.3549995 C 16.1679993,17.9759998 16.9309998,17.2360001 17.2980003,17.6040001 Z M 18.7900009,16.0909996 L 24.0499992,21.3500004 C 24.4330006,21.7329998 23.6700001,22.4729996 23.2989998,22.1009998 L 18.0389996,16.8419991 C 17.6590004,16.4629993 18.4230003,15.7229996 18.7900009,16.0909996 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
 							</Canvas>
-							<Path Data="[PathGeometry]M 36,40 L 28.686,40 L 0,11.314 L 0,3.947 C 0,1.747 1.883,0 4.083,0 L 11.313,0 L 40,28.686 L 40,36 C 40,38.2 38.2,40 36,40 Z" Fill="[SMSolidColorBrush]#7fc42126" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
-							<Path Data="[PathGeometry]M 36,2 C 37.103,2 38,2.897 38,4 L 38,36 C 38,37.103 37.103,38 36,38 L 4,38 C 2.897,38 2,37.103 2,36 L 2,4 C 2,2.897 2.897,2 4,2 L 36,2  M 36,0 L 4,0 C 1.791,0 0,1.791 0,4 L 0,36 C 0,38.209 1.791,40 4,40 L 36,40 C 38.209,40 40,38.209 40,36 L 40,4 C 40,1.791 38.209,0 36,0 L 36,0 Z" Fill="[SMSolidColorBrush]#ffc42126" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+							<Path Data="[PathGeometry]M 36,40 L 28.6860008,40 L 0,11.3140001 L 0,3.94700003 C 0,1.74699998 1.88300002,0 4.08300018,0 L 11.3129997,0 L 40,28.6860008 L 40,36 C 40,38.2000008 38.2000008,40 36,40 Z" Fill="[SMSolidColorBrush]#7fc42126" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
+							<Path Data="[PathGeometry]M 36,2 C 37.1030006,2 38,2.89700007 38,4 L 38,36 C 38,37.1030006 37.1030006,38 36,38 L 4,38 C 2.89700007,38 2,37.1030006 2,36 L 2,4 C 2,2.89700007 2.89700007,2 4,2 L 36,2 M 36,0 L 4,0 C 1.79100001,0 0,1.79100001 0,4 L 0,36 C 0,38.2089996 1.79100001,40 4,40 L 36,40 C 38.2089996,40 40,38.2089996 40,36 L 40,4 C 40,1.79100001 38.2089996,0 36,0 L 36,0 Z" Fill="[SMSolidColorBrush]#ffc42126" Height="[float]40" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]40" />
 							<IconTemplate Height="[float]40" HorizontalAlignment="[HorizontalAlignment]Center" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]NI.G Core.Error.gcomp" Top="[float]0" VerticalAlignment="[VerticalAlignment]Center" Width="[float]40" />
 						</IconPanel>
 					</Icon>
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.variant\ data:Get\ Last\ PString\.gvi">
+		<p.IconModel Target="openg:library:variant\ data:Get\ Last\ PString\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -1297,7 +1300,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.error:Build\ Error\ Cluster\.gvi">
+		<p.IconModel Target="openg:library:error:Build\ Error\ Cluster\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -1313,7 +1316,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.variant\ data:Get\ Variant\ Attributes\.gvi">
+		<p.IconModel Target="openg:library:variant\ data:Get\ Variant\ Attributes\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

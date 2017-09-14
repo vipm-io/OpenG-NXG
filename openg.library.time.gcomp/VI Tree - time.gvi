@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="0A1D1CC6E0E7ACFC31C34861836DE834" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1EDA2A47F02E63D549C39A069330E170" Timestamp="1D320F988D48177" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="14" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -54,7 +54,7 @@
 			<NodeLabel AttachedTo="26" Bounds="65 499 74 18" Id="27" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>time (ms)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="85 380 40 40" DomainName="openg.library.time" Id="28" Label="29" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.time.gcomp\\Tick Count (ms).gvi&quot;" Target="openg\.library\.time:Tick\ Count\ \(ms\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="85 380 40 40" DomainName="openg:library:time" Id="28" Label="29" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.time.gcomp\\Tick Count (ms).gvi&quot;" Target="openg:library:time:Tick\ Count\ \(ms\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L3" Desc="error in (no error)" />
@@ -69,7 +69,7 @@
 			<NodeLabel AttachedTo="28" Bounds="85 357 190 20" Id="29" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Tick Count (ms) (OpenG)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="85 450 40 40" DomainName="openg.library.time" Id="30" Label="31" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.time.gcomp\\Wait (ms).gvi&quot;" Target="openg\.library\.time:Wait\ \(ms\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="85 450 40 40" DomainName="openg:library:time" Id="30" Label="31" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.time.gcomp\\Wait (ms).gvi&quot;" Target="openg:library:time:Wait\ \(ms\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="milliseconds to wait" />
@@ -90,7 +90,7 @@
 			<NodeLabel AttachedTo="30" Bounds="85 427 145 20" Id="31" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Wait (ms) (OpenG)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="85 310 40 40" DomainName="openg.library.time" Id="32" Label="33" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.time.gcomp\\Wait Until Next ms Multiple.gvi&quot;" Target="openg\.library\.time:Wait\ Until\ Next\ ms\ Multiple\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="85 310 40 40" DomainName="openg:library:time" Id="32" Label="33" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.time.gcomp\\Wait Until Next ms Multiple.gvi&quot;" Target="openg:library:time:Wait\ Until\ Next\ ms\ Multiple\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="milliseconds to wait" />
@@ -109,7 +109,7 @@
 			<NodeLabel AttachedTo="32" Bounds="85 287 275 20" Id="33" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Wait Until Next ms Multiple (OpenG)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="85 525 50 50" DomainName="openg.library.time" Id="34" Label="35" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.time.gcomp\\Periodic Trigger.gvi&quot;" Target="openg\.library\.time:Periodic\ Trigger\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="85 525 50 50" DomainName="openg:library:time" Id="34" Label="35" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.time.gcomp\\Periodic Trigger.gvi&quot;" Target="openg:library:time:Periodic\ Trigger\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L2" Desc="time (ms)" />
@@ -132,10 +132,10 @@
 			<Wire Id="37" Joints="N(24:Out)|(75,315) N(32:L0)|(85,315)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="38" Joints="N(22:Out)|(75,455) N(30:L0)|(85,455)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
 			<Text Height="[float]17" Id="21" Left="[float]100" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]206" xmlns="http://www.ni.com/PlatformFramework" />
 			<PanelExecutionWindow Id="39" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
 		<p.TypeReference TypeId="b7377649cab8401a8a86d36b3aa641b1">
@@ -150,7 +150,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.time:Tick\ Count\ \(ms\)\.gvi">
+		<p.IconModel Target="openg:library:time:Tick\ Count\ \(ms\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -166,7 +166,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.time:Wait\ \(ms\)\.gvi">
+		<p.IconModel Target="openg:library:time:Wait\ \(ms\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -182,7 +182,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.time:Wait\ Until\ Next\ ms\ Multiple\.gvi">
+		<p.IconModel Target="openg:library:time:Wait\ Until\ Next\ ms\ Multiple\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -198,7 +198,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.time:Periodic\ Trigger\.gvi">
+		<p.IconModel Target="openg:library:time:Periodic\ Trigger\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 50 50">

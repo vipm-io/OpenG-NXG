@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DD0FC92799AB84C62A129E6CB111A84A" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="EB7ED7DEB7C61E609821C33A0ED5C25F" Timestamp="1D320F988746017" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="To Proper Case (String Array)" Id="1" OverloadGroup="To Proper Case" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Converts alphabetic characters in string to proper case (i.e., first alphabetic character to uppercase, all others to lowercase).</p.UserDescription>
@@ -50,7 +50,7 @@
 			</NodeLabel>
 			<ForLoop Bounds="148 408 110 155" DiagramId="42" Id="41">
 				<LoopIteration Bounds="0 125 15 15" Id="43" />
-				<MethodCall Bounds="35 55 40 40" DomainName="openg.library.string" Id="47" Label="48" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\To Proper Case (String).gvi&quot;" Target="openg\.library\.string:To\ Proper\ Case\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="35 55 40 40" DomainName="openg:library:string" Id="47" Label="48" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\To Proper Case (String).gvi&quot;" Target="openg:library:string:To\ Proper\ Case\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L1" Desc="string" />
@@ -72,7 +72,7 @@
 			<Wire Id="51" Joints="N(46:o0)|(261,480) N(37:Value)|(288,480)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="52" Joints="N(39:Value)|(125,480) N(45:o0)|(143,480)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Label Height="[float]16" Id="24" LabelOwner="[UIModel]23" Left="[float]371" Text="[string]proper case strings" Top="[float]13" Width="[float]101" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]28" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="23" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]24" Left="[float]371" Rows="[int]1" TabIndex="[int]0" Top="[float]33" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]167" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>""</p.DefaultElementValue>
@@ -86,7 +86,7 @@
 			<Text Height="[float]527" Id="35" Left="[float]100" Text="[string]To Proper Case.vi&#xA;&#xA;Converts alphabetic characters in string to proper case (i.e., first alphabetic character to uppercase, all others to lowercase).&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2005, MKS Instruments, Inc., author: Doug Femec&lt;doug_femec@mksinst.com&gt;, IM dafemec&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]143" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
 			<Text Height="[float]16" Id="36" Left="[float]529" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]205" xmlns="http://www.ni.com/PlatformFramework" />
 			<PanelExecutionWindow Id="53" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Output" CallIndex="1" DataType="String[]" Id="14" Name="proper case strings" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
@@ -95,7 +95,7 @@
 		</DataItem>
 	</VirtualInstrument>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.string:To\ Proper\ Case\ \(String\)\.gvi">
+		<p.IconModel Target="openg:library:string:To\ Proper\ Case\ \(String\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

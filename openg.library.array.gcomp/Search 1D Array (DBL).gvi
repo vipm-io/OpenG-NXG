@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="AC93C595FB6EB7C9A29D64D0B4C60670" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D262B34A187257B18798673F271D752F" Timestamp="1D320F9796E0373" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Search 1D Array for All (DBL)" Id="1" OverloadGroup="Search Array" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Searches for all element data matches in array</p.UserDescription>
@@ -115,13 +115,13 @@
 			<Wire Id="92" Joints="N(46:Value)|(560,270) h(15) N(65:o0)|(575,306)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="93" Joints="N(63:57)|(749,360) N(50:Value)|(798,360)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Label Id="26" LabelOwner="[UIModel]25" Left="[float]150" Text="[string]Array" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]30" Columns="[int]1" Dimensions="[int]1" Height="[float]34" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="25" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]26" Left="[float]150" Rows="[int]1" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]73" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="30" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="30" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="32" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" IsTabStop="[bool]True" Label="[UIModel]34" Left="[float]107" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]1" Top="[float]90" Value="{DataItemBinding Id=15}" ValueFormatter="[string]LV:0.00" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="32" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" IsTabStop="[bool]True" Label="[UIModel]34" Left="[float]107" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]1" Top="[float]90" Value="{DataItemBinding Id=15}" ValueFormatter="[string]LV:0.00" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="34" LabelOwner="[UIModel]32" Left="[float]107" Text="[string]Element Data" Top="[float]70" xmlns="http://www.ni.com/PanelCommon" />
 			<Label Id="36" LabelOwner="[UIModel]35" Left="[float]375" Text="[string]Indices of Elements" Top="[float]13" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]40" Columns="[int]1" Dimensions="[int]1" Height="[float]33" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="35" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]36" Left="[float]375" Rows="[int]1" TabIndex="[int]2" Top="[float]33" Value="{DataItemBinding Id=16}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]62" xmlns="http://www.ni.com/PanelCommon">
@@ -132,7 +132,7 @@
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="43" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]45" Left="[float]107" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]3" Top="[float]141" Value="{DataItemBinding Id=17}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="45" LabelOwner="[UIModel]43" Left="[float]107" Text="[string]Start Index (0)" Top="[float]121" xmlns="http://www.ni.com/PanelCommon" />
 			<PanelExecutionWindow Id="94" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="Double[]" Id="14" Name="Array" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>

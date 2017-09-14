@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DFD0AA416A296E34148503AADA3DF5EC" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CF8F46A94689DB9FE99E5A53623E8131" Timestamp="1D320F9877D33AD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="VI Tree - numeric" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="14" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -47,11 +47,11 @@
 			<NodeLabel AttachedTo="23" Bounds="70 314 81 18" Id="24" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Low (0.00)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="90 395 40 40" DomainName="OpenG.Numeric" Id="25" Label="26" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.numeric.gcomp\\Coerce to Enum.gvi&quot;" Target="OpenG\.Numeric:Coerce\ to\ Enum\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon" />
+			<MethodCall Bounds="90 395 40 40" DomainName="openg:library:numeric" Id="25" Label="26" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.numeric.gcomp\\Coerce to Enum.gvi&quot;" Target="openg:library:numeric:Coerce\ to\ Enum\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon" />
 			<NodeLabel AttachedTo="25" Bounds="90 372 190 20" Id="26" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Coerce to Enum</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="100 315 40 40" DomainName="OpenG.Numeric" Id="27" Label="28" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.numeric.gcomp\\Random Number Within Range - DBL.gvi&quot;" Target="OpenG\.Numeric:Random\ Number\ Within\ Range\ \-\ DBL\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="100 315 40 40" DomainName="openg:library:numeric" Id="27" Label="28" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.numeric.gcomp\\Random Number Within Range - DBL.gvi&quot;" Target="openg:library:numeric:Random\ Number\ Within\ Range\ \-\ DBL\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="High" />
@@ -66,19 +66,19 @@
 			<NodeLabel AttachedTo="27" Bounds="100 292 300 20" Id="28" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Random Number - Within Range</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="90 460 40 40" DomainName="OpenG.Numeric" Id="29" Label="30" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.numeric.gcomp\\Timestamp Constant.gvi&quot;" Target="OpenG\.Numeric:Timestamp\ Constant\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon" />
+			<MethodCall Bounds="90 460 40 40" DomainName="openg:library:numeric" Id="29" Label="30" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.numeric.gcomp\\Timestamp Constant.gvi&quot;" Target="openg:library:numeric:Timestamp\ Constant\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon" />
 			<NodeLabel AttachedTo="29" Bounds="90 437 225 20" Id="30" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Timestamp Constant</p.Text>
 			</NodeLabel>
 			<Wire Id="31" Joints="N(23:Out)|(80,340) N(27:L2)|(100,340)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="32" Joints="N(21:Out)|(80,320) N(27:L0)|(100,320)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<PanelExecutionWindow Id="33" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 	</VirtualInstrument>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="OpenG\.Numeric:Coerce\ to\ Enum\.gvi">
+		<p.IconModel Target="openg:library:numeric:Coerce\ to\ Enum\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -94,7 +94,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="OpenG\.Numeric:Random\ Number\ Within\ Range\ \-\ DBL\.gvi">
+		<p.IconModel Target="openg:library:numeric:Random\ Number\ Within\ Range\ \-\ DBL\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -110,7 +110,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="OpenG\.Numeric:Timestamp\ Constant\.gvi">
+		<p.IconModel Target="openg:library:numeric:Timestamp\ Constant\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

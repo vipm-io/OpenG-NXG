@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="A4562C68A7E4F699CC1C9714087DD94A" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="6498C5B1E4C9F2AB0F3AA573DD394DFF" Timestamp="1D320F9826E9F82" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Convert Dirs to VI Libraries (proxy).vi" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"Converts an array of Directories into VI Library (.llb) files. &lt;br/&gt;&lt;br/&gt;Note: This VI dynamically calls the LabVIEW subVI "Convert Dirs to VI Libraries.vi" located at &lt;LabVIEW&gt;\\project\\llbedit.llb (as it is not in the VI search paths)."</p.UserDescription>
@@ -73,7 +73,7 @@
 			<NodeLabel AttachedTo="64" Bounds="0 104 121 18" Id="65" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Relative path (.)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="90 125 40 40" DomainName="openg.library.file" Id="66" Label="67" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Application Directory.gvi&quot;" Target="openg\.library\.file:Application\ Directory\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="90 125 40 40" DomainName="openg:library:file" Id="66" Label="67" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Application Directory.gvi&quot;" Target="openg:library:file:Application\ Directory\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Relative path (.)" />
@@ -96,7 +96,7 @@
 				<NodeLabel AttachedTo="77" Bounds="35 74 88 18" Id="78" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 					<p.Text>prev ending</p.Text>
 				</NodeLabel>
-				<MethodCall Bounds="35 30 40 40" DomainName="openg.library.file" Id="79" Label="80" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Convert File Extension (Path).gvi&quot;" Target="openg\.library\.file:Convert\ File\ Extension\ \(Path\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="35 30 40 40" DomainName="openg:library:file" Id="79" Label="80" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Convert File Extension (Path).gvi&quot;" Target="openg:library:file:Convert\ File\ Extension\ \(Path\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L0" Desc="file name" />
@@ -170,14 +170,14 @@
 			<Wire Id="114" Joints="N(76:o0)|(536,265) h(24) v(-80) N(92:directories Input 2)|(585,185)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="115" Joints="N(62:Value)|(95,260) N(75:o0)|(250,260)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="116" Joints="N(64:Out)|(76,130) N(66:L0)|(90,130)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="117" Joints="N(56:Value)|(95,175) N(68:error in (no error\))|(165,175)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="117" Joints="N(56:Value)|(95,175) N(68:error in)|(165,175)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="118" Joints="N(94:error out)|(880,175) N(58:Value)|(908,175)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="119" Joints="N(92:Error IO Output 1)|(630,175) h(210)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="120" Joints="N(92:type specifier Output 0)|(630,165) h(205) v(-20) N(94:reference)|(840,145)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="121" Joints="N(68:vi reference)|(205,145) h(355) v(20) N(92:type specifier Input 0)|(585,165)" xmlns="http://www.ni.com/PlatformFramework" />
-			<Wire Id="122" Joints="N(60:Value)|(145,110) h(35) N(68:type specifier VI Refnum (for type only\))|(180,140)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="122" Joints="N(60:Value)|(145,110) h(35) N(68:type specifier VI reference)|(180,140)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="123" IsTabStop="[bool]True" Label="[UIModel]130" Left="[float]113" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]162" Value="{DataItemBinding Id=14}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
@@ -213,7 +213,7 @@
 			</ArrayViewer>
 			<Text Height="[float]365" Id="55" Left="[float]100" Text="[string]Convert Dirs to VI Libraries (proxy).vi&#xA;&#xA;Calls &quot;Convert Dirs to VI Libraries.vi&quot; by reference&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2003-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]371" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
 			<PanelExecutionWindow Id="140" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="2" DataType="Error" Id="14" Name="error in (no error)" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
@@ -311,7 +311,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.file:Application\ Directory\.gvi">
+		<p.IconModel Target="openg:library:file:Application\ Directory\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -327,7 +327,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.file:Convert\ File\ Extension\ \(Path\)\.gvi">
+		<p.IconModel Target="openg:library:file:Convert\ File\ Extension\ \(Path\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

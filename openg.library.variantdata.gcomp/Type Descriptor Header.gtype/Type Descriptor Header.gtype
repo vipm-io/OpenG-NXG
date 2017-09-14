@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1918DA3EA9A2C2069AF2686489D45CC4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="8618565D02757E6E68BDAA886A0F5CC2" Timestamp="1D320F98B11EE57" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
-	<TypeDefinition DataType="@7c6a05d11c1f47f69c5befc8de735311" Id="1" xmlns="http://www.ni.com/MocCommon">
+	<TypeDefinition DataType="@39023d3f463c4853bc264f32f20f23ce" Id="1" xmlns="http://www.ni.com/MocCommon">
 		<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-			<TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
+			<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
 		</p.TypeDefinitionTargets>
 		<Icon Id="10" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
@@ -20,10 +20,10 @@
 				<Image Height="[float]30" Id="16" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADNSURBVEhL7U/RDoQgDPP/v41/8pCSbnQIehHv5ZoG266MuKU9LeKPVm8tJPHNLi803JYz3eV/tfD2aoLhGeeNr7ly9ULIU2Pe6lsVLwEMhXGEPqCj+mkHqHowZ2du66ek+aSIIRMStsytTzZ3SqfTxumFt/mk4Oiw9RPuCJizM7emHBgK4wh9QEfix4z3B8R7ayBPPchXVvMPLv7KtPbWaoKJH0HTZtD6HPqwptqqP2MuVkagme6dmExrZk21dyAGOkNGTGruzbNctnpPH5g0FU5NMOdVAAAAAElFTkSuQmCC" Top="[float]5" Width="[float]30" />
 			</IconPanel>
 		</Icon>
-		<DataItem DataType="@7c6a05d11c1f47f69c5befc8de735311" Id="19" Name="Type Descriptor Header">
+		<DataItem DataType="@39023d3f463c4853bc264f32f20f23ce" Id="19" Name="Type Descriptor Header">
 			<p.DefaultValue>0_0_0_0_</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-				<TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
+				<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
 			</p.TypeDefinitionTargets>
 			<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Holds the info contained in a type descriptor header.</p.UserDescription>
 		</DataItem>
@@ -34,15 +34,15 @@
 			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="8" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
 				<ControlDefinition DefaultDirection="Control" Id="9" xmlns="http://www.ni.com/MocCommon">
 					<Label Id="18" LabelOwner="[UIModel]17" Left="[float]34" Text="[string]Type Descriptor Header" Top="[float]72" xmlns="http://www.ni.com/PanelCommon" />
-					<Cluster AutoArrange="[AutoArrange]ArrangeVertically" ClusterType="[Type]@7c6a05d11c1f47f69c5befc8de735311" Height="[float]216" Id="17" IsTabStop="[bool]True" Label="[UIModel]18" Left="[float]34" TabIndex="[int]0" Top="[float]92" Value="{DataItemBinding Id=19}" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
+					<Cluster AutoArrange="[AutoArrange]ArrangeVertically" ClusterType="[Type]@39023d3f463c4853bc264f32f20f23ce" Height="[float]216" Id="17" IsTabStop="[bool]True" Label="[UIModel]18" Left="[float]34" TabIndex="[int]0" Top="[float]92" Value="{DataItemBinding Id=19}" Width="[float]111" xmlns="http://www.ni.com/PanelCommon">
 						<p.InfoTipDescription xmlns="http://www.ni.com/PlatformFramework">Holds the info contained in a type descriptor header.</p.InfoTipDescription>
 						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="20" Interval="[ushort]1" IsTabStop="[bool]True" Label="[UIModel]22" Left="[float]4" Maximum="[ushort]65535" MinHeight="[float]24" Minimum="[ushort]0" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]24" Value="{ClusterBinding FieldName=length}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt16" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Id="22" LabelOwner="[UIModel]20" Left="[float]4" Text="[string]length" Top="[float]4" />
 						<NumericText BaseName="[string]Numeric" Height="[float]24" Id="23" Interval="[byte]1" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]4" Maximum="[byte]255" MinHeight="[float]24" Minimum="[byte]0" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]1" Top="[float]76" Value="{ClusterBinding FieldName=private}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt8" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 						<Label Id="25" LabelOwner="[UIModel]23" Left="[float]4" Text="[string]private" Top="[float]56" />
-						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="34" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]35" Left="[float]4" MinHeight="[float]24" TabIndex="[int]2" Top="[float]128" Value="{ClusterBinding FieldName=type}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]95" p7:ControlDefinitionChecksum="3DF/zAbUWNb5oOtt6Bh2ZA==" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+						<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="34" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]35" Left="[float]4" MinHeight="[float]24" TabIndex="[int]2" Top="[float]128" Value="{ClusterBinding FieldName=type}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]95" p7:ControlDefinitionChecksum="3EDc6ecoqjuI7i/a7hsa0g==" xmlns:p7="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 							<p7:p.TypeDefinitionTargets>
-								<p7:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Enumeration\.gtype:ControlDefinition" />
+								<p7:TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Enumeration\.gtype:ControlDefinition" />
 							</p7:p.TypeDefinitionTargets>
 							<EnumSelectorInfo DisplayValue="[string]&lt;Null&gt;" Value="[byte]0" ValueType="[Type]UInt8" />
 							<EnumSelectorInfo DisplayValue="[string]I8" Value="[byte]1" ValueType="[Type]UInt8" />
@@ -167,20 +167,20 @@
 		</NameScopingEnvoy>
 	</EnvoyManagerFile>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="7c6a05d11c1f47f69c5befc8de735311">
+		<p.TypeReference TypeId="39023d3f463c4853bc264f32f20f23ce">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="length" DataType="UInt16" />
 					<Field FieldAccessPolicy="ReadWrite" Name="private" DataType="UInt8" />
-					<Field FieldAccessPolicy="ReadWrite" Name="type" DataType="@22880521cbed454da65407f8a694d8e6" />
+					<Field FieldAccessPolicy="ReadWrite" Name="type" DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" />
 					<Field FieldAccessPolicy="ReadWrite" Name="# elements" DataType="UInt16" />
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="22880521cbed454da65407f8a694d8e6">
+		<p.TypeReference TypeId="8b5dfbea269845f7b5a67e0f8b1a48e5">
 			<Attributed AttributedType="@97d3d9cbc44d45348aae93714120fc20">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>

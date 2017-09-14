@@ -1,39 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="A293235E7837EAA15415344BC07E1F63" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="D848E39330A6CA2EBE35F5D178611B58" Timestamp="1D320F965761144" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.1.0.3" Version="5.1.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition AutoIncrementOnBuild="False" Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Numeric" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition AutoIncrementOnBuild="False" Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Numeric" RootNamespaceId="29" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
 		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
-		<ComponentConfiguration AssociatedPalettes="26" Id="10" Name="Default">
+		<ComponentConfiguration Id="10" Name="Default">
 			<CompilerSymbolTable Id="11" xmlns="http://www.ni.com/PlatformFramework" />
-			<ComponentItemProperties AssociatedEnvoyId="14" Exported="True" Id="20" />
-			<ComponentItemProperties AssociatedEnvoyId="15" Exported="True" Id="21" />
-			<ComponentItemProperties AssociatedEnvoyId="16" Exported="True" Id="22" />
-			<ComponentItemProperties AssociatedEnvoyId="17" Exported="True" Id="23" />
-			<ComponentItemProperties AssociatedEnvoyId="18" Exported="True" Id="24" />
-			<ComponentItemProperties AssociatedEnvoyId="19" Exported="True" Id="25" />
+			<ComponentItemProperties AssociatedEnvoyId="30" Exported="True" Id="37" />
+			<ComponentItemProperties AssociatedEnvoyId="31" Exported="True" Id="38" />
+			<ComponentItemProperties AssociatedEnvoyId="32" Exported="True" Id="39" />
+			<ComponentItemProperties AssociatedEnvoyId="33" Exported="True" Id="40" />
+			<ComponentItemProperties AssociatedEnvoyId="34" Exported="True" Id="41" />
+			<ComponentItemProperties AssociatedEnvoyId="35" Exported="True" Id="42" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
 		<ProjectSettings Id="7" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
 		<EmbeddedDefinitionReference Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
-			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="13" Name="OpenG\.Numeric">
-				<SourceFileReference Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Coerce\ to\ Enum\.gvi" StoragePath="Coerce to Enum.gvi" />
-				<SourceFileReference Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ \-\ Within\ Range\.gvi" StoragePath="Random Number - Within Range.gvi" />
-				<SourceFileReference Id="16" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ Within\ Range\ \-\ DBL\.gvi" StoragePath="Random Number Within Range - DBL.gvi" />
-				<SourceFileReference Id="17" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ Within\ Range\ \-\ I32\.gvi" StoragePath="Random Number Within Range - I32.gvi" />
-				<SourceFileReference Id="18" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Timestamp\ Constant\.gvi" StoragePath="Timestamp Constant.gvi" />
-				<SourceFileReference Id="19" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ numeric\.gvi" StoragePath="VI Tree - numeric.gvi" />
-				<SourceFileReference Id="26" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.numeric_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.numeric_Default.gpal" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="27" Name="openg">
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="28" Name="library">
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="29" Name="numeric">
+						<SourceFileReference Id="30" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Coerce\ to\ Enum\.gvi" StoragePath="Coerce to Enum.gvi" />
+						<SourceFileReference Id="31" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ \-\ Within\ Range\.gvi" StoragePath="Random Number - Within Range.gvi" />
+						<SourceFileReference Id="32" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ Within\ Range\ \-\ DBL\.gvi" StoragePath="Random Number Within Range - DBL.gvi" />
+						<SourceFileReference Id="33" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Random\ Number\ Within\ Range\ \-\ I32\.gvi" StoragePath="Random Number Within Range - I32.gvi" />
+						<SourceFileReference Id="34" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Timestamp\ Constant\.gvi" StoragePath="Timestamp Constant.gvi" />
+						<SourceFileReference Id="35" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ numeric\.gvi" StoragePath="VI Tree - numeric.gvi" />
+						<SourceFileReference Id="36" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.numeric_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.numeric_Default.gpal" />
+					</NameScopingEnvoy>
+				</NameScopingEnvoy>
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="openg\.library\.numeric\.gcomp" NameTracksFileName="True">

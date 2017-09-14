@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="02E4A127A55D056E8B7AC59009D3BA82" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="BBE068DC366023EBD30782986639C27A" Timestamp="1D320F98AE38B57" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Set Enum String Value" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Sets an enum's integer value to the position within the enum's strings matching the &lt;B&gt;String Value&lt;/B&gt; input. Returns&lt;B&gt; Default Enum Value&lt;/B&gt; if an error occurs.</p.UserDescription>
@@ -62,7 +62,7 @@
 			</NodeLabel>
 			<CaseStructure Bounds="180 20 1055 370" DataType="Error" Id="64" Selected="65" UserSelectorBounds="474 0 106 17">
 				<CaseStructure.Case Bounds="5 5 1045 360" Id="65" Pattern="No Error">
-					<MethodCall Bounds="25 180 40 40" DomainName="openg.library.variant data" Id="71" Label="72" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Variant to Header Info.gvi&quot;" Target="openg\.library\.variant\ data:Variant\ to\ Header\ Info\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 180 40 40" DomainName="openg:library:variant data" Id="71" Label="72" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Variant to Header Info.gvi&quot;" Target="openg:library:variant\ data:Variant\ to\ Header\ Info\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="Variant" />
@@ -72,18 +72,22 @@
 							</MethodDeclaration>
 						</p.MethodDeclaration>
 						<Terminal DataType="@4529452f36c34cebab2f83e17d79fd2a" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@62d9ec428361406a92c4ba022e177bfe" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
-						<Terminal DataType="@7c5e7b68e4514786a3afd32894f15395" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@dd3f97722e604f4486ab07758d96ff29" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+						<Terminal DataType="@9a8fb7e82524477984dd9a1aa5cff565" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
 						<Terminal DataType="String" Direction="Output" Hotspot="40 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
 					</MethodCall>
 					<NodeLabel AttachedTo="71" Bounds="25 159 235 18" Id="72" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Variant to Header Info</p.Text>
 					</NodeLabel>
-					<PropertyNode Bounds="85 140 80 50" HasErrorTerminals="False" Id="73" InstanceDataType="@62d9ec428361406a92c4ba022e177bfe" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
-						<PropertyItemTerminal DataType="@22880521cbed454da65407f8a694d8e6" Hotspot="80 15" Id="c0t0v" Path="type" PathElementMemberKinds="Field" Usage="Optional" />
+					<PropertyNode Bounds="85 140 80 20" HasErrorTerminals="False" Id="73" InstanceDataType="@dd3f97722e604f4486ab07758d96ff29" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+						<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+							<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Header\.gtype" />
+							<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
+						</p.TypeDefinitionTargets>
+						<PropertyItemTerminal DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" Hotspot="80 15" Id="c0t0v" Path="type" PathElementMemberKinds="Field" Usage="Optional" />
 						<PropertyItemTerminal DataType="UInt16" Hotspot="80 30" Id="c1t0v" Path="# elements" PathElementMemberKinds="Field" Usage="Optional" />
 					</PropertyNode>
-					<CaseStructure Bounds="185 15 830 325" DataType="@22880521cbed454da65407f8a694d8e6" Default="75" Id="74" Selected="76" UserSelectorBounds="317 0 196 17">
+					<CaseStructure Bounds="185 15 830 325" DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" Default="75" Id="74" Selected="76" UserSelectorBounds="317 0 196 17">
 						<CaseStructure.Case Bounds="5 5 820 315" Id="75" Pattern="Default">
 							<Literal Bounds="210 70 140 15" DataType="Int32" Id="84" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>1</p.Data>
@@ -422,7 +426,7 @@
 								<p.Text>Format String</p.Text>
 							</NodeLabel>
 							<FormatIntoString Bounds="310 150 40 40" Id="87" Terminals="formatString=145, outString=144, c0t0v=146" />
-							<MethodCall Bounds="370 130 40 40" DomainName="openg.library.error" Id="88" Label="89" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="370 130 40 40" DomainName="openg:library:error" Id="88" Label="89" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="code" />
@@ -465,7 +469,7 @@
 							<StringLength Bounds="105 280 40 20" Id="96" />
 							<ForLoop Bounds="108 108 130 170" DiagramId="98" Id="97">
 								<LoopIteration Bounds="0 140 15 15" Id="99" />
-								<MethodCall Bounds="55 60 40 40" DomainName="openg.library.variant data" Id="105" Label="106" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get PString.gvi&quot;" Target="openg\.library\.variant\ data:Get\ PString\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+								<MethodCall Bounds="55 60 40 40" DomainName="openg:library:variant data" Id="105" Label="106" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get PString.gvi&quot;" Target="openg:library:variant\ data:Get\ PString\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 									<p.MethodDeclaration>
 										<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 											<Parameter Id="L0" Desc="String" />
@@ -832,7 +836,7 @@
 										<p.Text>Format String</p.Text>
 									</NodeLabel>
 									<FormatIntoString Bounds="285 130 40 40" Id="121" Terminals="formatString=156, outString=157, c0t0v=155" />
-									<MethodCall Bounds="345 110 40 40" DomainName="openg.library.error" Id="122" Label="123" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+									<MethodCall Bounds="345 110 40 40" DomainName="openg:library:error" Id="122" Label="123" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 										<p.MethodDeclaration>
 											<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 												<Parameter Id="L0" Desc="code" />
@@ -957,7 +961,7 @@
 			<Wire Id="209" Joints="N(56:Value)|(100,180) N(67:64)|(176,180)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="210" Joints="N(68:64)|(1239,180) N(58:Value)|(1263,180)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Cluster BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]Error" Height="[float]176" Id="211" IsTabStop="[bool]True" Label="[UIModel]218" Left="[float]167" MinHeight="[float]128" MinWidth="[float]112" TabIndex="[int]0" Top="[float]179" Value="{DataItemBinding Id=14}" Width="[float]176" p4:ControlDefinitionChecksum="ciOmJMo5OE8XEaXh0ywYDA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype:ControlDefinition" />
@@ -991,7 +995,7 @@
 			<Label Height="[float]16" Id="54" LabelOwner="[UIModel]52" Left="[float]443" Text="[string]Enum" Top="[float]13" Width="[float]30" xmlns="http://www.ni.com/PanelCommon" />
 			<Text Height="[float]16" Id="55" Left="[float]672" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]205" xmlns="http://www.ni.com/PlatformFramework" />
 			<PanelExecutionWindow Id="228" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="3" DataType="Error" Id="14" Name="error in (no error)" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Cluster>
@@ -1042,29 +1046,29 @@
 		<p.TypeReference TypeId="4529452f36c34cebab2f83e17d79fd2a">
 			<Composite Id="1" Name="Variant" Sealed="" GenericTypeDefinition="Void" BaseType="Void" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="62d9ec428361406a92c4ba022e177bfe">
-			<Attributed AttributedType="@52ec150d8bc14ed29d2f4dff6c87e03a">
+		<p.TypeReference TypeId="dd3f97722e604f4486ab07758d96ff29">
+			<Attributed AttributedType="@e536b6be7aa04a2caf96490036f915ed">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="7c5e7b68e4514786a3afd32894f15395">
+		<p.TypeReference TypeId="9a8fb7e82524477984dd9a1aa5cff565">
 			<Attributed AttributedType="@1f1e5fefc5f84e50975c5104cdcd3cf6">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="22880521cbed454da65407f8a694d8e6">
+		<p.TypeReference TypeId="8b5dfbea269845f7b5a67e0f8b1a48e5">
 			<Attributed AttributedType="@97d3d9cbc44d45348aae93714120fc20">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="52ec150d8bc14ed29d2f4dff6c87e03a">
-			<Typedef TypedefName="Type Descriptor Header.gtype" UnderlyingType="@7c6a05d11c1f47f69c5befc8de735311" />
+		<p.TypeReference TypeId="e536b6be7aa04a2caf96490036f915ed">
+			<Typedef TypedefName="Type Descriptor Header.gtype" UnderlyingType="@39023d3f463c4853bc264f32f20f23ce" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="1f1e5fefc5f84e50975c5104cdcd3cf6">
 			<Typedef TypedefName="Type Descriptor.gtype" UnderlyingType="Int16[]" />
@@ -1072,12 +1076,12 @@
 		<p.TypeReference TypeId="97d3d9cbc44d45348aae93714120fc20">
 			<Typedef TypedefName="Type Descriptor Enumeration.gtype" UnderlyingType="@df05968590a44ecb901622f1480b23be" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="7c6a05d11c1f47f69c5befc8de735311">
+		<p.TypeReference TypeId="39023d3f463c4853bc264f32f20f23ce">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
 				<Members>
 					<Field FieldAccessPolicy="ReadWrite" Name="length" DataType="UInt16" />
 					<Field FieldAccessPolicy="ReadWrite" Name="private" DataType="UInt8" />
-					<Field FieldAccessPolicy="ReadWrite" Name="type" DataType="@22880521cbed454da65407f8a694d8e6" />
+					<Field FieldAccessPolicy="ReadWrite" Name="type" DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" />
 					<Field FieldAccessPolicy="ReadWrite" Name="# elements" DataType="UInt16" />
 				</Members>
 			</Composite>
@@ -1204,7 +1208,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.variant\ data:Variant\ to\ Header\ Info\.gvi">
+		<p.IconModel Target="openg:library:variant\ data:Variant\ to\ Header\ Info\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -1220,7 +1224,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.error:Build\ Error\ Cluster\.gvi">
+		<p.IconModel Target="openg:library:error:Build\ Error\ Cluster\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -1236,7 +1240,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.variant\ data:Get\ PString\.gvi">
+		<p.IconModel Target="openg:library:variant\ data:Get\ PString\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

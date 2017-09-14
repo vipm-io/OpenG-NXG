@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1CB27029C4BEF73FF9B9CFF8869B4AE5" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="BFC9D29EB35902D762E4AD368B217498" Timestamp="1D320F982A5B3A9" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Create Dir if Non-Existant" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Will create all directories above and including the directory defined by the "Directory Path" input, if they do not already exist.</p.UserDescription>
@@ -90,7 +90,7 @@
 				<FileOrDirectoryInfo Bounds="45 95 40 40" Id="89" />
 				<IsNotANumberOrPathOrRefnum Bounds="140 190 30 30" Id="90" />
 				<IsEmptyStringOrPath Bounds="140 155 30 30" Id="91" />
-				<MethodCall Bounds="135 110 40 40" DomainName="openg.library.file" Id="92" Label="93" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Strip Path - Traditional.gvi&quot;" Target="openg\.library\.file:Strip\ Path\ \-\ Traditional\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="135 110 40 40" DomainName="openg:library:file" Id="92" Label="93" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Strip Path - Traditional.gvi&quot;" Target="openg:library:file:Strip\ Path\ \-\ Traditional\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L0" Desc="path" />
@@ -129,7 +129,7 @@
 			</WhileLoop>
 			<ForLoop Bounds="833 228 240 210" DiagramId="98" Id="97">
 				<LoopIteration Bounds="0 180 15 15" Id="99" />
-				<MethodCall Bounds="45 80 40 40" DomainName="openg.library.file" Id="108" Label="109" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Build Path - Traditional.gvi&quot;" Target="openg\.library\.file:Build\ Path\ \-\ Traditional\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="45 80 40 40" DomainName="openg:library:file" Id="108" Label="109" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Build Path - Traditional.gvi&quot;" Target="openg:library:file:Build\ Path\ \-\ Traditional\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L0" Desc="base path" />
@@ -173,7 +173,7 @@
 			<Wire Id="138" Joints="N(103:97)|(1076,355) N(70:Value)|(1103,355)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Facade="WireInvisibleFacade" Id="139" Joints="N(66:Out)|(446,355) N(85:o0)|(446,355)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="27" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]29" Left="[float]170" MinHeight="[float]24" Path="{DataItemBinding Id=14}" TabIndex="[int]0" Top="[float]32" Width="[float]102" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="29" LabelOwner="[UIModel]27" Left="[float]170" Text="[string]Directory Path" Top="[float]12" Width="[float]76" xmlns="http://www.ni.com/PanelCommon" />
 			<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="30" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" Label="[UIModel]32" Left="[float]334" MinHeight="[float]24" Path="{DataItemBinding Id=15}" TabIndex="[int]1" Top="[float]30" Width="[float]98" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -213,7 +213,7 @@
 				<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="62" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" MinHeight="[float]24" TabIndex="[int]0" Width="[float]128" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<PanelExecutionWindow Id="157" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="Path" Id="14" Name="Directory Path" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Path a="1" />
@@ -258,7 +258,7 @@
 		</DataItem>
 	</VirtualInstrument>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.file:Strip\ Path\ \-\ Traditional\.gvi">
+		<p.IconModel Target="openg:library:file:Strip\ Path\ \-\ Traditional\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -274,7 +274,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.file:Build\ Path\ \-\ Traditional\.gvi">
+		<p.IconModel Target="openg:library:file:Build\ Path\ \-\ Traditional\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

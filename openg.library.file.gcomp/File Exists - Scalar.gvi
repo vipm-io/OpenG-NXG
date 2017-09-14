@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F881C03FDD7B62BD9960FAEA065773FC" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A68D1D286674745109631B9B4193C858" Timestamp="1D320F982E74EDB" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="File Exists - Scalar" Id="1" OverloadGroup="File Exists" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Checks to see whether a path exists on disk and whether it is a directory.</p.UserDescription>
@@ -55,7 +55,7 @@
 				<p.Text>is directory</p.Text>
 			</NodeLabel>
 			<FileOrDirectoryInfo Bounds="100 100 40 40" Id="40" />
-			<PropertyNode Bounds="160 130 55 35" HasErrorTerminals="False" Id="41" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+			<PropertyNode Bounds="160 130 55 20" HasErrorTerminals="False" Id="41" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 					<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
 				</p.TypeDefinitionTargets>
@@ -68,7 +68,7 @@
 			<Wire Id="46" Joints="N(40:error out)|(140,135) N(41:instance in)|(160,135)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="47" Joints="N(36:Value)|(75,105) N(40:path)|(100,105)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<LED BaseName="[string]Square LED" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" Height="[float]24" Id="24" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]26" Left="[float]277" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]0" Top="[float]74" TrueContent="[string]" Value="{DataItemBinding Id=14}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="26" LabelOwner="[UIModel]24" Left="[float]277" Text="[string]exists" Top="[float]54" Width="[float]29" xmlns="http://www.ni.com/PanelCommon" />
 			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="27" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]29" Left="[float]113" MinHeight="[float]24" Path="{DataItemBinding Id=15}" TabIndex="[int]1" Top="[float]74" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -77,7 +77,7 @@
 			<LED BaseName="[string]Square LED" Content="[string]" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]" Height="[float]24" Id="31" IsReadOnly="[bool]True" IsTabStop="[bool]True" Label="[UIModel]33" Left="[float]278" MinHeight="[float]16" MinWidth="[float]16" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]30" TrueContent="[string]" Value="{DataItemBinding Id=16}" Width="[float]24" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="33" LabelOwner="[UIModel]31" Left="[float]278" Text="[string]is directory" Top="[float]10" Width="[float]59" xmlns="http://www.ni.com/PanelCommon" />
 			<PanelExecutionWindow Id="48" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Output" CallIndex="2" DataType="Boolean" Id="14" Name="exists" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>False</p.DefaultValue>
 		</DataItem>

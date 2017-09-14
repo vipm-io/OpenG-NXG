@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="ACF13FD571310EC89BD396F5BC6CB2FE" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="77A98947D604F0847F45C5DB2B030C91" Timestamp="1D320F9662E38FD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" OverloadGroup="Conditional Auto-Indexing Tunnel" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This polymorphic VI filters &lt;B&gt;Array In&lt;/B&gt; by keeping only those elements where corresponding elements in &lt;B&gt;Elements to keep&lt;/B&gt; are TRUE.</p.UserDescription>
@@ -107,16 +107,16 @@
 			<Wire Id="86" Joints="N(46:Out)|(335,150) N(62:o0)|(353,150)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="87" Joints="N(65:o0)|(731,170) N(48:Value)|(758,170)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000">
 			<Label Height="[float]16" Id="25" LabelOwner="[UIModel]24" Left="[float]420" Text="[string]Filtered Array out" Top="[float]34" Width="[float]92" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]29" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="24" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]25" Left="[float]420" Rows="[int]1" TabIndex="[int]0" Top="[float]54" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]121" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="29" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="29" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="32" LabelOwner="[UIModel]31" Left="[float]148" Text="[string]Array in" Top="[float]144" Width="[float]41" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]36" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="31" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]32" Left="[float]148" Rows="[int]1" TabIndex="[int]1" Top="[float]164" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]132" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="36" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="36" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="39" LabelOwner="[UIModel]38" Left="[float]154" Text="[string]Elements to keep" Top="[float]10" Width="[float]92" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]43" Columns="[int]1" Dimensions="[int]1" Height="[float]84" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="38" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]39" Left="[float]154" Rows="[int]1" TabIndex="[int]2" Top="[float]30" Value="{DataItemBinding Id=16}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]101" xmlns="http://www.ni.com/PanelCommon">
@@ -125,7 +125,7 @@
 			</ArrayViewer>
 			<Text Height="[float]527" Id="45" Left="[float]116" Text="[string]Conditional Auto-Indexing Tunnel.vi&#xA;&#xA;A VI that simulates a conditional Auto-Indexing tunnel.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]276" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
 			<PanelExecutionWindow Id="88" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Output" CallIndex="1" DataType="Double[]" Id="14" Name="Filtered Array out" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>

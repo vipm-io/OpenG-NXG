@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DC857B2E4F39A8E9EE28D0B707D777BD" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="44C01B857C458EF4C7158E8E3BD8A6AD" Timestamp="1D320F988AD7177" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="VI Tree - string" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="14" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -156,7 +156,7 @@
 					<NodeLabel AttachedTo="50" Bounds="420 294 43 18" Id="51" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>string</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="535 55 40 40" DomainName="openg.library.string" Id="52" Label="53" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Convert EOLs (String).gvi&quot;" Target="openg\.library\.string:Convert\ EOLs\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="535 55 40 40" DomainName="openg:library:string" Id="52" Label="53" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Convert EOLs (String).gvi&quot;" Target="openg:library:string:Convert\ EOLs\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="String in" />
@@ -171,7 +171,7 @@
 					<NodeLabel AttachedTo="52" Bounds="535 32 170 20" Id="53" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Convert EOLs (String)</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="530 505 40 40" DomainName="openg.library.string" Id="54" Label="55" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Search or Split String.gvi&quot;" Target="openg\.library\.string:Search\ or\ Split\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="530 505 40 40" DomainName="openg:library:string" Id="54" Label="55" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Search or Split String.gvi&quot;" Target="openg:library:string:Search\ or\ Split\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="string" />
@@ -192,7 +192,7 @@
 					<NodeLabel AttachedTo="54" Bounds="530 482 230 20" Id="55" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Search or Split String</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="535 415 40 40" DomainName="openg.library.string" Id="56" Label="57" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\To Proper Case (String).gvi&quot;" Target="openg\.library\.string:To\ Proper\ Case\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="535 415 40 40" DomainName="openg:library:string" Id="56" Label="57" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\To Proper Case (String).gvi&quot;" Target="openg:library:string:To\ Proper\ Case\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="string" />
@@ -205,7 +205,7 @@
 					<NodeLabel AttachedTo="56" Bounds="535 392 185 20" Id="57" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>To Proper Case (String)</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="535 310 40 40" DomainName="openg.library.string" Id="58" Label="59" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\To Camel Case (String).gvi&quot;" Target="openg\.library\.string:To\ Camel\ Case\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="535 310 40 40" DomainName="openg:library:string" Id="58" Label="59" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\To Camel Case (String).gvi&quot;" Target="openg:library:string:To\ Camel\ Case\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="string" />
@@ -220,7 +220,7 @@
 					<NodeLabel AttachedTo="58" Bounds="535 287 180 20" Id="59" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>To Camel Case (String)</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="535 225 40 40" DomainName="openg.library.string" Id="60" Label="61" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Place Number to Proper Engl Text.gvi&quot;" Target="openg\.library\.string:Place\ Number\ to\ Proper\ Engl\ Text\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="535 225 40 40" DomainName="openg:library:string" Id="60" Label="61" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Place Number to Proper Engl Text.gvi&quot;" Target="openg:library:string:Place\ Number\ to\ Proper\ Engl\ Text\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Numeric" />
@@ -233,11 +233,11 @@
 					<NodeLabel AttachedTo="60" Bounds="535 202 320 20" Id="61" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Place Number to Proper English Text</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="530 640 40 40" DomainName="openg.library.string" Id="62" Label="63" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Comment.gvi&quot;" Target="openg\.library\.string:Comment\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon" />
+					<MethodCall Bounds="530 640 40 40" DomainName="openg:library:string" Id="62" Label="63" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Comment.gvi&quot;" Target="openg:library:string:Comment\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon" />
 					<NodeLabel AttachedTo="62" Bounds="530 617 145 20" Id="63" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Comment</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="145 50 50 50" DomainName="openg.library.string" Id="64" Label="65" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Format Variant Into String.gvi&quot;" Target="openg\.library\.string:Format\ Variant\ Into\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="145 50 50 50" DomainName="openg:library:string" Id="64" Label="65" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Format Variant Into String.gvi&quot;" Target="openg:library:string:Format\ Variant\ Into\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Input String" />
@@ -258,7 +258,7 @@
 					<NodeLabel AttachedTo="64" Bounds="145 27 265 20" Id="65" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Format Variant Into String</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="535 140 40 40" DomainName="openg.library.string" Id="66" Label="67" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Multi-line String to Array.gvi&quot;" Target="openg\.library\.string:Multi\-line\ String\ to\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="535 140 40 40" DomainName="openg:library:string" Id="66" Label="67" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Multi-line String to Array.gvi&quot;" Target="openg:library:string:Multi\-line\ String\ to\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="string" />
@@ -271,7 +271,7 @@
 					<NodeLabel AttachedTo="66" Bounds="535 117 255 20" Id="67" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Multi-line String to Array</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="145 290 40 40" DomainName="openg.library.string" Id="68" Label="69" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Number to Proper Engl Text.gvi&quot;" Target="openg\.library\.string:Number\ to\ Proper\ Engl\ Text\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="145 290 40 40" DomainName="openg:library:string" Id="68" Label="69" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Number to Proper Engl Text.gvi&quot;" Target="openg:library:string:Number\ to\ Proper\ Engl\ Text\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Numeric" />
@@ -284,7 +284,7 @@
 					<NodeLabel AttachedTo="68" Bounds="145 267 280 20" Id="69" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Number to Proper English Text</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="145 375 40 40" DomainName="openg.library.string" Id="70" Label="71" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Slice String.gvi&quot;" Target="openg\.library\.string:Slice\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="145 375 40 40" DomainName="openg:library:string" Id="70" Label="71" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Slice String.gvi&quot;" Target="openg:library:string:Slice\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="string" />
@@ -301,7 +301,7 @@
 					<NodeLabel AttachedTo="70" Bounds="145 352 155 20" Id="71" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Slice String</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="145 205 40 40" DomainName="openg.library.string" Id="72" Label="73" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Variant Array to Spreadsheet.gvi&quot;" Target="openg\.library\.string:Variant\ Array\ to\ Spreadsheet\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="145 205 40 40" DomainName="openg:library:string" Id="72" Label="73" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Variant Array to Spreadsheet.gvi&quot;" Target="openg:library:string:Variant\ Array\ to\ Spreadsheet\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="error in (no error)" />
@@ -320,7 +320,7 @@
 					<NodeLabel AttachedTo="72" Bounds="145 182 285 20" Id="73" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Variant Array to Spreadsheet String</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="145 490 40 40" DomainName="openg.library.string" Id="74" Label="75" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\String to 1D Array.gvi&quot;" Target="openg\.library\.string:String\ to\ 1D\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="145 490 40 40" DomainName="openg:library:string" Id="74" Label="75" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\String to 1D Array.gvi&quot;" Target="openg:library:string:String\ to\ 1D\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="string" />
@@ -337,7 +337,7 @@
 					<NodeLabel AttachedTo="74" Bounds="145 467 205 20" Id="75" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>String to 1D Array</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="145 555 40 40" DomainName="openg.library.string" Id="76" Label="77" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\1D Array to String.gvi&quot;" Target="openg\.library\.string:\1D\ Array\ to\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="145 555 40 40" DomainName="openg:library:string" Id="76" Label="77" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\1D Array to String.gvi&quot;" Target="openg:library:string:\1D\ Array\ to\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="Array of Strings" />
@@ -352,7 +352,7 @@
 					<NodeLabel AttachedTo="76" Bounds="145 532 205 20" Id="77" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>1D Array to String</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="145 140 40 40" DomainName="openg.library.string" Id="78" Label="79" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Scan Variant from String.gvi&quot;" Target="openg\.library\.string:Scan\ Variant\ from\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="145 140 40 40" DomainName="openg:library:string" Id="78" Label="79" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Scan Variant from String.gvi&quot;" Target="openg:library:string:Scan\ Variant\ from\ String\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Input String" />
@@ -379,7 +379,7 @@
 					<NodeLabel AttachedTo="78" Bounds="145 117 255 20" Id="79" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Scan Variant from String</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="155 620 40 40" DomainName="openg.library.string" Id="80" Label="81" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Trim Whitespace (String).gvi&quot;" Target="openg\.library\.string:Trim\ Whitespace\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="155 620 40 40" DomainName="openg:library:string" Id="80" Label="81" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Trim Whitespace (String).gvi&quot;" Target="openg:library:string:Trim\ Whitespace\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="String in" />
@@ -394,7 +394,7 @@
 					<NodeLabel AttachedTo="80" Bounds="155 597 195 20" Id="81" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Trim Whitespace</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="145 425 40 40" DomainName="openg.library.string" Id="82" Label="83" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Slice String 1.gvi&quot;" Target="openg\.library\.string:Slice\ String\ 1\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="145 425 40 40" DomainName="openg:library:string" Id="82" Label="83" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Slice String 1.gvi&quot;" Target="openg:library:string:Slice\ String\ 1\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="String" />
@@ -411,7 +411,7 @@
 					<NodeLabel AttachedTo="82" Bounds="145 402 170 20" Id="83" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Slice String</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="530 570 40 40" DomainName="openg.library.string" Id="84" Label="85" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\String to Character Array.gvi&quot;" Target="openg\.library\.string:String\ to\ Character\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="530 570 40 40" DomainName="openg:library:string" Id="84" Label="85" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\String to Character Array.gvi&quot;" Target="openg:library:string:String\ to\ Character\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Input String" />
@@ -443,9 +443,9 @@
 				<p.Text>VI Tree - String</p.Text>
 			</NodeLabel>
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<PanelExecutionWindow Id="99" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
 		<p.TypeReference TypeId="4529452f36c34cebab2f83e17d79fd2a">
@@ -479,7 +479,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.string:Convert\ EOLs\ \(String\)\.gvi">
+		<p.IconModel Target="openg:library:string:Convert\ EOLs\ \(String\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -495,7 +495,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Search\ or\ Split\ String\.gvi">
+		<p.IconModel Target="openg:library:string:Search\ or\ Split\ String\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -511,7 +511,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:To\ Proper\ Case\ \(String\)\.gvi">
+		<p.IconModel Target="openg:library:string:To\ Proper\ Case\ \(String\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -527,7 +527,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:To\ Camel\ Case\ \(String\)\.gvi">
+		<p.IconModel Target="openg:library:string:To\ Camel\ Case\ \(String\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -543,7 +543,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Place\ Number\ to\ Proper\ Engl\ Text\.gvi">
+		<p.IconModel Target="openg:library:string:Place\ Number\ to\ Proper\ Engl\ Text\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -559,7 +559,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Comment\.gvi">
+		<p.IconModel Target="openg:library:string:Comment\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -575,7 +575,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Format\ Variant\ Into\ String\.gvi">
+		<p.IconModel Target="openg:library:string:Format\ Variant\ Into\ String\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 50 50">
@@ -591,7 +591,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Multi\-line\ String\ to\ Array\.gvi">
+		<p.IconModel Target="openg:library:string:Multi\-line\ String\ to\ Array\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -607,7 +607,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Number\ to\ Proper\ Engl\ Text\.gvi">
+		<p.IconModel Target="openg:library:string:Number\ to\ Proper\ Engl\ Text\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -623,7 +623,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Slice\ String\.gvi">
+		<p.IconModel Target="openg:library:string:Slice\ String\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -639,7 +639,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Variant\ Array\ to\ Spreadsheet\.gvi">
+		<p.IconModel Target="openg:library:string:Variant\ Array\ to\ Spreadsheet\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -655,7 +655,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:String\ to\ 1D\ Array\.gvi">
+		<p.IconModel Target="openg:library:string:String\ to\ 1D\ Array\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -671,7 +671,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:\1D\ Array\ to\ String\.gvi">
+		<p.IconModel Target="openg:library:string:\1D\ Array\ to\ String\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -687,7 +687,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Scan\ Variant\ from\ String\.gvi">
+		<p.IconModel Target="openg:library:string:Scan\ Variant\ from\ String\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -703,7 +703,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Trim\ Whitespace\ \(String\)\.gvi">
+		<p.IconModel Target="openg:library:string:Trim\ Whitespace\ \(String\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -719,7 +719,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:Slice\ String\ 1\.gvi">
+		<p.IconModel Target="openg:library:string:Slice\ String\ 1\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -735,7 +735,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.string:String\ to\ Character\ Array\.gvi">
+		<p.IconModel Target="openg:library:string:String\ to\ Character\ Array\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

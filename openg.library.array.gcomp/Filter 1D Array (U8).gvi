@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F1E2CC8D1DE4A463BD7C4CFD1B69E0AF" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="DAA79C11FEA01FD533A1F8041CFB7BBC" Timestamp="1D320F96DD8C3AE" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Filter 1D Array (U8).vi" Id="1" OverloadGroup="Filter 1D Array" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This polymorphic VI filters out all instances of &lt;B&gt;items to filter&lt;/B&gt; from the input &lt;B&gt;array&lt;/B&gt; and outputs the result as &lt;B&gt;filtered array&lt;/B&gt; along with an array of &lt;B&gt;filtered item indices&lt;/B&gt; containing the indices of the items that were filtered.  You can wire either a 1D array or a scalar value to &lt;B&gt;items to filter&lt;/B&gt;.</p.UserDescription>
@@ -71,7 +71,7 @@
 			<NodeLabel AttachedTo="62" Bounds="815 310 150 20" Id="63" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>filtered item indices</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="400 345 40 40" DomainName="openg.library.array" Id="64" Label="65" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Remove Duplicates from 1D Array (U8).gvi&quot;" Target="openg\.library\.array:Remove\ Duplicates\ from\ 1D\ Array\ \(U8\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="400 345 40 40" DomainName="openg:library:array" Id="64" Label="65" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Remove Duplicates from 1D Array (U8).gvi&quot;" Target="openg:library:array:Remove\ Duplicates\ from\ 1D\ Array\ \(U8\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Input Array" />
@@ -88,7 +88,7 @@
 			</NodeLabel>
 			<ForLoop Bounds="480 280 168 123" DiagramId="67" Id="66">
 				<LoopIteration Bounds="10 95 15 15" Id="68" />
-				<MethodCall Bounds="45 50 40 40" DomainName="openg.library.array" Id="74" Label="75" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Search 1D Array (U8).gvi&quot;" Target="openg\.library\.array:Search\ 1D\ Array\ \(U8\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="45 50 40 40" DomainName="openg:library:array" Id="74" Label="75" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Search 1D Array (U8).gvi&quot;" Target="openg:library:array:Search\ 1D\ Array\ \(U8\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L0" Desc="Array" />
@@ -117,7 +117,7 @@
 				<LoopTunnel AutoIndex="True" Bounds="-5 60 13 10" Docking="Left" Id="72" Terminals="o0=84, i0=83" TunnelMode="0" />
 				<LoopTunnel Bounds="35 -5 10 13" Docking="Top" Id="73" Terminals="o0=87, i0=79" />
 			</ForLoop>
-			<MethodCall Bounds="700 250 40 40" DomainName="openg.library.array" Id="77" Label="78" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Delete Elements from 1D Array (U8).gvi&quot;" Target="openg\.library\.array:Delete\ Elements\ from\ 1D\ Array\ \(U8\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="700 250 40 40" DomainName="openg:library:array" Id="77" Label="78" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Delete Elements from 1D Array (U8).gvi&quot;" Target="openg:library:array:Delete\ Elements\ from\ 1D\ Array\ \(U8\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="array" />
@@ -141,7 +141,7 @@
 			<Wire Id="88" Joints="N(60:Out)|(439,315) N(71:o0)|(475,315)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="89" Joints="N(56:Value)|(390,355) h(5) v(-5) N(64:L0)|(400,350)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Label Id="26" LabelOwner="[UIModel]25" Left="[float]156" Text="[string]array" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]30" Columns="[int]1" Dimensions="[int]1" Height="[float]34" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="25" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]26" Left="[float]156" Rows="[int]1" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]73" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0</p.DefaultElementValue>
@@ -164,7 +164,7 @@
 				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="52" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsTabStop="[bool]True" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<PanelExecutionWindow Id="90" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="UInt8[]" Id="14" Name="array" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
@@ -179,7 +179,7 @@
 		</DataItem>
 	</VirtualInstrument>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.array:Remove\ Duplicates\ from\ 1D\ Array\ \(U8\)\.gvi">
+		<p.IconModel Target="openg:library:array:Remove\ Duplicates\ from\ 1D\ Array\ \(U8\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -195,7 +195,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.array:Search\ 1D\ Array\ \(U8\)\.gvi">
+		<p.IconModel Target="openg:library:array:Search\ 1D\ Array\ \(U8\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -211,7 +211,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.array:Delete\ Elements\ from\ 1D\ Array\ \(U8\)\.gvi">
+		<p.IconModel Target="openg:library:array:Delete\ Elements\ from\ 1D\ Array\ \(U8\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

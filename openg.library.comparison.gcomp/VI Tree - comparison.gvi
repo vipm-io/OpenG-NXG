@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="3B70B027D8281888EEECD344F09F424F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="C4767D7061F760ADA658AD834FF32A48" Timestamp="1D320F98113D353" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="VI Tree - comparison" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="14" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -45,7 +45,7 @@
 			<NodeLabel AttachedTo="22" Bounds="80 359 53 18" Id="23" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Variant</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="155 380 40 40" DomainName="openg.library.comparison" Id="24" Label="25" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.comparison.gcomp\\Variant Changed.gvi&quot;" Target="openg\.library\.comparison:Variant\ Changed\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="155 380 40 40" DomainName="openg:library:comparison" Id="24" Label="25" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.comparison.gcomp\\Variant Changed.gvi&quot;" Target="openg:library:comparison:Variant\ Changed\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Variant" />
@@ -60,10 +60,10 @@
 			</NodeLabel>
 			<Wire Id="26" Joints="N(22:Out)|(145,385) N(24:L0)|(155,385)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Text Height="[float]32" Id="21" Left="[float]100" Text="[string][OpenG VI Tags] ***Do Not Remove***&#xD;&#xA;" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]206" xmlns="http://www.ni.com/PlatformFramework" />
 			<PanelExecutionWindow Id="27" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
 		<p.TypeReference TypeId="4529452f36c34cebab2f83e17d79fd2a">
@@ -71,7 +71,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.comparison:Variant\ Changed\.gvi">
+		<p.IconModel Target="openg:library:comparison:Variant\ Changed\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

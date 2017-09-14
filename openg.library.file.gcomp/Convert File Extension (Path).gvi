@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="1F9ADD2CBCA4E150E436259FDC6A3C6B" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CB4B0407F2701B6523936DCCF65F68C8" Timestamp="1D320F98275F252" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Convert File Extension (Path)" Id="1" OverloadGroup="Convert File Extension" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"Converts the file extension of a file. "new ending" will accept an extension prefixed with or without a period, or a blank ("") string.&lt;br/&gt;For example:&lt;br/&gt;&lt;br/&gt;file name =&gt; c:\\temp\\data.txt&lt;br/&gt;new ending =&gt; "csv" or ".csv"&lt;br/&gt;new filename =&gt; c:\\temp\\data.csv&lt;br/&gt;prev ending =&gt; ".txt"&lt;br/&gt;&lt;br/&gt;file name =&gt; c:\\temp\\data.txt&lt;br/&gt;new ending =&gt; ""&lt;br/&gt;new filename =&gt; c:\\temp\\data&lt;br/&gt;prev ending =&gt; ".txt""</p.UserDescription>
@@ -61,7 +61,7 @@
 				<p.Text>new ending (none)</p.Text>
 			</NodeLabel>
 			<StripPath Bounds="155 30 30 30" Id="44" />
-			<MethodCall Bounds="245 45 40 40" DomainName="openg.library.file" Id="45" Label="46" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Convert File Extension (String).gvi&quot;" Target="openg\.library\.file:Convert\ File\ Extension\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="245 45 40 40" DomainName="openg:library:file" Id="45" Label="46" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Convert File Extension (String).gvi&quot;" Target="openg:library:file:Convert\ File\ Extension\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="file name" />
@@ -87,7 +87,7 @@
 			<Wire Id="53" Joints="N(44:name)|(185,50) N(45:L0)|(245,50)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="54" Joints="N(38:Value)|(115,45) N(44:path)|(155,45)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<PathSelector BaseName="[string]Path" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="25" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" Label="[UIModel]27" Left="[float]256" MinHeight="[float]24" Path="{DataItemBinding Id=14}" TabIndex="[int]0" Top="[float]31" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Id="27" LabelOwner="[UIModel]25" Left="[float]256" Text="[string]new filename" Top="[float]11" xmlns="http://www.ni.com/PanelCommon" />
 			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="28" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]30" Left="[float]100" MinHeight="[float]24" Path="{DataItemBinding Id=15}" TabIndex="[int]1" Top="[float]30" Width="[float]100" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -98,7 +98,7 @@
 			<Label Id="34" LabelOwner="[UIModel]33" Left="[float]100" Text="[string]new ending (none)" Top="[float]68" xmlns="http://www.ni.com/PanelCommon" />
 			<Text Height="[float]376" Id="35" Left="[float]102" Text="[string]Convert File Extension.vi&#xA;&#xA;Converts the file extension of a file&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA;&#xA;Copyright (c) 2002, Rolf Kalbermatter &lt;rolf.kalbermatter@citeng.com&gt; &#xA;Copyright (c) 2002-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]158" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
 			<PanelExecutionWindow Id="55" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Path" Id="14" Name="new filename" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Path a="1" />
@@ -117,7 +117,7 @@
 		</DataItem>
 	</VirtualInstrument>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.file:Convert\ File\ Extension\ \(String\)\.gvi">
+		<p.IconModel Target="openg:library:file:Convert\ File\ Extension\ \(String\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

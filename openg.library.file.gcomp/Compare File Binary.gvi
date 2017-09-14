@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="D0BD5842D9578A30FEFD21F2C0A774BB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="DFF2B5BEC8BBA52AF74F1A16790AEE66" Timestamp="1D320F9821E85BF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Compare File Binary" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Compare File Binary.vi - Compares two files to be of the same size and containing the same binary data.</p.UserDescription>
@@ -113,7 +113,7 @@
 								<SetFilePosition Bounds="325 85 40 40" Id="130" />
 								<ReadFromBinaryFile Bounds="385 85 40 40" Id="131" />
 								<IsNotEqual Bounds="455 95 30 30" ComparisonMode="CompareAggregates" Id="132" />
-								<PropertyNode Bounds="445 135 55 35" HasErrorTerminals="False" Id="133" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+								<PropertyNode Bounds="445 135 55 20" HasErrorTerminals="False" Id="133" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 									<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 										<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
 									</p.TypeDefinitionTargets>
@@ -159,7 +159,7 @@
 								<LoopTunnel Bounds="606 65 13 10" Docking="Right" Id="121" Terminals="o0=212, i0=181" />
 								<LoopTunnel Bounds="-4 20 13 10" Docking="Left" Id="122" Terminals="o0=208, i0=179" />
 							</WhileLoop>
-							<PropertyNode Bounds="995 195 55 35" HasErrorTerminals="False" Id="135" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+							<PropertyNode Bounds="995 195 55 20" HasErrorTerminals="False" Id="135" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 								<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 									<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
 								</p.TypeDefinitionTargets>
@@ -511,7 +511,7 @@
 											<NodeLabel AttachedTo="154" Bounds="75 59 236 18" Id="155" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 												<p.Text>String to Prepend to source ("")</p.Text>
 											</NodeLabel>
-											<MethodCall Bounds="195 60 40 40" DomainName="openg.library.error" Id="156" Label="157" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+											<MethodCall Bounds="195 60 40 40" DomainName="openg:library:error" Id="156" Label="157" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 												<p.MethodDeclaration>
 													<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 														<Parameter Id="L0" Desc="code" />
@@ -923,7 +923,7 @@
 								<p.Text>t</p.Text>
 							</NodeLabel>
 							<Select Bounds="225 130 40 40" Id="166" />
-							<MethodCall Bounds="295 125 40 40" DomainName="openg.library.error" Id="167" Label="168" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg\.library\.error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="295 125 40 40" DomainName="openg:library:error" Id="167" Label="168" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="code" />
@@ -1004,7 +1004,7 @@
 			<Wire Id="263" Joints="N(62:Value)|(-40,240) N(70:path)|(0,240)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="264" Joints="N(60:Value)|(110,240) N(72:path)|(135,240)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="27" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]29" Left="[float]113" MinHeight="[float]24" Path="{DataItemBinding Id=14}" TabIndex="[int]0" Top="[float]83" Width="[float]193" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="29" LabelOwner="[UIModel]27" Left="[float]113" Text="[string]copy file" Top="[float]63" Width="[float]45" xmlns="http://www.ni.com/PanelCommon" />
 			<PathSelector BaseName="[string]Path" BrowseDialogTitle="[string]Open File" BrowseOption="[BrowseOption]ExistingFiles" Height="[float]24" Id="30" InitialDirectory="[string]" InteractionMode="[PathSelectorInteractionModes]BrowseDialog, TextInput, AllowNullPathSelection" IsTabStop="[bool]True" Label="[UIModel]32" Left="[float]112" MinHeight="[float]24" Path="{DataItemBinding Id=15}" TabIndex="[int]1" Top="[float]30" Width="[float]190" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -1039,7 +1039,7 @@
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="57" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]59" Left="[float]115" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]5" Top="[float]138" Value="{DataItemBinding Id=19}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="59" LabelOwner="[UIModel]57" Left="[float]115" Text="[string]block size (100000)" Top="[float]118" Width="[float]101" xmlns="http://www.ni.com/PanelCommon" />
 			<PanelExecutionWindow Id="282" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="2" CallUsage="Required" DataType="Path" Id="14" Name="copy file" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>
 				<Path a="1" />
@@ -1097,7 +1097,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.error:Build\ Error\ Cluster\.gvi">
+		<p.IconModel Target="openg:library:error:Build\ Error\ Cluster\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

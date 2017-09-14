@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C3F5EC9412BCFC70BCCF9FE9F11EF395" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="EDB9D88F17EEF96DBC554B33E2BCBDC1" Timestamp="1D320F98524AD0D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="VI Tree - Large File" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="14" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -33,7 +33,7 @@
 		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
 		<FrontPanelUnplacedItems Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" />
 		<BlockDiagram Id="12">
-			<MethodCall Bounds="105 165 40 40" DomainName="openg.library.large file" Id="21" Label="22" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (STR).gvi&quot;" Target="openg\.library\.large\ file:LF\ Read\ File\ \(STR\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="105 165 40 40" DomainName="openg:library:large file" Id="21" Label="22" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (STR).gvi&quot;" Target="openg:library:large\ file:LF\ Read\ File\ \(STR\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -66,7 +66,7 @@
 			<NodeLabel AttachedTo="21" Bounds="105 144 159 18" Id="22" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Read File (STR)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="230 165 40 40" DomainName="openg.library.large file" Id="23" Label="24" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (STR).gvi&quot;" Target="openg\.library\.large\ file:LF\ Write\ File\ \(STR\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="230 165 40 40" DomainName="openg:library:large file" Id="23" Label="24" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (STR).gvi&quot;" Target="openg:library:large\ file:LF\ Write\ File\ \(STR\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -93,7 +93,7 @@
 			<NodeLabel AttachedTo="23" Bounds="230 144 161 18" Id="24" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Write File (STR)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="360 165 40 40" DomainName="openg.library.large file" Id="25" Label="26" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF End Of File.gvi&quot;" Target="openg\.library\.large\ file:LF\ End\ Of\ File\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="360 165 40 40" DomainName="openg:library:large file" Id="25" Label="26" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF End Of File.gvi&quot;" Target="openg:library:large\ file:LF\ End\ Of\ File\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -116,7 +116,7 @@
 			<NodeLabel AttachedTo="25" Bounds="360 144 171 18" Id="26" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF End Of File</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="475 165 40 40" DomainName="openg.library.large file" Id="27" Label="28" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Seek File.gvi&quot;" Target="openg\.library\.large\ file:LF\ Seek\ File\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="475 165 40 40" DomainName="openg:library:large file" Id="27" Label="28" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Seek File.gvi&quot;" Target="openg:library:large\ file:LF\ Seek\ File\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -139,7 +139,7 @@
 			<NodeLabel AttachedTo="27" Bounds="475 144 158 18" Id="28" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Seek File</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="475 290 40 40" DomainName="openg.library.large file" Id="29" Label="30" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Error Handler.gvi&quot;" Target="openg\.library\.large\ file:LFU\ Error\ Handler\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="475 290 40 40" DomainName="openg:library:large file" Id="29" Label="30" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Error Handler.gvi&quot;" Target="openg:library:large\ file:LFU\ Error\ Handler\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="retval" />
@@ -154,7 +154,7 @@
 			<NodeLabel AttachedTo="29" Bounds="475 269 202 18" Id="30" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LFU Error Handler</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="230 415 40 40" DomainName="openg.library.large file" Id="31" Label="32" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Get File Size.gvi&quot;" Target="openg\.library\.large\ file:LFU\ Get\ File\ Size\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="230 415 40 40" DomainName="openg:library:large file" Id="31" Label="32" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Get File Size.gvi&quot;" Target="openg:library:large\ file:LFU\ Get\ File\ Size\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="handle" />
@@ -173,7 +173,7 @@
 			<NodeLabel AttachedTo="31" Bounds="230 394 194 18" Id="32" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LFU Get File Size</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="105 415 40 40" DomainName="openg.library.large file" Id="33" Label="34" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Retrieve File Handle.gvi&quot;" Target="openg\.library\.large\ file:LFU\ Retrieve\ File\ Handle\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="105 415 40 40" DomainName="openg:library:large file" Id="33" Label="34" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Retrieve File Handle.gvi&quot;" Target="openg:library:large\ file:LFU\ Retrieve\ File\ Handle\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="file refnum" />
@@ -190,7 +190,7 @@
 			<NodeLabel AttachedTo="33" Bounds="105 394 250 18" Id="34" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LFU Retrieve File Handle</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="360 415 40 40" DomainName="openg.library.large file" Id="35" Label="36" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Set End Of File.gvi&quot;" Target="openg\.library\.large\ file:LFU\ Set\ End\ Of\ File\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="360 415 40 40" DomainName="openg:library:large file" Id="35" Label="36" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Set End Of File.gvi&quot;" Target="openg:library:large\ file:LFU\ Set\ End\ Of\ File\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="handle" />
@@ -207,7 +207,7 @@
 			<NodeLabel AttachedTo="35" Bounds="360 394 212 18" Id="36" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LFU Set End Of File</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="475 415 40 40" DomainName="openg.library.large file" Id="37" Label="38" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Set File Pointer.gvi&quot;" Target="openg\.library\.large\ file:LFU\ Set\ File\ Pointer\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="475 415 40 40" DomainName="openg:library:large file" Id="37" Label="38" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LFU Set File Pointer.gvi&quot;" Target="openg:library:large\ file:LFU\ Set\ File\ Pointer\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="handle" />
@@ -230,7 +230,7 @@
 			<NodeLabel AttachedTo="37" Bounds="475 394 214 18" Id="38" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LFU Set File Pointer</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="230 275 40 40" DomainName="openg.library.large file" Id="39" Label="40" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (STR).gvi&quot;" Target="openg\.library\.large\ file:LF\ Write\ File\ \(STR\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="230 275 40 40" DomainName="openg:library:large file" Id="39" Label="40" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (STR).gvi&quot;" Target="openg:library:large\ file:LF\ Write\ File\ \(STR\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -257,7 +257,7 @@
 			<NodeLabel AttachedTo="39" Bounds="230 254 209 18" Id="40" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Write File (STR)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="240 285 40 40" DomainName="openg.library.large file" Id="41" Label="42" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (I16).gvi&quot;" Target="openg\.library\.large\ file:LF\ Write\ File\ \(I16\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="240 285 40 40" DomainName="openg:library:large file" Id="41" Label="42" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (I16).gvi&quot;" Target="openg:library:large\ file:LF\ Write\ File\ \(I16\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -282,7 +282,7 @@
 			<NodeLabel AttachedTo="41" Bounds="240 264 204 18" Id="42" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Write File (I16)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="250 295 40 40" DomainName="openg.library.large file" Id="43" Label="44" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (I32).gvi&quot;" Target="openg\.library\.large\ file:LF\ Write\ File\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="250 295 40 40" DomainName="openg:library:large file" Id="43" Label="44" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (I32).gvi&quot;" Target="openg:library:large\ file:LF\ Write\ File\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -307,7 +307,7 @@
 			<NodeLabel AttachedTo="43" Bounds="250 274 204 18" Id="44" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Write File (I32)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="280 305 40 40" DomainName="openg.library.large file" Id="45" Label="46" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (SGL).gvi&quot;" Target="openg\.library\.large\ file:LF\ Write\ File\ \(SGL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="280 305 40 40" DomainName="openg:library:large file" Id="45" Label="46" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (SGL).gvi&quot;" Target="openg:library:large\ file:LF\ Write\ File\ \(SGL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -332,7 +332,7 @@
 			<NodeLabel AttachedTo="45" Bounds="280 284 209 18" Id="46" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Write File (SGL)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="280 325 40 40" DomainName="openg.library.large file" Id="47" Label="48" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (DBL).gvi&quot;" Target="openg\.library\.large\ file:LF\ Write\ File\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="280 325 40 40" DomainName="openg:library:large file" Id="47" Label="48" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (DBL).gvi&quot;" Target="openg:library:large\ file:LF\ Write\ File\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -357,7 +357,7 @@
 			<NodeLabel AttachedTo="47" Bounds="280 304 209 18" Id="48" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Write File (DBL)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="105 275 40 40" DomainName="openg.library.large file" Id="49" Label="50" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (STR).gvi&quot;" Target="openg\.library\.large\ file:LF\ Read\ File\ \(STR\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="105 275 40 40" DomainName="openg:library:large file" Id="49" Label="50" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (STR).gvi&quot;" Target="openg:library:large\ file:LF\ Read\ File\ \(STR\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -390,7 +390,7 @@
 			<NodeLabel AttachedTo="49" Bounds="105 254 206 18" Id="50" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Read File (STR)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="115 285 40 40" DomainName="openg.library.large file" Id="51" Label="52" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (I16).gvi&quot;" Target="openg\.library\.large\ file:LF\ Read\ File\ \(I16\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="115 285 40 40" DomainName="openg:library:large file" Id="51" Label="52" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (I16).gvi&quot;" Target="openg:library:large\ file:LF\ Read\ File\ \(I16\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -419,7 +419,7 @@
 			<NodeLabel AttachedTo="51" Bounds="115 264 202 18" Id="52" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Read File (I16)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="135 295 40 40" DomainName="openg.library.large file" Id="53" Label="54" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (I32).gvi&quot;" Target="openg\.library\.large\ file:LF\ Read\ File\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="135 295 40 40" DomainName="openg:library:large file" Id="53" Label="54" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (I32).gvi&quot;" Target="openg:library:large\ file:LF\ Read\ File\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -448,7 +448,7 @@
 			<NodeLabel AttachedTo="53" Bounds="135 274 202 18" Id="54" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Read File (I32)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="145 305 40 40" DomainName="openg.library.large file" Id="55" Label="56" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (SGL).gvi&quot;" Target="openg\.library\.large\ file:LF\ Read\ File\ \(SGL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="145 305 40 40" DomainName="openg:library:large file" Id="55" Label="56" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (SGL).gvi&quot;" Target="openg:library:large\ file:LF\ Read\ File\ \(SGL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -477,7 +477,7 @@
 			<NodeLabel AttachedTo="55" Bounds="145 284 207 18" Id="56" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Read File (SGL)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="155 325 40 40" DomainName="openg.library.large file" Id="57" Label="58" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (DBL).gvi&quot;" Target="openg\.library\.large\ file:LF\ Read\ File\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="155 325 40 40" DomainName="openg:library:large file" Id="57" Label="58" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (DBL).gvi&quot;" Target="openg:library:large\ file:LF\ Read\ File\ \(DBL\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -506,7 +506,7 @@
 			<NodeLabel AttachedTo="57" Bounds="155 304 207 18" Id="58" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Read File (DBL)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="165 335 40 40" DomainName="openg.library.large file" Id="59" Label="60" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (U32).gvi&quot;" Target="openg\.library\.large\ file:LF\ Read\ File\ \(U32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="165 335 40 40" DomainName="openg:library:large file" Id="59" Label="60" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Read File (U32).gvi&quot;" Target="openg:library:large\ file:LF\ Read\ File\ \(U32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -535,7 +535,7 @@
 			<NodeLabel AttachedTo="59" Bounds="165 314 207 18" Id="60" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Read File (U32)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="290 335 40 40" DomainName="openg.library.large file" Id="61" Label="62" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (U32).gvi&quot;" Target="openg\.library\.large\ file:LF\ Write\ File\ \(U32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="290 335 40 40" DomainName="openg:library:large file" Id="61" Label="62" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Write File (U32).gvi&quot;" Target="openg:library:large\ file:LF\ Write\ File\ \(U32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="refnum" />
@@ -560,7 +560,7 @@
 			<NodeLabel AttachedTo="61" Bounds="290 314 209 18" Id="62" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LF Write File (U32)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="0 165 40 40" DomainName="openg.library.large file" Id="63" Label="64" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Open File.gvi&quot;" Target="openg\.library\.large\ file:LF\ Open\ File\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="0 165 40 40" DomainName="openg:library:large file" Id="63" Label="64" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.largefile.gcomp\\LF Open File.gvi&quot;" Target="openg:library:large\ file:LF\ Open\ File\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="file path" />
@@ -582,9 +582,9 @@
 				<p.Text>LF Open File</p.Text>
 			</NodeLabel>
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<PanelExecutionWindow Id="65" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
 		<p.TypeReference TypeId="ddeee12e6cb04151b4470a3ebbb6726c">
@@ -630,7 +630,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Read\ File\ \(STR\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Read\ File\ \(STR\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -646,7 +646,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Write\ File\ \(STR\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Write\ File\ \(STR\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -662,7 +662,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ End\ Of\ File\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ End\ Of\ File\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -678,7 +678,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Seek\ File\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Seek\ File\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -694,7 +694,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LFU\ Error\ Handler\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LFU\ Error\ Handler\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -710,7 +710,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LFU\ Get\ File\ Size\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LFU\ Get\ File\ Size\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -726,7 +726,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LFU\ Retrieve\ File\ Handle\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LFU\ Retrieve\ File\ Handle\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -742,7 +742,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LFU\ Set\ End\ Of\ File\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LFU\ Set\ End\ Of\ File\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -758,7 +758,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LFU\ Set\ File\ Pointer\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LFU\ Set\ File\ Pointer\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -774,7 +774,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Write\ File\ \(I16\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Write\ File\ \(I16\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -790,7 +790,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Write\ File\ \(I32\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Write\ File\ \(I32\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -806,7 +806,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Write\ File\ \(SGL\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Write\ File\ \(SGL\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -822,7 +822,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Write\ File\ \(DBL\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Write\ File\ \(DBL\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -838,7 +838,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Read\ File\ \(I16\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Read\ File\ \(I16\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -854,7 +854,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Read\ File\ \(I32\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Read\ File\ \(I32\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -870,7 +870,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Read\ File\ \(SGL\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Read\ File\ \(SGL\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -886,7 +886,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Read\ File\ \(DBL\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Read\ File\ \(DBL\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -902,7 +902,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Read\ File\ \(U32\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Read\ File\ \(U32\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -918,7 +918,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Write\ File\ \(U32\)\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Write\ File\ \(U32\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -934,7 +934,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:LF\ Open\ File\.gvi">
+		<p.IconModel Target="openg:library:large\ file:LF\ Open\ File\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

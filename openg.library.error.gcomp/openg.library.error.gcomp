@@ -1,45 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="C01920EDD81B968E74BF66523E8B8869" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A08C46EFDB8C461B8EA6AB4C56BE8C17" Timestamp="1D320F9652708EA" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.1.0.3" Version="5.1.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition AutoIncrementOnBuild="False" Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Error" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition AutoIncrementOnBuild="False" Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Error" RootNamespaceId="40" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
 			</IconPanel>
 		</Icon>
 		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
-		<ComponentConfiguration AssociatedPalettes="37" Id="10" Name="Default">
+		<ComponentConfiguration Id="10" Name="Default">
 			<CompilerSymbolTable Id="11" xmlns="http://www.ni.com/PlatformFramework" />
-			<ComponentItemProperties AssociatedEnvoyId="14" Exported="True" Id="23" />
-			<ComponentItemProperties AssociatedEnvoyId="15" Exported="True" Id="24" />
-			<ComponentItemProperties AssociatedEnvoyId="16" Exported="True" Id="25" />
-			<ComponentItemProperties AssociatedEnvoyId="17" Exported="True" Id="26" />
-			<ComponentItemProperties AssociatedEnvoyId="18" Exported="True" Id="27" />
-			<ComponentItemProperties AssociatedEnvoyId="19" Exported="True" Id="28" />
-			<ComponentItemProperties AssociatedEnvoyId="20" Exported="True" Id="29" />
-			<ComponentItemProperties AssociatedEnvoyId="35" Exported="True" Id="36" />
-			<ComponentItemProperties AssociatedEnvoyId="22" Exported="True" Id="31" />
+			<ComponentItemProperties AssociatedEnvoyId="41" Exported="True" Id="51" />
+			<ComponentItemProperties AssociatedEnvoyId="42" Exported="True" Id="52" />
+			<ComponentItemProperties AssociatedEnvoyId="43" Exported="True" Id="53" />
+			<ComponentItemProperties AssociatedEnvoyId="44" Exported="True" Id="54" />
+			<ComponentItemProperties AssociatedEnvoyId="45" Exported="True" Id="55" />
+			<ComponentItemProperties AssociatedEnvoyId="46" Exported="True" Id="56" />
+			<ComponentItemProperties AssociatedEnvoyId="47" Exported="True" Id="57" />
+			<ComponentItemProperties AssociatedEnvoyId="48" Exported="True" Id="58" />
+			<ComponentItemProperties AssociatedEnvoyId="49" Exported="True" Id="59" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
 		<ProjectSettings Id="7" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
 		<EmbeddedDefinitionReference Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
-			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="13" Name="openg\.library\.error">
-				<SourceFileReference Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Build\ Error\ Cluster\.gvi" StoragePath="Build Error Cluster.gvi" />
-				<SourceFileReference Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Case\ \(Error\ IO\)\.gvi" StoragePath="Case (Error IO).gvi" />
-				<SourceFileReference Id="16" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Clear\ All\ Errors\.gvi" StoragePath="Clear All Errors.gvi" />
-				<SourceFileReference Id="17" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Error\ Codes\ Ring\ Constant\.gvi" StoragePath="Error Codes Ring Constant.gvi" />
-				<SourceFileReference Id="18" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Error\ Constant\.gvi" StoragePath="Error Constant.gvi" />
-				<SourceFileReference Id="19" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Filter\ Error\ Codes\ \(Array\)\.gvi" StoragePath="Filter Error Codes (Array).gvi" />
-				<SourceFileReference Id="20" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Filter\ Error\ Codes\ \(Scalar\)\.gvi" StoragePath="Filter Error Codes (Scalar).gvi" />
-				<SourceFileReference Id="22" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ error\.gvi" StoragePath="VI Tree - error.gvi" />
-				<SourceFileReference Bindings="EnvoyManager" Id="35" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Filtered\ Error\ Details\ \-\ Cluster\.gtype" StoragePath="Filtered Error Details - Cluster.gtype\Filtered Error Details - Cluster.gtype" />
-				<SourceFileReference Id="37" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.error_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.error_Default.gpal" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="38" Name="openg">
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="39" Name="library">
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="40" Name="error">
+						<SourceFileReference Id="41" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Build\ Error\ Cluster\.gvi" StoragePath="Build Error Cluster.gvi" />
+						<SourceFileReference Id="42" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Case\ \(Error\ IO\)\.gvi" StoragePath="Case (Error IO).gvi" />
+						<SourceFileReference Id="43" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Clear\ All\ Errors\.gvi" StoragePath="Clear All Errors.gvi" />
+						<SourceFileReference Id="44" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Error\ Codes\ Ring\ Constant\.gvi" StoragePath="Error Codes Ring Constant.gvi" />
+						<SourceFileReference Id="45" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Error\ Constant\.gvi" StoragePath="Error Constant.gvi" />
+						<SourceFileReference Id="46" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Filter\ Error\ Codes\ \(Array\)\.gvi" StoragePath="Filter Error Codes (Array).gvi" />
+						<SourceFileReference Id="47" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Filter\ Error\ Codes\ \(Scalar\)\.gvi" StoragePath="Filter Error Codes (Scalar).gvi" />
+						<SourceFileReference Id="48" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ error\.gvi" StoragePath="VI Tree - error.gvi" />
+						<SourceFileReference Bindings="EnvoyManager" Id="49" ModelDefinitionType="NationalInstruments.MocCommon.Modeling.TypeDefinition" Name="Filtered\ Error\ Details\ \-\ Cluster\.gtype" StoragePath="Filtered Error Details - Cluster.gtype\Filtered Error Details - Cluster.gtype" />
+						<SourceFileReference Id="50" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.error_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.error_Default.gpal" />
+					</NameScopingEnvoy>
+				</NameScopingEnvoy>
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="openg\.library\.error\.gcomp" NameTracksFileName="True">

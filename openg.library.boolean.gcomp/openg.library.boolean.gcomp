@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7A567174020C7A8975BEE8EEDDA23DF4" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="F6A425CB260AFE2FDE7695325ADFD69A" Timestamp="1D321029CC0FB0D" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.1.0.3" Version="5.1.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW NXG" Version="2.0.0" />
 	</SourceModelFeatureSet>
-	<ComponentDefinition AutoIncrementOnBuild="False" Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Boolean" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
+	<ComponentDefinition AutoIncrementOnBuild="False" Company="OpenG" DefaultConfigurationName="Default" Id="1" Product="Boolean" RootNamespaceId="24" xmlns="http://www.ni.com/GComponent.xsd">
 		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
 			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
 				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
@@ -14,19 +14,22 @@
 		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
 		<ComponentConfiguration Id="10" Name="Default">
 			<CompilerSymbolTable Id="11" xmlns="http://www.ni.com/PlatformFramework" />
-			<ComponentItemProperties AssociatedEnvoyId="14" Exported="True" Id="16" />
-			<ComponentItemProperties AssociatedEnvoyId="15" Exported="True" Id="17" />
-			<ComponentItemProperties AssociatedEnvoyId="20" Exported="True" Id="21" />
+			<ComponentItemProperties AssociatedEnvoyId="25" Exported="True" Id="28" />
+			<ComponentItemProperties AssociatedEnvoyId="26" Exported="True" Id="29" />
 		</ComponentConfiguration>
 	</ComponentDefinition>
 	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
 		<ProjectSettings Id="7" ModelDefinitionType="ProjectSettings" Name="ZProjectSettings" />
 		<EmbeddedDefinitionReference Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global\ namespace">
 			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
-			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="13" Name="openg\.library\.boolean">
-				<SourceFileReference Id="14" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Boolean\ Trigger\.gvi" StoragePath="Boolean Trigger.gvi" />
-				<SourceFileReference Id="15" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ boolean\.gvi" StoragePath="VI Tree - boolean.gvi" />
-				<SourceFileReference Id="20" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.boolean_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.boolean_Default.gpal" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="22" Name="openg">
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="23" Name="library">
+					<NameScopingEnvoy AutomaticallyResolveUp="True" Id="24" Name="boolean">
+						<SourceFileReference Id="25" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Boolean\ Trigger\.gvi" StoragePath="Boolean Trigger.gvi" />
+						<SourceFileReference Id="26" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="VI\ Tree\ \-\ boolean\.gvi" StoragePath="VI Tree - boolean.gvi" />
+						<SourceFileReference Id="27" ModelDefinitionType="NationalInstruments.SourceModel.PaletteDefinition" Name="openg\.library\.boolean_Default\.gpal" OverridingModelDefinitionType="NationalInstruments.SourceModel.PaletteDocument" StoragePath="openg.library.boolean_Default.gpal" />
+					</NameScopingEnvoy>
+				</NameScopingEnvoy>
 			</NameScopingEnvoy>
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="openg\.library\.boolean\.gcomp" NameTracksFileName="True">

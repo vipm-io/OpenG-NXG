@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="7642FF91A8B5DD0845E2E58CDBB05BDC" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="057E5B51DF7F2151AE0F67DA93EDD510" Timestamp="1D320F9850761CD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="LFU Get File Size" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Low level utility function to retrieve the size of a file as double precision number to work for files larger than 2GB.</p.UserDescription>
@@ -89,7 +89,7 @@
 					<NodeLabel AttachedTo="78" Bounds="45 128 9 18" Id="79" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>y</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="85 135 40 40" DomainName="openg.library.large file:kernel32.sli" Id="80" ResolveFailedHint="GetFileSize" Target="openg\.library\.large\ file:kernel32\.sli:GetFileSize" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="85 135 40 40" DomainName="openg:library:large file:kernel32.sli" Id="80" ResolveFailedHint="GetFileSize" Target="openg:library:large\ file:kernel32\.sli:GetFileSize" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="handle in" />
@@ -119,7 +119,7 @@
 							<Wire Id="110" Joints="N(87:Out)|(145,45) N(86:83)|(166,45)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 170 95" Id="84" Pattern="True">
-							<MethodCall Bounds="45 40 40 40" DomainName="openg.library.large file:kernel32.sli" Id="88" ResolveFailedHint="GetLastError" Target="openg\.library\.large\ file:kernel32\.sli:GetLastError" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="45 40 40 40" DomainName="openg:library:large file:kernel32.sli" Id="88" ResolveFailedHint="GetLastError" Target="openg:library:large\ file:kernel32\.sli:GetLastError" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L3" Desc="error in" />
@@ -481,7 +481,7 @@
 									</RingConstantInfo>
 								</RingBehavior>
 							</Literal>
-							<PropertyNode Bounds="195 155 60 65" HasErrorTerminals="False" Id="104" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+							<PropertyNode Bounds="195 155 60 20" HasErrorTerminals="False" Id="104" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 								<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 									<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
 								</p.TypeDefinitionTargets>
@@ -555,7 +555,7 @@
 			<Wire Id="142" Joints="N(56:Value)|(-85,235) N(71:66)|(-9,235)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="143" Joints="N(70:66)|(1049,105) N(58:Value)|(1073,105)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="26" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]28" Left="[float]106" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" Top="[float]31" Value="{DataItemBinding Id=14}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="28" LabelOwner="[UIModel]26" Left="[float]106" Text="[string]handle" Top="[float]11" Width="[float]36" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="29" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[uint]1" IsTabStop="[bool]True" Label="[UIModel]31" Left="[float]500" Maximum="[uint]4294967295" MinHeight="[float]24" Minimum="[uint]0" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]1" Top="[float]30" Value="{DataItemBinding Id=15}" ValueFormatter="[string]LV:G0" ValueType="[Type]UInt32" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
@@ -584,11 +584,11 @@
 				<p4:Label Height="[float]16" Id="159" LabelOwner="[UIModel]158" Left="[float]3" Text="[string]source" Top="[float]50" Width="[float]35" />
 			</Cluster>
 			<Label Height="[float]16" Id="160" LabelOwner="[UIModel]153" Left="[float]500" Text="[string]error out" Top="[float]153" Width="[float]47" xmlns="http://www.ni.com/PanelCommon" />
-			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="52" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Label="[UIModel]54" Left="[float]500" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]4" Top="[float]110" Value="{DataItemBinding Id=18}" ValueFormatter="[string]LV:0" Width="[float]76" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="52" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Label="[UIModel]54" Left="[float]500" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]4" Top="[float]110" Value="{DataItemBinding Id=18}" ValueFormatter="[string]LV:0" Width="[float]76" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="54" LabelOwner="[UIModel]52" Left="[float]500" Text="[string]file size" Top="[float]90" Width="[float]39" xmlns="http://www.ni.com/PanelCommon" />
 			<Text Height="[float]495" Id="55" Left="[float]102" Text="[string]LFU Get File Size.vi&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA;&#xA;Copyright (c) 2003, Rolf Kalbermatter &lt;rolf.kalbermatter@citeng.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]395" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
 			<PanelExecutionWindow Id="161" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="1" DataType="UInt32" Id="14" Name="handle" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 		</DataItem>
@@ -626,7 +626,7 @@
 		</DataItem>
 	</VirtualInstrument>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.large\ file:kernel32\.sli:GetFileSize">
+		<p.IconModel Target="openg:library:large\ file:kernel32\.sli:GetFileSize">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -645,7 +645,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.large\ file:kernel32\.sli:GetLastError">
+		<p.IconModel Target="openg:library:large\ file:kernel32\.sli:GetLastError">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

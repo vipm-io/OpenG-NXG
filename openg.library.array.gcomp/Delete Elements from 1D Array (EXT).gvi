@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="401685E0864509E3AEE9638A5D2BB820" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1588AB0F2B2534F3B4710FA603482C58" Timestamp="1D320F967CFF76B" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Delete Elements from 1D Array (EXT).vi" Id="1" OverloadGroup="Delete Elements from Array" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This polymorphic VI deletes elements from a 1D or 2D &lt;B&gt;array&lt;/B&gt; at the corresponding &lt;B&gt;indices&lt;/B&gt;, returning &lt;B&gt;array w/ subset deleted&lt;/B&gt; and &lt;B&gt;deleted elements&lt;/B&gt;.  For 2D arrays, wire the &lt;B&gt;delete (rows or columns)&lt;/B&gt; input to specify whether to delete rows or columns.</p.UserDescription>
@@ -74,7 +74,7 @@
 			<NodeLabel AttachedTo="64" Bounds="720 549 42 18" Id="65" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Order</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="535 540 40 40" DomainName="openg.library.array" Id="66" Label="67" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Sort 1D Array (I32).gvi&quot;" Target="openg\.library\.array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="535 540 40 40" DomainName="openg:library:array" Id="66" Label="67" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Sort 1D Array (I32).gvi&quot;" Target="openg:library:array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Array in" />
@@ -91,7 +91,7 @@
 			<NodeLabel AttachedTo="66" Bounds="535 519 146 18" Id="67" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Sort 1D Array (I32)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="845 550 40 40" DomainName="openg.library.array" Id="68" Label="69" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Sort 1D Array (I32).gvi&quot;" Target="openg\.library\.array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="845 550 40 40" DomainName="openg:library:array" Id="68" Label="69" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Sort 1D Array (I32).gvi&quot;" Target="openg:library:array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Array in" />
@@ -127,7 +127,7 @@
 			<NodeLabel AttachedTo="70" Bounds="625 383 149 14" Id="74" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>For Each element to delete</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="935 490 40 40" DomainName="openg.library.array" Id="81" Label="82" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Reorder 1D Array2 (EXT).gvi&quot;" Target="openg\.library\.array:Reorder\ 1D\ Array2\ \(EXT\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="935 490 40 40" DomainName="openg:library:array" Id="81" Label="82" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Reorder 1D Array2 (EXT).gvi&quot;" Target="openg:library:array:Reorder\ 1D\ Array2\ \(EXT\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="array" />
@@ -162,7 +162,7 @@
 			<Wire Id="98" Joints="N(75:70)|(768,450) N(58:Value)|(1018,450)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="99" Joints="N(56:Value)|(490,450) N(76:o0)|(620,450)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Label Height="[float]16" Id="26" LabelOwner="[UIModel]25" Left="[float]162" Text="[string]indices" Top="[float]139" Width="[float]37" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]30" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="25" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]26" Left="[float]162" Rows="[int]1" TabIndex="[int]0" Top="[float]159" Value="{DataItemBinding Id=14}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]132" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0</p.DefaultElementValue>
@@ -171,21 +171,21 @@
 			<Label Height="[float]16" Id="33" LabelOwner="[UIModel]32" Left="[float]163" Text="[string]array" Top="[float]10" Width="[float]27" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]37" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="32" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]33" Left="[float]163" Rows="[int]1" TabIndex="[int]1" Top="[float]30" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]132" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="37" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="37" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]65" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Label Height="[float]16" Id="40" LabelOwner="[UIModel]39" Left="[float]418" Text="[string]array w/ subset deleted" Top="[float]10" Width="[float]124" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]44" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="39" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]40" Left="[float]418" Rows="[int]1" TabIndex="[int]2" Top="[float]30" Value="{DataItemBinding Id=16}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]121" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="44" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="44" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Text Height="[float]527" Id="46" Left="[float]100" Text="[string]Delete Elements from Array.vi&#xA;&#xA;This polymorphic VI deletes elements from a 1D or 2D array at the corresponding indices&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2007, JKI &lt;info@jameskring.com&gt; (Author: Jim Kring &lt;jim.kring@jameskring.com&gt;)&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]253" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
 			<Label Height="[float]16" Id="48" LabelOwner="[UIModel]47" Left="[float]421" Text="[string]deleted elements" Top="[float]137" Width="[float]92" xmlns="http://www.ni.com/PanelCommon" />
 			<ArrayViewer ArrayElement="[UIModel]52" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="47" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]48" Left="[float]421" Rows="[int]1" TabIndex="[int]3" Top="[float]157" Value="{DataItemBinding Id=17}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]121" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0x0</p.DefaultElementValue>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="52" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixBase="[RadixBase]Decimal" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="52" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" IsTabStop="[bool]True" Maximum="[double]Infinity" MinHeight="[float]24" Minimum="[double]-Infinity" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:0.00" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<PanelExecutionWindow Id="100" />
-		</CPFrontPanel>
+		</NativeFrontPanel>
 		<DataItem CallDirection="Input" CallIndex="2" CallUsage="Required" DataType="Int32[]" Id="14" Name="indices" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 		</DataItem>
@@ -211,7 +211,7 @@
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.IconModel Target="openg\.library\.array:Sort\ 1D\ Array\ \(I32\)\.gvi">
+		<p.IconModel Target="openg:library:array:Sort\ 1D\ Array\ \(I32\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">
@@ -227,7 +227,7 @@
 				</MergeItem>
 			</MergeScript>
 		</p.IconModel>
-		<p.IconModel Target="openg\.library\.array:Reorder\ 1D\ Array2\ \(EXT\)\.gvi">
+		<p.IconModel Target="openg:library:array:Reorder\ 1D\ Array2\ \(EXT\)\.gvi">
 			<MergeScript>
 				<MergeItem Path="." IsPrimary="True">
 					<Icon ListViewIconCrop="0 0 40 40">

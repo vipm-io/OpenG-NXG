@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="F191B1ADE51A00748D416388A9251575" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="8ED8FA1C55215137655624B41787ACF3" Timestamp="1D320F98A25B997" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="4.8.0.0" Version="5.0.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.1.0.4746" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ApplicationVersionInfo Build="5.1.0.4746" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
+		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Get TDEnum From TD" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Gets a type enumerated constant from a type descriptor array.</p.UserDescription>
@@ -44,13 +44,13 @@
 				<p.Text>index</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="235 75 40 15" DataItem="14" Id="34" Label="35" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@22880521cbed454da65407f8a694d8e6" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="34" Bounds="235 52 220 20" Id="35" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Type Descriptor Enumeration</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="35 50 40 15" DataItem="15" Id="36" Label="37" xmlns="http://www.ni.com/MocCommon">
-				<Terminal DataType="@7c5e7b68e4514786a3afd32894f15395" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@9a8fb7e82524477984dd9a1aa5cff565" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
 			<NodeLabel AttachedTo="36" Bounds="35 27 120 20" Id="37" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Type Descriptor</p.Text>
@@ -62,11 +62,11 @@
 			<Wire Id="42" Joints="N(32:Out)|(100,75) N(38:c0t0v)|(110,75)" xmlns="http://www.ni.com/PlatformFramework" />
 			<Wire Id="43" Joints="N(39:low(x\))|(210,80) N(34:Value)|(238,80)" xmlns="http://www.ni.com/PlatformFramework" />
 		</BlockDiagram>
-		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
 			<Label Id="51" LabelOwner="[UIModel]50" Left="[float]364" Text="[string]Type Descriptor Enumeration" Top="[float]17" xmlns="http://www.ni.com/PanelCommon" />
-			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="50" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]51" Left="[float]364" MinHeight="[float]24" TabIndex="[int]0" Top="[float]37" Value="{DataItemBinding Id=14}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]95" p4:ControlDefinitionChecksum="3DF/zAbUWNb5oOtt6Bh2ZA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]24" Id="50" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]51" Left="[float]364" MinHeight="[float]24" TabIndex="[int]0" Top="[float]37" Value="{DataItemBinding Id=14}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]95" p4:ControlDefinitionChecksum="3EDc6ecoqjuI7i/a7hsa0g==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
 				<p4:p.TypeDefinitionTargets>
-					<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Enumeration\.gtype:ControlDefinition" />
+					<p4:TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Enumeration\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
 				<EnumSelectorInfo DisplayValue="[string]&lt;Null&gt;" Value="[byte]0" ValueType="[Type]UInt8" />
 				<EnumSelectorInfo DisplayValue="[string]I8" Value="[byte]1" ValueType="[Type]UInt8" />
@@ -183,42 +183,42 @@
 				<EnumSelectorInfo DisplayValue="[string]Refnum" Value="[byte]112" ValueType="[Type]UInt8" />
 			</EnumSelector>
 			<Label Id="55" LabelOwner="[UIModel]53" Left="[float]108" Text="[string]Type Descriptor" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
-			<ArrayViewer ArrayElement="[UIModel]58" Columns="[int]1" Dimensions="[int]1" Height="[float]27" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="53" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]55" Left="[float]108" Rows="[int]1" TabIndex="[int]1" Top="[float]30" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]63" p4:ControlDefinitionChecksum="gi9HDgKeqDNfK2PZj9IBAg==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<ArrayViewer ArrayElement="[UIModel]63" Columns="[int]1" Dimensions="[int]1" Height="[float]27" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="53" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]55" Left="[float]108" Rows="[int]1" TabIndex="[int]1" Top="[float]30" Value="{DataItemBinding Id=15}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]63" p4:ControlDefinitionChecksum="TpNcnmc9/KpCf91IsHuBFw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0</p.DefaultElementValue>
 				<p4:p.TypeDefinitionTargets>
-					<p4:TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype:ControlDefinition" />
+					<p4:TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\.gtype:ControlDefinition" />
 				</p4:p.TypeDefinitionTargets>
-				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="58" Interval="[short]1" IsTabStop="[bool]True" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="63" Interval="[short]1" IsTabStop="[bool]True" Maximum="[short]32767" MinHeight="[float]24" Minimum="[short]-32768" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]0" ValueFormatter="[string]LV:G0" ValueType="[Type]Int16" Width="[float]57" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<Text Height="[float]392" Id="30" Left="[float]100" Text="[string]Get TDEnum from TD.vi&#xA;&#xA;Gets a type enumerated constant from a type descriptor array.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jean-Pierre Drolet &lt;drolet_jp@hotmail.com&gt;&#xA;Copyright (c) 2002-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]139" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
 			<Text Height="[float]17" Id="31" Left="[float]511" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]64" Width="[float]206" xmlns="http://www.ni.com/PlatformFramework" />
 			<PanelExecutionWindow Id="56" />
-		</CPFrontPanel>
-		<DataItem CallDirection="Output" CallIndex="1" DataType="@22880521cbed454da65407f8a694d8e6" Id="14" Name="Type Descriptor Enumeration" xmlns="http://www.ni.com/MocCommon">
+		</NativeFrontPanel>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" Id="14" Name="Type Descriptor Enumeration" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>0</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-				<TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
+				<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
-		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="@7c5e7b68e4514786a3afd32894f15395" Id="15" Name="Type Descriptor" xmlns="http://www.ni.com/MocCommon">
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="@9a8fb7e82524477984dd9a1aa5cff565" Id="15" Name="Type Descriptor" xmlns="http://www.ni.com/MocCommon">
 			<p.DefaultValue>null</p.DefaultValue>
 			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
-				<TypeDefinitionTarget TargetName="openg\.library\.variant\ data:Type\ Descriptor\.gtype" />
+				<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\.gtype" />
 			</p.TypeDefinitionTargets>
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="22880521cbed454da65407f8a694d8e6">
+		<p.TypeReference TypeId="8b5dfbea269845f7b5a67e0f8b1a48e5">
 			<Attributed AttributedType="@97d3d9cbc44d45348aae93714120fc20">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="7c5e7b68e4514786a3afd32894f15395">
+		<p.TypeReference TypeId="9a8fb7e82524477984dd9a1aa5cff565">
 			<Attributed AttributedType="@1f1e5fefc5f84e50975c5104cdcd3cf6">
 				<AttributeValues>
-					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg\.library\.variant\ data" />
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
