@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="87B6B434C0993C121CDB71EC48525710" Timestamp="1D320F982F29931" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="84F06685761942D08164BCF360E5FF57" Timestamp="1D336FEDAFBF7FF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="File Info" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This function either returns extended file information or changes that information for a file. For setting a particular value to something else you should first retrieve the entire information, change the value in question and write it back to disk. Be careful with this as setting wrong values for this could make the files inaccessible or even destroy it.&lt;br/&gt;&lt;br/&gt;Some of the information can be also read and modified by LabVIEW icons, others not. Following information is available in the cluster:&lt;br/&gt;&lt;br/&gt;type: this is the Macintosh file type. This is actually also valid for the standard LabVIEW files on non-Macintosh platforms as LabVIEW stores its files in a similar fashion as what is used for Macintosh files. This value is the same as the "type" parameter from the Type &amp; Creator function.&lt;br/&gt;&lt;br/&gt;type: this is the Macintosh file creator. This is actually also valid for the standard LabVIEW files on non-Macintosh platforms as LabVIEW stores its files in a similar fashion as what is used for Macintosh files. In this case the creator is always "LBVW". This value is the same as the "creator" parameter from the Type &amp; Creator function.&lt;br/&gt;&lt;br/&gt;permissions: This is the file access permission and is the same as is read or set with the Access Rights function.&lt;br/&gt;&lt;br/&gt;data size: This is the same value as returned by the "File/Directory Info" function as well as it can be accessed by the EOF function.&lt;br/&gt;&lt;br/&gt;res size: This is the size of the Macintosh resource fork. On non Macintosh systems this value is always 0.&lt;br/&gt;&lt;br/&gt;creation date: The creation date of the file as far as the OS file system supports that. Changing this value is under normal circumstances probably not a good idea. For instance making this date to be later than the modification date could cause certain issues on some systems.&lt;br/&gt;&lt;br/&gt;modification date: This value is the same as returned by the "File/Directory Info" LabVIEW node.&lt;br/&gt;&lt;br/&gt;bFolder: If non-zero indicates that the path points to a directory. This value is the same as returned by the "File/Directory Info" function.&lt;br/&gt;&lt;br/&gt;bInvisible: If non-zero indicates if the file has the OS dependant hidden flag set.&lt;br/&gt;&lt;br/&gt;location: System specific desktop geographical location (on Mac only)</p.UserDescription>
@@ -78,7 +78,7 @@
 			<NodeLabel AttachedTo="132" Bounds="200 33 59 14" Id="133" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>update (F)</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="125 5 55 20" HasErrorTerminals="False" Id="134" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+			<PropertyNode Bounds="125 5 55 35" HasErrorTerminals="False" Id="134" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 					<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
 				</p.TypeDefinitionTargets>
@@ -225,7 +225,7 @@
 									<NodeLabel AttachedTo="203" Bounds="185 46 45 18" Id="204" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 										<p.Text>status</p.Text>
 									</NodeLabel>
-									<PropertyNode Bounds="255 15 55 20" HasErrorTerminals="False" Id="205" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+									<PropertyNode Bounds="255 15 55 50" HasErrorTerminals="False" Id="205" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 										<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 											<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
 										</p.TypeDefinitionTargets>
@@ -271,7 +271,7 @@
 									<Increment Bounds="265 255 30 30" Id="215" />
 									<ArraySubset Bounds="360 280 40 40" Id="216" Terminals="array=311, subarray=310, index0=313, length0=314" />
 									<ByteArrayToString Bounds="445 280 40 20" Id="217" />
-									<Literal Bounds="470 268 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="218" p10:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p10="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+									<Literal Bounds="470 268 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="218" p10:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p10="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 										<p.Data>2</p.Data>
 										<p10:p.TypeDefinitionTargets>
 											<p10:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -285,7 +285,7 @@
 									<ArrayIndex Bounds="260 210 40 30" Id="221" Terminals="array=311, c0t0v=318, c0out=319" />
 									<ArraySubset Bounds="360 235 40 40" Id="222" Terminals="array=311, subarray=316, index0=317, length0=319" />
 									<ByteArrayToString Bounds="445 235 40 20" Id="223" />
-									<Literal Bounds="470 223 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="224" p10:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p10="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+									<Literal Bounds="470 223 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="224" p10:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p10="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 										<p.Data>2</p.Data>
 										<p10:p.TypeDefinitionTargets>
 											<p10:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -297,7 +297,7 @@
 									<Wire Facade="WireInvisibleFacade" Id="225" Joints="N(224:Out)|(482,228) v(7) N(223:encoding)|(465,235)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 									<ArraySubset Bounds="260 35 40 40" Id="226" Terminals="array=311, subarray=341, index0, length0=343" />
 									<ByteArrayToString Bounds="615 50 40 20" Id="227" />
-									<Literal Bounds="640 38 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="228" p10:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p10="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+									<Literal Bounds="640 38 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="228" p10:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p10="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 										<p.Data>2</p.Data>
 										<p10:p.TypeDefinitionTargets>
 											<p10:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -311,7 +311,7 @@
 									<TypeCast Bounds="265 155 30 15" Id="231" />
 									<ArraySubset Bounds="260 80 40 40" Id="232" Terminals="array=311, subarray=340, index0=343, length0=343" />
 									<ByteArrayToString Bounds="505 80 40 20" Id="233" />
-									<Literal Bounds="530 68 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="234" p10:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p10="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+									<Literal Bounds="530 68 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="234" p10:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p10="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 										<p.Data>2</p.Data>
 										<p10:p.TypeDefinitionTargets>
 											<p10:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -336,7 +336,7 @@
 										<CaseStructure.Tunnel Bounds="-4 50 13 10" Docking="Left" Id="240" Terminals="236=338, 237=305, 238=308" />
 										<CaseStructure.Tunnel Bounds="256 50 13 10" Docking="Right" Id="241" Terminals="236=335, 237=305, 238=306" />
 									</CaseStructure>
-									<PropertyNode Bounds="675 95 120 20" HasErrorTerminals="False" Id="244" InstanceDataType="@cdd7a9c77bbd4ec78678549238451e3a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+									<PropertyNode Bounds="675 95 120 140" HasErrorTerminals="False" Id="244" InstanceDataType="@cdd7a9c77bbd4ec78678549238451e3a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 										<PropertyItemTerminal DataType="Int32" Hotspot="120 15" Id="c0t0v" Path="permissions" PathElementMemberKinds="Field" Usage="Optional" />
 										<PropertyItemTerminal DataType="Int32" Hotspot="120 30" Id="c1t0v" Path="data size" PathElementMemberKinds="Field" Usage="Optional" />
 										<PropertyItemTerminal DataType="Int32" Hotspot="120 45" Id="c2t0v" Path="res size" PathElementMemberKinds="Field" Usage="Optional" />
@@ -348,7 +348,7 @@
 									</PropertyNode>
 									<IsNotEqualTo0 Bounds="825 205 30 30" Id="245" />
 									<IsNotEqualTo0 Bounds="825 170 30 30" Id="246" />
-									<PropertyNode Bounds="905 65 120 20" HasErrorTerminals="False" Id="247" InstanceDataType="@ee4238b878e5460e9c8c36fb662c3c1a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+									<PropertyNode Bounds="905 65 120 200" HasErrorTerminals="False" Id="247" InstanceDataType="@ee4238b878e5460e9c8c36fb662c3c1a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 										<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 											<TypeDefinitionTarget TargetName="openg:library:file:File\ Info\ Record\.gtype" />
 										</p.TypeDefinitionTargets>
@@ -442,7 +442,7 @@
 							<NodeLabel AttachedTo="251" Bounds="715 299 100 18" Id="252" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 								<p.Text>Element Data</p.Text>
 							</NodeLabel>
-							<PropertyNode Bounds="35 140 120 20" HasErrorTerminals="False" Id="253" InstanceDataType="@ee4238b878e5460e9c8c36fb662c3c1a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+							<PropertyNode Bounds="35 140 120 200" HasErrorTerminals="False" Id="253" InstanceDataType="@ee4238b878e5460e9c8c36fb662c3c1a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 								<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 									<TypeDefinitionTarget TargetName="openg:library:file:File\ Info\ Record\.gtype" />
 								</p.TypeDefinitionTargets>
@@ -462,7 +462,7 @@
 							<StringLength Bounds="630 350 40 20" Id="254" />
 							<ToUnsignedByteInteger Bounds="780 305 30 10" Id="255" />
 							<StringToByteArray Bounds="440 355 40 20" Id="256" />
-							<Literal Bounds="464 343 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="257" p8:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+							<Literal Bounds="464 343 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="257" p8:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>2</p.Data>
 								<p8:p.TypeDefinitionTargets>
 									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -473,7 +473,7 @@
 							</Literal>
 							<Wire Facade="WireInvisibleFacade" Id="258" Joints="N(257:Out)|(476,348) v(7) N(256:encoding)|(460,355)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 							<StringToByteArray Bounds="530 265 40 20" Id="259" />
-							<Literal Bounds="554 253 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="260" p8:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+							<Literal Bounds="554 253 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="260" p8:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>2</p.Data>
 								<p8:p.TypeDefinitionTargets>
 									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -488,7 +488,7 @@
 							<BooleanToInteger Bounds="190 270 30 10" Id="264" />
 							<BooleanToInteger Bounds="190 255 30 10" Id="265" />
 							<StringToByteArray Bounds="185 100 40 20" Id="266" />
-							<Literal Bounds="210 88 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="267" p8:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+							<Literal Bounds="210 88 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="267" p8:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>2</p.Data>
 								<p8:p.TypeDefinitionTargets>
 									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -500,7 +500,7 @@
 							<Wire Facade="WireInvisibleFacade" Id="268" Joints="N(267:Out)|(222,93) v(7) N(266:encoding)|(205,100)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
 							<ReshapeArray Bounds="715 100 40 30" Id="269" Terminals="inArray=381, outArray=378, c0t0v=380" />
 							<StringToByteArray Bounds="440 70 40 20" Id="270" />
-							<Literal Bounds="464 58 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="271" p8:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+							<Literal Bounds="464 58 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="271" p8:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p8="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 								<p.Data>2</p.Data>
 								<p8:p.TypeDefinitionTargets>
 									<p8:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -515,7 +515,7 @@
 							<InitializeArray Bounds="775 270 40 30" Id="275" Terminals="element=369, outArray=373, c0t0v=377" />
 							<Subtract Bounds="720 335 30 30" Id="276" />
 							<InitializeArray Bounds="775 320 40 30" Id="277" Terminals="element=369, outArray=370, c0t0v=367" />
-							<PropertyNode Bounds="265 170 120 20" HasErrorTerminals="False" Id="278" InstanceDataType="@cdd7a9c77bbd4ec78678549238451e3a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+							<PropertyNode Bounds="265 170 120 140" HasErrorTerminals="False" Id="278" InstanceDataType="@cdd7a9c77bbd4ec78678549238451e3a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 								<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 15" Id="c0t0v" Path="permissions" PathElementMemberKinds="Field" Usage="Required" />
 								<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 30" Id="c1t0v" Path="data size" PathElementMemberKinds="Field" Usage="Required" />
 								<PropertyItemTerminal Action="Write" DataType="Int32" Hotspot="0 45" Id="c2t0v" Path="res size" PathElementMemberKinds="Field" Usage="Required" />
@@ -574,7 +574,7 @@
 									<NodeLabel AttachedTo="296" Bounds="165 19 45 18" Id="297" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 										<p.Text>status</p.Text>
 									</NodeLabel>
-									<PropertyNode Bounds="215 30 55 20" HasErrorTerminals="False" Id="298" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+									<PropertyNode Bounds="215 30 55 50" HasErrorTerminals="False" Id="298" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 										<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 											<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
 										</p.TypeDefinitionTargets>
@@ -899,8 +899,8 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="3df8c8c6a1594d8190f9ebfea7d2eba8">
-			<Attributed AttributedType="@76dc02f7ae14426bb38cf82c0e868476">
+		<p.TypeReference TypeId="87a23e4270b643b0a12f02c8df2be471">
+			<Attributed AttributedType="@89bd327db60443078cd4f3428e0ff5f2">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:G\ Core:Strings" />
 				</AttributeValues>
@@ -909,8 +909,8 @@
 		<p.TypeReference TypeId="33a75dbe5eac43969f323f02d2908484">
 			<Typedef TypedefName="File Info Record.gtype" UnderlyingType="@1c27a90ff6a24818acb5854609903714" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="76dc02f7ae14426bb38cf82c0e868476">
-			<Typedef TypedefName="String Encoding.gtype" UnderlyingType="@f8aef513f859491a83ce530d579feb7f" />
+		<p.TypeReference TypeId="89bd327db60443078cd4f3428e0ff5f2">
+			<Typedef TypedefName="String Encoding.gtype" UnderlyingType="@0d5d9325e81e4a229145b55f92d6bd73" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="1c27a90ff6a24818acb5854609903714">
 			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
@@ -930,7 +930,7 @@
 				</Members>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="f8aef513f859491a83ce530d579feb7f">
+		<p.TypeReference TypeId="0d5d9325e81e4a229145b55f92d6bd73">
 			<Enumeration>
 				<Members>
 					<EnumerationMember Value="0" Name="UTF-8" />

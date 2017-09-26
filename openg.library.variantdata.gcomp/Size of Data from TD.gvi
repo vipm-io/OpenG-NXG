@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2FA5330D6344120F23ED0F5B765DD2BB" Timestamp="1D320F98AEBEFC7" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="9E82D93C76462B1D8E07D4F1A967BCFF" Timestamp="1D336FEEAC9880F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Size of Data from TD" Id="1" Reentrancy="Stateless" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns the size of data of the TD. &lt;br/&gt;The VI will return the following bytes of the listed datatypes:&lt;br/&gt;&lt;b&gt;1 byte&lt;/b&gt; - I8, U8, Enum U8, Boolean&lt;br/&gt;&lt;b&gt;2 bytes&lt;/b&gt; - 16, U16, Enum U16 &lt;br/&gt;&lt;b&gt;4 bytes&lt;/b&gt; - I32, U32, SGL, Enum U32, Refnum&lt;br/&gt;&lt;b&gt;8 bytes&lt;/b&gt; - I64, U64, DBL, CSG, Enum U64 &lt;br/&gt;&lt;b&gt;16 bytes&lt;/b&gt; - EXT, CDB&lt;br/&gt;&lt;b&gt;32 bytes&lt;/b&gt; - CXT&lt;br/&gt;&lt;b&gt;-1&lt;/b&gt; -  String, Path, Array &lt;br/&gt;&lt;b&gt;Sum of Bytes&lt;/b&gt; - Cluster, VI calls itself recursively</p.UserDescription>
@@ -73,7 +73,7 @@
 			<NodeLabel AttachedTo="61" Bounds="160 154 219 18" Id="62" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Get Header from TD</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="265 175 50 20" HasErrorTerminals="False" Id="63" InstanceDataType="@dd3f97722e604f4486ab07758d96ff29" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+			<PropertyNode Bounds="265 175 50 35" HasErrorTerminals="False" Id="63" InstanceDataType="@dd3f97722e604f4486ab07758d96ff29" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 					<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Header\.gtype" />
 					<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
@@ -593,7 +593,7 @@
 							</NodeLabel>
 							<ForLoop Bounds="88 18 190 170" DiagramId="124" Id="123">
 								<LoopIteration Bounds="0 140 15 15" Id="125" />
-								<PropertyNode Bounds="45 50 50 20" HasErrorTerminals="False" Id="131" InstanceDataType="@23d222240fcb4db59296b86f69ad503a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+								<PropertyNode Bounds="45 50 50 35" HasErrorTerminals="False" Id="131" InstanceDataType="@23d222240fcb4db59296b86f69ad503a" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 									<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 										<TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\.gtype" />
 									</p.TypeDefinitionTargets>

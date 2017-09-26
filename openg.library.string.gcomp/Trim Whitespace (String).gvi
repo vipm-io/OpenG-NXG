@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B8307D7827F97B40EAF81E2F2556F16A" Timestamp="1D320F9889D92F7" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="798A62FA9DD0F18BE9F8214B35AE510A" Timestamp="1D336FEE3E2B75F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Trim Whitespace" Id="1" OverloadGroup="Trim Whitespace" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"Removes leading and/or trailing whitespace from a string.&lt;br/&gt;Whitespace is defined as any of the following characters (where values are in the format: dec, hex, string):&lt;br/&gt;  &lt;b&gt;tab&lt;/b&gt; = 9, 0x09, \\t&lt;br/&gt;  &lt;b&gt;newline&lt;/b&gt; = 10,  0x0A, \\n&lt;br/&gt;  &lt;b&gt;vertical tab&lt;/b&gt; = 11, 0x0B, \\0B&lt;br/&gt;  &lt;b&gt;form feed&lt;/b&gt; = 12, 0x0C, \\f&lt;br/&gt;  &lt;b&gt;carriage return&lt;/b&gt; = 13, 0x0D, \\r &lt;br/&gt;  &lt;b&gt;space&lt;/b&gt; = 32, 0x20, \\s&lt;br/&gt;&lt;br/&gt;This VI 's execution is set to &lt;b&gt;subroutine&lt;/b&gt;&lt;br/&gt;This VI is &lt;b&gt;reentrant&lt;/b&gt;"</p.UserDescription>
@@ -71,7 +71,7 @@
 				</Literal>
 			</ArrayLiteral>
 			<StringToByteArray Bounds="550 715 40 20" Id="41" />
-			<Literal Bounds="574 703 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="42" p4:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="574 703 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="42" p4:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>2</p.Data>
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -211,17 +211,17 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="3df8c8c6a1594d8190f9ebfea7d2eba8">
-			<Attributed AttributedType="@76dc02f7ae14426bb38cf82c0e868476">
+		<p.TypeReference TypeId="87a23e4270b643b0a12f02c8df2be471">
+			<Attributed AttributedType="@89bd327db60443078cd4f3428e0ff5f2">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:G\ Core:Strings" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="76dc02f7ae14426bb38cf82c0e868476">
-			<Typedef TypedefName="String Encoding.gtype" UnderlyingType="@f8aef513f859491a83ce530d579feb7f" />
+		<p.TypeReference TypeId="89bd327db60443078cd4f3428e0ff5f2">
+			<Typedef TypedefName="String Encoding.gtype" UnderlyingType="@0d5d9325e81e4a229145b55f92d6bd73" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="f8aef513f859491a83ce530d579feb7f">
+		<p.TypeReference TypeId="0d5d9325e81e4a229145b55f92d6bd73">
 			<Enumeration>
 				<Members>
 					<EnumerationMember Value="0" Name="UTF-8" />

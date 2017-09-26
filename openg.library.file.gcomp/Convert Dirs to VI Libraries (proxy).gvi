@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="6498C5B1E4C9F2AB0F3AA573DD394DFF" Timestamp="1D320F9826E9F82" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="95A1D364585543B3A8ED14E7E41E9784" Timestamp="1D336FEDA06C28F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Convert Dirs to VI Libraries (proxy).vi" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"Converts an array of Directories into VI Library (.llb) files. &lt;br/&gt;&lt;br/&gt;Note: This VI dynamically calls the LabVIEW subVI "Convert Dirs to VI Libraries.vi" located at &lt;LabVIEW&gt;\\project\\llbedit.llb (as it is not in the VI search paths)."</p.UserDescription>
@@ -256,13 +256,13 @@
 			</Attributed>
 		</p.TypeReference>
 		<p.TypeReference TypeId="6925a794719a490ebe0035824c4dc6ff">
-			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.StrictVIRefnum" ReferenceClass="" GenericTypeDefinition="@f7405a3d430f4b26a9192cb7bbe7afd1">
+			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.StrictVIRefnum" ReferenceClass="" GenericTypeDefinition="@9bdbccfbb13241869231ca2e7d2956b4">
 				<ClosedGenericParameters>
 					<TypeRef>@41b77434f1bf40a9b75e708684963691</TypeRef>
 				</ClosedGenericParameters>
 			</Composite>
 		</p.TypeReference>
-		<p.TypeReference TypeId="f7405a3d430f4b26a9192cb7bbe7afd1">
+		<p.TypeReference TypeId="9bdbccfbb13241869231ca2e7d2956b4">
 			<Attributed AttributedType="@c653f34e95dc46acbbde4f4ef0b463e4">
 				<AttributeValues>
 					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
@@ -277,37 +277,12 @@
 			</Function>
 		</p.TypeReference>
 		<p.TypeReference TypeId="c653f34e95dc46acbbde4f4ef0b463e4">
-			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.StrictVIRefnum" ReferenceClass="" GenericTypeDefinition="@f7405a3d430f4b26a9192cb7bbe7afd1">
+			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.StrictVIRefnum" ReferenceClass="" GenericTypeDefinition="@9bdbccfbb13241869231ca2e7d2956b4">
 				<GenericParameters>
 					<Generic GenericName="ConnectorPaneType" />
 				</GenericParameters>
-				<BaseType>@540e6938c3c54d88afc4e389093eade2</BaseType>
+				<BaseType>:VIRefnum:NationalInstruments.SourceModel.DataTypes.VIRefnum</BaseType>
 			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="540e6938c3c54d88afc4e389093eade2">
-			<Attributed AttributedType="@9b7fd5daf5fb4f1ea287c90f78ec6c8f">
-				<AttributeValues>
-					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
-				</AttributeValues>
-			</Attributed>
-		</p.TypeReference>
-		<p.TypeReference TypeId="9b7fd5daf5fb4f1ea287c90f78ec6c8f">
-			<Composite Id="1" Name="NationalInstruments.SourceModel.DataTypes.VIRefnum" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void">
-				<Members>
-					<Field FieldAccessPolicy="Read" Name="Exec.State" DataType="@2c3d5e0130054d1cbfb3093816652822" />
-				</Members>
-			</Composite>
-		</p.TypeReference>
-		<p.TypeReference TypeId="2c3d5e0130054d1cbfb3093816652822">
-			<Enumeration>
-				<Members>
-					<EnumerationMember Value="0" Name="Bad" />
-					<EnumerationMember Value="1" Name="Idle" />
-					<EnumerationMember Value="2" Name="Running Top Level" />
-					<EnumerationMember Value="3" Name="Running" />
-				</Members>
-				<DataType>UInt16</DataType>
-			</Enumeration>
 		</p.TypeReference>
 	</DataTypeReferenceTable>
 	<IconTable xmlns="http://www.ni.com/PlatformFramework">

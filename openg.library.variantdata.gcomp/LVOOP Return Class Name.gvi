@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="19610A7F6F93F085FEFAF93F0BB599FF" Timestamp="1D320F98A7B53A7" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="FF61E409BDD88D8E1B6FAF18DD6C4E53" Timestamp="1D336FEE91CC26F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Return Class Name" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns the &lt;b&gt;Class Base Name&lt;/b&gt;, &lt;b&gt;Qualified Name&lt;/b&gt; and &lt;b&gt;Qualified Name Array&lt;/b&gt; of &lt;b&gt;Object&lt;/b&gt;.&lt;br/&gt;&lt;br/&gt;For example if &lt;b&gt;Object&lt;/b&gt; is of type &lt;b&gt;Library.lvlib:Class 1.lvclass&lt;/b&gt; then:&lt;br/&gt;&lt;b&gt;Class Base Name&lt;/b&gt; = Class 1&lt;br/&gt;&lt;b&gt;Qualified Name&lt;/b&gt; = Library.lvlib:Class 1.lvclass&lt;br/&gt;&lt;b&gt;Qualified Name Array&lt;/b&gt; = [Library.lvlib, Class 1.lvclass]&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Notes:&lt;/b&gt;&lt;br/&gt;This VI benefits from being generic (e.g. good for probes/scripting) however, is most likely inefficient to the cost of flattening the entire object data to a string (as is any VI that does this). Although this VI is optimised to only use the default object data.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;The following alternative method is recommended for high performance applications:&lt;/b&gt;&lt;br/&gt;Add a dynamic dispatch method to the root Class (e.g. called "Get Class Name.vi") and override that VI at every level of the hierarchy to return a string constant of the desired name. This avoids the memory allocation and performance hit of the flattening to the string. An example of a use case is creating a by-name-lookup object hierarchy.</p.UserDescription>

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="914E6FAC8106EC057BD73C1383336D7D" Timestamp="1D320F983120743" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="59EBF76F4F31E79C7B296F2DB37A4BEC" Timestamp="1D336FEDB33A9CF" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="List Directory Recursive" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns an array of strings listing the names of all files in directory path and its subfolders, filtering the file names array based upon the specified pattern.  If "Treat llb files as directories" is TRUE, llb files will not show up in the "file paths" output, but thier contents will.  If "List only Top-level files in llbs?" is TRUE, only top-level llb contents will show up in the "file paths" output.</p.UserDescription>
@@ -160,7 +160,7 @@
 								<BuildArray Bounds="1175 280 40 20" ConcatenateInputs="True" Id="316" Terminals="outArray=439, c0t0v=443, c1t0v=356" VerticalChunkCount="2" />
 								<ArraySize Bounds="1250 280 40 20" Id="317" />
 								<IsEqualTo0 Bounds="1335 255 30 30" Id="318" />
-								<MethodCall Bounds="1245 160 50 50" DomainName="NI:G Core:Error:Legacy" Id="319" Label="320" ResolveFailedHint="General Error Handler.gvi, Package: (NI G Standard Library, Version: 1.0.5.14)" Target="NI:G\ Core:Error:Legacy:General\ Error\ Handler\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+								<MethodCall Bounds="1245 160 50 50" DomainName="NI:G Core:Error:Legacy" Id="319" Label="320" ResolveFailedHint="General Error Handler.gvi, Package: (NI G Standard Library, Version: 1.0.5.17)" Target="NI:G\ Core:Error:Legacy:General\ Error\ Handler\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 									<p.MethodDeclaration>
 										<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 											<Parameter Id="L0" Desc="error code" />
@@ -199,7 +199,7 @@
 								<NodeLabel AttachedTo="319" Bounds="1245 139 180 18" Id="320" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 									<p.Text>General Error Handler</p.Text>
 								</NodeLabel>
-								<PropertyNode Bounds="1325 290 55 20" HasErrorTerminals="False" Id="321" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+								<PropertyNode Bounds="1325 290 55 35" HasErrorTerminals="False" Id="321" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 									<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 										<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
 									</p.TypeDefinitionTargets>
@@ -429,7 +429,7 @@
 								<NodeLabel AttachedTo="171" Bounds="330 123 108 14" Id="175" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 									<p.Text>Has LLB extension?</p.Text>
 								</NodeLabel>
-								<MethodCall Bounds="105 300 40 40" DomainName="NI:G Core:File IO (General)" Id="516" ResolveFailedHint="Get File Extension.gvi, Package: (NI G Standard Library, Version: 1.0.5.14)" Target="NI:G\ Core:File\ IO\ \(General\):Get\ File\ Extension\.gvi" xmlns="http://www.ni.com/MocCommon">
+								<MethodCall Bounds="105 300 40 40" DomainName="NI:G Core:File IO (General)" Id="516" ResolveFailedHint="Get File Extension.gvi, Package: (NI G Standard Library, Version: 1.0.5.17)" Target="NI:G\ Core:File\ IO\ \(General\):Get\ File\ Extension\.gvi" xmlns="http://www.ni.com/MocCommon">
 									<p.MethodDeclaration>
 										<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 											<Parameter Id="L0" Desc="file" />

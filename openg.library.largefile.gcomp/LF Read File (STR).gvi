@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="8F6775E246977B5E661B4D6291A990F7" Timestamp="1D320F984AC99F0" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="C2639893A1AB03BDACE09E0F15607474" Timestamp="1D336FEDDCFFF8F" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.4" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.1.0.49153" Version="5.1.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.1" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.5767" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.7" Version="5.2.0.7" />
-		<ApplicationVersionInfo Build="5.2.0.5767" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="LF Read File (STR)" Id="1" OverloadGroup="LF Read File" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Reads a string using a double precision number as offset to work for files larger than 2GB.</p.UserDescription>
@@ -110,7 +110,7 @@
 			</NodeLabel>
 			<ToDoublePrecisionFloat Bounds="325 455 30 10" Id="108" />
 			<StringToByteArray Bounds="625 300 40 20" Id="109" />
-			<Literal Bounds="650 288 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="110" p4:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="650 288 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="110" p4:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>2</p.Data>
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -279,7 +279,7 @@
 			</CaseStructure>
 			<ReshapeArray Bounds="1145 300 40 30" Id="145" Terminals="inArray=204, outArray=201, c0t0v=203" />
 			<ByteArrayToString Bounds="1210 270 40 20" Id="146" />
-			<Literal Bounds="1234 258 12 9" DataType="@3df8c8c6a1594d8190f9ebfea7d2eba8" Id="147" p4:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+			<Literal Bounds="1234 258 12 9" DataType="@87a23e4270b643b0a12f02c8df2be471" Id="147" p4:ControlDefinitionChecksum="WLzIMTGh5syiSHALuaAxGA==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 				<p.Data>2</p.Data>
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="NI:G\ Core:Strings:String\ Encoding\.gtype" />
@@ -312,7 +312,7 @@
 			<NodeLabel AttachedTo="149" Bounds="1065 309 214 18" Id="150" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>LFU Set File Pointer</p.Text>
 			</NodeLabel>
-			<PropertyNode Bounds="1135 375 55 20" HasErrorTerminals="False" Id="151" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
+			<PropertyNode Bounds="1135 375 55 35" HasErrorTerminals="False" Id="151" InstanceDataType="Error" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
 				<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
 					<TypeDefinitionTarget TargetName="NI:G\ Core:Error:Error\.gtype" />
 				</p.TypeDefinitionTargets>
@@ -873,8 +873,8 @@
 				<DataType>UInt16</DataType>
 			</Enumeration>
 		</p.TypeReference>
-		<p.TypeReference TypeId="3df8c8c6a1594d8190f9ebfea7d2eba8">
-			<Attributed AttributedType="@76dc02f7ae14426bb38cf82c0e868476">
+		<p.TypeReference TypeId="87a23e4270b643b0a12f02c8df2be471">
+			<Attributed AttributedType="@89bd327db60443078cd4f3428e0ff5f2">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:G\ Core:Strings" />
 				</AttributeValues>
@@ -883,10 +883,10 @@
 		<p.TypeReference TypeId="0a27a86d90f64bada6ad049986f1baed">
 			<Composite Id="1" Name="NationalInstruments.LabVIEW.CoreRuntime.ByteStreamFileRefnum" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="76dc02f7ae14426bb38cf82c0e868476">
-			<Typedef TypedefName="String Encoding.gtype" UnderlyingType="@f8aef513f859491a83ce530d579feb7f" />
+		<p.TypeReference TypeId="89bd327db60443078cd4f3428e0ff5f2">
+			<Typedef TypedefName="String Encoding.gtype" UnderlyingType="@0d5d9325e81e4a229145b55f92d6bd73" />
 		</p.TypeReference>
-		<p.TypeReference TypeId="f8aef513f859491a83ce530d579feb7f">
+		<p.TypeReference TypeId="0d5d9325e81e4a229145b55f92d6bd73">
 			<Enumeration>
 				<Members>
 					<EnumerationMember Value="0" Name="UTF-8" />
