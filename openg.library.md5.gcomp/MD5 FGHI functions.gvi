@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="554AD2A88F90021B06B0ADE0215A9763" Timestamp="1D336FEE0D48CFF" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="91373C880A36F959682682E265716C7A" Timestamp="1D388BDA6D8AE71" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="MD5 FGHI functions" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="20" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -112,7 +112,7 @@
 			<ArrayIndex Bounds="60 330 40 30" Id="80" Terminals="array=122, c0t0v=129, c0out=125" />
 			<CaseStructure Bounds="250 285 80 130" DataType="@77a6c3c3932c40889fabbc17e4616eda" Default="82" Id="81" Selected="83" UserSelectorBounds="0 0 80 17">
 				<CaseStructure.Case Bounds="5 5 70 120" Id="82" Pattern="&quot;F&quot;, Default">
-					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="91" Label="92" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 F function.gvi&quot;" Target="openg:library:md5:MD5\ F\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="91" Label="92" Target="openg:library:md5:MD5\ F\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="X" />
@@ -135,7 +135,7 @@
 					<Wire Id="106" Joints="N(91:R0)|(60,45) h(3) v(5) N(87:82)|(66,50)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 70 120" Id="83" Pattern="&quot;G&quot;">
-					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="93" Label="94" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 G function.gvi&quot;" Target="openg:library:md5:MD5\ G\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="93" Label="94" Target="openg:library:md5:MD5\ G\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="X" />
@@ -158,7 +158,7 @@
 					<Wire Id="110" Joints="N(90:83)|(4,65) N(93:L2)|(20,65)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 70 120" Id="84" Pattern="&quot;H&quot;">
-					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="95" Label="96" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 H function.gvi&quot;" Target="openg:library:md5:MD5\ H\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="95" Label="96" Target="openg:library:md5:MD5\ H\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="X" />
@@ -181,7 +181,7 @@
 					<Wire Id="114" Joints="N(90:84)|(4,65) N(95:L2)|(20,65)" xmlns="http://www.ni.com/PlatformFramework" />
 				</CaseStructure.Case>
 				<CaseStructure.Case Bounds="5 5 70 120" Id="85" Pattern="&quot;I&quot;">
-					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="97" Label="98" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 I function.gvi&quot;" Target="openg:library:md5:MD5\ I\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="97" Label="98" Target="openg:library:md5:MD5\ I\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="X" />

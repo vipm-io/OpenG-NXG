@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="115F6E8AD234F8676971FC022F920078" Timestamp="1D336FEE2F3EA8F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="3F46007A7B0EA8ACC02614822E968FAF" Timestamp="1D388BDE9F9F013" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Scan Variant from String" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"Overcomes a limitation of "Scan From String" by allowing variant data types to be used/returned. This VI supports variant data for all LabVIEW data types supported by "Scan From String".  &lt;br/&gt;&lt;br/&gt;&lt;b&gt;Notes:&lt;/b&gt;&lt;br/&gt;&lt;b&gt;Format string&lt;/b&gt; input may optionally be passed as a variant attribute named "Format String".&lt;br/&gt;&lt;b&gt;ISO 8601&lt;/b&gt; is used as the default formating for Timestamp unless otherwise specified. &lt;b&gt;Timestamp&lt;/b&gt; data must use the &lt;b&gt;Format String:&lt;/b&gt; %T (or variations of %T), otherwise it will return an error. "</p.UserDescription>
@@ -99,7 +99,7 @@
 					<NodeLabel AttachedTo="99" Bounds="35 43 42 18" Id="100" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>name</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="25 80 40 40" DomainName="openg:library:variant data" Id="101" Label="102" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get TDEnum from Data.gvi&quot;" Target="openg:library:variant\ data:Get\ TDEnum\ from\ Data\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 80 40 40" DomainName="openg:library:variant data" Id="101" Label="102" Target="openg:library:variant\ data:Get\ TDEnum\ from\ Data\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="Data" />
@@ -113,7 +113,7 @@
 						<p.Text>Get TDEnum from Data</p.Text>
 					</NodeLabel>
 					<GetVariantAttribute Bounds="155 15 40 40" Id="103" />
-					<MethodCall Bounds="90 355 40 40" DomainName="openg:library:variant data" Id="104" Label="105" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Data Name.gvi&quot;" Target="openg:library:variant\ data:Get\ Data\ Name\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="90 355 40 40" DomainName="openg:library:variant data" Id="104" Label="105" Target="openg:library:variant\ data:Get\ Data\ Name\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Data" />
@@ -488,7 +488,7 @@
 								<VariantBehavior />
 							</Literal>
 							<FormatIntoString Bounds="165 65 40 40" Id="134" Terminals="formatString=270, outString=271, c0t0v=268" />
-							<MethodCall Bounds="390 45 40 40" DomainName="openg:library:error" Id="135" Label="136" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="390 45 40 40" DomainName="openg:library:error" Id="135" Label="136" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="code" />
@@ -648,7 +648,7 @@
 								<CaseStructure.Tunnel Bounds="-4 80 13 10" Docking="Left" Id="154" Terminals="143=318, 144=297, 145=306" />
 								<CaseStructure.Tunnel Bounds="1186 80 13 10" Docking="Right" Id="155" Terminals="143=320, 144=296, 145=308" />
 							</CaseStructure>
-							<MethodCall Bounds="60 60 40 40" DomainName="openg:library:variant data" Id="176" Label="177" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Refnum Type Enum from Data.gvi&quot;" Target="openg:library:variant\ data:Get\ Refnum\ Type\ Enum\ from\ Data\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="60 60 40 40" DomainName="openg:library:variant data" Id="176" Label="177" Target="openg:library:variant\ data:Get\ Refnum\ Type\ Enum\ from\ Data\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L1" Desc="Data" />
@@ -1166,7 +1166,7 @@
 									<NodeLabel AttachedTo="222" Bounds="495 59 236 18" Id="223" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 										<p.Text>String to Prepend to source ("")</p.Text>
 									</NodeLabel>
-									<MethodCall Bounds="600 60 40 40" DomainName="openg:library:error" Id="224" Label="225" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+									<MethodCall Bounds="600 60 40 40" DomainName="openg:library:error" Id="224" Label="225" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 										<p.MethodDeclaration>
 											<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 												<Parameter Id="L0" Desc="code" />
@@ -1197,7 +1197,7 @@
 										<p.Text>Format String</p.Text>
 									</NodeLabel>
 									<ScanFromString Bounds="215 45 40 50" Id="228" Terminals="formatString=411, inputString=419, startLoc=420, errIn=421, outString=418, offsetPastScan=417, errOut=413, c0t1v=415" />
-									<MethodCall Bounds="320 45 40 40" DomainName="openg:library:variant data" Id="229" Label="230" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Set Enum String Value.gvi&quot;" Target="openg:library:variant\ data:Set\ Enum\ String\ Value\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+									<MethodCall Bounds="320 45 40 40" DomainName="openg:library:variant data" Id="229" Label="230" Target="openg:library:variant\ data:Set\ Enum\ String\ Value\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 										<p.MethodDeclaration>
 											<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 												<Parameter Id="L1" Desc="Default Enum Value" />
@@ -1252,7 +1252,7 @@
 							<Wire Id="430" Joints="N(122:116)|(4,135) h(11) v(-30) N(213:209)|(41,105)" xmlns="http://www.ni.com/PlatformFramework" />
 						</CaseStructure.Case>
 						<CaseStructure.Case Bounds="5 5 1505 350" Id="117" Pattern="&quot;Waveform&quot;">
-							<MethodCall Bounds="60 90 40 40" DomainName="openg:library:variant data" Id="232" Label="233" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Get Waveform Type Enum from Data.gvi&quot;" Target="openg:library:variant\ data:Get\ Waveform\ Type\ Enum\ from\ Data\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="60 90 40 40" DomainName="openg:library:variant data" Id="232" Label="233" Target="openg:library:variant\ data:Get\ Waveform\ Type\ Enum\ from\ Data\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L1" Desc="Data" />
@@ -1621,7 +1621,7 @@
 										<StringBehavior TextDisplayMode="Default" />
 									</Literal>
 									<FormatIntoString Bounds="195 65 40 40" Id="251" Terminals="formatString=437, outString=436, c0t0v=431" />
-									<MethodCall Bounds="315 45 40 40" DomainName="openg:library:error" Id="252" Label="253" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+									<MethodCall Bounds="315 45 40 40" DomainName="openg:library:error" Id="252" Label="253" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 										<p.MethodDeclaration>
 											<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 												<Parameter Id="L0" Desc="code" />
@@ -1654,7 +1654,7 @@
 										<p.Text>Time Stamp</p.Text>
 									</NodeLabel>
 									<ScanFromString Bounds="375 35 40 50" Id="256" Terminals="formatString=441, inputString=440, startLoc=439, outString=443, offsetPastScan=442, errOut=446, c0t0v=448, c0t1v=444" />
-									<MethodCall Bounds="95 15 40 40" DomainName="openg:library:string" Id="257" Label="258" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Resolve Timestamp Format.gvi&quot;" Target="openg:library:string:Resolve\ Timestamp\ Format\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+									<MethodCall Bounds="95 15 40 40" DomainName="openg:library:string" Id="257" Label="258" Target="openg:library:string:Resolve\ Timestamp\ Format\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 										<p.MethodDeclaration>
 											<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 												<Parameter Id="L0" Desc="Timestamp Format In" />
@@ -1709,7 +1709,7 @@
 						<CaseStructure.Tunnel Bounds="1506 35 13 10" Docking="Right" Id="126" Terminals="106=469, 107=266, 108=275, 109=321, 110=329, 111=342, 112=355, 113=368, 114=381, 115=394, 116=426, 117=453" />
 						<CaseStructure.Tunnel Bounds="1506 75 13 10" Docking="Right" Id="127" Terminals="106=468, 107=272, 108=273, 109=320, 110=327, 111=340, 112=353, 113=366, 114=379, 115=392, 116=424, 117=452" />
 					</CaseStructure>
-					<MethodCall Bounds="1765 80 40 40" DomainName="openg:library:variant data" Id="260" Label="261" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Set Data Name.gvi&quot;" Target="openg:library:variant\ data:Set\ Data\ Name\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="1765 80 40 40" DomainName="openg:library:variant data" Id="260" Label="261" Target="openg:library:variant\ data:Set\ Data\ Name\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="Data" />

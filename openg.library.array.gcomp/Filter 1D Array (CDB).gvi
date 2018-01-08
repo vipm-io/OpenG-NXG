@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="13AEC7C2E3D0F0D33B7CD82084CF9EF1" Timestamp="1D336FEBEB3372F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="CA54487DB0423A6ACAA22375328C3CE6" Timestamp="1D388BD7FF8CFBE" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Filter 1D Array (CDB).vi" Id="1" OverloadGroup="Filter 1D Array" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This polymorphic VI filters out all instances of &lt;B&gt;items to filter&lt;/B&gt; from the input &lt;B&gt;array&lt;/B&gt; and outputs the result as &lt;B&gt;filtered array&lt;/B&gt; along with an array of &lt;B&gt;filtered item indices&lt;/B&gt; containing the indices of the items that were filtered.  You can wire either a 1D array or a scalar value to &lt;B&gt;items to filter&lt;/B&gt;.</p.UserDescription>
@@ -71,7 +71,7 @@
 			<NodeLabel AttachedTo="62" Bounds="815 310 150 20" Id="63" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>filtered item indices</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="400 345 40 40" DomainName="openg:library:array" Id="64" Label="65" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Remove Duplicates from 1D Array (CDB).gvi&quot;" Target="openg:library:array:Remove\ Duplicates\ from\ 1D\ Array\ \(CDB\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="400 345 40 40" DomainName="openg:library:array" Id="64" Label="65" Target="openg:library:array:Remove\ Duplicates\ from\ 1D\ Array\ \(CDB\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Input Array" />
@@ -88,7 +88,7 @@
 			</NodeLabel>
 			<ForLoop Bounds="480 280 168 123" DiagramId="67" Id="66">
 				<LoopIteration Bounds="10 95 15 15" Id="68" />
-				<MethodCall Bounds="45 50 40 40" DomainName="openg:library:array" Id="74" Label="75" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Search 1D Array (CDB).gvi&quot;" Target="openg:library:array:Search\ 1D\ Array\ \(CDB\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<MethodCall Bounds="45 50 40 40" DomainName="openg:library:array" Id="74" Label="75" Target="openg:library:array:Search\ 1D\ Array\ \(CDB\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 					<p.MethodDeclaration>
 						<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 							<Parameter Id="L0" Desc="Array" />
@@ -117,7 +117,7 @@
 				<LoopTunnel AutoIndex="True" Bounds="-5 60 13 10" Docking="Left" Id="72" Terminals="o0=84, i0=83" TunnelMode="0" />
 				<LoopTunnel Bounds="35 -5 10 13" Docking="Top" Id="73" Terminals="o0=87, i0=79" />
 			</ForLoop>
-			<MethodCall Bounds="700 250 40 40" DomainName="openg:library:array" Id="77" Label="78" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Delete Elements from 1D Array (CDB).gvi&quot;" Target="openg:library:array:Delete\ Elements\ from\ 1D\ Array\ \(CDB\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="700 250 40 40" DomainName="openg:library:array" Id="77" Label="78" Target="openg:library:array:Delete\ Elements\ from\ 1D\ Array\ \(CDB\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="array" />

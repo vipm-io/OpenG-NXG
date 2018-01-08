@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="D9AA8999C27D55565517040F5C235075" Timestamp="1D336FED08F0DCF" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="3CEAA03E7594A0A6999DE579FFA43673" Timestamp="1D388BDDDB66CAD" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument Id="1" OverloadGroup="Slice 1D Array" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns a subset from &lt;B&gt;array&lt;/B&gt;. &lt;B&gt;subset&lt;/B&gt; has the following syntax:&lt;br/&gt;&lt;br/&gt;array[subset] = subarray&lt;br/&gt;&lt;br/&gt;subset is a range and is of the form "i:j" where i and j are integers&lt;br/&gt;if i is ommitted it is assumed to be zero.  If j is ommitted it is assumed to be length(array)&lt;br/&gt;if i or j are negative numbers they are assumed to be refferenced from the end of the string.&lt;br/&gt;examples:&lt;br/&gt;&lt;br/&gt;if array = [7,6,5,4,3,2,1]&lt;br/&gt;&lt;br/&gt;string[2:] = [5,4,3,2,1]&lt;br/&gt;string[:3] = [7,6,5]&lt;br/&gt;string[-1] = [1]&lt;br/&gt;string[4] = [3]&lt;br/&gt;string[-4:-2] = [4,3]</p.UserDescription>
@@ -62,7 +62,7 @@
 				<p.Text>search string/char (-)</p.Text>
 			</NodeLabel>
 			<MatchPattern Bounds="120 535 40 40" Id="48" />
-			<MethodCall Bounds="195 515 40 40" DomainName="openg:library:string" Id="49" Label="50" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Trim Whitespace (String).gvi&quot;" Target="openg:library:string:Trim\ Whitespace\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="195 515 40 40" DomainName="openg:library:string" Id="49" Label="50" Target="openg:library:string:Trim\ Whitespace\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L1" Desc="String in" />
@@ -77,7 +77,7 @@
 			<NodeLabel AttachedTo="49" Bounds="195 494 193 18" Id="50" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Trim Whitespace</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="195 480 40 40" DomainName="openg:library:string" Id="51" Label="52" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.string.gcomp\\Trim Whitespace (String).gvi&quot;" Target="openg:library:string:Trim\ Whitespace\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="195 480 40 40" DomainName="openg:library:string" Id="51" Label="52" Target="openg:library:string:Trim\ Whitespace\ \(String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L1" Desc="String in" />

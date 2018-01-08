@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="2410B443A3EB9B1DA7F0E79BC6C23D29" Timestamp="1D336FEDAAFACBF" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="DD941FEBF6FFE9DCA99D48840031BB37" Timestamp="1D388BDD3C7D0E3" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Delete Recursive" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Deletes the file or directory specified by path.  If path specifies a directory that is not empty and "Recursive" is FALSE or if you do not have write permission for both the file or directory specified by path and its parent directory and "Ignore Read-Only" is FALSE, this function does not remove the directory and returns an error.</p.UserDescription>
@@ -74,7 +74,7 @@
 			</NodeLabel>
 			<CaseStructure Bounds="115 85 2300 715" DataType="Error" Id="70" Selected="71" UserSelectorBounds="1097 0 106 17">
 				<CaseStructure.Case Bounds="5 5 2290 705" Id="71" Pattern="No Error">
-					<MethodCall Bounds="25 185 40 40" DomainName="openg:library:file" Id="78" Label="79" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Valid Path - Traditional.gvi&quot;" Target="openg:library:file:Valid\ Path\ \-\ Traditional\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 185 40 40" DomainName="openg:library:file" Id="78" Label="79" Target="openg:library:file:Valid\ Path\ \-\ Traditional\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="path" />
@@ -426,7 +426,7 @@
 								<p.Text>format string</p.Text>
 							</NodeLabel>
 							<FormatIntoString Bounds="240 335 40 40" Id="92" Terminals="formatString=231, outString=230, c0t0v=232" />
-							<MethodCall Bounds="300 295 40 40" DomainName="openg:library:error" Id="93" Label="94" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+							<MethodCall Bounds="300 295 40 40" DomainName="openg:library:error" Id="93" Label="94" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 								<p.MethodDeclaration>
 									<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 										<Parameter Id="L0" Desc="code" />
@@ -526,7 +526,7 @@
 												<DeleteFromArray Bounds="55 175 40 40" Id="162" Terminals="inArray=307, length (1), outArray=302, deleted=301, index0" />
 												<ListFolder Bounds="125 195 40 40" Id="163" />
 												<ArraySize Bounds="305 15 40 20" Id="164" />
-												<MethodCall Bounds="215 185 40 40" DomainName="openg:library:file" Id="165" Label="166" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Build Path - File Names Array.gvi&quot;" Target="openg:library:file:Build\ Path\ \-\ File\ Names\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+												<MethodCall Bounds="215 185 40 40" DomainName="openg:library:file" Id="165" Label="166" Target="openg:library:file:Build\ Path\ \-\ File\ Names\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 													<p.MethodDeclaration>
 														<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 															<Parameter Id="L0" Desc="base path" />
@@ -644,7 +644,7 @@
 														<Wire Id="293" Joints="N(199:192)|(4,250) N(200:192)|(606,250)" xmlns="http://www.ni.com/PlatformFramework" />
 													</CaseStructure.Case>
 													<CaseStructure.Case Bounds="5 5 610 370" Id="193" Pattern="Default">
-														<MethodCall Bounds="45 265 40 40" DomainName="openg:library:file" Id="218" Label="219" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Build Path - File Names Array.gvi&quot;" Target="openg:library:file:Build\ Path\ \-\ File\ Names\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+														<MethodCall Bounds="45 265 40 40" DomainName="openg:library:file" Id="218" Label="219" Target="openg:library:file:Build\ Path\ \-\ File\ Names\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 															<p.MethodDeclaration>
 																<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 																	<Parameter Id="L0" Desc="base path" />

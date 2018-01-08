@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="B4317CC228F3B7ECF1BE6415AA654B3B" Timestamp="1D336FEE198040F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="0BFC22FC8A869AE1CA7AD6A72F176C5D" Timestamp="1D388BDA8AE5A49" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="VI Tree - md5" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<Icon Id="14" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
@@ -35,7 +35,7 @@
 		<BlockDiagram Id="12">
 			<FlatSequence Bounds="475 170 262 430" Id="22" Label="24">
 				<FlatSequence.Frame Bounds="5 10 252 410" Id="23">
-					<MethodCall Bounds="25 365 40 40" DomainName="openg:library:md5" Id="25" Label="26" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 ti.gvi&quot;" Target="openg:library:md5:MD5\ ti\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 365 40 40" DomainName="openg:library:md5" Id="25" Label="26" Target="openg:library:md5:MD5\ ti\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="i" />
@@ -48,7 +48,7 @@
 					<NodeLabel AttachedTo="25" Bounds="25 342 120 20" Id="26" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>MD5 ti</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="25 195 40 40" DomainName="openg:library:md5" Id="27" Label="28" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 H function.gvi&quot;" Target="openg:library:md5:MD5\ H\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 195 40 40" DomainName="openg:library:md5" Id="27" Label="28" Target="openg:library:md5:MD5\ H\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="X" />
@@ -65,7 +65,7 @@
 					<NodeLabel AttachedTo="27" Bounds="25 172 185 20" Id="28" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>MD5 H function</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="25 260 40 40" DomainName="openg:library:md5" Id="29" Label="30" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 I function.gvi&quot;" Target="openg:library:md5:MD5\ I\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 260 40 40" DomainName="openg:library:md5" Id="29" Label="30" Target="openg:library:md5:MD5\ I\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="X" />
@@ -82,7 +82,7 @@
 					<NodeLabel AttachedTo="29" Bounds="25 237 180 20" Id="30" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>MD5 I function</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="25 325 40 40" DomainName="openg:library:md5" Id="31" Label="32" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 Padding.gvi&quot;" Target="openg:library:md5:MD5\ Padding\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 325 40 40" DomainName="openg:library:md5" Id="31" Label="32" Target="openg:library:md5:MD5\ Padding\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="String" />
@@ -95,7 +95,7 @@
 					<NodeLabel AttachedTo="31" Bounds="25 302 170 20" Id="32" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>MD5 Padding</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="25 85 40 40" DomainName="openg:library:md5" Id="33" Label="34" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 FGHI functions.gvi&quot;" Target="openg:library:md5:MD5\ FGHI\ functions\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 85 40 40" DomainName="openg:library:md5" Id="33" Label="34" Target="openg:library:md5:MD5\ FGHI\ functions\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Chaining Variables" />
@@ -116,7 +116,7 @@
 					<NodeLabel AttachedTo="33" Bounds="25 62 220 20" Id="34" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>MD5 FGHI functions</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="25 150 40 40" DomainName="openg:library:md5" Id="35" Label="36" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 G function.gvi&quot;" Target="openg:library:md5:MD5\ G\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 150 40 40" DomainName="openg:library:md5" Id="35" Label="36" Target="openg:library:md5:MD5\ G\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="X" />
@@ -133,7 +133,7 @@
 					<NodeLabel AttachedTo="35" Bounds="25 127 185 20" Id="36" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>MD5 G function</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="25 40 40 40" DomainName="openg:library:md5" Id="37" Label="38" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 F function.gvi&quot;" Target="openg:library:md5:MD5\ F\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="25 40 40 40" DomainName="openg:library:md5" Id="37" Label="38" Target="openg:library:md5:MD5\ F\ function\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="X" />
@@ -157,7 +157,7 @@
 			</NodeLabel>
 			<FlatSequence Bounds="775 170 392 375" Id="39" Label="41">
 				<FlatSequence.Frame Bounds="5 10 382 355" Id="40">
-					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="42" Label="43" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 Unrecoverable character padding.gvi&quot;" Target="openg:library:md5:MD5\ Unrecoverable\ character\ padding\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="20 40 40 40" DomainName="openg:library:md5" Id="42" Label="43" Target="openg:library:md5:MD5\ Unrecoverable\ character\ padding\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Message" />
@@ -186,7 +186,7 @@
 					<NodeLabel AttachedTo="47" Bounds="15 19 64 18" Id="48" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Message</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="110 40 40 40" DomainName="openg:library:md5" Id="49" Label="50" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 Message Digest (Binary String).gvi&quot;" Target="openg:library:md5:MD5\ Message\ Digest\ \(Binary\ String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="110 40 40 40" DomainName="openg:library:md5" Id="49" Label="50" Target="openg:library:md5:MD5\ Message\ Digest\ \(Binary\ String\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Message" />
@@ -199,7 +199,7 @@
 					<NodeLabel AttachedTo="49" Bounds="110 17 225 20" Id="50" IsReadOnly="True" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>MD5 Message Digest</p.Text>
 					</NodeLabel>
-					<MethodCall Bounds="105 150 40 40" DomainName="openg:library:md5" Id="51" Label="52" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.md5.gcomp\\MD5 Hash.gvi&quot;" Target="openg:library:md5:MD5\ Hash\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="105 150 40 40" DomainName="openg:library:md5" Id="51" Label="52" Target="openg:library:md5:MD5\ Hash\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L1" Desc="Input String" />

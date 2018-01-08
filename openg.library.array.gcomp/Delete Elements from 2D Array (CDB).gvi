@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="3A1A00CCB1507E3DDEE9F0285415B619" Timestamp="1D336FEB9E66CDF" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="1831D689CD27A4D7D716F1BB622B0FF1" Timestamp="1D388BD7F179747" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Delete Elements from 2D Array (CDB).vi" Id="1" OverloadGroup="Delete Elements from Array" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">This polymorphic VI deletes elements from a 1D or 2D &lt;B&gt;array&lt;/B&gt; at the corresponding &lt;B&gt;indices&lt;/B&gt;, returning &lt;B&gt;array w/ subset deleted&lt;/B&gt; and &lt;B&gt;deleted elements&lt;/B&gt;.  For 2D arrays, wire the &lt;B&gt;delete (rows or columns)&lt;/B&gt; input to specify whether to delete rows or columns.</p.UserDescription>
@@ -80,7 +80,7 @@
 			<NodeLabel AttachedTo="70" Bounds="830 614 42 18" Id="71" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Order</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="655 605 40 40" DomainName="openg:library:array" Id="72" Label="73" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Sort 1D Array (I32).gvi&quot;" Target="openg:library:array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="655 605 40 40" DomainName="openg:library:array" Id="72" Label="73" Target="openg:library:array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Array in" />
@@ -97,7 +97,7 @@
 			<NodeLabel AttachedTo="72" Bounds="655 584 146 18" Id="73" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Sort 1D Array (I32)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="965 615 40 40" DomainName="openg:library:array" Id="74" Label="75" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Sort 1D Array (I32).gvi&quot;" Target="openg:library:array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="965 615 40 40" DomainName="openg:library:array" Id="74" Label="75" Target="openg:library:array:Sort\ 1D\ Array\ \(I32\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Array in" />
@@ -193,7 +193,7 @@
 				<CaseStructure.Tunnel Bounds="366 145 13 10" Docking="Right" Id="85" Terminals="78=142, 79=125, 80=134" />
 				<CaseStructure.Tunnel Bounds="366 220 13 10" Docking="Right" Id="86" Terminals="78=140, 79=124, 80=133" />
 			</CaseStructure>
-			<MethodCall Bounds="1220 490 40 40" DomainName="openg:library:array" Id="115" Label="116" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Reorder 2D Array2 (CDB).gvi&quot;" Target="openg:library:array:Reorder\ 2D\ Array2\ \(CDB\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="1220 490 40 40" DomainName="openg:library:array" Id="115" Label="116" Target="openg:library:array:Reorder\ 2D\ Array2\ \(CDB\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="array" />

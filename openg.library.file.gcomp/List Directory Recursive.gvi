@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="59EBF76F4F31E79C7B296F2DB37A4BEC" Timestamp="1D336FEDB33A9CF" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="40710D537DB7A6FE3472FA95848BAB31" Timestamp="1D388BDED8D78D7" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="List Directory Recursive" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns an array of strings listing the names of all files in directory path and its subfolders, filtering the file names array based upon the specified pattern.  If "Treat llb files as directories" is TRUE, llb files will not show up in the "file paths" output, but thier contents will.  If "List only Top-level files in llbs?" is TRUE, only top-level llb contents will show up in the "file paths" output.</p.UserDescription>
@@ -236,7 +236,7 @@
 								<LogicalAnd Bounds="285 300 25 20" Id="170" InvertedTerminals="010" Terminals="o=352, c0t0v=351, c1t0v=524" />
 								<CaseStructure Bounds="330 140 755 195" Default="172" Id="171" Label="175" Selected="172" UserSelectorBounds="334 0 88 17">
 									<CaseStructure.Case Bounds="5 5 745 185" Id="172" Pattern="False">
-										<MethodCall Bounds="85 70 40 40" DomainName="openg:library:file" Id="183" Label="184" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\List Directory.gvi&quot;" Target="openg:library:file:List\ Directory\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+										<MethodCall Bounds="85 70 40 40" DomainName="openg:library:file" Id="183" Label="184" Target="openg:library:file:List\ Directory\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 											<p.MethodDeclaration>
 												<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 													<Parameter Id="L0" Desc="directory path" />
@@ -259,7 +259,7 @@
 										<NodeLabel AttachedTo="183" Bounds="85 49 168 18" Id="184" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 											<p.Text>List Directory</p.Text>
 										</NodeLabel>
-										<MethodCall Bounds="165 10 40 40" DomainName="openg:library:file" Id="185" Label="186" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Build Path - File Names Array.gvi&quot;" Target="openg:library:file:Build\ Path\ \-\ File\ Names\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+										<MethodCall Bounds="165 10 40 40" DomainName="openg:library:file" Id="185" Label="186" Target="openg:library:file:Build\ Path\ \-\ File\ Names\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 											<p.MethodDeclaration>
 												<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 													<Parameter Id="L0" Desc="base path" />
@@ -274,7 +274,7 @@
 										<NodeLabel AttachedTo="185" Bounds="210 10 144 18" Id="186" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 											<p.Text>Build Path - File Names Array</p.Text>
 										</NodeLabel>
-										<MethodCall Bounds="165 70 40 40" DomainName="openg:library:file" Id="187" Label="188" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\List Directory.gvi&quot;" Target="openg:library:file:List\ Directory\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+										<MethodCall Bounds="165 70 40 40" DomainName="openg:library:file" Id="187" Label="188" Target="openg:library:file:List\ Directory\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 											<p.MethodDeclaration>
 												<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 													<Parameter Id="L0" Desc="directory path" />
@@ -297,7 +297,7 @@
 										<NodeLabel AttachedTo="187" Bounds="210 70 168 18" Id="188" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 											<p.Text>List Directory</p.Text>
 										</NodeLabel>
-										<MethodCall Bounds="225 70 40 40" DomainName="openg:library:file" Id="189" Label="190" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.file.gcomp\\Build Path - File Names Array.gvi&quot;" Target="openg:library:file:Build\ Path\ \-\ File\ Names\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+										<MethodCall Bounds="225 70 40 40" DomainName="openg:library:file" Id="189" Label="190" Target="openg:library:file:Build\ Path\ \-\ File\ Names\ Array\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 											<p.MethodDeclaration>
 												<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 													<Parameter Id="L0" Desc="base path" />
@@ -384,7 +384,7 @@
 												<NodeLabel AttachedTo="208" Bounds="110 24 236 18" Id="209" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 													<p.Text>String to Prepend to source ("")</p.Text>
 												</NodeLabel>
-												<MethodCall Bounds="395 25 40 40" DomainName="openg:library:error" Id="210" Label="211" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.error.gcomp\\Build Error Cluster.gvi&quot;" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+												<MethodCall Bounds="395 25 40 40" DomainName="openg:library:error" Id="210" Label="211" Target="openg:library:error:Build\ Error\ Cluster\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 													<p.MethodDeclaration>
 														<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 															<Parameter Id="L0" Desc="code" />
@@ -518,7 +518,7 @@
 				<CaseStructure.Tunnel Bounds="-4 245 13 10" Docking="Left" Id="113" Terminals="102=492, 103=474, 104=482" />
 				<CaseStructure.Tunnel Bounds="1816 150 13 10" Docking="Right" Id="114" Terminals="102=490, 103=473, 104=483" />
 			</CaseStructure>
-			<MethodCall Bounds="2425 95 40 40" DomainName="openg:library:array" Id="326" Label="327" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Remove Duplicates from 1D Array (Path).gvi&quot;" Target="openg:library:array:Remove\ Duplicates\ from\ 1D\ Array\ \(Path\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="2425 95 40 40" DomainName="openg:library:array" Id="326" Label="327" Target="openg:library:array:Remove\ Duplicates\ from\ 1D\ Array\ \(Path\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Input Array" />
@@ -533,7 +533,7 @@
 			<NodeLabel AttachedTo="326" Bounds="2470 95 322 18" Id="327" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Remove Duplicates from 1D Array (Path)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="2425 140 40 40" DomainName="openg:library:array" Id="328" Label="329" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Filter 1D Array (Path).gvi&quot;" Target="openg:library:array:Filter\ 1D\ Array\ \(Path\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="2425 140 40 40" DomainName="openg:library:array" Id="328" Label="329" Target="openg:library:array:Filter\ 1D\ Array\ \(Path\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L1" Desc="array" />
@@ -550,7 +550,7 @@
 			<NodeLabel AttachedTo="328" Bounds="2425 119 178 18" Id="329" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Filter 1D Array (Path).vi</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="2510 150 40 40" DomainName="openg:library:array" Id="330" Label="331" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.array.gcomp\\Remove Duplicates from 1D Array (Path).gvi&quot;" Target="openg:library:array:Remove\ Duplicates\ from\ 1D\ Array\ \(Path\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="2510 150 40 40" DomainName="openg:library:array" Id="330" Label="331" Target="openg:library:array:Remove\ Duplicates\ from\ 1D\ Array\ \(Path\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L0" Desc="Input Array" />

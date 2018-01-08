@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="5BD1EFF486D6F03EACE79674D31DB32A" Timestamp="1D336FEE98AC67F" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="30680194ACFFC62D7F1075C97B724564" Timestamp="1D388BDE9278D68" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.4" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.6404" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.6404" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Replace Array Element" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Replaces the elements in a MultiD array at given indices.</p.UserDescription>
@@ -60,7 +60,7 @@
 			<NodeLabel AttachedTo="75" Bounds="1340 208 77 14" Id="76" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>VMultiD Array</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="165 45 40 40" DomainName="openg:library:variant data" Id="77" Label="78" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Array Size(s).gvi&quot;" Target="openg:library:variant\ data:Array\ Size\(s\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="165 45 40 40" DomainName="openg:library:variant data" Id="77" Label="78" Target="openg:library:variant\ data:Array\ Size\(s\)\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L1" Desc="Array" />
@@ -79,7 +79,7 @@
 			<NodeLabel AttachedTo="77" Bounds="165 88 166 18" Id="78" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Array Size(s)</p.Text>
 			</NodeLabel>
-			<MethodCall Bounds="235 235 40 40" DomainName="openg:library:variant data" Id="79" Label="80" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Reshape Array to 1D VArray.gvi&quot;" Target="openg:library:variant\ data:Reshape\ Array\ to\ 1D\ VArray\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+			<MethodCall Bounds="235 235 40 40" DomainName="openg:library:variant data" Id="79" Label="80" Target="openg:library:variant\ data:Reshape\ Array\ to\ 1D\ VArray\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 				<p.MethodDeclaration>
 					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 						<Parameter Id="L1" Desc="MultiD Array" />
@@ -163,7 +163,7 @@
 						<CaseStructure.Tunnel Bounds="216 35 13 10" Docking="Right" Id="110" Terminals="106=153, 107=130, 108=132" />
 						<CaseStructure.Tunnel Bounds="-4 35 13 10" Docking="Left" Id="111" Terminals="106=154, 107, 108=132" />
 					</CaseStructure>
-					<MethodCall Bounds="465 70 40 40" DomainName="openg:library:variant data" Id="115" Label="116" ResolveFailedHint="&quot;\\\\vmware-host\\Shared Folders\\Documents\\OpenG-NXG\\openg.library.variantdata.gcomp\\Compute 1D Index.gvi&quot;" Target="openg:library:variant\ data:Compute\ 1D\ Index\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+					<MethodCall Bounds="465 70 40 40" DomainName="openg:library:variant data" Id="115" Label="116" Target="openg:library:variant\ data:Compute\ 1D\ Index\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
 						<p.MethodDeclaration>
 							<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
 								<Parameter Id="L0" Desc="Indices" />
