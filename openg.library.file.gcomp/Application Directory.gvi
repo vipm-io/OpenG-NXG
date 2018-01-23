@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="94B2EB33970D008C3B75FDEB002B721C" Timestamp="1D388BD97486912" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="0ED1CC6034C90F67B97A96D40CCCC636" Timestamp="1D390A5CC35DEE6" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Application Directory" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns the LV App directory + Relative path.</p.UserDescription>
@@ -49,7 +49,7 @@
 				<p.Text>Relative path (.)</p.Text>
 			</NodeLabel>
 			<PropertyNode Bounds="195 55 65 45" Id="34" InstanceDataType=":VIRefnum:NationalInstruments.SourceModel.DataTypes.VIRefnum" IsPlaceholderNodeForConversion="True" ListViewAutoSize="False" Mode="InstanceProperties" xmlns="http://www.ni.com/MocCommon">
-				<PropertyItemTerminal DataType="@2c3d5e0130054d1cbfb3093816652822" Hotspot="65 25" Id="c0t0v" Path="Execution State" PathElementMemberKinds="Field" Usage="Optional" />
+				<PropertyItemTerminal DataType="@2eed8ba430ce4b75a091df4fcf8f54f5" Hotspot="65 25" Id="c0t0v" Path="Execution State" PathElementMemberKinds="Field" Usage="Optional" />
 			</PropertyNode>
 			<BuildPath Bounds="330 75 30 30" Id="35" />
 			<Wire Id="36" Joints="N(34:c0t0v)|(260,80) N(35:base path)|(330,80)" xmlns="http://www.ni.com/PlatformFramework" />
@@ -78,14 +78,14 @@
 		</DataItem>
 	</VirtualInstrument>
 	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
-		<p.TypeReference TypeId="2c3d5e0130054d1cbfb3093816652822">
-			<Attributed AttributedType="@9935be25d6c1402b8eb8608ac6b8ccf1">
+		<p.TypeReference TypeId="2eed8ba430ce4b75a091df4fcf8f54f5">
+			<Attributed AttributedType="@bc1ec656be774b62a0e18c7693fb7b37">
 				<AttributeValues>
 					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]NI:G\ Core:Execution\ Control" />
 				</AttributeValues>
 			</Attributed>
 		</p.TypeReference>
-		<p.TypeReference TypeId="9935be25d6c1402b8eb8608ac6b8ccf1">
+		<p.TypeReference TypeId="bc1ec656be774b62a0e18c7693fb7b37">
 			<Typedef TypedefName="Execution State.gtype" UnderlyingType="@506ac211aef747b08dbfeeceef49b2f4" />
 		</p.TypeReference>
 		<p.TypeReference TypeId="506ac211aef747b08dbfeeceef49b2f4">

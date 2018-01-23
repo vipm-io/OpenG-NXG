@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="4CFF52DFF33CC4620E7BE15D2012B264" Timestamp="1D388BDD0DF6077" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="F33613DA1AF4BF0D32D3D98F688736F7" Timestamp="1D390A65BAF35F0" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Size of Data from TD" Id="1" Reentrancy="Stateless" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns the size of data of the TD. &lt;br/&gt;The VI will return the following bytes of the listed datatypes:&lt;br/&gt;&lt;b&gt;1 byte&lt;/b&gt; - I8, U8, Enum U8, Boolean&lt;br/&gt;&lt;b&gt;2 bytes&lt;/b&gt; - 16, U16, Enum U16 &lt;br/&gt;&lt;b&gt;4 bytes&lt;/b&gt; - I32, U32, SGL, Enum U32, Refnum&lt;br/&gt;&lt;b&gt;8 bytes&lt;/b&gt; - I64, U64, DBL, CSG, Enum U64 &lt;br/&gt;&lt;b&gt;16 bytes&lt;/b&gt; - EXT, CDB&lt;br/&gt;&lt;b&gt;32 bytes&lt;/b&gt; - CXT&lt;br/&gt;&lt;b&gt;-1&lt;/b&gt; -  String, Path, Array &lt;br/&gt;&lt;b&gt;Sum of Bytes&lt;/b&gt; - Cluster, VI calls itself recursively</p.UserDescription>
@@ -57,7 +57,7 @@
 			<DataAccessor Bounds="100 160 40 15" DataItem="17" Id="59" Label="60" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@9a8fb7e82524477984dd9a1aa5cff565" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="59" Bounds="7 160 88 14" Id="60" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="59" Bounds="8 160 87 14" Id="60" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Type Descriptor</p.Text>
 			</NodeLabel>
 			<MethodCall Bounds="160 175 40 40" DomainName="openg:library:variant data" Id="61" Label="62" Target="openg:library:variant\ data:Get\ Header\ from\ TD\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
@@ -721,8 +721,8 @@
 			<Label Height="[float]16" Id="214" LabelOwner="[UIModel]207" Left="[float]415" Text="[string]error out" Top="[float]135" Width="[float]47" xmlns="http://www.ni.com/PanelCommon" />
 			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="45" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Interval="[int]1" IsTabStop="[bool]True" Label="[UIModel]47" Left="[float]411" Maximum="[int]2147483647" MinHeight="[float]24" Minimum="[int]-2147483648" RadixVisibility="[SMVisibility]Hidden" TabIndex="[int]2" Top="[float]48" Value="{DataItemBinding Id=16}" ValueFormatter="[string]LV:G0" ValueType="[Type]Int32" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="47" LabelOwner="[UIModel]45" Left="[float]411" Text="[string]Size of Data" Top="[float]28" Width="[float]64" xmlns="http://www.ni.com/PanelCommon" />
-			<Label Id="220" LabelOwner="[UIModel]218" Left="[float]103" Text="[string]Type Descriptor" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
-			<ArrayViewer ArrayElement="[UIModel]225" Columns="[int]1" Dimensions="[int]1" Height="[float]27" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="218" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]220" Left="[float]103" Rows="[int]1" TabIndex="[int]3" Top="[float]30" Value="{DataItemBinding Id=17}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]63" p4:ControlDefinitionChecksum="TpNcnmc9/KpCf91IsHuBFw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+			<Label Height="[float]16" Id="220" LabelOwner="[UIModel]218" Left="[float]103" Text="[string]Type Descriptor" Top="[float]10" Width="[float]83" xmlns="http://www.ni.com/PanelCommon" />
+			<ArrayViewer ArrayElement="[UIModel]225" Columns="[int]1" Dimensions="[int]1" Height="[float]36" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="218" IndexVisibility="[Visibility]Visible" IsFixedSize="[bool]False" IsTabStop="[bool]True" Label="[UIModel]220" Left="[float]103" Rows="[int]1" TabIndex="[int]3" Top="[float]30" Value="{DataItemBinding Id=17}" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]124" p4:ControlDefinitionChecksum="TpNcnmc9/KpCf91IsHuBFw==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
 				<p.DefaultElementValue>0</p.DefaultElementValue>
 				<p4:p.TypeDefinitionTargets>
 					<p4:TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\.gtype:ControlDefinition" />

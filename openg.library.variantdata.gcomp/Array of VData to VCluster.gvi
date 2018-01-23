@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="09C1317E4A047D68EAE2B8A46E06BF48" Timestamp="1D388BDE816FEA6" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="92079803248A285EE7B1E1A2736F2AF7" Timestamp="1D390A660FEC926" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56172" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.56172" Name="LabVIEW Platform Developer Preview" Version="0.1.0" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
 	</SourceModelFeatureSet>
 	<VirtualInstrument CustomTitle="Array of VData to VCluster" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
 		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">Returns the elements of an array as elements of a variant cluster.</p.UserDescription>
@@ -57,7 +57,7 @@
 			<DataAccessor Bounds="325 360 40 15" DataItem="16" Id="66" Label="67" xmlns="http://www.ni.com/MocCommon">
 				<Terminal DataType="@2ef2be26dbb04676b34ec143791bb3be" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
 			</DataAccessor>
-			<NodeLabel AttachedTo="66" Bounds="289 360 31 14" Id="67" xmlns="http://www.ni.com/PlatformFramework">
+			<NodeLabel AttachedTo="66" Bounds="290 360 30 14" Id="67" xmlns="http://www.ni.com/PlatformFramework">
 				<p.Text>Array</p.Text>
 			</NodeLabel>
 			<DataAccessor Bounds="325 420 40 15" DataItem="18" Id="68" Label="69" xmlns="http://www.ni.com/MocCommon">
@@ -240,7 +240,7 @@
 					<Wire Id="195" Joints="N(189:*(type *\) &amp;x)|(640,400) N(108:data string)|(735,400)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="196" Joints="N(100:outString)|(480,405) h(60) v(-5) N(189:x)|(610,400)" xmlns="http://www.ni.com/PlatformFramework" />
 					<Wire Id="200" Joints="N(198:Out)|(470,265) h(150) v(-25) N(86:number)|(628,240)" xmlns="http://www.ni.com/PlatformFramework" />
-					<Literal Bounds="395 260 75 15" DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" Id="198" Label="203" p6:ControlDefinitionChecksum="3EDc6ecoqjuI7i/a7hsa0g==" xmlns:p6="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
+					<Literal Bounds="375 260 95 15" DataType="@8b5dfbea269845f7b5a67e0f8b1a48e5" Id="198" Label="203" p6:ControlDefinitionChecksum="3EDc6ecoqjuI7i/a7hsa0g==" xmlns:p6="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/MocCommon">
 						<p.Data>80</p.Data>
 						<p6:p.TypeDefinitionTargets>
 							<p6:TypeDefinitionTarget TargetName="openg:library:variant\ data:Type\ Descriptor\ Enumeration\.gtype" />
@@ -248,7 +248,7 @@
 						</p6:p.TypeDefinitionTargets>
 						<EnumBehavior />
 					</Literal>
-					<NodeLabel AttachedTo="198" Bounds="395 242 30 15" Id="203" xmlns="http://www.ni.com/PlatformFramework">
+					<NodeLabel AttachedTo="198" Bounds="375 243 161 14" Id="203" xmlns="http://www.ni.com/PlatformFramework">
 						<p.Text>Type Descriptor Enumeration</p.Text>
 					</NodeLabel>
 				</CaseStructure.Case>
@@ -316,9 +316,9 @@
 				<VariantControl BaseName="[string]Variant" Height="[float]75" Id="51" IsTabStop="[bool]True" TabIndex="[int]0" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			</ArrayViewer>
 			<VariantControl BaseName="[string]Variant" Height="[float]75" Id="53" IsIndicator="[bool]True" IsTabStop="[bool]True" Label="[UIModel]55" Left="[float]356" TabIndex="[int]3" Top="[float]36" VariantValue="{DataItemBinding Id=17}" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
-			<Label Height="[float]16" Id="55" LabelOwner="[UIModel]53" Left="[float]356" Text="[string]VCluster" Top="[float]16" Width="[float]45" xmlns="http://www.ni.com/PanelCommon" />
+			<Label Height="[float]16" Id="55" LabelOwner="[UIModel]53" Left="[float]356" Text="[string]VCluster" Top="[float]16" Width="[float]44" xmlns="http://www.ni.com/PanelCommon" />
 			<Text Height="[float]543" Id="56" Left="[float]100" Text="[string]Array of VData to VCluster.vi&#xA;&#xA;Returns the elements of an array as elements of a variant cluster.&#xA;&#xA;Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002, Jean-Pierre Drolet &lt;drolet_jp@hotmail.com&gt;&#xA;Copyright (c) 2002-2006, Jim Kring &lt;jim@jimkring.com&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]398" Width="[float]750" xmlns="http://www.ni.com/PlatformFramework" />
-			<Text Height="[float]16" Id="57" Left="[float]593" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]205" xmlns="http://www.ni.com/PlatformFramework" />
+			<Text Height="[float]16" Id="57" Left="[float]593" Text="[string][OpenG VI Tags] ***Do Not Remove***" TextWrapping="[TextWrapping]Wrap" Top="[float]30" Width="[float]203" xmlns="http://www.ni.com/PlatformFramework" />
 			<StringControl AcceptsReturn="[bool]True" Height="[float]24" HorizontalScrollBarVisibility="[ScrollBarVisibility]Hidden" Id="58" IsTabStop="[bool]True" Label="[UIModel]59" Left="[float]100" MinHeight="[float]24" TabIndex="[int]4" Text="{DataItemBinding Id=18}" TextDisplayMode="[SMTextDisplayMode]Default" Top="[float]136" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden" Width="[float]100" WordWrap="[bool]True" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
 			<Label Height="[float]16" Id="59" LabelOwner="[UIModel]58" Left="[float]100" Text="[string]Cluster Name" Top="[float]116" Width="[float]72" xmlns="http://www.ni.com/PanelCommon" />
 			<PanelExecutionWindow Id="201" />
