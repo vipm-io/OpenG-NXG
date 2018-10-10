@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="09500AD19235B621239539893E0C8A42" Timestamp="1D390A640075B79" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="5.2.0.9" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="5.2.0.1" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
+		<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument CustomTitle="Get Refnum Type Enum from Data" Id="1" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"Gets the Refnum Type Enumeration of the input. "</p.UserDescription>
+		<Icon Id="16" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="18" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Id="19" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="20" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="21" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<Image Height="[float]30" Id="22" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACMSURBVEhL7ZBZDsAgCAU9raf1ThSDywO70Db+MXlRamBsm2gboTaE2hBqQ3oJD7hTqPjDA36UOqe8BhuGun2DvkqeZg9OsoioYG7Usg4771LOYozJO65qtHdPlcoq9MO51mKMfVALWCO/fojgVa/BBlQj7VSj1I+5kJzTrnXDA+60KzYQakOoDaFWEB2/nzl5SQnbOAAAAABJRU5ErkJggg==" Top="[float]5" Width="[float]30" />
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="40" Id="9" ListViewHeight="70" ListViewWidth="150" Width="40" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 35" Parameter="15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="40 5" />
+			<ConnectorPaneTerminal Hotspot="40 15" ListViewHotspot="150 50" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="40 25" />
+			<ConnectorPaneTerminal Hotspot="40 35" />
+			<ConnectorPaneTerminal Hotspot="15 40" />
+			<ConnectorPaneTerminal Hotspot="25 40" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="11" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="220 55 40 15" DataItem="14" Id="30" Label="31" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@703db96790b84ed7a306535281a074b2" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="30" Bounds="265 55 175 20" Id="31" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Refnum Subtype Enum</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="45 70 40 15" DataItem="15" Id="32" Label="33" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@4529452f36c34cebab2f83e17d79fd2a" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="32" Bounds="5 70 35 20" Id="33" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data</p.Text>
+			</NodeLabel>
+			<VariantToFlattenedByteArray Bounds="100 55 40 40" Id="34" />
+			<MethodCall Bounds="160 45 40 40" DomainName="openg:library:variant data" Id="35" Label="36" Target="openg:library:variant\ data:Get\ Refnum\ Type\ Enum\ from\ TD\.gvi" Template="Icon" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L1" Desc="Type Descriptor" />
+						<Parameter Id="R1" Desc="Refnum Subtype Enum" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@9a8fb7e82524477984dd9a1aa5cff565" Direction="Input" Hotspot="0 15" Id="L1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@703db96790b84ed7a306535281a074b2" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="35" Bounds="160 24 311 18" Id="36" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Get Refnum Type Enum from TD</p.Text>
+			</NodeLabel>
+			<Wire Id="37" Joints="N(35:R1)|(200,60) N(30:Value)|(223,60)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="38" Joints="N(34:type string)|(140,60) N(35:L1)|(160,60)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="39" Joints="N(32:Value)|(85,75) N(34:variant)|(100,75)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<NativeFrontPanel Height="[float]1600" Id="13" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]Title">
+			<Label Id="43" LabelOwner="[UIModel]42" Left="[float]274" Text="[string]Refnum Subtype Enum" Top="[float]10" xmlns="http://www.ni.com/PanelCommon" />
+			<EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]25" Id="42" InteractionMode="[SelectorInteractionModes]ReadOnly" IsTabStop="[bool]True" IsTypeAheadEnabled="[bool]True" Label="[UIModel]43" Left="[float]274" MinHeight="[float]24" TabIndex="[int]0" Top="[float]30" Value="{DataItemBinding Id=14}" ValueType="[Type]UInt8" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]246" p4:ControlDefinitionChecksum="L+1tJ/ndXaDuAxU9iodadQ==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="openg:library:variant\ data:Refnum\ Subtype\ Enum\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<EnumSelectorInfo DisplayValue="[string]Generic" Value="[byte]0" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Datalog File Refnum" Value="[byte]1" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Byte Stream File Refnum" Value="[byte]2" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Device Refnum" Value="[byte]3" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Occurence Refnum" Value="[byte]4" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]TCP Connection Refnum" Value="[byte]5" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]VISA Refnum (Obsolete)" Value="[byte]6" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Automation Renum" Value="[byte]7" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]VI Server Refnum" Value="[byte]8" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Menu Refnum" Value="[byte]9" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]IVI Refnum (Obsolete)" Value="[byte]10" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]IMAQ Session" Value="[byte]11" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]0x0C" Value="[byte]12" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Datasocket Refnum" Value="[byte]13" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]VISA Resource" Value="[byte]14" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]IVI Logical Name" Value="[byte]15" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]UDP Connection Refnum" Value="[byte]16" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Notifier Refnum" Value="[byte]17" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Queue Refnum" Value="[byte]18" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]IrDA Refnum" Value="[byte]19" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Hardware Plugin Refnum" Value="[byte]20" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Hardware Plugin Tag Refnum" Value="[byte]21" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]DAQmx Refnum" Value="[byte]22" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Event Registration Refnum" Value="[byte]23" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string].NET Refnum" Value="[byte]24" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]User Event Refnum" Value="[byte]25" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]0x1A" Value="[byte]26" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Event Callback" Value="[byte]27" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]0x1C" Value="[byte]28" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]0x1D" Value="[byte]29" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Only Used Internal to LabVIEW" Value="[byte]30" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Bluetooth" Value="[byte]31" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]Data Value References" Value="[byte]32" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]RT FIFO" Value="[byte]33" ValueType="[Type]UInt8" />
+				<EnumSelectorInfo DisplayValue="[string]TDM Streaming" Value="[byte]34" ValueType="[Type]UInt8" />
+			</EnumSelector>
+			<VariantControl BaseName="[string]Variant" Height="[float]75" Id="26" IsIndicator="[bool]False" IsTabStop="[bool]True" Label="[UIModel]28" Left="[float]102" TabIndex="[int]1" Top="[float]48" VariantValue="{DataItemBinding Id=15}" Width="[float]150" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="28" LabelOwner="[UIModel]26" Left="[float]102" Text="[string]Data" Top="[float]28" xmlns="http://www.ni.com/PanelCommon" />
+			<Text Height="[float]332" Id="29" Left="[float]100" Text="[string]Please visit http://www.OpenG.org to learn about the&#xA;Open Source LabVIEW software movement.&#xA;&#xA;NOTICE -- YOU MUST LEAVE THIS NOTICE IN PLACE.  PER THE TERMS OF THE LICENSE BELOW, YOU MAY SUBLICENSE THIS SOFTWARE &#xA;IN ANY WAY THAT DOES NOT CONFLICT WITH THIS LICENSE.&#xA;&#xA;### BSD License (http://www.opensource.org/licenses/bsd-license.php) Begin ###&#xA; &#xA;Copyright (c) 2002-2011, Jim Kring &lt;jim@jimkring.com&gt;&#xA;Copyright (c) 2011, Jonathon Green &lt;jg@jgcode.net&gt;&#xA;&#xA;All rights reserved.&#xA;&#xA;Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:&#xA;&#xA;    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.&#xA;    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the &#xA;       documentation and/or other materials provided with the distribution.&#xA;    * Neither the name of SciWare, James Kring, Inc., nor the names of its contributors may be used to endorse or promote products derived &#xA;       from this software without specific prior written permission.&#xA;&#xA;THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, &#xA;INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE &#xA;DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,&#xA; SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR &#xA;SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, &#xA;WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE &#xA;OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.&#xA;&#xA;### BSD License End ###" TextWrapping="[TextWrapping]Wrap" Top="[float]160" Width="[float]522" xmlns="http://www.ni.com/PlatformFramework" />
+			<PanelExecutionWindow Id="44" />
+		</NativeFrontPanel>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@703db96790b84ed7a306535281a074b2" Id="14" Name="Refnum Subtype Enum" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="openg:library:variant\ data:Refnum\ Subtype\ Enum\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="1" CallUsage="Required" DataType="@4529452f36c34cebab2f83e17d79fd2a" Id="15" Name="Data" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Variant>
+					<InnerType>Void</InnerType>
+					<VariantData>null</VariantData>
+				</Variant>
+			</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="703db96790b84ed7a306535281a074b2">
+			<Attributed AttributedType="@d5f5f91aaf0f4f8088a017d72c99d8d0">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4529452f36c34cebab2f83e17d79fd2a">
+			<Composite Id="1" Name="Variant" Sealed="" GenericTypeDefinition="Void" BaseType="Void" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="9a8fb7e82524477984dd9a1aa5cff565">
+			<Attributed AttributedType="@1f1e5fefc5f84e50975c5104cdcd3cf6">
+				<AttributeValues>
+					<AttributeValue Name="NationalInstruments.NamespaceName" Value="[QualifiedName]openg:library:variant\ data" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="d5f5f91aaf0f4f8088a017d72c99d8d0">
+			<Typedef TypedefName="Refnum Subtype Enum.gtype" UnderlyingType="@23cdc12003ab44c0963b7644e40f352d" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="1f1e5fefc5f84e50975c5104cdcd3cf6">
+			<Typedef TypedefName="Type Descriptor.gtype" UnderlyingType="Int16[]" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="23cdc12003ab44c0963b7644e40f352d">
+			<Enumeration>
+				<Members>
+					<EnumerationMember Value="0" Name="Generic" />
+					<EnumerationMember Value="1" Name="Datalog File Refnum" />
+					<EnumerationMember Value="2" Name="Byte Stream File Refnum" />
+					<EnumerationMember Value="3" Name="Device Refnum" />
+					<EnumerationMember Value="4" Name="Occurence Refnum" />
+					<EnumerationMember Value="5" Name="TCP Connection Refnum" />
+					<EnumerationMember Value="6" Name="VISA Refnum (Obsolete)" />
+					<EnumerationMember Value="7" Name="Automation Renum" />
+					<EnumerationMember Value="8" Name="VI Server Refnum" />
+					<EnumerationMember Value="9" Name="Menu Refnum" />
+					<EnumerationMember Value="10" Name="IVI Refnum (Obsolete)" />
+					<EnumerationMember Value="11" Name="IMAQ Session" />
+					<EnumerationMember Value="12" Name="0x0C" />
+					<EnumerationMember Value="13" Name="Datasocket Refnum" />
+					<EnumerationMember Value="14" Name="VISA Resource" />
+					<EnumerationMember Value="15" Name="IVI Logical Name" />
+					<EnumerationMember Value="16" Name="UDP Connection Refnum" />
+					<EnumerationMember Value="17" Name="Notifier Refnum" />
+					<EnumerationMember Value="18" Name="Queue Refnum" />
+					<EnumerationMember Value="19" Name="IrDA Refnum" />
+					<EnumerationMember Value="20" Name="Hardware Plugin Refnum" />
+					<EnumerationMember Value="21" Name="Hardware Plugin Tag Refnum" />
+					<EnumerationMember Value="22" Name="DAQmx Refnum" />
+					<EnumerationMember Value="23" Name="Event Registration Refnum" />
+					<EnumerationMember Value="24" Name=".NET Refnum" />
+					<EnumerationMember Value="25" Name="User Event Refnum" />
+					<EnumerationMember Value="26" Name="0x1A" />
+					<EnumerationMember Value="27" Name="Event Callback" />
+					<EnumerationMember Value="28" Name="0x1C" />
+					<EnumerationMember Value="29" Name="0x1D" />
+					<EnumerationMember Value="30" Name="Only Used Internal to LabVIEW" />
+					<EnumerationMember Value="31" Name="Bluetooth" />
+					<EnumerationMember Value="32" Name="Data Value References" />
+					<EnumerationMember Value="33" Name="RT FIFO" />
+					<EnumerationMember Value="34" Name="TDM Streaming" />
+				</Members>
+				<DataType>UInt8</DataType>
+			</Enumeration>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="openg:library:variant\ data:Get\ Refnum\ Type\ Enum\ from\ TD\.gvi">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]GrayNoText" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+							</IconTemplate>
+							<Image Height="[float]30" Left="[float]5" MinHeight="[float]13" MinWidth="[float]13" Source="[SMEmbeddedImageSource]iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVEhL7Y5BDoQwDAP5/9v4U7dNYzexQMoeuGUUITfgKdf4jFYLrRZaLVx/Mgvlucddn1moc9T+WwaXMlT7d/mqfTrfoJN0uxbBHjVL+xU2R+2BLhrjMS4tr86qWdqvJlie5wroJEsMfFpAjSnnCDseeBSwR62uFh2XMlEd8W3m1fI4L5Jn/Noys1Aev+IDWi20Wmh1YowfaeoG38d5L9MAAAAASUVORK5CYII=" Top="[float]5" Width="[float]30" />
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]openg.library.variantdata.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

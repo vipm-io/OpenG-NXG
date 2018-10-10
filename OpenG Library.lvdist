@@ -1,26 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="039A4DE996BDFCB7F670E679A351128C" Timestamp="1D3947C368CAF10" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="3CEAF4D0D04071A44A320D03BA9B0904AD802BEBD283D0C343E81D1CF73DA1192EC6E01D5A5B08342AD8911720E080E023EC7A8A5BEC53ED1F060F9CAD800F70" Timestamp="1D45BF7C5AF7587" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-		<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-		<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
+		<ParsableNamespace AssemblyFileVersion="6.2.0.52432" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="6.1.0.1" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="6.2.0.52432" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+		<ApplicationVersionInfo Build="6.2.0.52432" Name="LabVIEW NXG" Version="3.0.0" />
 	</SourceModelFeatureSet>
-	<DistributionDefinition BusId="0" Company="OpenG" DisplayName="OpenG Library" DistributionOutputType="NiPackage" Homepage="http://www.lavag.org" IsStoreProduct="True" MaintainerEmail="support@jki.net" MaintainerName="Lavag.org" ModelId="0" OutputDirectory="&quot;C:\\dev\\pkg\\openg1&quot;" Product="Library" ShortDescription="The OpenG package installs the OpenG Libraries." TargetedProduct="LabVIEW" VendorId="0" Version="2.0.0.22" xmlns="http://www.ni.com/GComponent.xsd">
-		<DistributionBuildTarget Id="2" Target=":DevSystem" />
-		<DistributionMemberDependencySource Id="50" MemberContentType="Conversion" Target=":NullTarget:openg\.library\.gconversion" />
-		<DistributionMemberDependencySource Id="51" MemberContentType="Eula" Target=":NullTarget:LICENSE\.rtf" />
-		<DistributionDependencyContent DisplayName="LabVIEW NXG" Id="52" Included="False" MaintainerName="National Instruments" Name="ni-labview-nxg-2.0.0" Version="5.2.0.32816" />
-		<DistributionDependencyContent DisplayName="LabVIEW NXG G Standard Library Files" Id="53" Included="False" MaintainerName="National Instruments" Name="ni-labview-nxg-2.0.0-g-stdlib-bin" Version="5.2.0.32816" />
-		<DistributionMemberDependencySource Id="67" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.array\.gcomp" />
-		<DistributionMemberDependencySource Id="68" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.boolean\.gcomp" />
-		<DistributionMemberDependencySource Id="69" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.comparison\.gcomp" />
-		<DistributionMemberDependencySource Id="70" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.error\.gcomp" />
-		<DistributionMemberDependencySource Id="71" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.file\.gcomp" />
-		<DistributionMemberDependencySource Id="72" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.largefile\.gcomp" />
-		<DistributionMemberDependencySource Id="73" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.md5\.gcomp" />
-		<DistributionMemberDependencySource Id="74" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.numeric\.gcomp" />
-		<DistributionMemberDependencySource Id="75" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.string\.gcomp" />
-		<DistributionMemberDependencySource Id="76" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.time\.gcomp" />
-		<DistributionMemberDependencySource Id="77" MemberContentType="Library" Target=":DevSystem:Interactive:openg\.library\.variantdata\.gcomp" />
+	<DistributionDefinition Company="OpenG" OutputDirectory="&quot;C:\\dev\\pkg\\openg3&quot;" Product="Library" ShortDescription="The OpenG package installs the OpenG Libraries." TargetedProduct="LabVIEW" Version="3.0.0.8" xmlns="http://www.ni.com/GComponent.xsd">
+		<DistributionBuildTarget Id="2" Target="::DevSystem" />
+		<DistributionMemberDependencySource Id="50" MemberContentType="Conversion" Target="::NullTarget::openg.library.gconversion" />
+		<DistributionMemberDependencySource Id="51" MemberContentType="Eula" Target="::NullTarget::LICENSE.rtf" />
+		<DistributionMemberDependencySource Id="67" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.array.gcomp" />
+		<DistributionMemberDependencySource Id="68" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.boolean.gcomp" />
+		<DistributionMemberDependencySource Id="69" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.comparison.gcomp" />
+		<DistributionMemberDependencySource Id="70" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.error.gcomp" />
+		<DistributionMemberDependencySource Id="71" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.file.gcomp" />
+		<DistributionMemberDependencySource Id="72" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.largefile.gcomp" />
+		<DistributionMemberDependencySource Id="73" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.md5.gcomp" />
+		<DistributionMemberDependencySource Id="74" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.numeric.gcomp" />
+		<DistributionMemberDependencySource Id="75" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.string.gcomp" />
+		<DistributionMemberDependencySource Id="76" MemberContentType="Component" Target="::DevSystem::Interactive::openg.library.time.gcomp" />
+		<DistributionOutput CachedDisplayName="Package" Id="78" OutputTypeIdentifier="DistributionOutputType:NiPackage" p3:CustomNipmPackageName="openg-library-src-3" p3:Homepage="http://www.lavag.org" p3:IncludeNiCertificatesPackage="False" p3:IsStoreProduct="True" p3:MaintainerEmail="support@jki.net" p3:MaintainerName="Lavag.org" p3:PackageDisplayName="OpenG Library" xmlns:p3="http://www.ni.com/GComponent.xsd" />
+		<DistributionDependencyContent DisplayName="LabVIEW NXG" Id="80" Included="False" MaintainerName="National Instruments" Name="ni-labview-nxg-3.0.0" Version="6.2.0.49154-0+f2" />
 	</DistributionDefinition>
 </SourceFile>

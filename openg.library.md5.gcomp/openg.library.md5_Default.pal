@@ -151,20 +151,20 @@
 					</Image><MergeScript xmlns="http://www.ni.com/PlatformFramework">
 	<MergeFeatureSet>
 		<SourceModelFeatureSet>
-			<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-			<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-			<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
+			<ParsableNamespace AssemblyFileVersion="6.2.0.52432" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+			<ParsableNamespace AssemblyFileVersion="6.2.0.52432" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+			<ApplicationVersionInfo Build="6.2.0.52432" Name="LabVIEW NXG" Version="3.0.0" />
 		</SourceModelFeatureSet>
 	</MergeFeatureSet>
 	<MergeItem Path="." IsPrimary="True">
-		<MethodCall Bounds="0 0 40 40" DomainName="openg:library:md5" Target="openg:library:md5:MD5\ Message\ Digest\ \(Binary\ String\)\.gvi" xmlns="http://www.ni.com/MocCommon">
+		<MethodCall Bounds="0 0 40 40" Target="openg::library::md5::MD5 Message Digest (Binary String).gvi" xmlns="http://www.ni.com/MocCommon">
 			<Terminal DataType="String" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
 			<Terminal DataType="String" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
 		</MethodCall>
 	</MergeItem>
 	<MergeItem Path="." IsPrimary="True">
 		<IconTable>
-			<p.IconModel Target="openg:library:md5:MD5\ Message\ Digest\ \(Binary\ String\)\.gvi">
+			<p.IconModel Target="openg::library::md5::MD5 Message Digest (Binary String).gvi">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
 						<Icon ListViewIconCrop="0 0 40 40">
@@ -226,13 +226,13 @@
 					</Image><MergeScript xmlns="http://www.ni.com/PlatformFramework">
 	<MergeFeatureSet>
 		<SourceModelFeatureSet>
-			<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
-			<ParsableNamespace AssemblyFileVersion="5.2.0.56171" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="5.2.0.49153" Version="5.2.0.49153" />
-			<ApplicationVersionInfo Build="5.2.0.56171" Name="LabVIEW NXG" Version="2.0.0" />
+			<ParsableNamespace AssemblyFileVersion="6.2.0.52432" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="6.2.0.49153" Version="6.2.0.49153" />
+			<ParsableNamespace AssemblyFileVersion="6.2.0.52432" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="6.2.0.49154" Version="6.2.0.49154" />
+			<ApplicationVersionInfo Build="6.2.0.52432" Name="LabVIEW NXG" Version="3.0.0" />
 		</SourceModelFeatureSet>
 	</MergeFeatureSet>
 	<MergeItem Path="." IsPrimary="True">
-		<MethodCall Bounds="0 0 40 40" DomainName="openg:library:md5" Target="openg:library:md5:MD5\ Hash\.gvi" xmlns="http://www.ni.com/MocCommon">
+		<MethodCall Bounds="0 0 40 40" Target="openg::library::md5::MD5 Hash.gvi" xmlns="http://www.ni.com/MocCommon">
 			<Terminal DataType="String" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
 			<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
 			<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
@@ -240,7 +240,7 @@
 	</MergeItem>
 	<MergeItem Path="." IsPrimary="True">
 		<IconTable>
-			<p.IconModel Target="openg:library:md5:MD5\ Hash\.gvi">
+			<p.IconModel Target="openg::library::md5::MD5 Hash.gvi">
 				<MergeScript>
 					<MergeItem Path="." IsPrimary="True">
 						<Icon ListViewIconCrop="0 0 40 40">
